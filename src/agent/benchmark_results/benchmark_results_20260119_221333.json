@@ -1,0 +1,21 @@
+{
+  "timestamp": "20260119_221333",
+  "total_cases": 1,
+  "correct": 0,
+  "accuracy": 0.0,
+  "results": [
+    {
+      "case_number": 1,
+      "case_title": "Case number 10128",
+      "ground_truth": "E",
+      "agent_answer": "D",
+      "correct": false,
+      "reasoning": "Pineal-region mass in a 43-year-old man presenting with obstructive hydrocephalus that was relieved by endoscopic third ventriculostomy, with biopsy confirmation and a dramatic good response to radical radiotherapy, is most consistent with an intracranial germ cell tumour (germinoma). Germinomas commonly occur in young adults (male predilection), cause hydrocephalus, and are highly radiosensitive. Pineoblastoma is more aggressive and typically seen in children; tectal glioma, dermoid, and meningioma are less likely given the clinical course and radiosensitive response.",
+      "turns": 2,
+      "tokens": {
+        "input": 6489,
+        "output": 567
+      }
+    }
+  ]
+}

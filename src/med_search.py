@@ -164,8 +164,7 @@ class MedSearchEngine:
             if case_number in self.case_number_index:
                 return [(self.case_number_index[case_number], 1.0)]
             else:
-                print(f"Case number {case_number} not found.")
-                return []
+                return []  # Return empty list, caller handles the message
 
         # Text query mode - use BM25
         tokenized_query = self._tokenize(query)
@@ -215,8 +214,8 @@ Examples:
     parser.add_argument(
         "--csv",
         type=str,
-        default=str(Path(__file__).parent / "deepsearch列表信息.csv"),
-        help="Path to the CSV data file"
+        default=str(Path(__file__).parent.parent / "deepsearch_complete.csv"), #deepsearch_complete.csv, deepsearch_filtered.csv
+        help="Path to the CSV data file (default: filtered version excluding selected 50 cases)"
     )
 
     args = parser.parse_args()
@@ -230,12 +229,18 @@ Examples:
 
     results = engine.search(args.query, top_k=args.top_k)
 
+    # Check if it's a case number query
+    queried_case_number = engine._is_case_number_query(args.query)
+
     if not results:
-        print("No results found.")
-        sys.exit(0)
+        if queried_case_number is not None:
+            print(f"Error: Case number {queried_case_number} does not exist in the database.")
+        else:
+            print("No results found.")
+        sys.exit(1)
 
     # Check if it's a case number search (single result with score 1.0)
-    is_case_number_search = len(results) == 1 and results[0][1] == 1.0 and engine._is_case_number_query(args.query) is not None
+    is_case_number_search = len(results) == 1 and results[0][1] == 1.0 and queried_case_number is not None
 
     if is_case_number_search:
         # Case number mode: show everything

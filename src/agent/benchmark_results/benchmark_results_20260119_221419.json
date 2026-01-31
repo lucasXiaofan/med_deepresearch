@@ -1,0 +1,21 @@
+{
+  "timestamp": "20260119_221419",
+  "total_cases": 1,
+  "correct": 0,
+  "accuracy": 0.0,
+  "results": [
+    {
+      "case_number": 1,
+      "case_title": "Case number 10128",
+      "ground_truth": "E",
+      "agent_answer": "D",
+      "correct": false,
+      "reasoning": "The most likely diagnosis is Intracranial Germ cell tumour (D). Key points: 1) 43-year-old man with pineal region mass causing hydrocephalus, 2) Excellent response to radical radiotherapy - germ cell tumors (especially germinomas) are highly radiosensitive, 3) Pineal region is a classic location for germ cell tumors in young adults, 4) Pineoblastoma (E) is more common in children and less radiosensitive, 5) Meningioma (A), dermoid (B), and tectal glioma (C) don't typically show such dramatic response to radiotherapy. The clinical presentation and treatment response strongly favor a germ cell tumor.",
+      "turns": 1,
+      "tokens": {
+        "input": 3173,
+        "output": 513
+      }
+    }
+  ]
+}

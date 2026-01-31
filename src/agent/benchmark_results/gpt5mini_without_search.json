@@ -1,0 +1,73 @@
+{
+  "timestamp": "20260119_221221",
+  "total_cases": 5,
+  "correct": 1,
+  "accuracy": 0.2,
+  "results": [
+    {
+      "case_number": 1,
+      "case_title": "Case number 10128",
+      "ground_truth": "E",
+      "agent_answer": "D",
+      "correct": false,
+      "reasoning": "Pineal-region mass in an adult male causing obstructive hydrocephalus, with biopsy confirmation and an excellent response to radical radiotherapy, is most consistent with an intracranial germ cell tumour (germinoma). Germinomas in the pineal region are highly radiosensitive and classically present with hydrocephalus. Pineoblastoma is more aggressive and more common in children; tectal glioma is typically a pediatric, indolent lesion; dermoid would show fat components; meningioma is less likely in this clinical context. Therefore option D is the best choice.",
+      "turns": 2,
+      "tokens": {
+        "input": 6660,
+        "output": 799
+      }
+    },
+    {
+      "case_number": 2,
+      "case_title": "Case number 10146",
+      "ground_truth": "A",
+      "agent_answer": "C",
+      "correct": false,
+      "reasoning": "Location in the carpal tunnel intimately related to a flexor tendon sheath, MRI showing low-to-intermediate T1, predominantly low (heterogeneous) T2 signal and inhomogeneous enhancement are classic for a localized tenosynovial giant-cell tumor/giant-cell tumor of tendon sheath (GCTTS). The low T2 reflects hemosiderin/fibrous content; a ganglion would be T2-bright, and fibroma of tendon sheath is usually smaller and more homogeneously collagenous. Therefore the most likely diagnosis is C (Giant-cell tumor of tendon sheath).",
+      "turns": 2,
+      "tokens": {
+        "input": 6682,
+        "output": 795
+      }
+    },
+    {
+      "case_number": 3,
+      "case_title": "Case number 10280",
+      "ground_truth": "E",
+      "agent_answer": "E",
+      "correct": true,
+      "reasoning": "Initial CT showed a saccular aneurysm of the mid-descending aorta. Subsequent imaging demonstrated enlargement of the aneurysm, effacement of the periaortic fat plane, periaortic gas/intramural air and contrast extravasation into the gastric fundus \u2014 findings indicating a communication between the aorta and the foregut. Surgical exploration confirmed an aortoesophageal fistula. Therefore the most likely diagnosis is E. Aortoesophageal fistula.",
+      "turns": 2,
+      "tokens": {
+        "input": 6393,
+        "output": 293
+      }
+    },
+    {
+      "case_number": 4,
+      "case_title": "Case number 11692",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "The imaging and clinical picture show a blind-ending tubular structure arising from the terminal ileum containing air and debris with surrounding fat stranding and lymphadenopathy, while the appendix is normal. These findings are classic for an inflamed Meckel's diverticulum (Meckel's diverticulitis). Pathology confirmed acute inflammation and perforation. Other options (enteric duplication cyst, epiploic appendagitis, omental infarction) do not fit the gas-containing ileal blind pouch arising from the bowel.",
+      "turns": 2,
+      "tokens": {
+        "input": 6401,
+        "output": 321
+      }
+    },
+    {
+      "case_number": 5,
+      "case_title": "Case number 11845",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Multiple intradural extramedullary, intensely enhancing, T2-hyperintense sausage-shaped mass in the lumbosacral/filum terminale\u2013cauda equina region with additional nodules is most typical of a myxopapillary ependymoma of the filum terminale. Schwannoma/neurofibroma typically show foraminal/dumbbell extension and are less likely to present as an elongated sausage-shaped lesion with multiple nodules; drop metastases would usually be accompanied by an intracranial primary (head MRI was negative). Pathology was not reported, so the radiologic diagnosis is Ependymoma (choose A rather than B).",
+      "turns": 2,
+      "tokens": {
+        "input": 6984,
+        "output": 1066
+      }
+    }
+  ]
+}

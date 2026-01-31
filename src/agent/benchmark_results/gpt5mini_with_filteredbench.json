@@ -1,0 +1,190 @@
+{
+  "timestamp": "20260119_222532",
+  "total_cases": 14,
+  "correct": 2,
+  "accuracy": 0.14285714285714285,
+  "results": [
+    {
+      "case_number": 1,
+      "case_title": "Case number 10128",
+      "ground_truth": "E",
+      "agent_answer": "D",
+      "correct": false,
+      "reasoning": "Pineal-region mass in a 43-year-old man causing obstructive hydrocephalus, with biopsy confirmation and an excellent response to radical radiotherapy, is most consistent with an intracranial germ cell tumour (germinoma). Germinomas commonly occur in young adults (male predilection), produce obstructive hydrocephalus by aqueduct compression, are highly radiosensitive, and often show central engulfment of pineal calcification. Other options are less likely: meningioma is dural-based and uncommon in the pineal recess; dermoid shows fat components; tectal glioma is typically a pediatric indolent tectal lesion; pineoblastoma is a more aggressive pediatric tumour. Therefore D is the best choice.",
+      "turns": 3,
+      "tokens": {
+        "input": 14833,
+        "output": 610
+      }
+    },
+    {
+      "case_number": 2,
+      "case_title": "Case number 10146",
+      "ground_truth": "A",
+      "agent_answer": "C",
+      "correct": false,
+      "reasoning": "Imaging and clinical features best fit a tenosynovial giant-cell tumour (giant-cell tumour of tendon sheath):\n\n- Typical location in the hand/carpal tunnel arising from tendon sheath.  \n- MRI signal: low\u2013intermediate on T1 and predominantly low on T2 (hypointensity on T2 is characteristic due to haemosiderin/packed cellularity), with inhomogeneous contrast enhancement.  \n- The lesion encases/extends around the flexor tendon \u2014 a common appearance for GCTTS.  \n- Slow-growing lesion in an older adult; diagnosis commonly confirmed at excision/biopsy.\n\nOther options are less likely: ganglion cyst would be T2-bright and non-enhancing centrally; fibroma of tendon sheath can be T2-low but is usually smaller and more homogeneous; nodular fasciitis and fibrous histiocytoma have different clinical/imaging patterns. Supporting similar cases in the database demonstrate the same imaging pattern for tenosynovial giant-cell tumour/PVNS involving the wrist. Therefore choose C.",
+      "turns": 4,
+      "tokens": {
+        "input": 29233,
+        "output": 1369
+      }
+    },
+    {
+      "case_number": 3,
+      "case_title": "Case number 10280",
+      "ground_truth": "E",
+      "agent_answer": "E",
+      "correct": true,
+      "reasoning": "Key points supporting aortoesophageal fistula (E):\n- Initial CT showed a saccular descending thoracic aortic aneurysm adjacent to the esophagus.\n- Rapid clinical deterioration with tachycardia/hypotension consistent with bleeding/rupture.\n- CT signs pathognomonic for aortoenteric/oesophageal communication: new effacement/loss of periaortic fat plane, peri\u2011aortic/intramural gas, and contrast extravasation into the gastric/upper GI lumen.\n- These imaging and clinical features are classic for an aortoesophageal fistula; surgery in this case confirmed the diagnosis.  \n\nSupporting literature/case match: similar CT features (intramural air, perigraft/periaortic gas and GI blood/clot) are described in reported aortoesophageal fistula cases (see related case in database: Case 14192). Therefore the most likely diagnosis is E. Aortoesophageal fistula.",
+      "turns": 3,
+      "tokens": {
+        "input": 15255,
+        "output": 1143
+      }
+    },
+    {
+      "case_number": 4,
+      "case_title": "Case number 11692",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Key points supporting Meckel's diverticulitis (option A):\n- Typical presentation in a young male with periumbilical pain migrating to RLQ, nausea/vomiting.\n- Ultrasound: second blind-ending tubular structure (17 mm) with air and debris separate from a normal appendix \u2014 suggests an inflamed diverticulum rather than appendix.\n- CT: blind-ending tubular structure arising from distal ileum with wall thickening, adjacent fat stranding and regional lymph nodes \u2014 classic imaging features of inflamed Meckel's diverticulum.\n- Pathology confirmed acute inflammation, perforation and hemorrhage of Meckel's diverticulum.\n- Differential diagnoses (appendicitis, duplication cyst, epiploic appendagitis, omental infarction) are excluded by imaging and pathology.\n\nTherefore the most likely diagnosis is Meckel's diverticulitis (A).",
+      "turns": 3,
+      "tokens": {
+        "input": 14931,
+        "output": 702
+      }
+    },
+    {
+      "case_number": 5,
+      "case_title": "Case number 11845",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Multiple intradural extramedullary, intensely enhancing T2\u2011hyperintense masses concentrated in the lumbosacral canal with a long sausage\u2011shaped dominant lesion at L2\u2013L3 strongly favour a tumour of the filum/conus region \u2014 classically myxopapillary (spinal) ependymoma with nodular seeding. Myxopapillary ependymomas are intradural extramedullary, T1 iso, T2 hyperintense, intensely enhancing and can be long/sausage\u2011shaped in the cauda/filum region and produce multiple intradural nodules. Schwannoma/neurofibroma more often show neural\u2011foraminal/dumbbell extension or target\u2011sign and multiple nerve\u2011sheath tumours would suggest NF2 (head MRI was negative). Drop metastases require a known cranial/spinal primary. Therefore the most likely diagnosis among the options is ependymoma (myxopapillary type).",
+      "turns": 3,
+      "tokens": {
+        "input": 18495,
+        "output": 2232
+      }
+    },
+    {
+      "case_number": 6,
+      "case_title": "Case number 12185",
+      "ground_truth": "B",
+      "agent_answer": "E",
+      "correct": false,
+      "reasoning": "Most likely neuroblastoma. Reasoning: Pediatric age (7 years) and a large retroperitoneal/adrenal-region mass that is predominantly cystic/necrotic, vascular, displacing stomach/spleen/pancreas, encasing/compressing renal vessels with resultant severe hydronephrosis fits a neuroblastoma arising from the adrenal/para\u2011aortic region. STIR showed no fat (argues against liposarcoma). Desmoid tumours and NRSTS are typically solid fibrous/sarcomatous masses and far less likely to present as a large mixed cystic vascular lesion in this age group. Haemangioendothelioma is uncommon in this location/age. Medline/Eurorad case examples describe cystic neuroblastoma presenting as complex cystic suprarenal/retroperitoneal masses with internal vascularity, displacement/encasement of adjacent structures and causing ureteric obstruction. Therefore option E is the best choice.",
+      "turns": 3,
+      "tokens": {
+        "input": 16112,
+        "output": 997
+      }
+    },
+    {
+      "case_number": 7,
+      "case_title": "Case number 12691",
+      "ground_truth": "C",
+      "agent_answer": "E",
+      "correct": false,
+      "reasoning": "Key imaging\u2013clinic correlation: MRI shows marked proximal plantar fascia thickening with perifascial oedema consistent with plantar fasciitis, together with selective fat-replacement (atrophy) of the abductor digiti minimi muscle. This pattern is classic for chronic inferior calcaneal (Baxter) nerve entrapment producing denervation atrophy of the abductor digiti minimi, usually seen in association with plantar fasciitis. \n\nWhy not the others:\n- A (intramuscular lipoma): would appear as a discrete fatty mass within the muscle, not selective fatty replacement of the entire abductor digiti minimi with plantar fascia thickening.\n- B (isolated plantar fasciitis): explains the fascial changes but not the selective muscle fatty atrophy.\n- D (plantar fibromatosis): causes nodular superficial plantar fascial masses, not diffuse fascial thickening with muscle denervation changes.\n- C (Baxter's neuropathy associated with plantar fasciitis): this is essentially the same entity but less specifically worded than E; option E precisely describes abductor digiti minimi atrophy from Baxter neuropathy, which matches the images.\n\nTherefore the most likely diagnosis is E: abductor digiti minimi atrophy associated with plantar fasciitis (Baxter neuropathy: chronic inferior calcaneal nerve entrapment).",
+      "turns": 4,
+      "tokens": {
+        "input": 28265,
+        "output": 1315
+      }
+    },
+    {
+      "case_number": 8,
+      "case_title": "Case number 16526",
+      "ground_truth": "E",
+      "agent_answer": "C",
+      "correct": false,
+      "reasoning": "CT and ultrasound show gangrenous cholecystitis with wall disruption and intramural/luminal gas plus pneumobilia (air in the biliary tree) and an irregular wall directed toward the D2 segment of the duodenum. These findings are most consistent with a cholecysto\u2011enteric communication (cholecystoduodenal fistula), i.e. a bilio\u2011enteric fistula. This explains the gas in the biliary tree and the focal disruption of the gallbladder wall adjacent to the duodenum.",
+      "turns": 3,
+      "tokens": {
+        "input": 16379,
+        "output": 1222
+      }
+    },
+    {
+      "case_number": 9,
+      "case_title": "Case number 16686",
+      "ground_truth": "C",
+      "agent_answer": "D",
+      "correct": false,
+      "reasoning": "Imaging demonstrates a duodenal wall defect with oral contrast opacifying a paravertebral collection that tracks into the intervertebral spaces and anterior epidural space, proving direct enteric perforation/fistulisation to the spine. Blood cultures grew Streptococcus anginosus and the clinical course is acute with very high CRP\u2014findings that favor an acute pyogenic (bacterial) spondylodiscitis from contiguous seeding by intestinal contents. Prior vertebroplasty is noted but the CT directly shows enteric contrast entering the paravertebral/epidural collections, making iatrogenic infection less likely. Tuberculosis and fungal infection are less likely given the acute presentation, imaging with oral contrast demonstrating enteric fistula, and positive blood cultures for S. anginosus. Therefore the most likely diagnosis is pyogenic spondylodiscitis (Streptococcus anginosus) due to intestinal perforation (option D).",
+      "turns": 3,
+      "tokens": {
+        "input": 16469,
+        "output": 879
+      }
+    },
+    {
+      "case_number": 10,
+      "case_title": "Case number 16760",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Most likely diagnosis: Warthin tumour. Reasoning: The lesion is a small, well-marginated, T1-hypo / T2-hyperintense, vividly enhancing parotid mass with restricted diffusion (ADC ~1.0 x10^-3 mm2/s) and a Type\u2011B time\u2013intensity curve (early peak enhancement with rapid washout). This combination (low ADC + rapid washout on dynamic contrast imaging) is characteristic of Warthin tumour and helps differentiate it from pleomorphic adenoma (benign mixed tumour), which typically shows progressive/late enhancement (Type\u2011A curve) and higher ADC values. Acinic cell and mucoepidermoid carcinomas are less likely given the small, well-circumscribed appearance, lack of perineural/nodal disease and the classic dynamic/ADC profile. Supporting literature/cases from the database (e.g. Eurorad case 11031) describe Warthin tumours with early intense enhancement and rapid washout and cystic/oncocytic features on imaging, consistent with this case.",
+      "turns": 3,
+      "tokens": {
+        "input": 16772,
+        "output": 1494
+      }
+    },
+    {
+      "case_number": 11,
+      "case_title": "Case number 17930",
+      "ground_truth": "A",
+      "agent_answer": "E",
+      "correct": false,
+      "reasoning": "Acute clinical presentation (24-hour history of right flank/RLQ pain) and CT findings are most consistent with acute appendicitis: markedly enlarged appendix (20 mm), irregular wall thickening and prominent periappendiceal/mesenteric fat stranding with mild localized ascites and small reactive nodes. Mucocele or appendiceal tumour typically appear as well\u2011circumscribed, cystic/tubular low\u2011attenuation masses (often with mural calcification) and are usually more chronic; caecal diverticulitis would show primary cecal wall abnormality. Therefore the most likely diagnosis is appendicitis.",
+      "turns": 3,
+      "tokens": {
+        "input": 16000,
+        "output": 914
+      }
+    },
+    {
+      "case_number": 12,
+      "case_title": "Case number 9232",
+      "ground_truth": "E",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Imaging and pathology are classic for a high\u2011flow vascular malformation (arteriovenous malformation): a compressible, hypervascular intramuscular mass with strong Doppler signals, multiple serpiginous flow\u2011voids on MRI, marked heterogeneous contrast enhancement, replacement of muscle rather than a discrete solid tumour, and associated cortical bone sclerosis. Biopsy confirmed an arteriovenous malformation. These features favour a high\u2011flow lesion/haemangioma or AVM (option A) and argue against low\u2011flow venous malformation (B), malignant soft\u2011tissue tumour (C/D), or the misnamed \u201chigh\u2011flow venous malformation\u201d (E).",
+      "turns": 3,
+      "tokens": {
+        "input": 16700,
+        "output": 908
+      }
+    },
+    {
+      "case_number": 13,
+      "case_title": "Case number 9435",
+      "ground_truth": "C",
+      "agent_answer": "B",
+      "correct": false,
+      "reasoning": "Acute presentation with fever, elevated CRP and MRI/CT findings of a focal sacral bone lesion with cortical loss, a central low-signal sequestrum and extensive adjacent muscle/soft-tissue high-signal and an enhancing fluid collection are classic for pyogenic osteomyelitis with intraosseous abscess and soft-tissue extension. In children the most frequent pathogen is Staphylococcus aureus, making option B the best choice. Brucellosis (A) is less likely in this acute setting and usually causes sacroiliitis without a frank sequestrum and large surrounding pyogenic abscess; option C is redundant/unclear; option D (genitourinary/abdominal source) is not supported by imaging; and E (sickle cell disease) requires relevant clinical history. The imaging plus clinical picture therefore support pyogenic (Staphylococcus aureus) osteomyelitis.",
+      "turns": 3,
+      "tokens": {
+        "input": 17553,
+        "output": 1107
+      }
+    },
+    {
+      "case_number": 14,
+      "case_title": "Case number 9905",
+      "ground_truth": "B",
+      "agent_answer": "B",
+      "correct": true,
+      "reasoning": "Imaging shows a large, well-defined unilocular cystic lesion arising from the posterior mandibular ramus with scalloped borders, cortical thinning/defects and an intramural enhancing soft-tissue nodule. These features are classic for an ameloblastoma (unicystic/cystic variant) \u2014 ameloblastomas frequently occur in the posterior mandible, can be unilocular, are T2-bright with low T1 signal, and commonly demonstrate enhancing mural/solid nodules and peripheral rim enhancement. \n\nDifferential considerations: odontogenic keratocyst can appear unilocular in the ramus but usually lacks an enhancing mural nodule and has different internal signal characteristics; a dentigerous cyst would be associated with an impacted tooth (not reported); metastatic follicular thyroid carcinoma to the mandible is possible but uncommon and typically produces a more solid/irregular destructive mass rather than a cystic lesion with a mural enhancing nodule. Thus the most likely diagnosis is ameloblastoma.",
+      "turns": 3,
+      "tokens": {
+        "input": 18354,
+        "output": 1312
+      }
+    }
+  ]
+}

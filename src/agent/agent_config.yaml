@@ -2,44 +2,57 @@
 # This file defines agents and their tool configurations
 
 agents:
-  med_research_agent:
-    model: "deepseek-chat"
+  med_simple_agent:
+    model: "openai/gpt-5-mini"
     system_prompt: |
-      You are a helpful medical research assistant with access to a local medical case database and bash commands.
+      You are a medical diagnostic assistant. You will be presented with a clinical case including:
+      - Clinical history
+      - Imaging findings
+      - Discussion/background information
+      - Multiple choice options (A, B, C, D, E)
+
+      ## Your Task
+      Analyze the case information and select the correct diagnosis from the given options.
+    temperature: 0.3
+    max_turns: 7
+    tools:
+      - think
+      - final_answer
+    terminal_tools:
+      - final_answer
+
+  med_research_agent:
+    model: "openai/gpt-5-mini"
+    system_prompt: |
+      You are a medical diagnostic assistant. You will be presented with a clinical case including:
+      - Clinical history
+      - Imaging findings
+      - Multiple choice options (A, B, C, D, E)
+
+      ## Your Task
+      Analyze the case information and search for medical cases in the database to support your reasoning. Then select the correct diagnosis from the given options.
+
 
       ## Available Tools
-
-      ### Medical Case Search (via bash_command)
-      You have access to a BM25-based medical case search engine. Use it to find relevant cases.
-      IMPORTANT: Always use `uv run python` to run Python scripts.
-
+      You have access to a medical case database to search for similar cases:
       ```bash
-      # Search by text query (symptoms, conditions, findings)
-      cd /Users/xiaofanlu/Documents/github_repos/med_deepresearch && uv run python src/med_search.py "chest pain dyspnea" --top_k 5
-
-      # Search by case number for exact lookup
-      cd /Users/xiaofanlu/Documents/github_repos/med_deepresearch && uv run python src/med_search.py "1000"
-      cd /Users/xiaofanlu/Documents/github_repos/med_deepresearch && uv run python src/med_search.py "case number 1000"
+      cd /Users/xiaofanlu/Documents/github_repos/med_deepresearch && uv run python src/med_search.py "search query" --top_k 5
       ```
 
-      The search returns: case title, clinical history, imaging findings, discussion, differential diagnosis, final diagnosis, and related cases.
-
       ## Workflow
-      1. Use the 'think' tool to plan your approach
-      2. Use 'bash_command' to search the medical case database with relevant queries
-      3. Analyze the returned cases to find patterns, differential diagnoses, or similar presentations
-      4. When you have gathered enough information, use 'final_result' to present your findings
+      1. Use 'think' to analyze the clinical presentation and imaging findings
+      2. utilize med_search the database for similar cases to support your reasoning
+      3. Use 'final_answer' to submit your answer choice (A, B, C, D, or E) with reasoning
 
-      Always cite case numbers when referencing specific cases from the database.
-      You have access to recent conversation history for context.
+      IMPORTANT: You MUST use the 'final_answer' tool to submit your answer.
     temperature: 0.3
-    max_turns: 20
+    max_turns: 15
     tools:
       - think
       - bash_command
-      - final_result
+      - final_answer
     terminal_tools:
-      - final_result
+      - final_answer
 
   simple_agent:
     model: "x-ai/grok-4.1-fast"

@@ -111,6 +111,31 @@ def brave_search(query: str, count: int = 10) -> str:
         return f"Error: {str(e)}"
 
 
+@tool(name="final_answer", description="Submit your final answer choice for a multiple choice question. Use this when you are ready to provide your diagnosis.")
+def final_answer(answer: str, reasoning: str) -> str:
+    """Submit the final answer for a multiple choice diagnostic question.
+
+    Args:
+        answer: The answer choice letter (A, B, C, D, or E)
+        reasoning: Brief explanation for why this answer was chosen
+
+    Returns:
+        Formatted answer response
+    """
+    # Normalize answer to uppercase single letter
+    answer = answer.strip().upper()
+    if len(answer) > 1:
+        answer = answer[0]
+
+    if answer not in ['A', 'B', 'C', 'D', 'E']:
+        return f"Error: Invalid answer '{answer}'. Must be A, B, C, D, or E."
+
+    return json.dumps({
+        "answer": answer,
+        "reasoning": reasoning
+    })
+
+
 @tool(name="final_result", description="Format and present the final report to the user. Use this when you have gathered enough information to provide a complete answer.")
 def final_result(summary: str, details: str, sources: str = "") -> str:
     """Format the agent's final report to the user.

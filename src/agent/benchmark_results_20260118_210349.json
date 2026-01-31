@@ -1,0 +1,138 @@
+{
+  "timestamp": "20260118_210349",
+  "total_cases": 10,
+  "correct": 10,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "case_number": 1,
+      "case_title": "Case number 19172",
+      "ground_truth": "C",
+      "agent_answer": "C",
+      "correct": true,
+      "reasoning": "Ultrasound demonstrates a thin, avascular central septum partially dividing the endometrial cavity with the gestational sac/foetus extending across both hemicavities and placental tissue implanted on/near the midline septum. These findings are characteristic of a septate uterus. Bicornuate or didelphys would show a prominent external fundal cleft and more muscularly separated horns; an arcuate uterus is only a shallow indentation and does not produce a persistent thin midline septum, and intrauterine synechiae are usually irregular adhesions. Hence the most likely diagnosis is gravid septate uterus with septal placental implantation (Option C).",
+      "turns": 2,
+      "tokens": {
+        "input": 5647,
+        "output": 733
+      }
+    },
+    {
+      "case_number": 2,
+      "case_title": "Case number 19090",
+      "ground_truth": "A",
+      "agent_answer": "A",
+      "correct": true,
+      "reasoning": "Core biopsy shows dense stromal fibrosis with a nodular lymphoplasmacytic infiltrate, abundant CD138+ plasma cells with >50 IgG4+ plasma cells/HPF and polyclonal kappa/lambda expression. Eosinophils are present and no malignant epithelial cells were identified. These features are diagnostic of IgG4-related breast disease (IgG4-related sclerosing mastitis). Monoclonality would be expected for a lymphoproliferative disorder and malignant cells for invasive carcinoma or DCIS, while papillomatosis would show epithelial papillary proliferation, none of which are present here.",
+      "turns": 2,
+      "tokens": {
+        "input": 7851,
+        "output": 637
+      }
+    },
+    {
+      "case_number": 3,
+      "case_title": "Case number 19087",
+      "ground_truth": "B",
+      "agent_answer": "B",
+      "correct": true,
+      "reasoning": "Clinical presentation of chronic flank discomfort, anaemia and leukocytosis with imaging demonstrating the CT 'bear-paw' sign, renal enlargement with parenchymal destruction, staghorn/nephrolithiasis, perirenal abscess and a nonfunctional kidney is classic for xanthogranulomatous pyelonephritis (diffuse form). Ultrasound findings of multiple thick-walled collections and loss of corticomedullary differentiation support this. Definitive confirmation by nephrectomy histology showing lipid-laden (foamy) macrophages confirms XPN. Other options (pyonephrosis, TB, tumour, hydronephrosis) are less consistent with the combination of bear-paw appearance, staghorn calculus and characteristic histology.",
+      "turns": 2,
+      "tokens": {
+        "input": 10033,
+        "output": 701
+      }
+    },
+    {
+      "case_number": 4,
+      "case_title": "Case number 19078",
+      "ground_truth": "C",
+      "agent_answer": "C",
+      "correct": true,
+      "reasoning": "Imaging showed a large hypoechoic, fibrotic-appearing lesion with indistinct margins and non-mass enhancement\u2014features that can mimic carcinoma. Histology demonstrated dense lymphocytic infiltrate, collagenised stroma and thickened basement membrane with no malignant cells, which is diagnostic of sclerosing lymphocytic mastitis (lymphocytic mastopathy/diabetic mastopathy). The association with impaired glucose tolerance/diabetes and complete resolution with conservative management further supports this diagnosis. Therefore the correct answer is C.",
+      "turns": 2,
+      "tokens": {
+        "input": 12862,
+        "output": 529
+      }
+    },
+    {
+      "case_number": 5,
+      "case_title": "Case number 10128",
+      "ground_truth": "E",
+      "agent_answer": "E",
+      "correct": true,
+      "reasoning": "Biopsy confirmed a WHO grade IV pineoblastoma (high Ki-67 >40%) in the pineal region, with hydrocephalus and CSF-positive malignant cells (Chang stage M3). Imaging and clinical course fit a high-grade pineal parenchymal tumour rather than germ cell tumour or other lesions. Management with craniospinal irradiation and boost is appropriate for pineoblastoma with CSF dissemination. Therefore the correct diagnosis is Pineoblastoma (Option E).",
+      "turns": 2,
+      "tokens": {
+        "input": 14479,
+        "output": 389
+      }
+    },
+    {
+      "case_number": 6,
+      "case_title": "Case number 10142",
+      "ground_truth": "C",
+      "agent_answer": "C",
+      "correct": true,
+      "reasoning": "Postoperative CT-urography with delayed/excretory-phase imaging demonstrates opacification of a pelvic fluid collection directly from the distal right ureter, indicating contrast-containing urine extravasation. This appearance is diagnostic of an iatrogenic ureteral injury with resultant urinoma rather than abscess, seroma, ascites, or extraluminal enteric material. Clinical context (recent colectomy, prior surgery, worsening pain/fever) further supports this diagnosis.",
+      "turns": 2,
+      "tokens": {
+        "input": 14879,
+        "output": 344
+      }
+    },
+    {
+      "case_number": 7,
+      "case_title": "Case number 10146",
+      "ground_truth": "A",
+      "agent_answer": "A",
+      "correct": true,
+      "reasoning": "Slow-growing well-defined mass in the carpal tunnel abutting the tendon sheath with low\u2013intermediate T1 signal, predominantly low T2 signal (reflecting dense collagenous stroma) and inhomogeneous enhancement is characteristic of fibroma of the tendon sheath (tendon sheath fibroma). Imaging and clinical features (location, chronicity) differentiate it from ganglion (fluid signal), GCTTS (hemosiderin susceptibility), nodular fasciitis (rapid growth) and fibrous histiocytoma. Therefore the most likely diagnosis is A: Fibroma of the tendon sheath.",
+      "turns": 2,
+      "tokens": {
+        "input": 14908,
+        "output": 475
+      }
+    },
+    {
+      "case_number": 8,
+      "case_title": "Case number 10186",
+      "ground_truth": "A",
+      "agent_answer": "A",
+      "correct": true,
+      "reasoning": "Clinical picture of febrile left\u2011quadrant pain with leukocytosis and imaging showing a well\u2011defined mesenteric cystic mass with fluid\u2013fluid levels (water to fat attenuation) and chylous/fat content, multiloculated appearance, plus peripheral enhancement and adjacent fat stranding (consistent with superinfection) is classic for mesenteric lymphangioma complicated by inflammation. Other cyst types (enteric duplication, mesothelial or enteric cyst) typically contain serous fluid without fat attenuation, and no history of pancreatitis argues against a non\u2011pancreatic pseudocyst. Histopathology in the case confirmed lymphangioma with inflammatory changes.",
+      "turns": 2,
+      "tokens": {
+        "input": 14653,
+        "output": 606
+      }
+    },
+    {
+      "case_number": 9,
+      "case_title": "Case number 10280",
+      "ground_truth": "E",
+      "agent_answer": "E",
+      "correct": true,
+      "reasoning": "Initial CT showed a saccular aneurysm from a penetrating atherosclerotic ulcer in the mid descending aorta. Subsequent imaging demonstrated loss of the periaortic fat plane, periaortic gas/intramural air, hazy aortic wall, enlargement of the saccular aneurysm, and contrast extravasation into the gastric fundus. These CT findings\u2014ectopic gas adjacent to the aorta, intramural air, loss of the fat plane, and direct contrast leakage into the gastrointestinal tract\u2014are classic for an aortoenteric communication. Surgical exploration confirmed an aortoesophageal fistula. Therefore the most likely diagnosis is E. Aortoesophageal fistula.",
+      "turns": 2,
+      "tokens": {
+        "input": 14554,
+        "output": 558
+      }
+    },
+    {
+      "case_number": 10,
+      "case_title": "Case number 10653",
+      "ground_truth": "C",
+      "agent_answer": "C",
+      "correct": true,
+      "reasoning": "Young patient with a unilateral solid ovarian mass with cystic areas and biochemical hyperandrogenism (elevated delta-4-androstenedione) strongly favors an androgen-secreting sex cord\u2013stromal tumor. Imaging (well-defined solid mass with peripheral cyst) and the clinical context are typical for Sertoli\u2013Leydig cell tumor (SLCT). Fibroma/thecoma would be T2-hypointense and not androgenic; granulosa cell tumors are estrogenic; sclerosing stromal tumor has a characteristic enhancement pattern. Therefore the most likely diagnosis is Sertoli\u2013Leydig cell tumour (Option C).",
+      "turns": 2,
+      "tokens": {
+        "input": 13686,
+        "output": 497
+      }
+    }
+  ]
+}

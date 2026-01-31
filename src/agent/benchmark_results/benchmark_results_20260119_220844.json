@@ -1,0 +1,73 @@
+{
+  "timestamp": "20260119_220844",
+  "total_cases": 5,
+  "correct": 1,
+  "accuracy": 0.2,
+  "results": [
+    {
+      "case_number": 1,
+      "case_title": "Case number 10128",
+      "ground_truth": "E",
+      "agent_answer": "D",
+      "correct": false,
+      "reasoning": "Pineal region mass producing hydrocephalus in an adult with biopsy confirmation and excellent response to radical radiotherapy is most consistent with an intracranial germ cell tumour (germinoma). Germinomas commonly occur in the pineal region, cause obstructive hydrocephalus, and are highly radiosensitive. Pineoblastoma is more typical in children and is more aggressive; tectal glioma is usually a paediatric indolent lesion; meningioma and dermoid are less likely given presentation and treatment response.",
+      "turns": 2,
+      "tokens": {
+        "input": 6872,
+        "output": 663
+      }
+    },
+    {
+      "case_number": 2,
+      "case_title": "Case number 10146",
+      "ground_truth": "A",
+      "agent_answer": "C",
+      "correct": false,
+      "reasoning": "The lesion is a well-defined, elongated mass within the carpal tunnel intimately related to a flexor tendon, showing low signal on T1 and predominantly low signal on T2 with inhomogeneous contrast enhancement and encasement/peripheral enhancement around the tendon. These MRI features are classical for a giant-cell tumor of tendon sheath (GCTTS)/localized pigmented villonodular synovitis. Fibroma of tendon sheath can show low T2 signal but is usually smaller with less marked enhancement. Therefore the most likely diagnosis is C. Giant-cell tumor of tendon sheath.",
+      "turns": 2,
+      "tokens": {
+        "input": 7263,
+        "output": 1145
+      }
+    },
+    {
+      "case_number": 3,
+      "case_title": "Case number 10280",
+      "ground_truth": "E",
+      "agent_answer": "E",
+      "correct": true,
+      "reasoning": "Initial CT showed a saccular aneurysm of the mid descending aorta. Subsequent imaging demonstrated enlargement, loss of periaortic fat plane, periaortic gas and intramural air, and contrast extravasation into the gastric fundus \u2014 all indicating communication between the aorta and the gastrointestinal tract. Emergency surgery confirmed an aortoesophageal fistula. Therefore the most likely diagnosis is E. Aortoesophageal fistula.",
+      "turns": 2,
+      "tokens": {
+        "input": 6698,
+        "output": 607
+      }
+    },
+    {
+      "case_number": 4,
+      "case_title": "Case number 11692",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Imaging shows a second incompressible blind-ending tubular structure arising from the terminal ileum with gas/debris, surrounding fat stranding and nodes while the appendix is normal. These findings are classic for an inflamed Meckel\u2019s diverticulum (Meckel\u2019s diverticulitis), confirmed at pathology. Other options (enteric duplication cyst, epiploic appendagitis, omental infarction) do not present as a gas-containing blind-ending ileal diverticulum.",
+      "turns": 2,
+      "tokens": {
+        "input": 6552,
+        "output": 333
+      }
+    },
+    {
+      "case_number": 5,
+      "case_title": "Case number 11845",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "The imaging shows multiple intradural extramedullary enhancing masses centered in the cauda equina/filum terminale region, with the largest lesion described as sausage-shaped and elongated, T2 hyperintense, T1 isointense and markedly enhancing. These features are most typical of a myxopapillary ependymoma arising from the filum terminale (an ependymoma variant). Nerve-sheath tumors (schwannoma/neurofibroma) commonly extend into the neural foramina and have different imaging patterns, and drop metastases would prompt a search for a primary intracranial lesion, which was excluded. Therefore the most likely diagnosis is ependymoma (A).",
+      "turns": 2,
+      "tokens": {
+        "input": 7342,
+        "output": 1299
+      }
+    }
+  ]
+}

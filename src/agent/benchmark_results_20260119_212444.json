@@ -1,0 +1,73 @@
+{
+  "timestamp": "20260119_212444",
+  "total_cases": 5,
+  "correct": 5,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "case_number": 1,
+      "case_title": "Case number 19172",
+      "ground_truth": "C",
+      "agent_answer": "C",
+      "correct": true,
+      "reasoning": "Ultrasound shows a thin central (avascular) septum partially dividing the endometrial cavity with the gestation/amnionic sac extending into both hemicavities and placental tissue implanted on the septum \u2014 findings diagnostic of a septate uterus with septal placental implantation rather than bicornuate/didelphys (would have external fundal cleft and separate uterine horns) or arcuate uterus or intrauterine synechiae.",
+      "turns": 1,
+      "tokens": {
+        "input": 6444,
+        "output": 245
+      }
+    },
+    {
+      "case_number": 2,
+      "case_title": "Case number 19090",
+      "ground_truth": "A",
+      "agent_answer": "A",
+      "correct": true,
+      "reasoning": "Imaging shows a well-defined, lobulated hypoechoic mass but core biopsy demonstrates dense lymphoplasmacytic infiltrate with abundant polyclonal CD138+ plasma cells and >50 IgG4+ plasma cells/HPF, stromal fibrosis and eosinophils \u2014 findings characteristic of IgG4-related disease. No malignant epithelial cells or monoclonal population to suggest carcinoma or lymphoma. Therefore the most likely diagnosis is IgG4-related breast disease.",
+      "turns": 1,
+      "tokens": {
+        "input": 6557,
+        "output": 310
+      }
+    },
+    {
+      "case_number": 3,
+      "case_title": "Case number 19087",
+      "ground_truth": "B",
+      "agent_answer": "B",
+      "correct": true,
+      "reasoning": null,
+      "turns": 1,
+      "tokens": {
+        "input": 6769,
+        "output": 525
+      }
+    },
+    {
+      "case_number": 4,
+      "case_title": "Case number 19078",
+      "ground_truth": "C",
+      "agent_answer": "C",
+      "correct": true,
+      "reasoning": "Imaging suggested a suspicious fibrous mass, but core biopsy showed dense lymphocytic infiltrate, collagenised stroma and thickened basement membrane\u2014histologic features diagnostic of lymphocytic mastopathy (diabetic mastopathy). The association with impaired glucose metabolism and clinical/imaging resolution with conservative management further supports this benign diagnosis over carcinoma, granulomatous mastitis, trauma, or vasculitis.",
+      "turns": 2,
+      "tokens": {
+        "input": 15466,
+        "output": 584
+      }
+    },
+    {
+      "case_number": 5,
+      "case_title": "Case number 10128",
+      "ground_truth": "E",
+      "agent_answer": "E",
+      "correct": true,
+      "reasoning": "Biopsy confirmed a WHO grade IV pineal-region tumour with high proliferative index (Ki-67 >40%), hydrocephalus, CSF positive for malignant cells (Chang M3), and treatment with craniospinal irradiation \u2014 findings diagnostic of pineoblastoma rather than meningioma, dermoid, tectal glioma, or germ cell tumour.",
+      "turns": 2,
+      "tokens": {
+        "input": 14786,
+        "output": 363
+      }
+    }
+  ]
+}

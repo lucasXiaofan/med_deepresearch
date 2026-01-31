@@ -1,0 +1,73 @@
+{
+  "timestamp": "20260119_222841",
+  "total_cases": 5,
+  "correct": 3,
+  "accuracy": 0.6,
+  "results": [
+    {
+      "case_number": 1,
+      "case_title": "Case number 10128",
+      "ground_truth": "E",
+      "agent_answer": "E",
+      "correct": true,
+      "reasoning": "Key points favoring pineoblastoma: the patient had an enhancing pineal-region mass causing obstructive hydrocephalus, required endoscopic third ventriculostomy with biopsy, and histology confirmed a high-grade (WHO grade IV) pineal parenchymal tumour with high proliferation index. The case record shows craniospinal irradiation was given (appropriate for pineoblastoma with CSF/ependymal dissemination) and the report\u2019s final diagnosis was pineoblastoma. Although germ cell tumours are common in the pineal region and radiosensitive, the biopsy-proven high-grade pineal parenchymal tumour (pineoblastoma) and management with craniospinal radiotherapy support option E as the correct diagnosis.",
+      "turns": 3,
+      "tokens": {
+        "input": 15534,
+        "output": 1123
+      }
+    },
+    {
+      "case_number": 2,
+      "case_title": "Case number 10146",
+      "ground_truth": "A",
+      "agent_answer": "A",
+      "correct": true,
+      "reasoning": "Imaging and clinical features fit a tendon-sheath fibroma: a slow-growing volar wrist mass within the carpal tunnel, low\u2013intermediate T1 and predominantly low T2 signal (reflecting dense collagenous tissue) with inhomogeneous enhancement and intimate relation to a flexor tendon. Differential includes GCTTS (which also can be low T2) but GCTTS classically shows hemosiderin-related susceptibility on gradient-echo sequences and more frequent bone erosion; histology in this case confirmed fibroma of the tendon sheath. The same Eurorad case (Case 10146) documents these findings and final diagnosis: fibroma of the tendon sheath.",
+      "turns": 3,
+      "tokens": {
+        "input": 15380,
+        "output": 1292
+      }
+    },
+    {
+      "case_number": 3,
+      "case_title": "Case number 10280",
+      "ground_truth": "E",
+      "agent_answer": "E",
+      "correct": true,
+      "reasoning": "Findings are classic for an aortoesophageal (aortoenteric) fistula: a saccular pseudoaneurysm from a penetrating atherosclerotic ulcer in the descending thoracic aorta with loss of the periaortic fat plane, peri\u2011aortic gas and intramural air, and direct contrast extravasation into the gastric/enteric lumen. Surgical exploration confirmed an aortoesophageal fistula. These imaging and operative findings make E the correct diagnosis.",
+      "turns": 3,
+      "tokens": {
+        "input": 16167,
+        "output": 655
+      }
+    },
+    {
+      "case_number": 4,
+      "case_title": "Case number 11692",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Typical presentation and imaging findings: a blind-ending tubular structure arising from the antimesenteric border of the terminal ileum (separate from a normal appendix), containing air/debris, with wall thickening, adjacent fat stranding and reactive nodes \u2014 all consistent with inflamed (and in this case perforated) Meckel's diverticulum. Pathology confirmed acute inflammation and perforation. Differential diagnoses (enteric duplication cyst, epiploic appendagitis, omental infarct) are less compatible with the imaging and clinical features. Therefore the correct diagnosis is Meckel's diverticulitis (A).",
+      "turns": 3,
+      "tokens": {
+        "input": 15800,
+        "output": 760
+      }
+    },
+    {
+      "case_number": 5,
+      "case_title": "Case number 11845",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Multiple intradural extramedullary enhancing masses localized to the lumbosacral canal, with the largest lesion described as sausage-shaped at L2\u2013L3, is most typical for a lesion of the filum terminale/conus region \u2014 classically a myxopapillary ependymoma. Imaging appearance (T2 hyperintense, T1 isointense, intense enhancement), intradural extramedullary location without neural foraminal extension, and the elongated/sausage morphology strongly favor an ependymoma of the filum terminale (myxopapillary type) over nerve sheath tumours (which often show foraminal/dumbbell extension or target-sign features) or drop metastases (would usually have an identified intracranial primary). Pathology was not described, so the appropriate choice is the radiologic diagnosis: Ependymoma (A).",
+      "turns": 3,
+      "tokens": {
+        "input": 17478,
+        "output": 1895
+      }
+    }
+  ]
+}
