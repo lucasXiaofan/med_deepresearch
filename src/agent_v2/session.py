@@ -21,6 +21,7 @@ class Session:
 
     Each session has:
     - session_id: Unique identifier
+    - agent_name: Name/type of agent (e.g., skill name, "subagent", "main-agent")
     - context: What the session is about
     - store: List of dicts the agent has stored (append-only)
     - history: List of run summaries
@@ -30,12 +31,14 @@ class Session:
         self,
         session_id: Optional[str] = None,
         session_dir: Optional[Path] = None,
-        context: str = ""
+        context: str = "",
+        agent_name: str = "agent"
     ):
         self.session_id = session_id or self._generate_id()
         self.session_dir = Path(session_dir) if session_dir else DEFAULT_SESSION_DIR
         self.session_dir.mkdir(parents=True, exist_ok=True)
 
+        self.agent_name = agent_name
         self.context = context
         self.store: List[Dict[str, Any]] = []  # Append-only list of dicts
         self.history: List[Dict[str, Any]] = []
@@ -63,6 +66,7 @@ class Session:
                 fcntl.flock(f.fileno(), fcntl.LOCK_SH)  # Shared lock for reading
                 try:
                     data = json.load(f)
+                    self.agent_name = data.get("agent_name", self.agent_name)
                     self.context = data.get("context", self.context)
                     self.store = data.get("store", [])
                     self.history = data.get("history", [])
@@ -78,6 +82,7 @@ class Session:
         self.updated_at = datetime.now().isoformat()
         data = {
             "session_id": self.session_id,
+            "agent_name": self.agent_name,
             "context": self.context,
             "store": self.store,
             "history": self.history,
@@ -154,6 +159,7 @@ def list_sessions(session_dir: Path = None) -> List[Dict[str, Any]]:
                 data = json.load(file)
             sessions.append({
                 "session_id": data.get("session_id", f.stem),
+                "agent_name": data.get("agent_name", "unknown"),
                 "created_at": data.get("created_at", ""),
                 "updated_at": data.get("updated_at", ""),
                 "context": (data.get("context", "")[:100] + "...") if data.get("context") else "",

@@ -1,0 +1,75 @@
+{
+  "timestamp": "20260202_161851",
+  "model": null,
+  "csv_path": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/medd_selected_50.csv",
+  "total_cases": 5,
+  "correct": 0,
+  "accuracy": 0.0,
+  "results": [
+    {
+      "case_number": 1,
+      "case_title": "Case number 19172",
+      "ground_truth": "C",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Based on the clinical presentation of a 27-year-old nulliparous female at 32 weeks gestation with a bilobed abdominal contour showing two distinct bulges and a central vertical depression, the most likely diagnosis is a gravid bicornuate uterus with intercornual communication. Bicornuate uterus results from incomplete fusion of M\u00fcllerian ducts, creating a heart-shaped uterus with a fundal indentation >1cm. This external fundal depression explains the bilobed appearance with central vertical depression. Uterus didelphys would present as two completely separate masses without a central depression. Septate uterus has normal external contour. Arcuate uterus has minimal indentation. Intrauterine synechiae wouldn't cause external deformity. The advanced gestational age without prior scans explains the late detection.",
+      "session_id": "session_20260202_160445_8e580344",
+      "tokens": {
+        "input": 233239,
+        "output": 1897
+      }
+    },
+    {
+      "case_number": 2,
+      "case_title": "Case number 19090",
+      "ground_truth": "A",
+      "agent_answer": "D",
+      "correct": false,
+      "reasoning": "Based on research of similar cases: 1) Patient is 74-year-old postmenopausal woman with history of intraductal papilloma (benign), 2) New solitary nodule near previous resection scar, 3) Intraductal papillomas have malignant potential, especially in postmenopausal women, 4) Ductal carcinoma in situ (DCIS) can arise within pre-existing papillomas, 5) Mass-forming DCIS is a known entity that presents as palpable mass, 6) Cases show papillary lesions range from benign papilloma to papillary carcinoma/DCIS, with DCIS within papilloma being a recognized malignant transformation. Other options less likely: IgG4-related disease is rare and systemic; invasive ductal carcinoma possible but DCIS more likely given papilloma history; papillomatosis involves multiple lesions; lymphoproliferative disorder unlikely without systemic symptoms.",
+      "session_id": "session_20260202_160746_3d6af4c1",
+      "tokens": {
+        "input": 194810,
+        "output": 1997
+      }
+    },
+    {
+      "case_number": 3,
+      "case_title": "Case number 19087",
+      "ground_truth": "B",
+      "agent_answer": "A",
+      "correct": false,
+      "reasoning": "Based on the clinical presentation of an 8-year-old male with chronic left lumbar discomfort, claudication (suggesting vascular compression), anemia requiring 2 years of therapy, and mild hyperleukocytosis, the most likely diagnosis is a renal fossa tumor (Wilms tumor). Wilms tumor is the most common renal malignancy in children and can present with chronic pain, anemia (from chronic disease or hemorrhage), and mild inflammatory response. The claudication suggests possible vascular compression by a large retroperitoneal mass. Xanthogranulomatous pyelonephritis is rare in children and typically presents with more acute infectious symptoms. Pyonephrosis would be more acute. Hydronephrosis wouldn't explain the anemia. Urogenital tuberculosis could cause chronic symptoms but claudication would be unusual.",
+      "session_id": "session_20260202_160936_39e4573a",
+      "tokens": {
+        "input": 217847,
+        "output": 2185
+      }
+    },
+    {
+      "case_number": 4,
+      "case_title": "Case number 19078",
+      "ground_truth": "C",
+      "agent_answer": "B",
+      "correct": false,
+      "reasoning": "Based on the clinical presentation of a 49-year-old premenopausal woman with a painful right breast lump of 2 weeks duration, granulomatous mastitis is the most likely diagnosis. This condition commonly affects premenopausal women and presents with painful breast masses. The rapid onset (2 weeks) and absence of trauma history make traumatic lesions less likely. Lymphocytic mastopathy is typically painless and associated with diabetes, which is not present. Panarteritis nodosa is rare and usually presents with systemic symptoms. While breast carcinoma must always be considered, granulomatous mastitis is a more common inflammatory condition in this demographic with this clinical presentation.",
+      "session_id": "session_20260202_161233_7808dacc",
+      "tokens": {
+        "input": 226362,
+        "output": 1805
+      }
+    },
+    {
+      "case_number": 5,
+      "case_title": "Case number 10128",
+      "ground_truth": "E",
+      "agent_answer": "D",
+      "correct": false,
+      "reasoning": "Based on the clinical presentation of a 43-year-old male with obstructive hydrocephalus treated with endoscopic third ventriculostomy, biopsy-confirmed diagnosis, and good response to radical radiotherapy, the most likely diagnosis is intracranial germ cell tumor (specifically germinoma). Germ cell tumors commonly present in the pineal region causing aqueductal compression and hydrocephalus. They are highly radiosensitive, with radical radiotherapy being curative in many cases, especially for germinomas. The age, presentation with hydrocephalus, need for biopsy confirmation, and excellent response to radiotherapy all support this diagnosis over the other options: meningiomas (typically surgical diseases), dermoids (benign, not radiotherapy-responsive), tectal gliomas (more common in children, less radiosensitive), and pineoblastomas (rare in adults, poorer prognosis).",
+      "session_id": "session_20260202_161601_c210cfa2",
+      "tokens": {
+        "input": 362001,
+        "output": 2685
+      }
+    }
+  ]
+}

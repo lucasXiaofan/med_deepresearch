@@ -8,6 +8,7 @@ Provides fundamental tools:
 import os
 import json
 import subprocess
+from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
@@ -15,6 +16,9 @@ from dotenv import load_dotenv
 from .registry import tool
 
 load_dotenv()
+
+# Detect project root (4 levels up from this file: tools/ -> agent_v2/ -> src/ -> project/)
+PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
 
 
 @tool(name="web_search", description="Search the web for information. Use this to find current information, documentation, or answers to questions.")
@@ -83,6 +87,8 @@ def bash_with_session(command: str, session_id: str = None, session_dir: str = N
         if session_dir:
             env["AGENT_SESSION_DIR"] = str(session_dir)
 
+        # Always run commands from project root for consistency
+        # This ensures skill scripts with paths like "src/..." work correctly
         result = subprocess.run(
             command,
             shell=True,
@@ -90,7 +96,7 @@ def bash_with_session(command: str, session_id: str = None, session_dir: str = N
             text=True,
             timeout=min(timeout, 300),
             executable='/bin/bash',
-            cwd=os.getcwd(),
+            cwd=str(PROJECT_ROOT),
             env=env
         )
 

@@ -51,7 +51,7 @@ class MedCase:
         """Get top 5 related cases."""
         if not self.relate_case:
             return 'N/A'
-        cases = self.relate_case.split(';')[:5]
+        cases = self.relate_case.split(';')[:20]
         return ';'.join(cases)
 
     def display(self) -> str:

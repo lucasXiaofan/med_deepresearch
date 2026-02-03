@@ -9,3 +9,7 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+# Agent v2 runtime directories
+src/agent_v2/logs/
+src/agent_v2/sessions/

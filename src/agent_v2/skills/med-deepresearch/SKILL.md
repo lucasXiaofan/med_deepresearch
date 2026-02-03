@@ -11,17 +11,7 @@ You are a medical research assistant. Your task is to analyze clinical cases by 
 
 All tools automatically track your research progress. Use the `research_tools.py` script:
 
-### 1. Plan Your Research
-
-Before starting, outline your research strategy:
-
-```bash
-uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py plan \
-    --steps "Search for similar presentations" "Compare imaging findings" "Narrow differential" \
-    --goal "Identify the most likely diagnosis"
-```
-
-### 2. Query the Medical Database
+### 1. Query the Medical Database
 
 Search for similar cases by symptoms, findings, or keywords:
 
@@ -31,7 +21,7 @@ uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py que
     --top-k 5
 ```
 
-### 3. Navigate to a Specific Case
+### 2. Navigate to a Specific Case
 
 When you find a relevant case, investigate it in detail:
 
@@ -41,7 +31,38 @@ uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py nav
     --reason "Similar imaging findings"
 ```
 
-### 4. Submit Final Answer
+### 3. Spawn Sub-Agents for Parallel Research (Advanced)
+
+For complex cases, delegate research tasks to multiple sub-agents running in parallel:
+
+```bash
+uv run python src/agent_v2/skills/med-deepresearch/scripts/spawn_subagents.py \
+    "Search for cases with fever and rash in pediatric patients" \
+    "Find cases with neurological complications" \
+    "Research treatment outcomes for suspected diagnosis"
+```
+
+- Maximum 5 sub-agents at once
+- Each sub-agent gets its own focused research task
+- Sub-agents run in parallel for faster research
+- All reports are automatically stored in your session
+- Results returned as JSON with all sub-agent findings
+
+**When to use sub-agents:**
+- Complex cases requiring multiple lines of investigation
+- Time-critical research with many angles to explore
+- When you need to compare different hypotheses simultaneously
+
+**Example multi-agent strategy:**
+```bash
+# Delegate 3 parallel research tasks
+uv run python src/agent_v2/skills/med-deepresearch/scripts/spawn_subagents.py \
+    "Search for anterior mediastinal masses in young adults" \
+    "Research thymic pathology presentations on CT" \
+    "Find cases with similar demographics and imaging features"
+```
+
+### 5. Submit Final Answer
 
 When you've made your diagnosis:
 
@@ -53,28 +74,44 @@ uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py sub
 
 ## Research Workflow
 
-1. **Read the case carefully**
-   - Note patient demographics (age, sex)
-   - Identify key symptoms and duration
-   - Note imaging modality and findings
+### Standard Workflow (Single Agent)
 
-2. **Plan your research**
-   - Use `plan` to outline your approach
-   - This helps structure your investigation
 
-3. **Search for similar cases**
+1. **Search for similar cases**
    - Use `query` with relevant keywords
    - Focus on distinctive findings
    - Search multiple times if needed
 
-4. **Investigate promising matches**
+2. **Investigate promising matches**
    - Use `navigate` to view full case details
    - Compare with your case
    - Note similarities and differences
 
-5. **Make your diagnosis**
+3. **Make your diagnosis**
    - Eliminate clearly incorrect options
    - Use `submit` when confident
+
+### Parallel Workflow (Multi-Agent)
+
+For complex cases requiring multiple research angles:
+
+1. **Analyze the case complexity**
+   - Identify 2-5 distinct research questions
+   - Each should be independently investigable
+
+2. **Spawn sub-agents**
+   - Use `spawn_subagents.py` with clear task descriptions
+   - Each sub-agent researches their assigned question
+   - Sub-agents run in parallel (faster than sequential)
+
+3. **Review sub-agent reports**
+   - All reports are stored in your session
+   - Check the JSON output for each sub-agent's findings
+   - Synthesize insights across all reports
+
+4. **Make informed diagnosis**
+   - Combine evidence from all research streams
+   - Use `submit` with reasoning from multiple angles
 
 ## Search Tips
 

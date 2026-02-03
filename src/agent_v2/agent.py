@@ -28,6 +28,8 @@ from .tools import get_tool_schemas, execute_tool, bash_with_session
 
 load_dotenv()
 
+# Module directory for default log/session storage
+MODULE_DIR = Path(__file__).parent
 
 # Final Result Protocol markers
 FINAL_RESULT_START = "<<<FINAL_RESULT>>>"
@@ -83,13 +85,15 @@ class Agent:
         self,
         session_id: Optional[str] = None,
         skills: Optional[List[str]] = None,
-        skills_dir: Optional[Path] = None,
+        skills_dir: Optional[Path] = None, #need complete path not relative path
         model: Optional[str] = None,
         temperature: float = 0.3,
         max_turns: int = 15,
         log_dir: Optional[Path] = None,
         custom_instructions: str = "",
-        session_dir: Optional[Path] = None
+        custom_system_prompt: Optional[str] = None,
+        session_dir: Optional[Path] = None,
+        agent_name: Optional[str] = None
     ):
         """Initialize the agent.
 
@@ -100,35 +104,47 @@ class Agent:
             model: Model identifier (e.g., "openai/gpt-4o-mini")
             temperature: LLM temperature (0-1)
             max_turns: Maximum tool-calling turns
-            log_dir: Directory for trajectory logs
-            custom_instructions: Additional system prompt instructions
-            session_dir: Directory for session storage
+            log_dir: Directory for trajectory logs (defaults to agent_v2/logs)
+            custom_instructions: Additional instructions to augment system prompt
+            custom_system_prompt: Custom system prompt to append after built prompt (augments, not replaces)
+            session_dir: Directory for session storage (defaults to agent_v2/sessions)
+            agent_name: Agent identifier (auto-detected from skills if None)
         """
-        # Session setup
-        self.session_dir = session_dir or Path("./sessions")
-        self.session = Session(
-            session_id=session_id,
-            session_dir=self.session_dir
-        )
-        self.session_id = self.session.session_id
-
-        # Skill setup
+        # Skill setup first (to determine agent_name)
         self.skill_loader = SkillLoader(skills_dir or Path("./skills"))
         self.skill_names = skills or []
         self.loaded_skills: List[Skill] = []
         self._load_skills()
+
+        # Determine agent name (explicit > skills > default)
+        if agent_name:
+            final_agent_name = agent_name
+        elif self.skill_names:
+            final_agent_name = "+".join(self.skill_names)  # e.g., "med-deepresearch" or "skill1+skill2"
+        else:
+            final_agent_name = "main-agent"
+
+        # Session setup - defaults to agent_v2/sessions
+        self.session_dir = session_dir or (MODULE_DIR / "sessions")
+        self.session = Session(
+            session_id=session_id,
+            session_dir=self.session_dir,
+            agent_name=final_agent_name
+        )
+        self.session_id = self.session.session_id
 
         # Model setup
         self.model = model or os.getenv("AGENT_MODEL", self.DEFAULT_MODEL)
         self.temperature = temperature
         self.max_turns = max_turns
         self.custom_instructions = custom_instructions
+        self.custom_system_prompt = custom_system_prompt
 
         # Client setup
         self._setup_client()
 
-        # Logging setup
-        self.log_dir = log_dir or Path("./logs")
+        # Logging setup - defaults to agent_v2/logs
+        self.log_dir = log_dir or (MODULE_DIR / "logs")
         self.log_dir.mkdir(parents=True, exist_ok=True)
 
         # Build prompts and tools
@@ -158,7 +174,10 @@ class Agent:
                 self.loaded_skills.append(skill)
 
     def _build_system_prompt(self):
-        """Build the system prompt based on skills and session."""
+        """Build the system prompt based on skills and session.
+
+        If custom_system_prompt is provided, it augments (appends to) the built prompt.
+        """
         skill_prompt = ""
         self.has_skill_routing = False
 
@@ -167,7 +186,6 @@ class Agent:
         elif len(self.loaded_skills) > 1:
             skill_prompt = generate_skill_routing_prompt(self.loaded_skills)
             self.has_skill_routing = True
-
         session_prompt = self.session.get_context_prompt()
 
         self.system_prompt = build_system_prompt(
@@ -176,6 +194,10 @@ class Agent:
             has_skill_routing=self.has_skill_routing,
             custom_instructions=self.custom_instructions
         )
+
+        # Augment with custom system prompt if provided
+        if self.custom_system_prompt:
+            self.system_prompt = f"{self.system_prompt}\n\n{self.custom_system_prompt}"
 
     def _build_tools(self):
         """Build tool schemas for this agent.
@@ -303,6 +325,7 @@ class Agent:
         trajectory = {
             "run_id": run_id,
             "session_id": self.session_id,
+            "agent_name": self.session.agent_name,
             "model": self.model,
             "input": user_input,
             "image": image,
@@ -359,7 +382,7 @@ class Agent:
                     turn_record["tool_calls"].append({
                         "name": name,
                         "args": args,
-                        "result": result[:2000] if len(result) > 2000 else result,
+                        "result": result, # need full results
                         "is_final": is_final
                     })
 
@@ -383,6 +406,22 @@ class Agent:
                 # Exit outer loop if we got a final result
                 if final_result_data is not None:
                     break
+
+                # Add turn counter reminder to keep LLM aware of remaining turns
+                turns_remaining = self.max_turns - turn
+                if turns_remaining <= 3:
+                    # Urgent warning when very low
+                    turn_warning = f"\n[Turn {turn}/{self.max_turns} - Only {turns_remaining} turns left! Prioritize completing your task.]"
+                elif turns_remaining <= 5:
+                    # Moderate warning
+                    turn_warning = f"\n[Turn {turn}/{self.max_turns} - {turns_remaining} turns remaining, work efficiently.]"
+                else:
+                    # Just a counter
+                    turn_warning = f"\n[Turn {turn}/{self.max_turns}]"
+
+                # Append turn info to last tool result
+                if messages and messages[-1]["role"] == "tool":
+                    messages[-1]["content"] += turn_warning
             else:
                 # No tool calls - LLM finished naturally
                 final_response = message.content or ""
@@ -392,15 +431,57 @@ class Agent:
                 break
 
         if turn >= self.max_turns and not final_response:
-            final_response = "Reached maximum reasoning steps."
-            trajectory["termination_reason"] = "max_turns"
-            if messages and hasattr(messages[-1], 'content'):
-                final_response = messages[-1].content or final_response
+            # Max turns reached - make one final call to synthesize findings
+            trajectory["termination_reason"] = "max_turns_synthesized"
+
+            try:
+                # Add instruction for final synthesis
+                synthesis_prompt = (
+                    "You have reached the maximum number of reasoning steps. "
+                    "Based on all the research and analysis you've done so far, "
+                    "provide a final conclusion or answer. Synthesize your findings "
+                    "and provide the best response you can with the information gathered."
+                )
+
+                messages.append({
+                    "role": "user",
+                    "content": synthesis_prompt
+                })
+
+                # Final LLM call without tools - just get the synthesis
+                response = self.client.chat.completions.create(
+                    model=self.model_id,
+                    messages=messages,
+                    tools=self.tools if self.tools else None,
+                    temperature=self.temperature
+                )
+
+                if response.usage:
+                    trajectory["tokens"]["input"] += response.usage.prompt_tokens
+                    trajectory["tokens"]["output"] += response.usage.completion_tokens
+
+                final_response = response.choices[0].message.content or "Unable to synthesize findings."
+
+                # Record the synthesis turn
+                trajectory["turns"].append({
+                    "turn": turn + 1,
+                    "content": final_response,
+                    "tool_calls": [],
+                    "final": True,
+                    "synthesis": True
+                })
+
+            except Exception as e:
+                final_response = f"Reached maximum reasoning steps. Failed to synthesize: {str(e)}"
+                trajectory["termination_reason"] = "max_turns_synthesis_failed"
 
         trajectory["finished_at"] = datetime.now().isoformat()
         trajectory["output"] = final_response
         trajectory["final_result_data"] = final_result_data
         trajectory["total_turns"] = turn
+
+        # Store trajectory as instance variable for external access
+        self.trajectory = trajectory
 
         self._save_trajectory(trajectory)
 
@@ -421,7 +502,9 @@ class Agent:
 
     def _save_trajectory(self, trajectory: dict):
         """Save trajectory to log file."""
-        log_file = self.log_dir / f"{trajectory['run_id']}.json"
+        agent_name = trajectory.get('agent_name', 'unknown')
+        run_id = trajectory['run_id']
+        log_file = self.log_dir / f"{agent_name}_{run_id}.json"
         with open(log_file, "w", encoding="utf-8") as f:
             json.dump(trajectory, f, indent=2, ensure_ascii=False)
 

@@ -202,6 +202,7 @@ Examples:
             print("Sessions:")
             for s in sessions:
                 print(f"  {s['session_id']}")
+                print(f"    Agent: {s.get('agent_name', 'unknown')}")
                 print(f"    Runs: {s['runs']}, Store items: {s['store_items']}")
                 print(f"    Updated: {s['updated_at']}")
         return
