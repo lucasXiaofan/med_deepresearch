@@ -42,23 +42,26 @@ from agent_v2.agent import Agent
 
 # Default paths
 REPO_ROOT = PROJECT_ROOT.parent
+AGENT_V2_DIR = PROJECT_ROOT / "agent_v2"
 DEFAULT_INPUT_CSV = REPO_ROOT / "medd_selected_50.csv"
-DEFAULT_OUTPUT_CSV = PROJECT_ROOT / "agent_v2" / "results" / "med-diagnosis-relevant-search.csv"
-DEFAULT_SESSION_DIR = PROJECT_ROOT / "agent_v2" / "sessions"
+DEFAULT_OUTPUT_CSV = AGENT_V2_DIR / "results" / "med-diagnosis-relevant-search.csv"
+DEFAULT_SESSION_DIR = AGENT_V2_DIR / "sessions"
+DEFAULT_SKILLS_DIR = AGENT_V2_DIR / "skills"
+DEFAULT_CONFIG_PATH = AGENT_V2_DIR / "agent_config.yaml"
 
 
-def load_cases_from_csv(csv_path: Path, num_cases: int = None, case_indices: list = None):
+def load_cases_from_csv(csv_path: Path, start_index: int = 0, num_cases: int = 2):
     """Load clinical cases from CSV file.
 
     Args:
         csv_path: Path to CSV file
-        num_cases: Number of cases to load from start (if case_indices not specified)
-        case_indices: Specific case indices to load
+        start_index: Starting row index (0-based)
+        num_cases: Number of cases to process starting from start_index
 
     Returns:
-        List of case dictionaries
+        List of (global_index, case_dict) tuples
     """
-    cases = []
+    all_cases = []
 
     # Try different encodings in order
     encodings = ['utf-8', 'iso-8859-1', 'cp1252', 'latin-1']
@@ -68,29 +71,22 @@ def load_cases_from_csv(csv_path: Path, num_cases: int = None, case_indices: lis
             with open(csv_path, 'r', encoding=encoding) as f:
                 reader = csv.DictReader(f)
                 all_cases = list(reader)
-
-            if case_indices:
-                # Load specific indices
-                for idx in case_indices:
-                    if 0 <= idx < len(all_cases):
-                        cases.append(all_cases[idx])
-                    else:
-                        print(f"Warning: Index {idx} out of range (0-{len(all_cases)-1})")
-            else:
-                # Load first N cases
-                n = num_cases if num_cases else len(all_cases)
-                cases = all_cases[:n]
-
-            print(f"Successfully loaded CSV with {encoding} encoding")
+            print(f"Successfully loaded CSV with {encoding} encoding ({len(all_cases)} total cases)")
             break
         except (UnicodeDecodeError, UnicodeError):
             if encoding == encodings[-1]:
-                # Last encoding failed, raise error
                 raise
-            # Try next encoding
             continue
 
-    return cases
+    # Slice from start_index for num_cases
+    end_index = min(start_index + num_cases, len(all_cases))
+    if start_index >= len(all_cases):
+        print(f"Warning: start_index {start_index} >= total cases {len(all_cases)}")
+        return []
+
+    selected = [(i, all_cases[i]) for i in range(start_index, end_index)]
+    print(f"Selected cases: index {start_index} to {end_index - 1} ({len(selected)} cases)")
+    return selected
 
 
 def format_case_for_agent(case: dict) -> str:
@@ -125,20 +121,19 @@ DIFFERENTIAL DIAGNOSIS OPTIONS:
 CORRECT DIAGNOSIS: {correct_answer_text} (Option {correct_answer})
 
 YOUR TASK:
-You know the CORRECT DIAGNOSIS. Find cases that would help MAKE this diagnosis.
+You know the CORRECT DIAGNOSIS. Find cases with imaging evidence that would help MAKE this diagnosis.
+You are a VISION agent — when you navigate to a case, its medical images are automatically shown to you.
 
-WORKFLOW (8-10 turns max):
-1. Query database 1-2 times to get candidate cases
-2. Spawn 3-5 sub-agents with MIXED strategies to find diagnostically relevant cases
-3. MUST call submit_results.py with case IDs and WHY they're relevant to the diagnosis
+WORKFLOW:
+1. Query the database 2-3 times with different keyword strategies
+2. Navigate to the most promising cases (at most 10 total navigations)
+3. For each navigated case, EXAMINE THE IMAGES and note specific imaging features
+4. MUST call submit_results.py with case IDs and WHY they're relevant (citing imaging features)
 
 Focus on cases showing:
-- Key diagnostic features for {correct_answer_text}
-- Imaging patterns that identify this condition
-- Clinical presentations that suggest this diagnosis
-- Differential features distinguishing this from other conditions
-
-Find 5-10 cases with clear diagnostic relevance.
+- Key imaging features that define {correct_answer_text}
+- Imaging patterns that distinguish this from other differential diagnoses
+- Clinical presentations + imaging that confirm this diagnosis
 """
 
     return prompt
@@ -208,15 +203,16 @@ def run_agent_for_case(case: dict, case_index: int, output_csv: Path, session_di
     prompt = format_case_for_agent(case)
 
     try:
-        # Create agent with the med-diagnosis-relevant-search skill
-        skills_dir = PROJECT_ROOT / "agent_v2" / "skills"
+        # Create agent with vision model (gpt-5-mini) for image analysis
         agent = Agent(
             session_id=session_id,
             session_dir=session_dir,
             skills=["med-diagnosis-relevant-search"],
-            skills_dir=skills_dir,
-            max_turns=10,  # Tight limit - force efficiency with parallel sub-agents
-            temperature=0.3,
+            skills_dir=DEFAULT_SKILLS_DIR,
+            model_type="vision",
+            config_path=DEFAULT_CONFIG_PATH,
+            max_turns=20,
+            temperature=1,
             agent_name=f"diagsearch-agent-{case_index}"
         )
 
@@ -295,16 +291,16 @@ def main():
         help=f'Output CSV file for results (default: {DEFAULT_OUTPUT_CSV})'
     )
     parser.add_argument(
+        '--start-index',
+        type=int,
+        default=0,
+        help='Starting case index in the CSV, 0-based (default: 0)'
+    )
+    parser.add_argument(
         '--num-cases',
         type=int,
         default=2,
-        help='Number of cases to process from start (default: 2)'
-    )
-    parser.add_argument(
-        '--case-indices',
-        type=int,
-        nargs='+',
-        help='Specific case indices to process (overrides --num-cases)'
+        help='Number of cases to process from start-index (default: 2)'
     )
     parser.add_argument(
         '--session-dir',
@@ -334,28 +330,28 @@ def main():
     print(f"Session Directory: {args.session_dir}")
 
     # Load cases
-    cases = load_cases_from_csv(
+    indexed_cases = load_cases_from_csv(
         args.input_csv,
+        start_index=args.start_index,
         num_cases=args.num_cases,
-        case_indices=args.case_indices
     )
 
-    print(f"Cases to process: {len(cases)}")
+    print(f"Cases to process: {len(indexed_cases)}")
     print(f"{'='*80}\n")
 
     # Process each case
     results = []
-    for i, case in enumerate(cases):
+    for global_idx, case in indexed_cases:
         result = run_agent_for_case(
             case=case,
-            case_index=i,
+            case_index=global_idx,
             output_csv=args.output_csv,
             session_dir=args.session_dir
         )
         results.append(result)
 
         # Brief pause between cases
-        if i < len(cases) - 1:
+        if len(results) < len(indexed_cases):
             print("\nPausing 2 seconds before next case...\n")
             time.sleep(2)
 

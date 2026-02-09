@@ -1,0 +1,33 @@
+# Agent V2 Configuration
+# Defines model profiles and image data sources
+
+models:
+  vision:
+    model_id: gpt-5-mini
+    provider: openai
+    api_key_env: OPENAI_API_KEY
+    base_url: https://api.openai.com/v1
+    supports_vision: true
+
+  text:
+    model_id: deepseek-chat
+    provider: deepseek
+    api_key_env: DEEPSEEK_API_KEY
+    base_url: https://api.deepseek.com
+    supports_vision: false
+
+# Default model type to use when not specified
+defaults:
+  model_type: text
+  temperature: 0.3
+  max_turns: 15
+
+# Image data source for medical case images
+image_data:
+  csv_path: ../../deepresearch图片链接.csv   # relative to this config file
+  case_id_pattern: "https://www.eurorad.org/case/{case_id}"
+  columns:
+    plink: plink           # case page URL
+    img_url: img_url       # image URL
+    caption: img_alt       # image caption/alt text
+    img_id: img_id         # unique image identifier

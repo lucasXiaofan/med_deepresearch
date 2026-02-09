@@ -13,3 +13,6 @@ wheels/
 # Agent v2 runtime directories
 src/agent_v2/logs/
 src/agent_v2/sessions/
+
+# Downloaded image cache
+data/image_cache/

@@ -1,92 +1,111 @@
 ---
 name: med-diagnosis-relevant-search
-description: Find cases relevant to making the correct diagnosis. Use parallel sub-agents with mixed strategies (case investigation + feature search) to find diagnostically relevant cases.
+description: Vision-based medical case search agent. Queries the database, navigates cases to inspect images, and submits diagnosis-relevant cases with imaging evidence.
 ---
 
-# Medical Diagnosis Relevant Case Search
+# Medical Diagnosis-Relevant Case Search
 
-You know the CORRECT DIAGNOSIS. Find cases that would help make this diagnosis. 8-10 turns max.
+You are a **vision-capable** medical imaging search agent running on gpt-5-mini.
+When you navigate to a case, its medical images are **automatically displayed** to you.
 
-## WORKFLOW
+## Your Goal
 
-### Step 1: Initial Query (1-2 queries)
+Given a target case with a known correct diagnosis, find cases from the database whose **imaging features** help confirm or differentiate that diagnosis. You must examine images and cite specific visual findings.
 
-Query the database to get candidate cases:
+## Tools
+
+### 1. Query the Database
+
+Search by keywords (symptoms, imaging terms, anatomy, pathology):
 
 ```bash
 uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py query \
-    --name "septate uterus placental implantation" \
-    --top-k 15
+    --name "ground glass opacity CT lung" \
+    --top-k 5
 ```
 
-**Goal:** Get candidate case IDs and understand what's in the database.
+- Returns case summaries ranked by relevance (BM25)
+- Each result includes: clinical history, imaging findings, diagnosis, and **image captions**
+- Use 2-3 queries with different keyword strategies
 
-### Step 2: Spawn 3-5 Sub-Agents with MIXED Strategies (REQUIRED)
+### 2. Navigate to a Case (Images Auto-Loaded)
 
-Spawn sub-agents with DIFFERENT strategies - some investigate case IDs, some search features. Mix it up!
-
-**Example: For diagnosis "Gravid septate uterus with septal placental implantation"**
+Inspect a case in detail — **images are automatically shown to you**:
 
 ```bash
-uv run python src/agent_v2/skills/med-deepresearch/scripts/spawn_subagents.py \
-    "Investigate cases 1234, 5678, 9012 from initial search - determine if they show septate uterus features relevant to this diagnosis and WHY they help make this diagnosis Gravid septate uterus with septal placental implantation" \
-    "Search for uterine septum imaging cases - find cases showing clear septum anatomy that would help identify septate uterus, return case IDs and diagnostic relevance, Gravid septate uterus with septal placental implantation" \
-    "Investigate cases 3456, 7890 - check if placental implantation patterns match our diagnosis and explain diagnostic value, Gravid septate uterus with septal placental implantation" \
-    "Search for gravid uterine anomalies - find pregnancy cases with congenital malformations, identify which are relevant to diagnosing septate uterus, Gravid septate uterus with septal placental implantation" \
-    "Search for septate vs bicornuate uterus - find cases showing differential features that help distinguish septate uterus diagnosis, Gravid septate uterus with septal placental implantation"
+uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py navigate \
+    --case-id 1000 \
+    --reason "Similar CT pattern to target case"
 ```
 
-**CRITICAL - Each sub-agent must:**
-1. Find relevant cases (by investigating case IDs OR searching)
-2. Return case IDs they found
-3. Explain WHY each case is relevant to the CORRECT DIAGNOSIS
-4. Focus on diagnostic value: "This case shows X feature which helps confirm/distinguish this diagnosis"
+- Shows full case details (history, findings, diagnosis, related cases)
+- **Medical images for the case are automatically injected into your context**
+- You can directly see and analyze the images
+- **LIMIT: Navigate at most 10 cases total** — choose wisely
 
+### 3. Submit Results
 
-**Each sub-agent reports back:**
-- Case IDs found
-- WHY those cases help make the diagnosis (specific features, imaging findings, clinical presentation)
-
-### Step 3: Submit Results (REQUIRED)
-
-Compile all relevant cases from sub-agents and submit:
+When done, submit your findings with `submit_results.py`:
 
 ```bash
 uv run python src/agent_v2/skills/med-diagnosis-relevant-search/scripts/submit_results.py \
-    --relevant-cases '{"1234": "Septate uterus with clear septum on ultrasound - demonstrates key diagnostic feature for identifying uterine septum", "5678": "Placental implantation on septum - shows the specific placental location diagnostic of this condition", "9012": "Gravid septate uterus imaging - shows complete diagnostic presentation with pregnancy and septum visible"}'
+    --relevant-cases '{"1234": "CT shows ground-glass opacity with crazy-paving pattern, consistent with alveolar proteinosis - same pattern as target case", "5678": "MRI demonstrates periventricular white matter lesions distinguishing MS from ADEM"}'
 ```
 
-**IMPORTANT:**
-- You MUST call submit_results.py
-- Case reasons must explain DIAGNOSTIC RELEVANCE (why this case helps make the diagnosis)
-- Focus on cases showing key diagnostic features
+- `--relevant-cases` is a JSON object: `{"case_id": "reason citing imaging features", ...}`
+- **You MUST call this** — it terminates the agent and saves results
+- Every reason should cite **specific imaging features** you observed
 
-## Key Points
+### Step-by-Step
 
-- **You know the correct diagnosis** - Find cases relevant to MAKING that diagnosis
-- **Initial query first** - Get candidate cases
-- **Mix strategies** - Some sub-agents investigate case IDs, some search features
-- **Goal: Diagnostic relevance** - Cases must help make/confirm the diagnosis
-- **8-10 turns max** - Be efficient
-- **Always submit** - Use submit_results.py with diagnostically relevant cases
-- **5-10 cases** - Quality over quantity
+1. **Query** the database with different keyword strategies to cover the candidate diagnoses:
+   - Search by the correct diagnosis name
+   - Search by key imaging findings from the target case
+   - Search by differential diagnosis terms
 
-## Example Strategies
+2. **Select candidates** from query results — pick cases whose summaries suggest relevant imaging
 
-**Diagnosis: "Thymoma"**
-```bash
-spawn_subagents.py \
-    "Investigate cases 1000, 2000, 3000 - check if anterior mediastinal location and imaging features are diagnostic of thymoma" \
-    "Search for thymic masses in young adults - find cases with age demographics that help identify thymoma" \
-    "Search for smooth-bordered mediastinal masses - find imaging patterns diagnostic of thymoma vs lymphoma" \
-    "Investigate cases 4000, 5000 - verify if CT characteristics match thymoma diagnosis"
-```
+3. **Navigate** to each candidate (max 10 total):
+   - **Look at the images** shown to you
+   - Note specific imaging features (e.g., "enhancing ring lesion", "ground-glass opacity")
+   - Compare with the target case's imaging findings
+   - Decide: does this case help confirm or differentiate the diagnosis?
 
-**Diagnosis: "Osteoid osteoma"**
-```bash
-spawn_subagents.py \
-    "Search for night pain bone lesions - find cases showing classic clinical presentation of osteoid osteoma" \
-    "Investigate cases 1500, 2500 - check if nidus on CT is visible, diagnostic feature for osteoid osteoma" \
-    "Search for aspirin-responsive bone pain - find cases with this pathognomonic feature" \
-    "Search for cortical bone lesions in young patients - find demographic and location patterns diagnostic of osteoid osteoma"
+4. **Submit results** with `submit_results.py`:
+   - Include only cases with clear imaging relevance
+   - Each reason must cite specific imaging features you observed
+   - Quality over quantity — exclude weak matches
+
+## Case Inclusion Criteria
+
+**Include** a case if:
+- At least one defining imaging feature is shared with the target case
+- The imaging evidence helps confirm the correct diagnosis OR meaningfully distinguishes it from a differential
+- Features cited are directly observable in the images or described in imaging findings
+
+**Exclude** a case if:
+- No shared imaging features with the target case
+- Key imaging features are not assessable
+- The case is non-discriminative (matches everything without adding diagnostic insight)
+
+## Search Tips
+
+**Effective queries:**
+- Combine anatomy + modality + finding: `"liver CT hypervascular lesion"`
+- Use the diagnosis name directly: `"hepatocellular carcinoma"`
+- Search differential terms: `"hemangioma vs HCC liver"`
+
+
+## Output Format
+
+Your final result (via `submit_results.py`) will be:
+```json
+{
+  "relevant_cases": {
+    "1234": "CT shows characteristic finding X that confirms diagnosis Y",
+    "5678": "MRI demonstrates feature Z that distinguishes A from B"
+  },
+  "num_cases_found": 2,
+  "timestamp": "2026-02-09T..."
+}
 ```

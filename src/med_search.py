@@ -11,7 +11,7 @@ import argparse
 import csv
 import re
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
@@ -32,6 +32,7 @@ class MedCase:
     images: str
     relate_case: str
     categories: str
+    image_captions: list = field(default_factory=list)
 
     @property
     def case_number(self) -> Optional[int]:
@@ -44,7 +45,7 @@ class MedCase:
     @property
     def searchable_text(self) -> str:
         """Combined text for BM25 indexing."""
-        return f"{self.clinical_history} {self.imaging_findings} {self.discussion}"
+        return f"{self.clinical_history} {self.imaging_findings} {self.discussion} {self.differential_diagnosis} {self.final_diagnosis}"
 
     @property
     def related_cases_top5(self) -> str:
@@ -53,6 +54,17 @@ class MedCase:
             return 'N/A'
         cases = self.relate_case.split(';')[:20]
         return ';'.join(cases)
+
+    @property
+    def images_display(self) -> str:
+        """Format image info with captions."""
+        count = self.images or '0'
+        if not self.image_captions:
+            return f"{count} image(s)"
+        lines = [f"{count} image(s):"]
+        for i, cap in enumerate(self.image_captions, 1):
+            lines.append(f"  {i}. {cap}")
+        return "\n".join(lines)
 
     def display(self) -> str:
         """Format case for display."""
@@ -81,9 +93,9 @@ Categories: {self.categories}
 {self.final_diagnosis or 'N/A'}
 
 --- IMAGES ---
-{self.images or 'N/A'}
+{self.images_display}
 
---- RELATED CASES (Top 5) ---
+--- RELATED CASES ---
 {self.related_cases_top5}
 {separator}
 """
@@ -92,12 +104,36 @@ Categories: {self.categories}
 class MedSearchEngine:
     """BM25-based medical case search engine."""
 
-    def __init__(self, csv_path: str):
+    # Default image CSV path (relative to this file's parent's parent)
+    DEFAULT_IMAGE_CSV = Path(__file__).parent.parent / "deepresearch图片链接.csv"
+
+    def __init__(self, csv_path: str, image_csv_path: Optional[str] = None):
         self.cases: list[MedCase] = []
         self.case_number_index: dict[int, MedCase] = {}
         self.bm25: Optional[BM25Okapi] = None
+        self._caption_index: dict[str, list[str]] = {}
+        self._load_captions(image_csv_path or str(self.DEFAULT_IMAGE_CSV))
         self._load_data(csv_path)
         self._build_index()
+
+    def _load_captions(self, image_csv_path: str) -> None:
+        """Load image captions from the image CSV into a case_id -> captions index."""
+        path = Path(image_csv_path)
+        if not path.exists():
+            print(f"Warning: Image CSV not found at {path}. Captions unavailable.")
+            return
+
+        with open(path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                plink = row.get("plink", "")
+                match = re.search(r'/case/(\d+)', plink)
+                if not match:
+                    continue
+                case_id = match.group(1)
+                caption = row.get("img_alt", "").strip()
+                if caption:
+                    self._caption_index.setdefault(case_id, []).append(caption)
 
     def _load_data(self, csv_path: str) -> None:
         """Load cases from CSV file."""
@@ -118,6 +154,12 @@ class MedSearchEngine:
                     relate_case=row.get('relate_case', ''),
                     categories=row.get('Categories', ''),
                 )
+                # Attach image captions from the image CSV
+                link = row.get('link', '')
+                link_match = re.search(r'/case/(\d+)', link)
+                if link_match:
+                    case.image_captions = self._caption_index.get(link_match.group(1), [])
+
                 self.cases.append(case)
 
                 # Index by case number
@@ -217,11 +259,17 @@ Examples:
         default=str(Path(__file__).parent.parent / "deepsearch_complete.csv"), #deepsearch_complete.csv, deepsearch_filtered.csv
         help="Path to the CSV data file (default: filtered version excluding selected 50 cases)"
     )
+    parser.add_argument(
+        "--image-csv",
+        type=str,
+        default=None,
+        help="Path to image CSV with captions (default: deepresearch图片链接.csv)"
+    )
 
     args = parser.parse_args()
 
     # Initialize search engine
-    engine = MedSearchEngine(args.csv)
+    engine = MedSearchEngine(args.csv, image_csv_path=args.image_csv)
 
     # Perform search
     print(f"\nSearching for: '{args.query}'")

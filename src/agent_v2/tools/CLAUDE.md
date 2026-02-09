@@ -12,4 +12,10 @@
 | #91 | 2:10 PM | 🟣 | Tools Package Public API with Session Management Exports | ~318 |
 | #89 | " | 🟣 | Core Tool Implementations with Session-Aware Storage System | ~499 |
 | #86 | " | 🟣 | Enhanced Tool Registry with Docstring Parsing and Selective Schema Retrieval | ~423 |
+
+### Feb 2, 2026
+
+| ID | Time | T | Title | Read |
+|----|------|---|-------|------|
+| #131 | 1:31 PM | 🔵 | Bash session isolation investigation for parallel agent tasks | ~317 |
 </claude-mem-context>

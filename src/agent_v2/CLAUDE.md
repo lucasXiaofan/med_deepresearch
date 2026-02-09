@@ -8,4 +8,11 @@
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
 | #115 | 2:13 PM | 🟣 | Comprehensive Documentation with Conceptual Explanations and Usage Examples | ~592 |
+
+### Feb 5, 2026
+
+| ID | Time | T | Title | Read |
+|----|------|---|-------|------|
+| #152 | 4:47 PM | 🔵 | SkillLoader default path mismatch confirmed | ~306 |
+| #149 | " | 🔵 | SkillLoader defaults to ./skills directory when initialized without path | ~283 |
 </claude-mem-context>
