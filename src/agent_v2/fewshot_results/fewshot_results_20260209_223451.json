@@ -1,0 +1,167 @@
+{
+  "timestamp": "20260209_223451",
+  "cases_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/medd_selected_50.csv",
+  "relevant_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/src/agent_v2/results/med-diagnosis-relevant-search.csv",
+  "database_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/deepsearch_complete.csv",
+  "num_cases": 6,
+  "modes": {
+    "baseline": {
+      "correct": 4,
+      "total": 6,
+      "accuracy": 0.6666666666666666,
+      "results": [
+        {
+          "case_index": 0,
+          "case_title": "Case number 19172",
+          "case_number": "19172",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "Transverse ultrasound images demonstrate a thin central intrauterine septum dividing the cavity into two hemicavities with placenta implanted on the septal/left side. This appearance is most consistent with a septate uterus with septal placental implantation; other anomalies (bicornuate/didelphys) would show a thick myometrial fundal cleft or separate uterine bodies, and synechiae are typically focal and irregular rather than a complete thin septum.",
+          "mode": "baseline",
+          "elapsed_time": 27.5,
+          "session_id": "fewshot_baseline_20260209_223134_0"
+        },
+        {
+          "case_index": 2,
+          "case_title": "Case number 19087",
+          "case_number": "19087",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "Chronic left lumbar pain with prolonged anemia and mild leukocytosis in an 8\u2011yr\u2011old, consistent with chronic suppurative renal disease. Imaging and history favor diffuse xanthogranulomatous pyelonephritis (chronic nonfunctioning, inflammatory replacement of the kidney) over acute pyonephrosis, simple hydronephrosis, TB, or an aggressive renal tumor.",
+          "mode": "baseline",
+          "elapsed_time": 15.6,
+          "session_id": "fewshot_baseline_20260209_223202_2"
+        },
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Pineal region midline homogenously enhancing mass causing obstructive hydrocephalus in an adult male; biopsy proven and excellent response to radiotherapy \u2014 classic for an intracranial germ cell tumour (germinoma).",
+          "mode": "baseline",
+          "elapsed_time": 13.3,
+          "session_id": "fewshot_baseline_20260209_223218_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "Postoperative CT-urography (excretory phase) demonstrates contrast extravasation from a distal ureter into a nearby pelvic fluid collection (opacified collection on excretory images and corresponding 3D reconstructions - arrow/arrowheads), consistent with iatrogenic ureteral injury with urinoma. Imaging findings exclude a simple seroma/loculated ascites or enteric leak (contrast pattern corresponds to urinary contrast).",
+          "mode": "baseline",
+          "elapsed_time": 18.3,
+          "session_id": "fewshot_baseline_20260209_223231_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Well-circumscribed cystic lesion at the volar wrist with high T2 signal and thin rim (fluid) and relation to the tendon sheath; lacks solid low-T2/hemosiderin signal or solid enhancement seen in GCTTS/fibroma/nodular fasciitis \u2014 most consistent with a ganglion cyst.",
+          "mode": "baseline",
+          "elapsed_time": 14.1,
+          "session_id": "fewshot_baseline_20260209_223250_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "CT and US show a well-defined cystic mass in the left abdomen with wall hyperemia/enhancement and surrounding inflammatory changes in a patient without pancreatitis. Multiloculated/ cystic appearance and infection fit lymphangioma with inflammatory changes.",
+          "mode": "baseline",
+          "elapsed_time": 16.1,
+          "session_id": "fewshot_baseline_20260209_223304_7"
+        }
+      ]
+    },
+    "fewshot": {
+      "correct": 4,
+      "total": 6,
+      "accuracy": 0.6666666666666666,
+      "results": [
+        {
+          "case_index": 0,
+          "case_title": "Case number 19172",
+          "case_number": "19172",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "US images demonstrate a thin midline uterine septum dividing the amniotic sac into two hemicavities with placenta implanted on the septum. This is characteristic of a septate uterus with septal placental implantation; bicornuate/didelphys would show external fundal cleft or separate uterine bodies with thicker myometrium between horns, arcuate is only a shallow indentation, and synechiae are usually irregular/surgical bands.",
+          "mode": "fewshot",
+          "elapsed_time": 13.9,
+          "session_id": "fewshot_fewshot_20260209_223320_0"
+        },
+        {
+          "case_index": 2,
+          "case_title": "Case number 19087",
+          "case_number": "19087",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "Chronic left lumbar symptoms with long standing anaemia and leukocytosis, and imaging features of an enlarged nonfunctioning kidney with multiple dilated calyces (bear paw sign), staghorn calculus and perinephric inflammatory changes are classic for diffuse xanthogranulomatous pyelonephritis.",
+          "mode": "fewshot",
+          "elapsed_time": 20.7,
+          "session_id": "fewshot_fewshot_20260209_223334_2"
+        },
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Pineal midline, homogenously enhancing, hyperdense lesion causing obstructive hydrocephalus in an adult male with dramatic response to radiotherapy \u2014 classic for a radiosensitive intracranial germ cell tumour (germinoma). Imaging lacks fat/calc of dermoid/teratoma, is solid not meningioma/tectal glioma, and pineoblastoma is typically heterogeneous and in younger patients.",
+          "mode": "fewshot",
+          "elapsed_time": 12.1,
+          "session_id": "fewshot_fewshot_20260209_223355_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "Postoperative CT-urography demonstrates a pelvic fluid collection that becomes opacified on the excretory phase with direct contrast extravasation/communication from the distal ureter into the collection (visualized on axial and 3D reformats). This is diagnostic of an iatrogenic ureteral injury with urinoma; abscess/seroma/ascites or enteric leak would not show urinary contrast opacification tracking from the ureter.",
+          "mode": "fewshot",
+          "elapsed_time": 10.4,
+          "session_id": "fewshot_fewshot_20260209_223407_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "MRI shows a well-defined volar wrist lesion with fluid-like high T2 signal and thin rim/septal enhancement consistent with a ganglion cyst. Lack of low T1/T2 signal or susceptibility (no hemosiderin) argues against GCTTS or fibroma of tendon sheath; nodular fasciitis/fibrous histiocytoma would be more solid and enhancing.",
+          "mode": "fewshot",
+          "elapsed_time": 16.6,
+          "session_id": "fewshot_fewshot_20260209_223418_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "Cystic multiloculated mesenteric mass with thin enhancing wall and internal septa, adjacent inflammatory fat stranding and Doppler hyperemia in a febrile patient; imaging and clinical pattern match infected/inflamed mesenteric lymphangioma. Duplication cyst would show gut\u2011wall signature and bowel wall continuity; no pancreatitis history to support pseudocyst.",
+          "mode": "fewshot",
+          "elapsed_time": 16.3,
+          "session_id": "fewshot_fewshot_20260209_223435_7"
+        }
+      ]
+    }
+  }
+}

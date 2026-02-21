@@ -144,8 +144,17 @@ class Agent:
         )
         self.session_id = self.session.session_id
 
-        # Model setup: explicit model > model_type from config > env > default
-        if model:
+        # Model setup:
+        # - explicit model + model_type: use model_type provider/vision settings, override model_id
+        # - explicit model only: legacy behavior
+        # - model_type only: use config profile
+        # - fallback: env/default
+        if model and model_type:
+            model_cfg = get_model_config(self.config, model_type)
+            self.model = model
+            self.supports_vision = model_cfg.get("supports_vision", False)
+            self._setup_client_from_config(model_cfg, model_override=model)
+        elif model:
             self.model = model
             self.supports_vision = False  # explicit model, unknown vision support
             self._setup_client()
@@ -192,11 +201,11 @@ class Agent:
             )
             self.model_id = self.model
 
-    def _setup_client_from_config(self, model_cfg: Dict[str, Any]):
+    def _setup_client_from_config(self, model_cfg: Dict[str, Any], model_override: Optional[str] = None):
         """Setup the OpenAI client from config model entry."""
         kwargs = build_client_kwargs(model_cfg)
         self.client = OpenAI(**kwargs)
-        self.model_id = model_cfg["model_id"]
+        self.model_id = model_override or model_cfg["model_id"]
 
     def _setup_image_loader(self):
         """Initialize the image loader from config."""

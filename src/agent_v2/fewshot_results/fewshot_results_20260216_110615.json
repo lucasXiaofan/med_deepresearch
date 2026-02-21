@@ -1,0 +1,1070 @@
+{
+  "timestamp": "20260216_110615",
+  "cases_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/medd_selected_50.csv",
+  "relevant_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/src/agent_v2/results/med-diagnosis-relevant-search-vector-similarity.csv",
+  "database_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/deepsearch_complete.csv",
+  "model": null,
+  "model_type": "vision",
+  "num_cases": 19,
+  "modes": {
+    "baseline": {
+      "correct": 4,
+      "total": 19,
+      "accuracy": 0.21052631578947367,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Midline pineal region mass in an adult male causing obstructive hydrocephalus; lesion is well enhancing and shows excellent response to radiotherapy \u2014 classic for a pineal germinoma (intracranial germ cell tumour).",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 8.4,
+          "session_id": "fewshot_baseline_20260216_105753_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "CT-urography demonstrates extravasation of iodinated contrast from the distal ureter into a pelvic collection (contrast-filled urinoma) after recent pelvic surgery, consistent with iatrogenic ureteral injury.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 15.8,
+          "session_id": "fewshot_baseline_20260216_105802_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "Lobulated solid mass along the volar tendon sheath adjacent to flexor tendons with heterogeneous (intermediate/low) signal and enhancement, consistent with a tenosynovial tumor. Appearance and location favor giant-cell tumor of tendon sheath over a simple cyst (ganglion) or purely fibrous lesions.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 20.4,
+          "session_id": "fewshot_baseline_20260216_105818_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Left upper-quadrant well-defined cystic mass adjacent to stomach with a double-layered gut wall on ultrasound (gut-signature) and thick/enhancing wall with surrounding inflammatory stranding on CT in a febrile patient \u2014 findings most consistent with an infected enteric duplication cyst (enteric duplication).",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 16.9,
+          "session_id": "fewshot_baseline_20260216_105839_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "Adolescent with androgen excess (elevated delta-4-androstenedione), large heterogeneous solid\u2013cystic ovarian mass on MRI, and histology showing retiform/poorly differentiated sex cord elements consistent with a Sertoli\u2013Leydig cell tumor (produces androgens).",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 6.9,
+          "session_id": "fewshot_baseline_20260216_105856_9"
+        },
+        {
+          "case_index": 10,
+          "case_title": "Case number 10790",
+          "case_number": "10790",
+          "ground_truth": "C",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Small well-circumscribed submucosal rectal nodule with intact overlying mucosa, homogeneous intense contrast enhancement and marked diffusion restriction\u2014findings most consistent with a rectal carcinoid (neuroendocrine tumor).",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 11.7,
+          "session_id": "fewshot_baseline_20260216_105903_10"
+        },
+        {
+          "case_index": 11,
+          "case_title": "Case number 10827",
+          "case_number": "10827",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "Multiple well-defined rounded fat-density nodules in the subcutaneous tissues of the buttocks and thighs, typical of self-injected oil/paraffin (oil bubbles) rather than solid metastases, neurofibromas, or air.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 15.1,
+          "session_id": "fewshot_baseline_20260216_105915_11"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "MRI and US show a well-defined fusiform mass along the posterior tibial neurovascular bundle with internal fascicular architecture and vascularity; clinical posterior tibial nerve compression and location strongly favor a neurogenic tumour (eg schwannoma) over lymphoma, sarcoma or Ewing.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 13.5,
+          "session_id": "fewshot_baseline_20260216_105931_12"
+        },
+        {
+          "case_index": 13,
+          "case_title": "Case number 11532",
+          "case_number": "11532",
+          "ground_truth": "E",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "Imaging shows a multiloculated, rim-enhancing fluid collection within the kidney with internal septations and surrounding inflammatory change in a patient with fever and history of stones \u2014 most consistent with a renal abscess rather than a neoplasm.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 5.4,
+          "session_id": "fewshot_baseline_20260216_105945_13"
+        },
+        {
+          "case_index": 16,
+          "case_title": "Case number 11692",
+          "case_number": "11692",
+          "ground_truth": "B",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "CT shows a small ovoid fat-attenuation lesion with hyperattenuating rim adjacent to the colon and localized fat stranding; US shows a noncompressible hyperechoic ovoid mass at site of pain; labs show mild CRP elevation without leukocytosis. These findings are classic for epiploic appendagitis. Specimen photo is consistent with an infarcted epiploic appendage.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 16.7,
+          "session_id": "fewshot_baseline_20260216_105950_16"
+        },
+        {
+          "case_index": 17,
+          "case_title": "Case number 11845",
+          "case_number": "11845",
+          "ground_truth": "B",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "Imaging shows a solitary, well-circumscribed, eccentric intradural/extradural lateral nerve-root/foraminal mass at the lumbar level, which is typical for a schwannoma rather than a central filum/conus ependymoma, diffuse neurofibroma, or multiple drop metastases.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 8.9,
+          "session_id": "fewshot_baseline_20260216_110007_17"
+        },
+        {
+          "case_index": 18,
+          "case_title": "Case number 12166",
+          "case_number": "12166",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "Initial acquisition shows a short segmental luminal narrowing/nondistension that completely resolves on the repeated distended acquisition, with no focal mass or pericolic fat stranding \u2014 findings most consistent with segmental colonic spasm (technical artifact) rather than carcinoma, diverticulitis, lymphoma or extrinsic compression.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 10.0,
+          "session_id": "fewshot_baseline_20260216_110017_18"
+        },
+        {
+          "case_index": 19,
+          "case_title": "Case number 12185",
+          "case_number": "12185",
+          "ground_truth": "B",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Large multiloculated cystic abdominal mass in a child with thin septations and internal vascularity on Doppler; imaging favors a vascular/lymphatic-type lesion rather than solid sarcoma, lipomatous or neuroblastic tumor \u2014 best match among options is a haemangioendothelioma.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 27.9,
+          "session_id": "fewshot_baseline_20260216_110027_19"
+        },
+        {
+          "case_index": 20,
+          "case_title": "Case number 12691",
+          "case_number": "12691",
+          "ground_truth": "C",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "MRI demonstrates fatty atrophy of the abductor digiti minimi consistent with chronic inferior calcaneal (Baxter) nerve entrapment; clinical absence of sensory loss fits a motor neuropathy and findings are associated with plantar fasciitis/heel spur.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 9.0,
+          "session_id": "fewshot_baseline_20260216_110055_20"
+        },
+        {
+          "case_index": 21,
+          "case_title": "Case number 12773",
+          "case_number": "12773",
+          "ground_truth": "B",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "E: Imaging shows an irregular enhancing mass/annular wall thickening at the duodenal/pancreatic head region with intrahepatic biliary dilatation and multiple liver lesions; clinical picture of obstructive jaundice, weight loss, fever and markedly elevated CA19\u20119 is most consistent with an underlying carcinoma (pancreatic/ampullary/duodenal) rather than inflammatory or lymphomatous disease.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 16.7,
+          "session_id": "fewshot_baseline_20260216_110104_21"
+        },
+        {
+          "case_index": 22,
+          "case_title": "Case number 12781",
+          "case_number": "12781",
+          "ground_truth": "D",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Cortical, superficial multilobulated \u2018bubbly\u2019 T2-hyperintense lesion in a child with new-onset seizures, minimal mass effect/edema and little enhancement \u2014 classic appearance for a dysembryoplastic neuroepithelial tumour (DNET).",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 14.2,
+          "session_id": "fewshot_baseline_20260216_110122_22"
+        },
+        {
+          "case_index": 23,
+          "case_title": "Case number 12956",
+          "case_number": "12956",
+          "ground_truth": "D",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "Solitary, well\u2011defined posterior paravertebral thoracic mass on lateral radiograph and CT in an asymptomatic 36\u2011yr\u2011old \u2014 typical location and appearance of a neurogenic tumour (e.g., schwannoma/neurofibroma). Does not have features of lymphoma, extramedullary hematopoiesis, esophageal lesion, or Castleman disease.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 11.9,
+          "session_id": "fewshot_baseline_20260216_110136_23"
+        },
+        {
+          "case_index": 24,
+          "case_title": "Case number 13122",
+          "case_number": "13122",
+          "ground_truth": "A",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "MRI and TVUS show a tubular, multilocular convoluted adnexal mass with folded mucosal septations (cogwheel/beads-on-string) without solid enhancing ovarian mass or systemic sepsis\u2014findings most consistent with chronic hydrosalpinx (chronic PID).",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 20.0,
+          "session_id": "fewshot_baseline_20260216_110148_24"
+        },
+        {
+          "case_index": 25,
+          "case_title": "Case number 13497",
+          "case_number": "13497",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Contrast-enhanced CT and bedside echo show a hyperdense pericardial effusion consistent with hemopericardium; CT demonstrates contrast extravasation adjacent to the LV wall (arrow) after acute chest pain and cardiogenic shock \u2014 most consistent with left ventricular free wall rupture causing cardiac tamponade.,",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 12.0,
+          "session_id": "fewshot_baseline_20260216_110208_25"
+        }
+      ]
+    },
+    "fewshot": {
+      "correct": 5,
+      "total": 19,
+      "accuracy": 0.2631578947368421,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Pineal region mass in an adult causing obstructive hydrocephalus, biopsy-proven and showing dramatic response to radiotherapy. Imaging shows a homogenously enhancing pineal lesion (central calcification) typical of a germinoma. Pineoblastoma/tectal glioma/dermoid/meningioma are less likely given age, imaging appearance and excellent radiosensitivity.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "1828",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6806",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16434",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2729",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15783",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6459",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7785",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 14.5,
+          "session_id": "fewshot_fewshot_20260216_110221_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "Early postoperative CT-urography demonstrates focal extravasation of excreted contrast from the distal ureter into a pelvic collection (opacified in the excretory phase and confirmed on 3D reconstructions), consistent with iatrogenic ureteral injury with urinoma.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "12226",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "12304",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "4950",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9710",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1926",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9995",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "4508",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 13.1,
+          "session_id": "fewshot_fewshot_20260216_110235_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "Volar wrist mass intimately related to tendon sheath showing heterogeneous solid signal and marked enhancement rather than homogeneous fluid; imaging and location most consistent with localized tenosynovial giant cell tumor (giant-cell tumor of tendon sheath).",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "8890",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7781",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18540",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "885",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1066",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "14975",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15711",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 15.7,
+          "session_id": "fewshot_fewshot_20260216_110249_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "Left-sided unilocular cystic mass adjacent to colon with internal debris, thick enhancing wall and surrounding fat stranding in a febrile patient with leukocytosis \u2014 imaging and clinical features match a mesenteric non-pancreatic pseudocyst (see similar Eurorad case 15022).",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "15022",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17874",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "8152",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18024",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "12978",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17482",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1901",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 12.9,
+          "session_id": "fewshot_fewshot_20260216_110305_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "13-year-old with virilization: elevated delta-4-androstenedione, imaging shows a solid-cystic hypervascular adnexal mass in an adolescent, and histology demonstrates retiform and poorly differentiated Sertoli\u2013Leydig features \u2014 consistent with Sertoli\u2013Leydig cell tumour.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "10870",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18083",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7243",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17388",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9884",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2798",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "13305",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 10.6,
+          "session_id": "fewshot_fewshot_20260216_110318_9"
+        },
+        {
+          "case_index": 10,
+          "case_title": "Case number 10790",
+          "case_number": "10790",
+          "ground_truth": "C",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Small, well-defined submucosal rectal nodule with intense homogeneous enhancement and marked diffusion restriction, preserving mucosal contour \u2014 features most consistent with a rectal carcinoid (neuroendocrine tumor). Adenocarcinoma and lymphoma usually show irregular/concentric wall thickening; GIST is often larger/exophytic and heterogeneous; haemangioma has very high T2 signal and phleboliths.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "10587",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11253",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11557",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11221",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16818",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6230",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1401",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 12.0,
+          "session_id": "fewshot_fewshot_20260216_110329_10"
+        },
+        {
+          "case_index": 11,
+          "case_title": "Case number 10827",
+          "case_number": "10827",
+          "ground_truth": "E",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "CT demonstrates numerous well-defined subcutaneous fat-density nodules/cysts throughout chest, gluteal and thigh regions consistent with subcutaneous fat nodules (eg. steatocystoma multiplex). The lesions have fat attenuation, not soft-tissue density of metastases or neurofibromas, and are not air. Oil injections are less likely given distribution and classic appearance of multiple fat-containing cysts.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "8462",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "12960",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11294",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "4139",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2993",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1875",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2059",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 7.2,
+          "session_id": "fewshot_fewshot_20260216_110341_11"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Imaging shows a well-defined fusiform mass in continuity with the posterior tibial nerve, with internal vascularity and heterogeneous enhancement/degenerative areas causing tibial nerve compression\u2014features most consistent with a neurogenic tumour (schwannoma).",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11296",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10022",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "12899",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "5460",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17125",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16072",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10781",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 5.9,
+          "session_id": "fewshot_fewshot_20260216_110349_12"
+        },
+        {
+          "case_index": 13,
+          "case_title": "Case number 11532",
+          "case_number": "11532",
+          "ground_truth": "E",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "56-year-old man with fever and left flank pain and history of stones; imaging shows a complex cystic renal collection with internal debris on ultrasound and rim/septal enhancement on CT consistent with an infected fluid collection (renal abscess) rather than a solid neoplasm.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "17989",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16620",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18464",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9608",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6823",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11425",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18427",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 10.7,
+          "session_id": "fewshot_fewshot_20260216_110355_13"
+        },
+        {
+          "case_index": 16,
+          "case_title": "Case number 11692",
+          "case_number": "11692",
+          "ground_truth": "B",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "CT and US show a blind-ending tubular outpouching from the distal ileum on the antimesenteric side with surrounding fat stranding and inflammation; specimen photo is a resected diverticulum \u2014 findings most consistent with inflamed Meckel's diverticulum.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11700",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17528",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16809",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17121",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11923",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18065",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17580",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 11.3,
+          "session_id": "fewshot_fewshot_20260216_110406_16"
+        },
+        {
+          "case_index": 17,
+          "case_title": "Case number 11845",
+          "case_number": "11845",
+          "ground_truth": "B",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "Well-circumscribed intradural extramedullary midline lesion at the cauda/filum terminale displacing nerve roots peripherally with T2 hyperintensity and expected enhancement \u2014 imaging pattern most consistent with a myxopapillary ependymoma; no pathological confirmation provided.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "6966",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16402",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9848",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "8404",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15518",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "8133",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6576",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 8.1,
+          "session_id": "fewshot_fewshot_20260216_110418_17"
+        },
+        {
+          "case_index": 18,
+          "case_title": "Case number 12166",
+          "case_number": "12166",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "Initial WE-CTC shows a short segmental concentric narrowing that resolves on the repeated acquisition with restored luminal distension and no mural thickening or pericolonic inflammatory changes. Findings are consistent with transient segmental colonic spasm (technical artefact), not true mass or inflammation.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "10189",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1923",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7491",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16038",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7504",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1775",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "8194",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 7.1,
+          "session_id": "fewshot_fewshot_20260216_110426_18"
+        },
+        {
+          "case_index": 19,
+          "case_title": "Case number 12185",
+          "case_number": "12185",
+          "ground_truth": "B",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "MRI and ultrasound show a large well-defined multilobulated, predominantly fat-containing abdominal mass with internal septations/heterogeneous fatty lobules in a child; imaging appearance best fits a fatty neoplasm (liposarcoma) rather than desmoid, neuroblastoma, or vascular tumour.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "13341",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9384",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15887",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3470",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2497",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3376",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18295",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 24.9,
+          "session_id": "fewshot_fewshot_20260216_110434_19"
+        },
+        {
+          "case_index": 20,
+          "case_title": "Case number 12691",
+          "case_number": "12691",
+          "ground_truth": "C",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "MRI shows fatty atrophy of the abductor digiti minimi consistent with chronic inferior calcaneal (Baxter) nerve entrapment, together with plantar fascial thickening/calcaneal spur\u2014i.e. abductor digiti minimi atrophy associated with plantar fasciitis (chronic Baxter neuropathy).",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "1647",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16476",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10523",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3411",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11566",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1523",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18555",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 9.1,
+          "session_id": "fewshot_fewshot_20260216_110459_20"
+        },
+        {
+          "case_index": 21,
+          "case_title": "Case number 12773",
+          "case_number": "12773",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "CT shows long-segment homogeneous circumferential duodenal wall thickening at the ampullary region with preserved lumen and bulky lymphadenopathy, causing obstructive jaundice and systemic symptoms \u2014 features most consistent with duodenal (ampullary) lymphoma rather than adenocarcinoma or inflammatory disease.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11221",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11683",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2057",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7230",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16818",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15070",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10338",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 17.3,
+          "session_id": "fewshot_fewshot_20260216_110508_21"
+        },
+        {
+          "case_index": 22,
+          "case_title": "Case number 12781",
+          "case_number": "12781",
+          "ground_truth": "D",
+          "agent_answer": "D",
+          "correct": true,
+          "reasoning": "Superficial cortical-based cystic lesion with an enhancing mural nodule in a child with seizures, plus leptomeningeal/dural enhancement and adjacent calvarial change \u2014 imaging pattern most typical of pleomorphic xanthoastrocytoma.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "14216",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2226",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1196",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17093",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1765",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "14890",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3476",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 17.5,
+          "session_id": "fewshot_fewshot_20260216_110526_22"
+        },
+        {
+          "case_index": 23,
+          "case_title": "Case number 12956",
+          "case_number": "12956",
+          "ground_truth": "D",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "Well-defined solitary posterior paravertebral mediastinal mass on lateral CXR and CT in an asymptomatic adult, typical location and appearance for a neurogenic tumour (e.g., schwannoma). No features of multicentric lymphadenopathy or systemic disease to suggest lymphoma, Castleman, or extramedullary hematopoiesis, and not centered in the esophagus.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "9553",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16700",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1882",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "948",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "13977",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17378",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16735",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 14.6,
+          "session_id": "fewshot_fewshot_20260216_110543_23"
+        },
+        {
+          "case_index": 24,
+          "case_title": "Case number 13122",
+          "case_number": "13122",
+          "ground_truth": "A",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "Imaging shows a convoluted tubular multiloculated adnexal mass with internal septations and \u2018beads-on-a-string\u2019 appearance, no systemic signs of acute infection \u2014 most consistent with chronic hydrosalpinx from PID.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "15389",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "5520",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1296",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11873",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3646",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10362",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1341",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 11.2,
+          "session_id": "fewshot_fewshot_20260216_110558_24"
+        },
+        {
+          "case_index": 25,
+          "case_title": "Case number 13497",
+          "case_number": "13497",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Acute MI with cardiogenic shock and hyperechoic pericardial effusion; CT demonstrates high-attenuation pericardial fluid consistent with hemopericardium and contrast extravasation from the LV free wall into the pericardial sac \u2014 diagnostic of ventricular free wall rupture.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "5115",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "13386",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15382",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "14120",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "5991",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9496",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "4108",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 4.9,
+          "session_id": "fewshot_fewshot_20260216_110610_25"
+        }
+      ]
+    }
+  }
+}

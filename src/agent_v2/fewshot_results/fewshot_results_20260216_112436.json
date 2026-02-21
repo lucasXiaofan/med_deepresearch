@@ -1,0 +1,894 @@
+{
+  "timestamp": "20260216_112436",
+  "cases_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/medd_selected_50.csv",
+  "relevant_csv": "src/agent_v2/results/med-diagnosis-relevant-search.csv",
+  "database_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/deepsearch_complete.csv",
+  "model": "google/gemini-3-flash-preview",
+  "model_type": "vision",
+  "num_cases": 19,
+  "modes": {
+    "baseline": {
+      "correct": 9,
+      "total": 19,
+      "accuracy": 0.47368421052631576,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "The imaging shows a hyperdense mass in the pineal region on CT with intense enhancement on MRI, causing obstructive hydrocephalus. The clinical history of a 'good response' to radical radiotherapy is highly characteristic of an intracranial germ cell tumour (specifically a germinoma). The radiotherapy planning images also show craniospinal irradiation, which is often used for germ cell tumours due to their tendency for CSF seeding.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 7.1,
+          "session_id": "fewshot_baseline_20260216_111940_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "CT-urography images (especially 6, 7, and 8) show extravasation of contrast material in the pelvic region, consistent with a ureteral injury and subsequent urinoma formation following surgery. The 3D reconstructions clearly demonstrate the leakage of contrast from the urinary system.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 7.1,
+          "session_id": "fewshot_baseline_20260216_111947_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "The MRI images show a soft tissue mass at the volar aspect of the wrist. The mass demonstrates low signal intensity on T1-weighted images (Image 1) and remains relatively low in signal on T2/STIR-weighted images (Image 2, 4, 5, 6), which is characteristic of a Giant Cell Tumor of the Tendon Sheath (GCTTS) due to hemosiderin deposition. The location (volar wrist, adjacent to tendons) and the imaging characteristics (low signal on all sequences) are classic for GCTTS, making it the most likely diagnosis among the options provided.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 3.5,
+          "session_id": "fewshot_baseline_20260216_111955_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "The imaging (CT and US) shows a well-defined cystic lesion in the left quadrant with a characteristic layered wall appearance ('gut signature' or 'double-wall' sign on ultrasound, though partially obscured by inflammatory changes). The clinical presentation of abdominal pain, fever, and leukocytosis suggests a complication like infection or hemorrhage within the cyst. Enteric duplication cysts often exhibit this layered wall (inner echogenic mucosa and outer hypoechoic muscle layer) and can present in adulthood with such complications. Options like lymphangioma (A) usually are multiloculated and thin-walled, while mesothelial cysts (D) and non-pancreatic pseudocysts (C) lack the organized muscular wall seen here.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.7,
+          "session_id": "fewshot_baseline_20260216_111958_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "The 13-year-old patient presents with a solid and cystic adnexal mass and elevated delta-4-androstenedione (a precursor to testosterone). This hormonal profile is highly suggestive of a sex cord-stromal tumor with virilizing potential. Among the options, Sertoli-Leydig cell tumors (SLCT) are characterisically associated with androgen production. The MRI shows a heterogeneous mass with solid areas that exhibit relatively low signal on T2 (consistent with fibrous or cellular stroma) and cystic components. Crucially, the histopathology labels 'SLCT with retiform pattern' and 'Poorly differentiated' explicitly name the diagnosis as Sertoli-Leydig cell tumor.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.1,
+          "session_id": "fewshot_baseline_20260216_112003_9"
+        },
+        {
+          "case_index": 10,
+          "case_title": "Case number 10790",
+          "case_number": "10790",
+          "ground_truth": "C",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "The imaging (MRI) shows a well-circumscribed, solid, intramural mass in the rectal wall. It is characterized by intermediate T2 signal (Images 1, 2) and significant restricted diffusion (hyperintense on DWI b800 in Image 3/4). In Image 5 (Contrast-enhanced VIBE), there is intense and somewhat heterogeneous enhancement. The location within the wall and the solid nature without secondary signs of adenocarcinoma (like invasive margins or significant lymphadenopathy in the provided images) are highly suggestive of a mesenchymal tumor. In the rectum, GIST (Gastrointestinal Stromal Tumor) characteristically presents as a well-defined subepithelial/intramural mass. Rectal carcinoids (B) are typically much smaller when symptomatic. Lymphoma (C) usually presents as more diffuse thickening. Haemangiomas (D) have high T2 signal. Adenocarcinoma (E) typically presents as irregular luminal narrowing or invasive mass rather than a circumscribed intramural ball.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 5.9,
+          "session_id": "fewshot_baseline_20260216_112008_10"
+        },
+        {
+          "case_index": 11,
+          "case_title": "Case number 10827",
+          "case_number": "10827",
+          "ground_truth": "E",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 9.1,
+          "session_id": "fewshot_baseline_20260216_112014_11"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "The clinical history identifies a growing mass with posterior tibial nerve compression symptoms. The MRI images (specifically Image 4 with the arrow pointing to the nerve and Image 5/6 showing the mass relationship to the neurovascular bundle) show an encapsulated, well-defined soft tissue mass in the expected path of the posterior tibial nerve. The clinical presentation of nerve compression combined with the imaging features of a neurogenic mass (likely a schwannoma or neurofibroma) makes options D the most appropriate. While the patient has an osteochondroma, the new symptoms are specifically neurological and associated with a distinct soft tissue mass.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 5.4,
+          "session_id": "fewshot_baseline_20260216_112023_12"
+        },
+        {
+          "case_index": 13,
+          "case_title": "Case number 11532",
+          "case_number": "11532",
+          "ground_truth": "E",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "The patient presented with fever and flank pain, which is the classic presentation for an infectious process. The CT images show a hypodense, peripherally enhancing fluid collection in the left kidney with internal septations and debris (as seen on US). This appearance, combined with the clinical history of fever and a pre-existing horseshoe kidney (which is prone to infection and stones), is highly characteristic of a renal abscess.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.1,
+          "session_id": "fewshot_baseline_20260216_112029_13"
+        },
+        {
+          "case_index": 16,
+          "case_title": "Case number 11692",
+          "case_number": "11692",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The clinical presentation of migrated periumbilical pain to the right lower quadrant in a 17-year-old is classic for appendicitis-like symptoms. CT imaging (Images 3, 4, and 5) shows a blind-ending, inflamed, gas-filled structure in the right lower quadrant originating from the ileum, which is characteristic of Meckel's diverticulitis. Ultrasound shows an inflamed tubular structure. The specimen photograph (Image 2) shows an excised diverticulum. Note: Options A and B are identical ('Meckel's diverticulitis'), I will select B as it is the likely intended correct answer.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 3.9,
+          "session_id": "fewshot_baseline_20260216_112034_16"
+        },
+        {
+          "case_index": 17,
+          "case_title": "Case number 11845",
+          "case_number": "11845",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The MRI images show a well-circumscribed, intradural extramedullary mass at the level of the L3-L4 vertebrae, which is a classic location for a myxopapillary ependymoma (a subtype of ependymoma commonly found in the filum terminale). Given options A and B, 'confirmed by pathology' is the more definitive clinical conclusion typically sought in these case studies when provided as an option.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.4,
+          "session_id": "fewshot_baseline_20260216_112038_17"
+        },
+        {
+          "case_index": 18,
+          "case_title": "Case number 12166",
+          "case_number": "12166",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "The initial CT images show a segment of the colon (descending/splenic flexure area) that appears narrow and irregular, suggesting a lesion. However, the subsequent 'repeated acquisition' images show this same segment fully distended with water/gas, with no residual wall thickening or mass. This indicates that the initial appearance was a transient finding due to segmental colonic spasm (a known technical artifact in CT colonography) rather than a fixed organic lesion like colon carcinoma.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 6.1,
+          "session_id": "fewshot_baseline_20260216_112042_18"
+        },
+        {
+          "case_index": 19,
+          "case_title": "Case number 12185",
+          "case_number": "12185",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The imaging (MRI and ultrasound) shows a large, heterogeneously solid and cystic retroperitoneal mass in a 7-year-old child. The mass is distinct from the primary kidneys (although it displaces the left kidney and causes hydronephrosis) and liver. In a pediatric patient with a large retroperitoneal mass that is not a classic neuroblastoma (which usually shows more encasement of vessels and calcification) or Wilms tumor, and given the options, a retroperitoneal non-rhabdomyosarcoma soft tissue sarcoma (NRSTS) is a strong candidate. Specifically, the imaging appearance of a large, complex, partially cystic/multiloculated mass in the retroperitoneum of an older child fits the category of an NRSTS better than the other options provided.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 3.9,
+          "session_id": "fewshot_baseline_20260216_112049_19"
+        },
+        {
+          "case_index": 20,
+          "case_title": "Case number 12691",
+          "case_number": "12691",
+          "ground_truth": "C",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "The clinical history of recurrent painful heel in a 66-year-old woman, combined with MRI findings of selective atrophy (fatty infiltration) of the abductor digiti minimi muscle and evidence of plantar fasciitis (calcaneal spur and fascial thickening), is classic for Baxter's neuropathy (entrapment of the inferior calcaneal nerve). Image 2 specifically shows fatty replacement of the ADM muscle (marked with a star), which represents chronic denervation atrophy.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.1,
+          "session_id": "fewshot_baseline_20260216_112053_20"
+        },
+        {
+          "case_index": 21,
+          "case_title": "Case number 12773",
+          "case_number": "12773",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The clinical history identifies a 74-year-old male with obstructive jaundice, weight loss, and raised CA 19.9. CT images show massive, circumferential, and relatively homogeneous thickening of the duodenal wall (aneurysmal appearance in some sections) with associated extensive lymphadenopathy (indicated by arrowheads in images 2 and 3). While carcinoma is more common, the specific 'bulky' appearance with significant lymphadenopathy and the preserved lumen (not highly stenotic despite wall thickness) often favors lymphoma. However, in the context of obstructive jaundice and CA 19.9, carcinoma is a strong clinical contender. Re-evaluating the image findings: the wall thickening is extremely thick and somewhat homogeneous, which is characteristic of duodenal lymphoma ('aneurysmal' dilation can occur in lymphoma). However, standard clinical practice often yields 'Carcinoma' for such presentations. Let's look closer at the image 3: the duodenal lumen is quite large despite the massive wall thickening, a classic sign of lymphoma (aneurysmal dilatation). Carcinoma usually causes more constriction. Therefore, the imaging features specifically favor lymphoma.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.8,
+          "session_id": "fewshot_baseline_20260216_112057_21"
+        },
+        {
+          "case_index": 22,
+          "case_title": "Case number 12781",
+          "case_number": "12781",
+          "ground_truth": "D",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "The clinical presentation (9-year-old girl, new-onset seizure) and imaging findings are characteristic of a ganglioglioma. The MRI shows a cortical-based, mixed cystic and solid lesion in the right parietal/temporal region with a mural nodule that demonstrates enhancement (as seen in Image 5 and 8). There is also evidence of scalloping of the inner table of the skull on CT (Image 2), indicating a slow-growing, chronic process. While DNETs typically present similarly, they rarely enhance as robustly as seen here, and many exhibit a 'bubbly' appearance. Ganglioglioma is the most common CNS neoplasm associated with chronic temporal lobe epilepsy in children and commonly features a solid enhancing nodule within a cystic component.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 5.0,
+          "session_id": "fewshot_baseline_20260216_112102_22"
+        },
+        {
+          "case_index": 23,
+          "case_title": "Case number 12956",
+          "case_number": "12956",
+          "ground_truth": "D",
+          "agent_answer": "D",
+          "correct": true,
+          "reasoning": "The clinical history of an asymptomatic 36-year-old with an incidental finding of a posterior mediastinal mass on chest X-ray, combined with the CT findings of a well-defined, intensely enhancing mass in the posterior mediastinum, is highly suggestive of unicentric Castleman disease. While neurogenic tumors (E) are more common in the posterior mediastinum, the significant contrast enhancement seen on CT (Image 4) is a characteristic feature of the hyaline-vascular type of Castleman disease. The other options are less likely given the location, lack of symptoms, and imaging characteristics.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 7.2,
+          "session_id": "fewshot_baseline_20260216_112108_23"
+        },
+        {
+          "case_index": 24,
+          "case_title": "Case number 13122",
+          "case_number": "13122",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "The clinical presentation of acute pelvic pain and tenderness in a woman, combined with the MRI findings of a complex multiloculated cystic adnexal mass with thickened walls and internal septations (suggestive of a 'cogwheel' or 'beaded' appearance often seen in salpingitis/tubo-ovarian processes), is most consistent with a tubo-ovarian abscess (TOA). Although the patient is postmenopausal (menopause at 39) and afebrile, TOA remains a significant clinical possibility when a new pelvic mass with inflammatory characteristics appears. The absence of fever does not rule out TOA. Ovarian cystadenoma/cystadenocarcinoma is less likely given the acute presentation and imaging features of an inflammatory process.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 5.0,
+          "session_id": "fewshot_baseline_20260216_112115_24"
+        },
+        {
+          "case_index": 25,
+          "case_title": "Case number 13497",
+          "case_number": "13497",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "The patient presented with chest pain and cardiogenic shock. CT imaging (Image 1) shows a high-attenuation (hyperdense) pericardial effusion, consistent with hemopericardium. Contrast-enhanced CT (Image 3) shows a focus of contrast extravasation or wall irregularity at the free wall of the left ventricle (indicated by the arrow), which confirms a ventricular free wall rupture leading to cardiac tamponade.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 3.4,
+          "session_id": "fewshot_baseline_20260216_112121_25"
+        }
+      ]
+    },
+    "fewshot": {
+      "correct": 9,
+      "total": 19,
+      "accuracy": 0.47368421052631576,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "The clinical and imaging features are highly suggestive of an intracranial germ cell tumor, likely a germinoma. Key findings include: 1) A pineal region mass that is hyperdense on CT (Image 1), which is characteristic of the 'engulfed calcification' or dense cellularity seen in germinomas. 2) Avid and fairly homogeneous enhancement on post-contrast MRI (Images 2, 3, 8). 3) Significant hydrocephalus requiring shunting/ventriculostomy. 4) A 'good response' to radical radiotherapy, which is a hallmark of germinomas (highly radiosensitive). Post-radiotherapy images (Images 6, 7) show a remarkable reduction in tumor volume. While pineoblastoma could also response to radiation, it typically appears more heterogeneous and usually affects children/younger patients than this 43-year-old gentleman. The radio-responsiveness and imaging features point strongly toward a germ cell tumor.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "1828",
+              "reason": "Sagittal and axial post-contrast MR show a lobulated, heterogeneously enhancing pineal mass with subsequent multiple nodular leptomeningeal and ependymal enhancing deposits (\"sugar-icing\" pattern) \u2014 demonstrates typical CSF dissemination of pineoblastoma."
+            },
+            {
+              "case_id": "6806",
+              "reason": "Sagittal T1 and post-contrast images show an irregular, heterogeneously enhancing pineal mass that invades the tectum and extends through the aqueduct causing obstructive hydrocephalus \u2014 illustrates aggressive, infiltrative behavior of pineoblastoma."
+            },
+            {
+              "case_id": "16434",
+              "reason": "Non-contrast CT and post-contrast MR show a mildly hyperdense pineal mass with central calcification and avid, homogeneous enhancement \u2014 characteristic of germinoma and useful to distinguish from pineoblastoma which is usually heterogeneous and often lacks central calcification."
+            },
+            {
+              "case_id": "15105",
+              "reason": "Serial MR images show a cystic pineal lesion with nodular/thickened enhancing wall and interval growth \u2014 a pattern that can mimic pineoblastoma (cystic/necrotic malignant lesion) and emphasizes the imaging features that raise suspicion for pineoblastoma vs benign pineal cyst."
+            },
+            {
+              "case_id": "5483",
+              "reason": "CT and MR show a multiloculated heterogeneous pineal mass with areas of fat signal/low attenuation and calcification with fat droplets in subarachnoid spaces \u2014 classic for teratoma and helps exclude pineoblastoma which lacks macroscopic fat and typically shows homogeneous/heterogeneous solid enhancement and CSF dissemination."
+            }
+          ],
+          "elapsed_time": 4.1,
+          "session_id": "fewshot_fewshot_20260216_112124_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "The imaging findings, particularly images 6, 7, and 8, demonstrate a pelvic fluid collection that becomes opacified during the excretory phase of the CT-urography. The 3D reconstructions (images 7 and 8) clearly show extravasation of contrast from the ureter into the pelvic space, which is diagnostic of an iatrogenic ureteral injury and resulting urinoma following the colonic surgery.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "12226",
+              "reason": "Pelvic fluid collection is partially opacified on delayed/excretory-phase CT (higher attenuation within collection) with a visible track of contrast from the right distal ureter into the collection \u2014 classic CT-urography demonstration of iatrogenic ureteral leak/urinoma after pelvic surgery."
+            },
+            {
+              "case_id": "9710",
+              "reason": "Perinephric/retroperitoneal fluid collection shows marked increased attenuation on excretory-phase CT consistent with extravasated opacified urine; 3D reformations show relationship to collecting system \u2014 demonstrates how delayed imaging identifies urinoma and differentiates it from abscess/seroma."
+            },
+            {
+              "case_id": "12181",
+              "reason": "Medial perirenal extraluminal opacified urine originating at the ureteropelvic junction on excretory-phase CT with opacified proximal ureter \u2014 example of ureter/UPJ disruption causing urinoma and how delayed phase localizes injury level."
+            },
+            {
+              "case_id": "9613",
+              "reason": "CT urography shows clear extravasation of iodinated contrast from both ureters into a large retroperitoneal fluid collection (urinoma) with progressive increase in attenuation on delayed images \u2014 demonstrates direct visualization of contrast leak and extent of urinoma."
+            },
+            {
+              "case_id": "12239",
+              "reason": "Delayed excretory-phase CT shows opacification of the vagina (and tract) from the urinary bladder/ureteral system indicating a urinary fistula; useful to distinguish vesicovaginal or uretero-vaginal fistula versus urinoma and to localize source of urinary leak after pelvic surgery."
+            }
+          ],
+          "elapsed_time": 11.7,
+          "session_id": "fewshot_fewshot_20260216_112129_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "8890",
+              "reason": "MRI shows a well-defined tenosynovial mass isointense to muscle on T1 with no susceptibility artifacts on GRE (absence of hemosiderin) and collagenous hypocellular histology \u2014 imaging pattern supports fibroma of the tendon sheath (FTS)"
+            },
+            {
+              "case_id": "1066",
+              "reason": "GCTTS case with low-intermediate signal on T1 and T2 attributed to hemosiderin and strong post-contrast enhancement \u2014 demonstrates imaging features (hemosiderin-related low signal and marked enhancement) that help differentiate GCTTS from FTS"
+            },
+            {
+              "case_id": "18540",
+              "reason": "Localized tenosynovial giant cell tumour showing T1 hypointense mass, areas of signal drop on susceptibility/FFE (blooming from hemosiderin) and prominent enhancement \u2014 useful to exclude FTS when susceptibility artifacts are present"
+            },
+            {
+              "case_id": "15087",
+              "reason": "Diffuse tenosynovial giant cell tumour (PVNS) with T1/T2 low-signal hemosiderin, bone erosions and enhancing synovium on MRI \u2014 these features (blooming, erosions) contrast with FTS and aid differential diagnosis"
+            },
+            {
+              "case_id": "885",
+              "reason": "GCTTS example with low signal intensity on T1 and T2 due to hemosiderin deposition evident on MR images \u2014 reinforces that presence of hemosiderin/susceptibility favors GCTTS over FTS"
+            }
+          ],
+          "elapsed_time": 23.0,
+          "session_id": "fewshot_fewshot_20260216_112141_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "12978",
+              "reason": "CT shows a large thin-walled multiloculated mesenteric cystic mass with thin enhancing septa and fluid attenuation (8-10 HU) matching the multiloculated appearance of lymphangioma."
+            },
+            {
+              "case_id": "6424",
+              "reason": "CT demonstrates a large lobulated thin-walled multicystic mesenteric mass with contents varying from water to fat attenuation and intimate bowel relation \u2014 imaging evidence of chylous/fatty content and multiloculation typical of lymphangioma."
+            },
+            {
+              "case_id": "19174",
+              "reason": "CT shows a multiloculated cystic mesenteric lesion with thin enhancing internal septa, lobulated borders, mass effect and complications (small-bowel obstruction, whirlpool sign) \u2014 illustrates how lymphangioma can present with inflammatory/complication-related changes and enhancing septa as in the target case."
+            },
+            {
+              "case_id": "8152",
+              "reason": "CT and MRI demonstrate a cystic mesenteric lesion with central fat density/signal and circular wall enhancement plus surrounding mesenteric inflammatory changes \u2014 directly supports chylous (fat) content and infection/inflammation in lymphangioma."
+            },
+            {
+              "case_id": "17202",
+              "reason": "Ultrasound and CT show an enteric duplication cyst with thick enhancing wall, \u2018gut-signature\u2019 (inner echogenic mucosa and outer muscular layer) and a shared wall with the duodenum \u2014 useful to distinguish duplication cyst from lymphangioma which lacks the gut wall signature."
+            },
+            {
+              "case_id": "5016",
+              "reason": "CT shows a cystic omental teratoma with fat-fluid level and calcified/solid Rokitansky protuberance \u2014 demonstrates imaging features (calcification/solid elements) that favour teratoma over lymphangioma and help exclude this differential."
+            }
+          ],
+          "elapsed_time": 7.6,
+          "session_id": "fewshot_fewshot_20260216_112204_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "9884",
+              "reason": "Pelvic MRI shows a well-circumscribed right adnexal mass with mixed solid and cystic architecture; solid component is intermediate on T1 and low\u2013intermediate on T2 with scattered high-T2 areas \u2014 pattern and clinical androgen excess support androgen-producing Sertoli-Leydig cell tumour (matches target case imaging: solid/cystic, intermediate\u2013high T2)."
+            },
+            {
+              "case_id": "7243",
+              "reason": "Large heterogeneous predominantly solid ovarian mass with central cystic area and prominent feeding vessels converging to the hilum; enhancing solid capsule and internal enhancement on post-contrast MRI/CT \u2014 demonstrates the hypervascular, solid\u2013cystic appearance typical of sex-cord stromal tumours and helps confirm vascular solid phenotype seen in SLCT."
+            },
+            {
+              "case_id": "10870",
+              "reason": "Well-defined solid ovoid ovarian mass with homogeneous low T1, central high T2 signal and a peripheral low-T2 rim with early avid peripheral enhancement \u2014 imaging pattern typical of sclerosing stromal tumour, useful to distinguish from SLCT by its characteristic peripheral low-T2 rim and early peripheral enhancement."
+            },
+            {
+              "case_id": "9059",
+              "reason": "Adnexal lesion with very low T2 signal focus on MRI (and mild delayed enhancement on post-contrast imaging) consistent with fibrous tissue (fibroma/thecoma) \u2014 this low-T2 fibrous signature helps exclude fibrous stromal tumours in the differential for an SLCT, which usually shows intermediate\u2013high T2 signal."
+            },
+            {
+              "case_id": "13305",
+              "reason": "Heterogeneous solid adnexal mass with T1 and T2 signal similar to myometrium, internal cysts hyperintense on T2 and strong heterogeneous post-contrast enhancement \u2014 imaging of granulosa cell tumour that overlaps with SLCT features (solid/cystic, enhancing), highlighting the need for integration of imaging, age and hormonal findings to differentiate these entities."
+            }
+          ],
+          "elapsed_time": 10.8,
+          "session_id": "fewshot_fewshot_20260216_112212_9"
+        },
+        {
+          "case_index": 10,
+          "case_title": "Case number 10790",
+          "case_number": "10790",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "The MRI shows a bulky, well-defined, homogeneous mass in the rectal wall with marked diffusion restriction and homogeneous contrast enhancement. These features are highly characteristic of lymphoma (MALT or B-cell), especially the homogeneous appearance and preservation of rectal wall layers compared to the more infiltrative and heterogeneous appearance of adenocarcinoma or GIST. This pattern matches the provided reference cases for rectal lymphoma.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11253",
+              "reason": "Pelvic MRI: bulky ovoid, homogeneous rectal mass with well-defined margins, diffuse concentric wall thickening, homogeneous post-contrast enhancement and marked diffusion restriction \u2014 imaging pattern consistent with rectal B-cell lymphoma and supports lymphoma over adenocarcinoma or GIST."
+            },
+            {
+              "case_id": "10587",
+              "reason": "CT/MRI: extensive concentric, homogeneous rectal wall thickening with smooth margins and minimal mesorectal invasion and diffusion restriction \u2014 pattern typical for rectal lymphoma (high cellularity) and helps distinguish from focal adenocarcinoma or GIST which are usually more heterogeneous and infiltrative."
+            },
+            {
+              "case_id": "15471",
+              "reason": "Rectal MRI: 3 cm submucosal lesion with low T2 signal, no gadolinium enhancement and low signal on high-b DWI \u2014 imaging typical of endometriosis (non-enhancing, T2-dark) and useful to exclude lymphoma which shows T2 hyperintensity, enhancement and diffusion restriction."
+            },
+            {
+              "case_id": "16138",
+              "reason": "MR and EUS: polypoid anorectal lesion with intrinsic high T1 signal (melanin), low T2 signal and diffusion restriction \u2014 imaging features characteristic of anorectal melanoma and help differentiate it from lymphoma (which does not show intrinsic T1 hyperintensity)."
+            },
+            {
+              "case_id": "15210",
+              "reason": "Contrast-enhanced CT of gastric MALT lymphoma: diffuse homogeneous wall thickening with preserved fat planes and marked shrinkage after chemotherapy \u2014 demonstrates typical homogeneous involvement and chemo-responsiveness of MALT lymphoma, a pattern analogous to extranodal GI MALT including rectum."
+            }
+          ],
+          "elapsed_time": 5.1,
+          "session_id": "fewshot_fewshot_20260216_112223_10"
+        },
+        {
+          "case_index": 11,
+          "case_title": "Case number 10827",
+          "case_number": "10827",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "The CT images show multiple well-defined, low-attenuation (fat/oil density) nodules in the subcutaneous tissues of the chest, buttocks, and thighs. These appear as 'bubbles' within the subcutaneous fat and muscle layers. The reference cases (especially 17026 and 16557) describe similar findings following the injection of free silicone or oils, which produce granulomas and a 'snowstorm' appearance on ultrasound (though US is only mentioned in the history here). These are classic imaging findings for self-injected substances like paraffin or oil, often used for body contouring.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "17026",
+              "reason": "CT shows multiple bilateral isodense subcutaneous nodulations with surrounding fat stranding in the buttocks and US demonstrates the \u2018snowstorm\u2019 increased noise appearance consistent with free injected silicone/liquid filler \u2014 imaging pattern similar to subcutaneous oil bubbles."
+            },
+            {
+              "case_id": "13272",
+              "reason": "Neck US shows \u2018cloudy\u2019 high echogenicity with marked posterior enhancement (snowstorm sign) in supraclavicular node and silicone-specific MRI demonstrates high signal within the node; FDG-PET/CT shows metabolically active node \u2014 illustrates migration of injected silicone to nodes and imaging features that can mimic metastases, helping differentiate injected oil/silicone from true nodal metastasis."
+            },
+            {
+              "case_id": "16557",
+              "reason": "Mammography demonstrates multiple scattered linear and round high-density opacities in the breast and US shows extremely echogenic masses with dirty shadowing (snowstorm sign) \u2014 classic imaging of direct self-injection of silicone/fillers resembling subcutaneous oil nodules seen on CT/US."
+            },
+            {
+              "case_id": "16904",
+              "reason": "FDG-PET/CT reveals intensely FDG-avid calcifications within subcutaneous tissues at filler injection sites \u2014 demonstrates that injected fillers can be FDG-avid and mimic skin/soft-tissue metastases on PET/CT, an important differential when evaluating multiple subcutaneous nodules."
+            },
+            {
+              "case_id": "12579",
+              "reason": "Breast US and mammography of an oil cyst (post-traumatic fat necrosis) show a fat-containing oval mass with thin capsule, peripheral echogenic mural nodules and posterior acoustic enhancement \u2014 provides the classic \u2018oil cyst\u2019 appearance and helps distinguish organized oil-containing cysts from scattered free oil droplets or metastases."
+            }
+          ],
+          "elapsed_time": 2.9,
+          "session_id": "fewshot_fewshot_20260216_112228_11"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11296",
+              "reason": "US shows lobulated hypoechoic soft-tissue mass with marked hypervascularity on power Doppler; MRI T1 hypointense/T2 hyperintense lesion with diffusion restriction and heterogeneous centripetal contrast enhancement (necrotic areas) and PET-CT hypermetabolism \u2014 imaging pattern strongly supports malignant small-round-cell tumour (extraskeletal Ewing sarcoma) rather than benign neurogenic lesion."
+            },
+            {
+              "case_id": "8549",
+              "reason": "Contrast CT shows an extrapulmonary paravertebral heterogeneously enhancing soft-tissue mass with no vertebral bone invasion \u2014 demonstrates extraskeletal presentation of Ewing sarcoma in soft tissues and differentiates from primary bone Ewing or benign nerve sheath tumours that typically show nerve-related morphology."
+            },
+            {
+              "case_id": "10781",
+              "reason": "Abdominal CT shows a solid, non-homogeneous mass with hypodense/necrotic areas and multiple peritoneal/omental implants and nodal disease \u2014 pattern of aggressive soft-tissue tumour dissemination consistent with extraskeletal Ewing sarcoma and helps exclude localized benign/vascular lesions."
+            },
+            {
+              "case_id": "17053",
+              "reason": "Thoracic CT demonstrates a large anterior mediastinal heterogeneously enhancing mass with cystic/hemorrhagic areas and heterogeneous enhancement \u2014 indicates aggressive soft-tissue sarcoma (extraskeletal Ewing) in an atypical location and helps distinguish from homogenous lymphoproliferative or purely cystic germ cell lesions."
+            }
+          ],
+          "elapsed_time": 10.2,
+          "session_id": "fewshot_fewshot_20260216_112232_12"
+        },
+        {
+          "case_index": 13,
+          "case_title": "Case number 11532",
+          "case_number": "11532",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "The imaging shows a well-circumscribed renal mass with peripheral nodular enhancement in the arterial phase and centripetal progression, which is characteristic of the renal hemangioma. The provided reference cases (18427, 17989, 10070) confirm that hemangiomas in or around the kidney display this pattern of peripheral/vivid enhancement and isodensity to blood pool. While clinical symptoms of fever and pain might suggest an abscess, the classical vascular enhancement pattern on the multiphase CT is pathognomonic for a hemangioma.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "18427",
+              "reason": "Perirenal capillary haemangioma: CT and MRI show a well-circumscribed nodule with peripheral hyperenhancement that persists into the portal phase and a T2-hyperintense centre (target-like appearance) with a feeding vessel \u2014 imaging pattern matches the peripheral/persistent enhancement seen in renal haemangioma (and similar to case 11532) and supports a diagnosis of vascular/Blood-filled lesion."
+            },
+            {
+              "case_id": "17989",
+              "reason": "Renal anastomosing haemangioma: small (1 cm) intrarenal nodule that is isodense to the blood pool across arterial and parenchymal phases with vivid homogeneous arterial enhancement \u2014 demonstrates that renal haemangiomas can be intensely hypervascular and may mimic RCC; recognition of isodensity to blood pool and early enhancement helps identify a vascular haemangioma variant."
+            },
+            {
+              "case_id": "10070",
+              "reason": "Giant cavernous hepatic haemangioma: classic peripheral globular/nodular enhancement with progressive centripetal fill-in on multiphase CT and eventual uniform enhancement \u2014 exemplar of the canonical haemangioma enhancement pattern (peripheral nodular enhancement with centripetal fill-in) that supports interpreting peripheral nodular/persistent enhancement in renal lesions as haemangioma rather than cystic neoplasm or abscess."
+            },
+            {
+              "case_id": "18088",
+              "reason": "Solitary fibrous tumour of the renal sinus (contrast): lobulated, solid renal sinus mass with relatively homogeneous attenuation and no peripheral nodular enhancement or persistent peripheral rim \u2014 useful as a negative comparator to distinguish haemangioma (which shows peripheral nodular/persistent or target-like enhancement and high T2 signal) from other renal-sinus tumours that enhance homogeneously."
+            }
+          ],
+          "elapsed_time": 5.3,
+          "session_id": "fewshot_fewshot_20260216_112242_13"
+        },
+        {
+          "case_index": 16,
+          "case_title": "Case number 11692",
+          "case_number": "11692",
+          "ground_truth": "B",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "17121",
+              "reason": "CT shows a thick-walled blind-ending tubular structure arising from the distal ileum separate from a normal appendix, with surrounding fat stranding and mesenteric lymphadenopathy \u2014 classic imaging for Meckel's diverticulitis and distinguishes it from appendicitis."
+            },
+            {
+              "case_id": "11923",
+              "reason": "Contrast-enhanced CT demonstrates a localized fluid collection adjacent to thickened small bowel and reactive mesenteric changes consistent with an inflamed Meckel's diverticulum (surgically confirmed). The focal collection and adjacent bowel wall thickening support the diagnosis."
+            },
+            {
+              "case_id": "17257",
+              "reason": "CT shows a fluid-filled distended structure at the distal ileum with an avidly enhancing intraluminal nodule (gastric heterotopia) and transition point; operative findings of torsion/strangulation confirm Meckel's \u2014 illustrates presentation with obstruction and heterotopic mucosa."
+            },
+            {
+              "case_id": "9137",
+              "reason": "Ultrasound demonstrates a mass connected to small bowel with alternating echotexture, hyperechoic mesenteric fat and prominent mesenteric nodes, which at surgery proved to be a perforated Meckel's diverticulum \u2014 shows sonographic features that can mimic intussusception but are pathognomonic when a neck to small bowel is seen."
+            },
+            {
+              "case_id": "14495",
+              "reason": "CT shows a rounded fluid collection with air-fluid level and faecal material near the ileum with minimal fat stranding; differential included ruptured appendix vs Meckel's, with surgery confirming strangulated Meckel's diverticulitis \u2014 demonstrates how Meckel can mimic appendiceal abscess on CT."
+            }
+          ],
+          "elapsed_time": 9.7,
+          "session_id": "fewshot_fewshot_20260216_112248_16"
+        },
+        {
+          "case_index": 17,
+          "case_title": "Case number 11845",
+          "case_number": "11845",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The imaging shows a well-defined, sausage-shaped intradural extramedullary lesion at the L2-L3 level, which is isointense on T1, hyperintense on T2, and shows intense enhancement. This is classic for a myxopapillary ependymoma of the filum terminale, consistent with the reference cases and the provided options.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "9848",
+              "reason": "Large lumbosacral intradural extramedullary mass isointense on T1, hyperintense on T2, with intense post-contrast enhancement and T2* hypointense foci (intratumoral haemorrhage) plus vertebral scalloping and craniospinal dissemination \u2014 imaging features of myxopapillary ependymoma that support the diagnosis in the target case."
+            },
+            {
+              "case_id": "16402",
+              "reason": "Well-defined tubular/sausage-shaped long-segment intradural extramedullary lesion within thecal sac that is T2 hyperintense and shows intense homogeneous enhancement, compressing cauda equina \u2014 matches the sausage-shaped enhancing L2-L3 lesion in the target and supports ependymoma."
+            },
+            {
+              "case_id": "11446",
+              "reason": "Lumbosacral T2-hyperintense, heterogeneously enhancing mass with sacral extension and posterior vertebral scalloping/foraminal expansion \u2014 demonstrates aggressive lumbosacral ependymoma imaging pattern useful for confirming ependymoma and contrasting features (scalloping) absent in target."
+            },
+            {
+              "case_id": "13239",
+              "reason": "Intraforaminal cystic lesion with neural foraminal widening and peripheral/ring-like enhancement consistent with schwannoma \u2014 provides imaging features that help differentiate nerve-sheath tumour from central intradural ependymoma in the differential diagnosis."
+            }
+          ],
+          "elapsed_time": 7.3,
+          "session_id": "fewshot_fewshot_20260216_112258_17"
+        },
+        {
+          "case_index": 18,
+          "case_title": "Case number 12166",
+          "case_number": "12166",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "The initial acquisition (Images 1-3) shows a focal narrowing with apparent mural thickening (marked with arrows and arrowheads) that resembles a colonic lesion. However, the subsequent repeated acquisition images (Images 4-7) demonstrate complete resolution of this narrowing and normal distension of the same colonic segment. This disappearance upon further distension/repeat imaging is pathognomonic for a segmental colonic spasm (a common technical artifact in CT colonography) rather than a fixed organic lesion like carcinoma or lymphoma.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "15169",
+              "reason": "Arterial-phase CT shows a curved tubular air-density structure that disappears on portal-phase imaging \u2014 example of a transient intraluminal imaging artefact that resolves on repeat acquisition, analogous to the colonic segmental spasm in the target case which vanished after further distension and hypotonisation."
+            },
+            {
+              "case_id": "12572",
+              "reason": "Water-enema CT colonography demonstrates a fixed 6-cm stricturing sigmoid carcinoma with circumferential enhancing mural thickening, abrupt shouldering proximally and distally, and persistent upstream faecal loading \u2014 shows the imaging pattern of true malignancy that can mimic spasm but does NOT resolve on repeat acquisition, helping to differentiate carcinoma from transient spasm."
+            },
+            {
+              "case_id": "10189",
+              "reason": "WE\u2011MDCT shows a rigid, poorly distended descending colon with moderate circumferential enhancing wall thickening, pseudopolyps and pericolonic fat hyperaemia (comb sign) \u2014 an inflammatory/fibrotic pattern causing persistent poor distension that helps distinguish chronic disease from transient segmental spasm artifact."
+            },
+            {
+              "case_id": "16556",
+              "reason": "CT colonography cases show smooth, plate-like pin\u2011hole strictures and focal luminal narrowings (NSAID diaphragm disease) that are unchanged on interval imaging/endoluminal reconstructions \u2014 an example of fixed strictures that can mimic focal non\u2011distension but are persistent, unlike transient spasm."
+            },
+            {
+              "case_id": "16038",
+              "reason": "CTC virtual endoscopy demonstrates multiple broad-based polypoid-appearing lesions that correspond to gas\u2011filled intramural cysts (pneumatosis coli) \u2014 an intraluminal mimic on CTC distinguished by intramural gas and lack of mural enhancement or shouldering, unlike spasm artifact."
+            },
+            {
+              "case_id": "2757",
+              "reason": "Barium enema shows a long narrow, stiff tubular colon with a \u2018string sign\u2019 from muscular spasm and fibrosis in ulcerative colitis \u2014 illustrates how muscular spasm (chronic/fibrotic) can produce severe luminal narrowing, but the chronic rigid appearance and flattened haustra help distinguish it from the transient, reversible segmental colonic spasm seen in the target case."
+            }
+          ],
+          "elapsed_time": 12.0,
+          "session_id": "fewshot_fewshot_20260216_112305_18"
+        },
+        {
+          "case_index": 19,
+          "case_title": "Case number 12185",
+          "case_number": "12185",
+          "ground_truth": "B",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "13341",
+              "reason": "Large heterogeneous retroperitoneal soft-tissue mass on CT with abundant intratumoural tortuous vessels and progressive enhancement; compresses but does not invade adjacent organs \u2014 imaging pattern consistent with NRSTS (malignant fibrous histiocytoma) and supports diagnosis of retroperitoneal NRSTS."
+            },
+            {
+              "case_id": "9046",
+              "reason": "Large retroperitoneal mass on CT with heterogeneous soft-tissue attenuation but with macroscopic fatty areas (fatty attenuation) and septations \u2014 imaging appearance diagnostic of dedifferentiated liposarcoma, an important differential to exclude when considering NRSTS (presence of macroscopic fat helps distinguish liposarcoma from NRSTS)."
+            },
+            {
+              "case_id": "12705",
+              "reason": "Pediatric adrenal-origin masses on US/MRI with vessel encasement and metastatic liver nodules; classic features for neuroblastoma including adrenal location and vascular encasement \u2014 imaging features that help differentiate neuroblastoma from NRSTS in children."
+            },
+            {
+              "case_id": "16458",
+              "reason": "Well-defined, rounded-oval fluid-attenuating mass on CT occupying the greater omentum/mesentery with thin septations and lack of aggressive vascular encasement \u2014 imaging features compatible with mesenteric desmoid/benign cystic lesion, which helps distinguish noninfiltrative cystic masses from aggressive heterogeneous NRSTS."
+            }
+          ],
+          "elapsed_time": 20.3,
+          "session_id": "fewshot_fewshot_20260216_112318_19"
+        },
+        {
+          "case_index": 20,
+          "case_title": "Case number 12691",
+          "case_number": "12691",
+          "ground_truth": "C",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "18473",
+              "reason": "Shoulder MRI shows focal suprascapular nerve enlargement and T2 hyperintensity at the suprascapular notch with acute muscle oedema and chronic fatty atrophy of supraspinatus/infraspinatus \u2014 demonstrates the MRI pattern of denervation (acute STIR/T2 hyperintensity followed by chronic T1 fatty replacement) analogous to selective abductor digiti minimi fatty replacement in Baxter neuropathy."
+            },
+            {
+              "case_id": "19235",
+              "reason": "Pelvic MRI demonstrates obturator nerve thickening and T2 hyperintensity where the nerve is encased by iliac adenopathy, with oedema in obturator-innervated muscles and secondary mild fatty atrophy \u2014 an example of peripheral nerve entrapment producing selective muscle denervation and fatty replacement, matching the mechanism in Baxter neuropathy."
+            },
+            {
+              "case_id": "9784",
+              "reason": "MR shows increased T2/STIR signal (muscle oedema) and T1 hyperintense fatty infiltration/atrophy of muscles supplied by the anterior interosseous nerve \u2014 a clear example of focal motor denervation causing selective fatty muscle replacement, supporting interpretation of abductor digiti minimi fatty change as neurogenic."
+            },
+            {
+              "case_id": "19012",
+              "reason": "High-resolution US and MR demonstrate a well-defined, encapsulated lipomatous mass enveloping the tibialis anterior tendon with homogeneous high T1 signal, internal septations and complete fat suppression on PD-FS \u2014 imaging features that distinguish an encapsulated lipoma from diffuse neurogenic fatty muscle replacement and help exclude intramuscular lipoma as a cause of abductor digiti minimi change."
+            }
+          ],
+          "elapsed_time": 20.8,
+          "session_id": "fewshot_fewshot_20260216_112338_20"
+        },
+        {
+          "case_index": 21,
+          "case_title": "Case number 12773",
+          "case_number": "12773",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The imaging shows marked, homogeneous, circumferential wall thickening of the duodenum with associated lymphadenopathy and biliary obstruction (dilated intrahepatic ducts). These findings, especially the bulky and homogeneous nature of the thickening without significant luminal obstruction, are highly characteristic of primary duodenal lymphoma, matching patterns described in the reference cases for gastrointestinal lymphoma.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11221",
+              "reason": "CT shows circumferential homogeneous wall thickening of the 2nd\u20133rd parts of the duodenum (~1.6 cm) with para\u2011aortic adenopathy \u2014 direct match to duodenal lymphoma imaging (long segment, homogeneous, hypovascular duodenal mass)."
+            },
+            {
+              "case_id": "18130",
+              "reason": "CT/US show long-segment, hypodense hypovascular circumferential bowel wall thickening of the terminal ileum with ileocolic and para\u2011aortic adenopathy, restricted diffusion on DWI and FDG uptake; marked response to chemotherapy \u2014 demonstrates typical lymphoma features (bulky, homogeneous, nonobstructing, chemo\u2011sensitive) that help distinguish lymphoma from adenocarcinoma or inflammatory disease."
+            },
+            {
+              "case_id": "10338",
+              "reason": "CT shows a focal/stenosing, irregular enhancing mass of the 3rd portion of the duodenum causing luminal narrowing \u2014 pattern more typical of adenocarcinoma (focal, stenosing, irregular) and useful as a differential comparator to lymphoma which tends to be long-segment and homogeneous."
+            },
+            {
+              "case_id": "11683",
+              "reason": "MRCP/CT/PET show circumferential soft\u2011tissue thickening at the porta/ampullary region causing CBD stricture with local lymphadenopathy and FDG avidity; biopsy-proven diffuse large B-cell lymphoma \u2014 illustrates how lymphoma can present with obstructive jaundice mimicking cholangiocarcinoma/ampullary tumour, directly relevant to the target case."
+            }
+          ],
+          "elapsed_time": 9.0,
+          "session_id": "fewshot_fewshot_20260216_112359_21"
+        },
+        {
+          "case_index": 22,
+          "case_title": "Case number 12781",
+          "case_number": "12781",
+          "ground_truth": "D",
+          "agent_answer": "D",
+          "correct": true,
+          "reasoning": "The clinical presentation of a 9-year-old with a new-onset seizure and a superficial, cortical-based mass is characteristic of several low-grade neuroepithelial tumors. However, the specific imaging combination of a cystic/multicystic component, a vividly enhancing mural nodule abutting the pial surface (seen clearly on Image 8), and overlying bone remodeling/scalloping (seen on Image 2) is most classic for Pleomorphic Xanthoastrocytoma (PXA). While Ganglioglioma is a strong differential, the degree of dural/pial-based enhancement and the typical demographics favor PXA in this morphological presentation.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "16976",
+              "reason": "Cortical-based lesion with central cystic component and intralesional hyperdense foci (calcifications) and superficial location adjacent to cortex \u2014 imaging pattern (cystic cortical mass with calcification) overlaps with PXA features seen in the target case (superficial cysts, calcified/hemorrhagic components)."
+            },
+            {
+              "case_id": "18319",
+              "reason": "Large predominantly cystic frontal mass with an enhancing solid mural nodule and intralesional calcifications on SWI, with restricted diffusion in the solid nodule \u2014 demonstrates the classic cyst + enhancing mural nodule morphology and calcification that is characteristic of PXA and helps differentiate from purely diffuse gliomas or DNET."
+            },
+            {
+              "case_id": "10491",
+              "reason": "Cystic lesion with a vividly enhancing mural nodule that has a pial base and high rCBV on perfusion \u2014 illustrates the mural-nodule architecture and pial/leptomeningeal surface origin seen in PXAs (superficial cortical/pial-based tumors), useful as a morphological exemplar even though the pathology differs."
+            },
+            {
+              "case_id": "18963",
+              "reason": "Cortical/subcortical frontal lesions with coarse gyriform calcification and light bone remodelling/scalloping on CT, T2/FLAIR cortical hyperintensity and only minimal linear enhancement \u2014 shows bone remodeling/scalloping and cortical calcification features that support a superficial cortical tumour (like PXA) and help distinguish PXA from deep white-matter gliomas."
+            }
+          ],
+          "elapsed_time": 7.2,
+          "session_id": "fewshot_fewshot_20260216_112409_22"
+        },
+        {
+          "case_index": 23,
+          "case_title": "Case number 12956",
+          "case_number": "12956",
+          "ground_truth": "D",
+          "agent_answer": "D",
+          "correct": true,
+          "reasoning": "The imaging shows a well-defined, solitary, hypervascular posterior mediastinal mass. Reference Case 9553 (Castleman's disease) specifically describes a similar well-defined paravertebral mass with avid contrast enhancement, mimicking neurogenic tumors but often presenting as a more hypervascular lesion. The location in the posterior mediastinum, the unicentric nature (solitary mass), and the patient's asymptomatic presentation are all characteristic of Unicentric Castleman Disease, which frequently involves the mediastinum.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "9553",
+              "reason": "Axial contrast-enhanced CT shows a well-defined left paravertebral mass with rough central calcification and homogeneous, avid contrast enhancement \u2014 matches the target case&#39;s posterior mediastinal, hypervascular appearance and helps distinguish from necrotic lymphoma or cystic neurogenic tumours."
+            },
+            {
+              "case_id": "16700",
+              "reason": "CT and MRI demonstrate a large, well-defined soft-tissue mass in the neck/upper mediastinum with bright T2/STIR signal and homogeneous (mild) post-contrast enhancement and PET avidity; shows unicentric Castleman can present as an isolated hypervascular mediastinal/neck mass that may encase but not infiltrate adjacent vessels, aiding differentiation from aggressive malignancies."
+            },
+            {
+              "case_id": "1882",
+              "reason": "MR images show a well-circumscribed paracardiac/pleural enhancing mass with heterogeneous T2 hyperintensity arising from pleura \u2014 demonstrates that unicentric hyaline-vascular Castleman can present as an encapsulated mediastinal/paracardiac mass and mimic pleural/neoplastic lesions, supporting the differential for the target posterior mediastinal mass."
+            },
+            {
+              "case_id": "19020",
+              "reason": "Contrast-enhanced CT of an isolated paraduodenal lesion shows avid homogeneous enhancement and a focus of internal calcification; endoscopic ultrasound shows a hypoechoic solid lesion and histology confirms hyaline-vascular Castleman. This case highlights solitary, avidly enhancing lymphoid mass with possible central calcification seen in unicentric Castleman disease, paralleling imaging features of the target mediastinal lesion."
+            }
+          ],
+          "elapsed_time": 4.1,
+          "session_id": "fewshot_fewshot_20260216_112416_23"
+        },
+        {
+          "case_index": 24,
+          "case_title": "Case number 13122",
+          "case_number": "13122",
+          "ground_truth": "A",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "15389",
+              "reason": "TVUS and contrast-enhanced CT show tubular multiloculated adnexal collections with fluid/fluid layering, thick hypervascular septa and thick-enhancing walls \u2014 imaging classic for pyosalpinx/tubo-ovarian complex (TOA)."
+            },
+            {
+              "case_id": "10362",
+              "reason": "Transvaginal US and contrast-enhanced CT demonstrate an 8-cm multiloculated adnexal complex mass with thickened peripheral wall and contrast-enhancing septa \u2014 features typical of tubo-ovarian abscess; adjacency to inflamed sigmoid colon shows secondary TOA from diverticulitis."
+            },
+            {
+              "case_id": "9865",
+              "reason": "Contrast-enhanced CT shows a parauterine fluid collection with internal air and surrounding fat stranding adjacent to sigmoid diverticulitis \u2014 presence of internal gas within adnexal collection and inflammatory change strongly supports abscess (tubo-ovarian abscess) rather than neoplasm."
+            },
+            {
+              "case_id": "10088",
+              "reason": "Contrast-enhanced CT shows a fluid-containing tubular adnexal structure with enhancing walls, associated peritoneal enhancement/ascites and an IUD \u2014 imaging pattern consistent with pyosalpinx/tubo-ovarian abscess and severe PID."
+            },
+            {
+              "case_id": "11883",
+              "reason": "Multicystic adnexal masses with thick contrast-enhancing walls and marked peritoneal thickening/ascites on CT/MRI can mimic TOA; associated pulmonary nodules and necrotic mediastinal nodes and preserved normal ovaries in this case indicate pelvic tuberculosis \u2014 useful differential-imaging features to distinguish TB from TOA."
+            }
+          ],
+          "elapsed_time": 9.2,
+          "session_id": "fewshot_fewshot_20260216_112420_24"
+        },
+        {
+          "case_index": 25,
+          "case_title": "Case number 13497",
+          "case_number": "13497",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "The clinical history of chest pain followed by cardiogenic shock, coupled with the echocardiographic finding of hyperechoic pericardial effusion (suggestive of hemopericardium) and CT images showing a significant pericardial effusion, strongly points to ventricular free wall rupture. Ventricular septal rupture (Option A) would cause an intracardiac shunt rather than hemopericardium.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "14120",
+              "reason": "Contrast-enhanced CT angiography shows a lobulated saccular pseudoaneurysm disrupting the basal anterior interventricular septum with a visible defect and direct communication between the LV cavity and the RV \u2014 demonstrates how post\u2011MI septal rupture/pseudoaneurysm appears as a contrast\u2011filled septal defect connecting ventricles."
+            },
+            {
+              "case_id": "18238",
+              "reason": "ECG-gated CT shows a clearly visualized subaortic ventricular septal defect (~2.7 cm) on coronal/sagittal reformats \u2014 provides anatomic example of an intracardiac septal defect and its location for comparison with post\u2011infarction septal rupture morphology."
+            },
+            {
+              "case_id": "18025",
+              "reason": "Pulmonary\u2011arterial phase CT demonstrates isolated early enhancement of the left ventricular outflow tract consistent with contrast passage through a reopened VSD (right\u2011to\u2011left shunt) \u2014 shows the contrast timing/early enhancement sign used to detect intracardiac shunts after infarction."
+            },
+            {
+              "case_id": "13386",
+              "reason": "Emergency MDCT shows high\u2011attenuation haemopericardium and contrast extravasation through a full\u2011thickness discontinuity of the LV free wall into the pericardial sac \u2014 exemplary imaging of free\u2011wall rupture and haemopericardium to differentiate from interventricular septal rupture, which produces intracardiac communication rather than pericardial extravasation."
+            },
+            {
+              "case_id": "9496",
+              "reason": "Non\u2011ECG gated CT after penetrating trauma demonstrates dense heterogeneous pericardial effusion (~50 HU) and linear high\u2011density contrast tracking into the pericardial sac anterior to the RV apex consistent with myocardial perforation and active extravasation \u2014 a trauma example of free\u2011wall rupture/perforation to contrast with septal rupture imaging features."
+            }
+          ],
+          "elapsed_time": 5.5,
+          "session_id": "fewshot_fewshot_20260216_112430_25"
+        }
+      ]
+    }
+  }
+}

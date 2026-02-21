@@ -68,11 +68,10 @@ class MedCase:
 
     def display(self) -> str:
         """Format case for display."""
-        separator = "=" * 80
+        separator = "=" * 20
         return f"""
 {separator}
 CASE: {self.case_title}
-{separator}
 Date: {self.case_date}
 Link: {self.link}
 Categories: {self.categories}
@@ -83,22 +82,28 @@ Categories: {self.categories}
 --- IMAGING FINDINGS ---
 {self.imaging_findings or 'N/A'}
 
---- DISCUSSION ---
-{self.discussion or 'N/A'}
-
 --- DIFFERENTIAL DIAGNOSIS ---
 {self.differential_diagnosis or 'N/A'}
 
 --- FINAL DIAGNOSIS ---
 {self.final_diagnosis or 'N/A'}
 
---- IMAGES ---
-{self.images_display}
-
 --- RELATED CASES ---
 {self.related_cases_top5}
 {separator}
 """
+
+## should add back later
+# --- DISCUSSION ---
+# {self.discussion or 'N/A'}
+
+# --- IMAGES ---
+# {self.images_display}
+
+# --- RELATED CASES ---
+# {self.related_cases_top5}
+# {separator}
+
 
 
 class MedSearchEngine:
@@ -256,7 +261,7 @@ Examples:
     parser.add_argument(
         "--csv",
         type=str,
-        default=str(Path(__file__).parent.parent / "deepsearch_complete.csv"), #deepsearch_complete.csv, deepsearch_filtered.csv
+        default=str(Path(__file__).parent.parent / "deepsearch_filtered.csv"), #deepsearch_complete.csv, deepsearch_filtered.csv
         help="Path to the CSV data file (default: filtered version excluding selected 50 cases)"
     )
     parser.add_argument(

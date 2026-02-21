@@ -28,6 +28,7 @@ Usage:
 import sys
 import csv
 import json
+import re
 import fcntl
 import argparse
 import time
@@ -38,6 +39,7 @@ from datetime import datetime
 PROJECT_ROOT = Path(__file__).parent.parent.parent  # src/
 sys.path.insert(0, str(PROJECT_ROOT))
 
+from typing import Optional
 from agent_v2.agent import Agent
 
 # Default paths
@@ -89,6 +91,49 @@ def load_cases_from_csv(csv_path: Path, start_index: int = 0, num_cases: int = 2
     return selected
 
 
+def normalize_case_title(case_title: str) -> str:
+    """Normalize case title for deduping across input/output CSVs."""
+    return str(case_title or "").strip().lower()
+
+
+def load_completed_case_titles(output_csv: Path) -> set[str]:
+    """Load already-completed case titles from the output CSV."""
+    if not output_csv.exists():
+        return set()
+
+    completed: set[str] = set()
+    with open(output_csv, "r", encoding="utf-8", errors="replace") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            normalized = normalize_case_title(row.get("case_title", ""))
+            if normalized:
+                completed.add(normalized)
+    return completed
+
+
+def extract_case_id(case: dict) -> Optional[str]:
+    """Extract the eurorad case ID from a case row.
+
+    Tries case_title ("Case number 19172") first, then link URL.
+
+    Returns:
+        Case ID string (e.g. "19172") or None
+    """
+    # Try case_title: "Case number 19172"
+    title = case.get('case_title', '')
+    match = re.search(r'\d+', title)
+    if match:
+        return match.group(0)
+
+    # Fallback: extract from link URL
+    link = case.get('link', '')
+    match = re.search(r'/case/(\d+)', link)
+    if match:
+        return match.group(1)
+
+    return None
+
+
 def format_case_for_agent(case: dict) -> str:
     """Format a case dictionary into a prompt for the agent.
 
@@ -125,7 +170,7 @@ You know the CORRECT DIAGNOSIS. Find cases with imaging evidence that would help
 You are a VISION agent — when you navigate to a case, its medical images are automatically shown to you.
 
 WORKFLOW:
-1. Query the database 2-3 times with different keyword strategies
+1. Query the database 2-3 times with different semantic strategies (vector embedding retrieval)
 2. Navigate to the most promising cases (at most 10 total navigations)
 3. For each navigated case, EXAMINE THE IMAGES and note specific imaging features
 4. MUST call submit_results.py with case IDs and WHY they're relevant (citing imaging features)
@@ -177,7 +222,15 @@ def save_result_to_csv(case: dict, relevant_cases: dict, output_csv: Path):
             fcntl.flock(f.fileno(), fcntl.LOCK_UN)
 
 
-def run_agent_for_case(case: dict, case_index: int, output_csv: Path, session_dir: Path):
+def run_agent_for_case(
+    case: dict,
+    case_index: int,
+    output_csv: Path,
+    session_dir: Path,
+    skill_name: str,
+    model: str,
+    model_type: str,
+):
     """Run an agent to find diagnosis-relevant cases for a single clinical case.
 
     Args:
@@ -202,23 +255,31 @@ def run_agent_for_case(case: dict, case_index: int, output_csv: Path, session_di
     # Format case as prompt
     prompt = format_case_for_agent(case)
 
+    # Extract eurorad case ID for image loading
+    case_id = extract_case_id(case)
+    if case_id:
+        print(f"  Case ID: {case_id} (images will be auto-loaded for vision model)")
+    else:
+        print(f"  Warning: Could not extract case ID — no images will be loaded")
+
     try:
         # Create agent with vision model (gpt-5-mini) for image analysis
         agent = Agent(
             session_id=session_id,
             session_dir=session_dir,
-            skills=["med-diagnosis-relevant-search"],
+            skills=[skill_name],
             skills_dir=DEFAULT_SKILLS_DIR,
-            model_type="vision",
+            model=model,
+            model_type=model_type,
             config_path=DEFAULT_CONFIG_PATH,
             max_turns=20,
             temperature=1,
             agent_name=f"diagsearch-agent-{case_index}"
         )
 
-        # Run the agent
+        # Run the agent with case_id so vision model receives the case images
         start_time = time.time()
-        result = agent.run(prompt)
+        result = agent.run(prompt, case_id=case_id)
         elapsed_time = time.time() - start_time
 
         # Extract final result from trajectory
@@ -299,8 +360,32 @@ def main():
     parser.add_argument(
         '--num-cases',
         type=int,
-        default=2,
-        help='Number of cases to process from start-index (default: 2)'
+        default=50,
+        help='Number of cases to process from start-index (default: 50)'
+    )
+    parser.add_argument(
+        '--skill-name',
+        type=str,
+        default='med-diagnosis-relevant-search',
+        help='Skill to run (default: med-diagnosis-relevant-search)'
+    )
+    parser.add_argument(
+        '--model',
+        type=str,
+        default='x-ai/grok-4.1-fast',
+        help='Model ID override (default: x-ai/grok-4.1-fast)'
+    )
+    parser.add_argument(
+        '--model-type',
+        type=str,
+        default='vision_grok',
+        help='Model profile type from config (default: vision_grok)'
+    )
+    parser.add_argument(
+        '--skip-existing',
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help='Skip cases that already exist in output CSV (default: true)'
     )
     parser.add_argument(
         '--session-dir',
@@ -328,6 +413,8 @@ def main():
     print(f"Input CSV: {args.input_csv}")
     print(f"Output CSV: {args.output_csv}")
     print(f"Session Directory: {args.session_dir}")
+    print(f"Skill: {args.skill_name}")
+    print(f"Model: {args.model} (model_type={args.model_type})")
 
     # Load cases
     indexed_cases = load_cases_from_csv(
@@ -335,6 +422,17 @@ def main():
         start_index=args.start_index,
         num_cases=args.num_cases,
     )
+
+    if args.skip_existing:
+        completed_case_titles = load_completed_case_titles(args.output_csv)
+        before_count = len(indexed_cases)
+        indexed_cases = [
+            (idx, case)
+            for idx, case in indexed_cases
+            if normalize_case_title(case.get("case_title", "")) not in completed_case_titles
+        ]
+        skipped_count = before_count - len(indexed_cases)
+        print(f"Skip existing: {skipped_count} already completed, {len(indexed_cases)} remaining")
 
     print(f"Cases to process: {len(indexed_cases)}")
     print(f"{'='*80}\n")
@@ -346,7 +444,10 @@ def main():
             case=case,
             case_index=global_idx,
             output_csv=args.output_csv,
-            session_dir=args.session_dir
+            session_dir=args.session_dir,
+            skill_name=args.skill_name,
+            model=args.model,
+            model_type=args.model_type,
         )
         results.append(result)
 

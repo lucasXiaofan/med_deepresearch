@@ -1,0 +1,215 @@
+{
+  "timestamp": "20260210_082813",
+  "cases_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/medd_selected_50.csv",
+  "relevant_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/src/agent_v2/results/med-diagnosis-relevant-search.csv",
+  "database_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/deepsearch_complete.csv",
+  "num_cases": 8,
+  "modes": {
+    "baseline": {
+      "correct": 3,
+      "total": 8,
+      "accuracy": 0.375,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Pineal region midline enhancing mass causing aqueductal obstruction and hydrocephalus in an adult with biopsy and excellent radiotherapy response \u2014 classic for a radiosensitive germinoma (intracranial germ cell tumour). Imaging and treatment response make dermoid, tectal glioma, pineoblastoma and meningioma less likely.",
+          "mode": "baseline",
+          "elapsed_time": 17.6,
+          "session_id": "fewshot_baseline_20260210_082206_4"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "MRI shows a lobulated solid mass along the flexor tendon sheath at the volar wrist with heterogeneous low T2 signal and enhancement consistent with hemosiderin-laden tenosynovial giant-cell tumor; not purely cystic so not a ganglion; fibroma would be smaller and more homogeneous.",
+          "mode": "baseline",
+          "elapsed_time": 24.7,
+          "session_id": "fewshot_baseline_20260210_082224_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "Imaging shows a well-defined multilocular cystic mass in the left upper quadrant with thin septations, peripheral enhancement and adjacent inflammatory change; clinical fever and leukocytosis indicate superimposed infection. Findings favor a mesenteric lymphatic malformation (lymphangioma) with inflammatory changes. Duplication cysts are usually bowel-attached and pediatric; mesothelial cysts are typically pelvic and unilocular; non-pancreatic pseudocyst less likely without pancreatitis/trauma history.",
+          "mode": "baseline",
+          "elapsed_time": 24.6,
+          "session_id": "fewshot_baseline_20260210_082249_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "13-year-old with adnexal mass and elevated androstenedione (virilization), MRI mixed solid-cystic ovarian mass and histology showing retiform/poorly differentiated pattern consistent with Sertoli-Leydig cell tumor (sex cord-stromal tumor).",
+          "mode": "baseline",
+          "elapsed_time": 33.1,
+          "session_id": "fewshot_baseline_20260210_082314_9"
+        },
+        {
+          "case_index": 10,
+          "case_title": "Case number 10790",
+          "case_number": "10790",
+          "ground_truth": "C",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Well-defined small submucosal intraluminal polypoid rectal lesion with marked diffusion restriction and intense homogeneous contrast enhancement, typical for a small rectal neuroendocrine tumour (carcinoid). Findings are not typical for mucosal-based adenocarcinoma, exophytic heterogeneous GIST, haemangioma (would show very high T2 and phleboliths), or MALT lymphoma (more diffuse wall involvement).",
+          "mode": "baseline",
+          "elapsed_time": 28.9,
+          "session_id": "fewshot_baseline_20260210_082347_10"
+        },
+        {
+          "case_index": 11,
+          "case_title": "Case number 10827",
+          "case_number": "10827",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "Multiple bilateral, well-defined round subcutaneous low-attenuation nodules with fat-like density in the buttocks/thighs consistent with injected oil/paraffin droplets (lipogranulomas). Appear as fat-density globules, not soft-tissue metastases, neurofibromas or air.",
+          "mode": "baseline",
+          "elapsed_time": 35.3,
+          "session_id": "fewshot_baseline_20260210_082416_11"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Well-marginated fusiform soft-tissue mass along the course of the posterior tibial nerve with T2-hyperintense signal, internal vascularity on US and clinical nerve compression \u2014 appearance most consistent with a neurogenic tumour (e.g., schwannoma). Other options less likely given location, morphology and patient age.",
+          "mode": "baseline",
+          "elapsed_time": 38.2,
+          "session_id": "fewshot_baseline_20260210_082451_12"
+        },
+        {
+          "case_index": 13,
+          "case_title": "Case number 11532",
+          "case_number": "11532",
+          "ground_truth": "E",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "Fever and left flank pain in a patient with horseshoe kidney. Imaging shows a complex multiloculated cystic lesion with central nonenhancing necrosis/debris and peripheral/septal enhancement on CT and complex echoes on US\u2014features most consistent with a renal abscess rather than a solid neoplasm.",
+          "mode": "baseline",
+          "elapsed_time": 30.9,
+          "session_id": "fewshot_baseline_20260210_082530_13"
+        }
+      ]
+    },
+    "fewshot": {
+      "correct": 4,
+      "total": 8,
+      "accuracy": 0.5,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Pineal midline mass causing obstructive hydrocephalus in an adult male with biopsy-proven lesion and dramatic response to radical radiotherapy. Imaging shows a well-enhancing pineal lesion (possible central calcification) and the clinical course is classic for a radiosensitive germ cell tumour/germinoma rather than pineoblastoma or dermoid; tectal glioma and meningioma are less likely. Therefore intracranial germ cell tumour (germinoma) is most likely.",
+          "mode": "fewshot",
+          "elapsed_time": 22.0,
+          "session_id": "fewshot_fewshot_20260210_082601_4"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Well-defined cystic multiloculated lesion at the volar wrist with high T2 signal and rim/septal enhancement consistent with a ganglion cyst. Imaging lacks low T2/hemosiderin or solid fibrous characteristics of GCTTS or fibroma of tendon sheath.",
+          "mode": "fewshot",
+          "elapsed_time": 13.2,
+          "session_id": "fewshot_fewshot_20260210_082623_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "CT shows a well-defined thin-walled multiloculated cystic mesenteric lesion with thin enhancing septa and adjacent inflammatory changes; clinical fever and leukocytosis fit infected/inflamed lymphangioma. Duplication cysts usually show a gut-wall signature and a close bowel wall relationship; pseudocyst would require pancreatitis history. Most consistent diagnosis: lymphangioma with inflammatory changes.",
+          "mode": "fewshot",
+          "elapsed_time": 23.6,
+          "session_id": "fewshot_fewshot_20260210_082636_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "Adolescent with virilizing androgen elevation (\u2191 delta\u20114\u2011androstenedione) and a large heterogeneous solid\u2013cystic right adnexal mass on MRI; histology images demonstrate retiform/poorly differentiated Sertoli\u2011Leydig morphology. Findings are classic for Sertoli\u2011Leydig cell tumour.",
+          "mode": "fewshot",
+          "elapsed_time": 8.5,
+          "session_id": "fewshot_fewshot_20260210_082700_9"
+        },
+        {
+          "case_index": 10,
+          "case_title": "Case number 10790",
+          "case_number": "10790",
+          "ground_truth": "C",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Well-defined small submucosal rectal nodule with homogeneous marked arterial-phase enhancement and diffusion restriction on MRI\u2014typical appearance of a rectal neuroendocrine tumour (carcinoid). Findings are unlike diffuse homogeneous concentric thickening of lymphoma, the large heterogeneous pattern of GIST, the very T2-bright haemangioma, or infiltrative adenocarcinoma.",
+          "mode": "fewshot",
+          "elapsed_time": 16.3,
+          "session_id": "fewshot_fewshot_20260210_082709_10"
+        },
+        {
+          "case_index": 11,
+          "case_title": "Case number 10827",
+          "case_number": "10827",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "CT shows numerous bilateral, well-defined subcutaneous rounded nodules with fat-like attenuation in buttocks and thighs, most consistent with self-injected oil/silicone droplets (oil bubbles). Appearance matches described \u2018oil/silicone\u2019 injection cases and differs from soft-tissue-density metastases, neurofibromas, or air.",
+          "mode": "fewshot",
+          "elapsed_time": 19.9,
+          "session_id": "fewshot_fewshot_20260210_082725_11"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Imaging shows a well-defined fusiform, encapsulated, enhancing soft-tissue mass along the course of the posterior tibial nerve in the tarsal tunnel with target/fascicular appearance and neurovascular displacement causing tibial nerve compression. Features are classic for a benign neurogenic tumour (schwannoma/neurofibroma). Other options (Ewing sarcoma, synovial sarcoma, UPS, lymphoma) are less likely given location, morphology, and patient age.",
+          "mode": "fewshot",
+          "elapsed_time": 14.2,
+          "session_id": "fewshot_fewshot_20260210_082745_12"
+        },
+        {
+          "case_index": 13,
+          "case_title": "Case number 11532",
+          "case_number": "11532",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "CT demonstrates peripheral nodular/persistent enhancement with a possible feeding vessel and centripetal fill-in appearance consistent with a vascular lesion. Imaging pattern matches renal haemangioma (peripheral nodular enhancement that persists into the portal phase) rather than abscess (which shows irregular rim enhancement and inflammatory changes) or RCC/oncocytoma. Therefore renal haemangioma is most likely.",
+          "mode": "fewshot",
+          "elapsed_time": 13.9,
+          "session_id": "fewshot_fewshot_20260210_082759_13"
+        }
+      ]
+    }
+  }
+}

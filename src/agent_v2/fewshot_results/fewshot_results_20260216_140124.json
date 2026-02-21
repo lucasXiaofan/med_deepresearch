@@ -1,0 +1,1070 @@
+{
+  "timestamp": "20260216_140124",
+  "cases_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/medd_selected_50.csv",
+  "relevant_csv": "src/agent_v2/results/med-diagnosis-relevant-search-vector-similarity.csv",
+  "database_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/deepsearch_complete.csv",
+  "model": "google/gemini-3-flash-preview",
+  "model_type": "vision",
+  "num_cases": 19,
+  "modes": {
+    "baseline": {
+      "correct": 8,
+      "total": 19,
+      "accuracy": 0.42105263157894735,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "The images show a pineal region tumor causing hydrocephalus. The patient underwent radical radiotherapy with a dramatic response (near-complete resolution on follow-up MRI). The radiotherapy planning shows craniospinal irradiation (CSI). This clinical course\u2014highly radiosensitive pineal tumor in an adult with CSI planning\u2014is most characteristic of an intracranial germ cell tumor (specifically a germinoma).",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 12.5,
+          "session_id": "fewshot_baseline_20260216_135720_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "The clinical history identifies a patient undergoing colonic recanalization (an abdominal surgery where the ureter is at risk). The postoperative imaging (CT urography) clearly shows contrast extravasation from the right ureter into the pelvis (Image 6, arrowheads) and a 3D reconstruction (Images 7 and 8) confirming the site of injury and contrast accumulation, which is pathognomonic for a iatrogenic ureteral injury and resulting urinoma.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 7.4,
+          "session_id": "fewshot_baseline_20260216_135733_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "The clinical history of a soft tissue swelling at the volar wrist and the MR images (especially axial T1 and T2/PD fat-saturated sequences) show a well-circumscribed, lobulated soft tissue mass associated with a tendon. The mass exhibits low to intermediate signal intensity on both T1-weighted (Image 1) and T2-weighted or fluid-sensitive sequences (Images 2, 4, 5, 6), which is a classic feature of giant cell tumor of the tendon sheath (GCTTS) due to hemosiderin deposition. The sagittal post-contrast or fluid-sensitive image (Image 3) also shows a well-defined mass. Ganglion cysts would be hyperintense on T2 (Image 6 shows some fluid but the main lesion is not purely cystic). Fibroma of the tendon sheath is a differential but GCTTS is more common and fits the low T1/T2 signal profile better.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.1,
+          "session_id": "fewshot_baseline_20260216_135740_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "The clinical history of a 38-year-old woman with abdominal pain, fever, and leukocytosis suggests an inflammatory or infected cystic lesion. Imaging shows a well-defined cystic mass in the left upper quadrant with a characteristic 'gut signature' or double-layered wall on ultrasound (inner hyperechoic mucosa and outer hypoechoic muscularis), which is pathognomonic for an enteric duplication cyst. The wall thickening and clinical symptoms are consistent with inflammation or infection of the cyst.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.7,
+          "session_id": "fewshot_baseline_20260216_135745_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "The patient is a 13-year-old female with a large adnexal mass and elevated delta-4-androstenedione (6.73 ng/dL, normal < 3.39), which is an androgen precursor indicating a virilizing or androgen-producing tumor. MRI shows a complex solid and cystic adnexal mass. The histopathology images 8 and 9 are explicitly labeled 'SCLT with retiform pattern' and 'Poorly differentiated', respectively. SCLT stands for Sertoli-Leydig Cell Tumor. Sertoli-Leydig cell tumors are sex cord-stromal tumors that characteristically produce androgens, fitting both the clinical presentation and the provided histological labels.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.7,
+          "session_id": "fewshot_baseline_20260216_135750_9"
+        },
+        {
+          "case_index": 10,
+          "case_title": "Case number 10790",
+          "case_number": "10790",
+          "ground_truth": "C",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "The imaging (MRI) reveals a well-circumscribed, solid, intramural mass in the rectal wall. On T2-weighted images, the lesion is relatively homogeneous and shows intermediate signal intensity. It demonstrates significant diffusion restriction on DWI/ADC (high signal on DWI) and moderate enhancement on contrast-enhanced sequences. In a 40-year-old with rectal bleeding and a solid lesion on digital exam, a Gastrointestinal Stromal Tumor (GIST) is a classic consideration for a large, well-defined mesenchymal submucosal/intramural tumor. While carcinoid and lymphoma are possibilities, the size and imaging characteristics are highly suggestive of GIST, which typically arises from the muscularis propria.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.3,
+          "session_id": "fewshot_baseline_20260216_135755_10"
+        },
+        {
+          "case_index": 11,
+          "case_title": "Case number 10827",
+          "case_number": "10827",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "The CT images show multiple well-defined, very low-attenuation (hypodense) foci within the subcutaneous tissues of the chest wall, gluteal region, and thighs. These foci have attenuation values similar to air (-1000 HU) rather than fat or soft tissue. In the context of a patient with coeliac disease presenting with weight loss and abdominal pain, the mural thickening of the splenic flexure identified on US/CT could represent a perforated malignancy or another inflammatory process leading to subcutaneous emphysema. The imaging findings are consistent with subcutaneous air bubbles.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 3.7,
+          "session_id": "fewshot_baseline_20260216_135759_11"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "The clinical history identifies a growing mass in the posterior ankle with posterior tibial nerve compression symptoms. MRI and ultrasound show a well-defined, fusiform, encapsulated soft tissue mass in the posterior compartment of the ankle, which is closely associated with the neurovascular bundle (posterior tibial nerve). The imaging characteristics (fusiform shape, high T2 signal, and location along the expected course of the nerve) are highly suggestive of a neurogenic tumor, such as a schwannoma or neurofibroma.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 5.8,
+          "session_id": "fewshot_baseline_20260216_135803_12"
+        },
+        {
+          "case_index": 13,
+          "case_title": "Case number 11532",
+          "case_number": "11532",
+          "ground_truth": "E",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "The patient is a 56-year-old male with fever and left flank pain, a history of horseshoe kidney, and urolithiasis. Imaging shows a thick-walled cystic/hypodense lesion in the left kidney with peripheral enhancement and internal debris/septations. Given the acute presentation with fever and flank pain, a renal abscess is the most likely diagnosis. Other options like Cystic Renal Cell Carcinoma or Angiosarcoma would typically present more chronically and less commonly with acute infection symptoms, although they can overlap. The context of a horseshoe kidney and urolithiasis increases the risk for complicated urinary tract infections leading to abscess formation.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 5.6,
+          "session_id": "fewshot_baseline_20260216_135809_13"
+        },
+        {
+          "case_index": 16,
+          "case_title": "Case number 11692",
+          "case_number": "11692",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The clinical presentation (17-year-old male, peri-umbilical pain migrating to the RLQ, vomiting) is classic for appendicitis, but the imaging shows a blind-ending, inflamed structures containing gas and appearing as a diverticulum in the mid-abdomen/RLQ separate from the appendix. CT images (3, 4, 5) show a tubular, gas-containing inflamed structure (white arrows) located away from the typical position of the appendix, more consistent with Meckel's diverticulitis. The specimen image shows a resected diverticulum. Note: Option A and B are identical in text, but A has a typo in the prompt 'diverticulitis' vs 'diverticulitis' in the provided selection list? Actually, checking carefully, A and B are 'Meckel\\'s diverticulitis' and 'Meckel\\'s diverticulitis'. I will choose B as it is the standard spelling.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 5.1,
+          "session_id": "fewshot_baseline_20260216_135815_16"
+        },
+        {
+          "case_index": 17,
+          "case_title": "Case number 11845",
+          "case_number": "11845",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The sagittal MRI images (Images 2 and 3) show a well-circumscribed intradural extramedullary mass at the level of the L1-L3 vertebrae, associated with the filum terminale/cauda equina. The mass is iso- to hypo-intense on T1 and hyperintense on T2 sequences, which is characteristic of a myxopapillary ependymoma, the most common tumor of the filum terminale. Given the specific options provided, 'Ependymoma (confirmed by pathology)' is the most definitive clinical diagnosis for such a presentation.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 3.5,
+          "session_id": "fewshot_baseline_20260216_135821_17"
+        },
+        {
+          "case_index": 18,
+          "case_title": "Case number 12166",
+          "case_number": "12166",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "The CT colonography images show a focal narrowing in the transverse colon with irregular mucosal contours in the initial acquisition (Images 2 and 3), which resembles an apple-core lesion suggestive of carcinoma. However, the repeated acquisition (Images 4-7) shows that the previously narrowed segment has completely distended with water and appears normal. This transient disappearance of the lesion confirms it was a segmental colonic spasm (a technical artefact) rather than a fixed organic lesion like colon carcinoma.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 7.7,
+          "session_id": "fewshot_baseline_20260216_135825_18"
+        },
+        {
+          "case_index": 19,
+          "case_title": "Case number 12185",
+          "case_number": "12185",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The imaging (MRI and ultrasound) shows a large, multicystic/septated retroperitoneal mass in a 7-year-old child. Differential diagnoses for a large retroperitoneal mass in a child include neuroblastoma, Wilms tumor, and various sarcomas. Neuroblastoma (E) is one of the most common but typically presents with solid components and often encases vessels. Haemangioendothelioma (D) is more common in the liver or as a cutaneous lesion. Desmoid tumors (C) are typically solid and infiltrative. Liposarcoma (A) is rare in children and usually shows fatty components on MRI. Non-rhabdomyosarcoma soft tissue sarcoma (NRSTS) is a broad category that includes various retroperitoneal sarcomas (like synovial sarcoma or undifferentiated sarcoma) which can present as large heterogenous masses with cystic/necrotic areas. In this specific case, the large, complex, predominantly retroperitoneal mass without characteristic fat of liposarcoma or the typical appearance of neuroblastoma makes NRSTS a likely candidate among the given options.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 5.0,
+          "session_id": "fewshot_baseline_20260216_135833_19"
+        },
+        {
+          "case_index": 20,
+          "case_title": "Case number 12691",
+          "case_number": "12691",
+          "ground_truth": "C",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "The clinical history of chronic painful heel without sensory loss points toward Baxter neuropathy (entrapment of the inferior calcaneal nerve). The provided MRI images show fatty replacement/atrophy of the abductor digiti minimi (ADM) muscle (indicated by high signal on T1-weighted images in the ADM location), which is a classic imaging finding of chronic Baxter neuropathy. The images also demonstrate associated plantar fasciitis and a calcaneal spur, which are common predisposing factors for this entrapment.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 6.4,
+          "session_id": "fewshot_baseline_20260216_135838_20"
+        },
+        {
+          "case_index": 21,
+          "case_title": "Case number 12773",
+          "case_number": "12773",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The clinical presentation (74-year-old male, weight loss, jaundice) and imaging findings are highly suggestive of a malignant process. CT images show circumferential thickening of the duodenum with associated bulky lymphadenopathy and biliary obstruction (proximal ductal dilation). While carcinoma is possible, the 'bulky' and extensive nature of the lymphadenopathy shown in the CT images often favors lymphoma in the gastrointestinal tract over adenocarcinoma. However, the most definitive distinction in such cases is often histological. Given the bulky nodes (arrowheads in images 2 and 3) and diffuse involvement, Duodenal Lymphoma is a strong candidate.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.3,
+          "session_id": "fewshot_baseline_20260216_135845_21"
+        },
+        {
+          "case_index": 22,
+          "case_title": "Case number 12781",
+          "case_number": "12781",
+          "ground_truth": "D",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "The imaging shows a well-circumscribed, multicystic cortical lesion in the right parietal lobe. On T2-weighted MRI, it exhibits the characteristic 'bubbly' appearance typical of a Dysembryoplastic Neuroepithelial Tumour (DNET). The lesion is cortical-based, shows minimal mass effect, and is associated with cortical scalloping on the adjacent bone (scalloping seen on CT/MRI), which are classic features. DNET is a common cause of epilepsy in children.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 3.7,
+          "session_id": "fewshot_baseline_20260216_135849_22"
+        },
+        {
+          "case_index": 23,
+          "case_title": "Case number 12956",
+          "case_number": "12956",
+          "ground_truth": "D",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "The images show a well-circumscribed mass in the posterior mediastinum, specifically in the paravertebral gutter as seen on CT (Images 3-6) and the lateral X-ray (Image 2). In an asymptomatic 36-year-old male, a solitary posterior mediastinal mass is most commonly a neurogenic tumor (such as a schwannoma or neurofibroma), which typically presents as a routine finding on imaging.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 3.4,
+          "session_id": "fewshot_baseline_20260216_135853_23"
+        },
+        {
+          "case_index": 24,
+          "case_title": "Case number 13122",
+          "case_number": "13122",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "The patient is a middle-aged woman presenting with acute pelvic pain and tenderness. Imaging shows a complex, multiloculated cystic adnexal mass with thick walls and internal septations (beaded appearance of the fallopian tube on MRI), as well as signs of pelvic inflammation (free fluid and soft tissue stranding). These findings, combined with the clinical presentation of pelvic pain, are highly suggestive of a tubo-ovarian abscess (TOA), which is a common complication of pelvic inflammatory disease. The lack of fever does not exclude TOA, especially in patients with other comorbidities or partial treatment. Options B, C, D, and E are less likely given the imaging characteristics and clinical context.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 4.7,
+          "session_id": "fewshot_baseline_20260216_135857_24"
+        },
+        {
+          "case_index": 25,
+          "case_title": "Case number 13497",
+          "case_number": "13497",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "The clinical history describes an 83-year-old male with cardiogenic shock and chest pain. Echocardiography showed hyperechoic (hemorrhagic) pericardial effusion. The CT images (especially Image 1 and Image 3) demonstrate a significant pericardial effusion with high density, consistent with hemopericardium. Crucially, Image 3 shows an arrow pointing to a defect or irregularity in the ventricular wall, suggesting a wall rupture. Among the options, Ventricular Free Wall Rupture (B) is the most consistent with the finding of hemopericardium and cardiogenic shock following chest pain (likely an acute myocardial infarction).",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 3.1,
+          "session_id": "fewshot_baseline_20260216_135902_25"
+        }
+      ]
+    },
+    "fewshot": {
+      "correct": 6,
+      "total": 19,
+      "accuracy": 0.3157894736842105,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "The clinical history and imaging show a 43-year-old with a pineal region mass causing obstructive hydrocephalus. The mass is hyperdense on CT, enhances intensely on MRI, and shows a dramatic response to radiotherapy. In adults, while germinomas are more common in children/young adults, they can occur in older adults and are typically extremely radiosensitive. The biopsy-confirmed diagnosis and 'good response' to radical radiotherapy strongly favor an intracranial germ cell tumor (like a germinoma) over a pineoblastoma (which is usually more aggressive and seen in younger children) or typical tectal gliomas (which are usually slow-growing and don't require radical radiotherapy for a 'good response' in this way).",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "1828",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6806",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16434",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2729",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15783",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6459",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7785",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 7.2,
+          "session_id": "fewshot_fewshot_20260216_135905_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "The imaging findings, particularly images 6, 7, and 8, demonstrate contrast extravasation from the right ureter into a pelvic fluid collection during the excretory phase of a CT urography. This is characteristic of an iatrogenic ureteral injury leading to the formation of a urinoma, which is a known complication of complex pelvic surgeries such as colonic recanalization.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "12226",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "12304",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "4950",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9710",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1926",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9995",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "4508",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 5.8,
+          "session_id": "fewshot_fewshot_20260216_135913_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "The imaging shows a well-circumscribed soft tissue mass at the volar aspect of the wrist, intimately associated with the flexor tendons. Key features include low signal intensity on both T1-weighted (Image 1) and T2-weighted (Image 2) images, which is characteristic of Giant Cell Tumor of the Tendon Sheath (GCTTS) due to hemosiderin deposition (blooming on susceptibility sequences, though not explicitly shown here, the T2 hypointensity is highly suggestive). Image 3 and 4 show heterogeneous enhancement, and Image 6 shows susceptibility-related signal drop or low SI typical of GCTTS/PVNS family. Compared to reference cases (18540, 885, 1066), the location and signal characteristics (low T1/T2) strongly favor GCTTS over fibroma (which usually has even lower T2 signal and less enhancement) or ganglion cyst (which would be T2 hyperintense).",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "8890",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7781",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18540",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "885",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1066",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "14975",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15711",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 4.0,
+          "session_id": "fewshot_fewshot_20260216_135919_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "15022",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17874",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "8152",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18024",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "12978",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17482",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1901",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 7.8,
+          "session_id": "fewshot_fewshot_20260216_135923_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "10870",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18083",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7243",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17388",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9884",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2798",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "13305",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 10.6,
+          "session_id": "fewshot_fewshot_20260216_135931_9"
+        },
+        {
+          "case_index": 10,
+          "case_title": "Case number 10790",
+          "case_number": "10790",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "The imaging (MRI) shows a well-defined, homogeneous, solid submucosal rectal mass with restricted diffusion (high signal on b800 DWI) and moderate enhancement. In a 40-year-old with rectal bleeding and no other symptoms, the presence of a localized, relatively small submucosal tumor that preserves the outer wall layer is highly characteristic of a primary rectal lymphoma, specifically MALT lymphoma, which often presents as a sessile or polypoid lesion. Adenocarcinoma typically shows more irregular infiltration and more significant luminal narrowing, GIST is less common in the rectum and often exhibits more heterogenous enhancement, and carcinoids are usually smaller. The provided reference cases emphasize that B-cell lymphomas often present as bulky or well-defined mural thickenings.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "10587",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11253",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11557",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11221",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16818",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6230",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1401",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 3.7,
+          "session_id": "fewshot_fewshot_20260216_135942_10"
+        },
+        {
+          "case_index": 11,
+          "case_title": "Case number 10827",
+          "case_number": "10827",
+          "ground_truth": "E",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "8462",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "12960",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11294",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "4139",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2993",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1875",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2059",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 6.7,
+          "session_id": "fewshot_fewshot_20260216_135946_11"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11296",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10022",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "12899",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "5460",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17125",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16072",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10781",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 9.5,
+          "session_id": "fewshot_fewshot_20260216_135953_12"
+        },
+        {
+          "case_index": 13,
+          "case_title": "Case number 11532",
+          "case_number": "11532",
+          "ground_truth": "E",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "17989",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16620",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18464",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9608",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6823",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11425",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18427",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 5.5,
+          "session_id": "fewshot_fewshot_20260216_140003_13"
+        },
+        {
+          "case_index": 16,
+          "case_title": "Case number 11692",
+          "case_number": "11692",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The clinical presentation of a 17-year-old with RLQ pain mimicking appendicitis, combined with imaging (CT and ultrasound) showing a blind-ending, inflamed tubular structure arising from the ileum, is diagnostic of Meckel's diverticulitis. Options A and B are the same diagnosis.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11700",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17528",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16809",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17121",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11923",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18065",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17580",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 10.6,
+          "session_id": "fewshot_fewshot_20260216_140009_16"
+        },
+        {
+          "case_index": 17,
+          "case_title": "Case number 11845",
+          "case_number": "11845",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The imaging demonstrates an intradural, extramedullary mass at the level of the cauda equina (specifically involving the filum terminale region at L2-L3). The mass is well-circumscribed, isointense on T1-weighted images (Image 2) and hyperintense on T2-weighted images (Image 3), consistent with the typical appearance of a myxopapillary ependymoma. Multiple reference cases (6966, 16402, 8404, 15518) describe nearly identical presentations and imaging features for myxopapillary ependymoma of the filum terminale. Option B is selected as it specifying pathology confirmation, which is standard for definitive diagnosis in these clinical vignettes.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "6966",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16402",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9848",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "8404",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15518",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "8133",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "6576",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 3.5,
+          "session_id": "fewshot_fewshot_20260216_140020_17"
+        },
+        {
+          "case_index": 18,
+          "case_title": "Case number 12166",
+          "case_number": "12166",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "Initially, images 1-3 suggest a colonic lesion with wall thickening and narrowing. However, repeated acquisition images 4-7 show that the previously narrowed segment of the colon is now well-distended with water and has a normal wall, indicating that the initial appearance was a transient segmental colonic spasm, which is a technical mimic or artifact in CT colonography.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "10189",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1923",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7491",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16038",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7504",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1775",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "8194",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 8.8,
+          "session_id": "fewshot_fewshot_20260216_140024_18"
+        },
+        {
+          "case_index": 19,
+          "case_title": "Case number 12185",
+          "case_number": "12185",
+          "ground_truth": "B",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "13341",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9384",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15887",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3470",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2497",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3376",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18295",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 10.2,
+          "session_id": "fewshot_fewshot_20260216_140033_19"
+        },
+        {
+          "case_index": 20,
+          "case_title": "Case number 12691",
+          "case_number": "12691",
+          "ground_truth": "C",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "The imaging findings (Image 2 and Image 7) show fatty infiltration/atrophy of the abductor digiti minimi muscle (marked with a star). This is a characteristic finding of chronic Baxter's neuropathy (entrapment of the inferior calcaneal nerve). Images 6 and 7 also show findings of plantar fasciitis and a calcaneal spur, which are known causes of nerve entrapment in this region. Option E correctly identifies the combination of muscle atrophy and the associated plantar fasciitis.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "1647",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16476",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10523",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3411",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11566",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1523",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "18555",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 3.4,
+          "session_id": "fewshot_fewshot_20260216_140043_20"
+        },
+        {
+          "case_index": 21,
+          "case_title": "Case number 12773",
+          "case_number": "12773",
+          "ground_truth": "B",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11221",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11683",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2057",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "7230",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16818",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15070",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10338",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 6.8,
+          "session_id": "fewshot_fewshot_20260216_140047_21"
+        },
+        {
+          "case_index": 22,
+          "case_title": "Case number 12781",
+          "case_number": "12781",
+          "ground_truth": "D",
+          "agent_answer": "D",
+          "correct": true,
+          "reasoning": "The clinical presentation of a 9-year-old girl with epilepsy and imaging findings showing a peripherally located, partially cystic lesion in the right temporal-parietal region with a solid enhancing component and a dural tail (best seen on Image 8) is characteristic of Pleomorphic Xanthoastrocytoma (PXA). Contrast enhancement, dural contact/tail, and cortical location are classic for PXA. While Ganglioglioma is a significant differential, the prominent dural enhancement and tail sign strongly favor PXA.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "14216",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "2226",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1196",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17093",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1765",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "14890",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3476",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 4.0,
+          "session_id": "fewshot_fewshot_20260216_140054_22"
+        },
+        {
+          "case_index": 23,
+          "case_title": "Case number 12956",
+          "case_number": "12956",
+          "ground_truth": "D",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "9553",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16700",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1882",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "948",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "13977",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "17378",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "16735",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 8.6,
+          "session_id": "fewshot_fewshot_20260216_140058_23"
+        },
+        {
+          "case_index": 24,
+          "case_title": "Case number 13122",
+          "case_number": "13122",
+          "ground_truth": "A",
+          "agent_answer": null,
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "15389",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "5520",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1296",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "11873",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "3646",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "10362",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "1341",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 10.3,
+          "session_id": "fewshot_fewshot_20260216_140107_24"
+        },
+        {
+          "case_index": 25,
+          "case_title": "Case number 13497",
+          "case_number": "13497",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "The clinical history of chest pain followed by cardiogenic shock, combined with imaging findings of a high-attenuation pericardial effusion (hemopericardium) and evidence of myocardial discontinuity/hypoperfused areas in the left ventricle, is pathognomonic for ventricular free wall rupture post-myocardial infarction. Reference cases support this as a cause of sudden hemodynamic collapse and hemopericardium.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "5115",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "13386",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "15382",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "14120",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "5991",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "9496",
+              "reason": "vector_similarity"
+            },
+            {
+              "case_id": "4108",
+              "reason": "vector_similarity"
+            }
+          ],
+          "elapsed_time": 5.9,
+          "session_id": "fewshot_fewshot_20260216_140118_25"
+        }
+      ]
+    }
+  }
+}

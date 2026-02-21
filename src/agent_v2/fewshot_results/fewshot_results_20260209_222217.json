@@ -1,0 +1,88 @@
+{
+  "timestamp": "20260209_222217",
+  "cases_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/medd_selected_50.csv",
+  "relevant_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/src/agent_v2/results/med-diagnosis-relevant-search.csv",
+  "database_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/deepsearch_complete.csv",
+  "num_cases": 6,
+  "modes": {
+    "fewshot": {
+      "correct": 5,
+      "total": 6,
+      "accuracy": 0.8333333333333334,
+      "results": [
+        {
+          "case_index": 0,
+          "case_title": "Case number 19172",
+          "case_number": "19172",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "Ultrasound shows a thin central intrauterine septum dividing the cavity into two hemicavities with a single fetus and placenta on one side; appearance consistent with a septate uterus rather than bicornuate/didelphys (which have an external fundal cleft or separate uterine horns) or synechiae/arcuate variant.",
+          "mode": "fewshot",
+          "elapsed_time": 19.7,
+          "session_id": "fewshot_fewshot_20260209_222032_0"
+        },
+        {
+          "case_index": 2,
+          "case_title": "Case number 19087",
+          "case_number": "19087",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "Chronic left lumbar discomfort, long-standing anaemia and leukocytosis, plus imaging features consistent with chronic destructive renal disease (dilated calyces surrounded by thin rim of parenchyma - 'bear paw'), perinephric inflammatory changes and likely staghorn calculus, favor diffuse xanthogranulomatous pyelonephritis over tumour, pyonephrosis, hydronephrosis or TB.",
+          "mode": "fewshot",
+          "elapsed_time": 14.8,
+          "session_id": "fewshot_fewshot_20260209_222052_2"
+        },
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Midline pineal region mass causing obstructive hydrocephalus in an adult male with biopsy and dramatic good response to radical radiotherapy. Imaging shows an avidly enhancing pineal mass. Germinomas are common in pineal region in males, typically show homogeneous enhancement and are highly radiosensitive. Dermoid would show fat; tectal glioma is usually nonenhancing/indolent; pineoblastoma occurs in children and is heterogeneous/aggressive; meningioma less likely in this location.",
+          "mode": "fewshot",
+          "elapsed_time": 25.5,
+          "session_id": "fewshot_fewshot_20260209_222107_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "Excretory-phase CT shows opacified pelvic fluid with direct contrast extravasation tracking from the distal ureter into the collection on axial and 3D reconstructions, consistent with iatrogenic ureteral injury producing a urinoma; abscess/seroma/ascites or enteric leak would not opacify from the urinary tract on delayed urographic images.",
+          "mode": "fewshot",
+          "elapsed_time": 13.9,
+          "session_id": "fewshot_fewshot_20260209_222132_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "MRI shows a small well-defined tenosynovial mass on the volar wrist with isointense-to-muscle T1 signal, heterogeneous T2 with concentric/onion\u2011layer pattern and no evidence of hemosiderin blooming; features favor fibroma of the tendon sheath over GCTTS or ganglion cyst.",
+          "mode": "fewshot",
+          "elapsed_time": 18.4,
+          "session_id": "fewshot_fewshot_20260209_222146_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "CT and ultrasound show a well-defined multiloculated cystic mesenteric/omental mass with thin septa, internal debris and peripheral hyperemia and wall enhancement; clinical fever and leukocytosis indicate inflammation. Findings match mesenteric lymphangioma with inflammatory changes rather than duplication cyst or pseudocyst.",
+          "mode": "fewshot",
+          "elapsed_time": 11.5,
+          "session_id": "fewshot_fewshot_20260209_222205_7"
+        }
+      ]
+    }
+  }
+}

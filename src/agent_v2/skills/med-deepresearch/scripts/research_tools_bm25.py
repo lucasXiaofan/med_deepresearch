@@ -7,7 +7,7 @@ The session_id is passed via AGENT_SESSION_ID environment variable.
 
 Commands:
     plan     - Record research plan (queries to run, steps to take)
-    query    - Execute a vector-embedding search query and record results
+    query    - Execute a search query and record results
     navigate - Select a case to investigate further
     submit   - Submit final diagnosis answer
 
@@ -68,8 +68,8 @@ def cmd_query(args):
     """Execute a search query and record results."""
     session = get_session()
 
-    # Run vector search script
-    search_script = Path(__file__).parent.parent.parent.parent.parent / "med_search_vector.py"
+    # Run med_search.py
+    search_script = Path(__file__).parent.parent.parent.parent.parent / "med_search.py"
 
     cmd = ["uv", "run", "python", str(search_script), args.name]
     if args.top_k:
@@ -91,7 +91,6 @@ def cmd_query(args):
             "type": "query",
             "query": args.name,
             "top_k": args.top_k or 5,
-            "search_mode": "vector_embedding",
             "success": result.returncode == 0
         }
         session.append_store(query_data)

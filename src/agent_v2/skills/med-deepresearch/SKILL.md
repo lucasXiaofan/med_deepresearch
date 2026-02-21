@@ -1,6 +1,6 @@
 ---
 name: med-deepresearch
-description: Medical deep research skill for analyzing clinical cases. Provides tools to plan research, query the medical database, navigate to specific cases, and submit final diagnosis.
+description: Medical deep research skill for analyzing clinical cases. Uses vector-embedding search by default, supports BM25 fallback, and provides navigate/submit tools.
 ---
 
 # Medical Deep Research Skill
@@ -13,10 +13,18 @@ All tools automatically track your research progress. Use the `research_tools.py
 
 ### 1. Query the Medical Database
 
-Search for similar cases by symptoms, findings, or keywords:
+Search for similar cases by semantic similarity (vector embeddings):
 
 ```bash
 uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py query \
+    --name "chest pain mediastinal mass CT" \
+    --top-k 5
+```
+
+BM25 fallback:
+
+```bash
+uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools_bm25.py query \
     --name "chest pain mediastinal mass CT" \
     --top-k 5
 ```
@@ -78,7 +86,7 @@ uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py sub
 
 
 1. **Search for similar cases**
-   - Use `query` with relevant keywords
+   - Use `query` with semantically rich phrases
    - Focus on distinctive findings
    - Search multiple times if needed
 
@@ -120,8 +128,6 @@ For complex cases requiring multiple research angles:
 - Use specific imaging terms: `"ground glass opacity CT lung"`
 - Search by differential: `"thymoma vs lymphoma mediastinum"`
 
-**Case number lookup:**
-- Direct lookup: `--name "1000"` or `--name "case 1000"`
 
 ## Output Format
 

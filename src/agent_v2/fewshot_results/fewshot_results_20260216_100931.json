@@ -1,0 +1,145 @@
+{
+  "timestamp": "20260216_100931",
+  "cases_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/medd_selected_50.csv",
+  "relevant_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/src/agent_v2/results/med-diagnosis-relevant-search-vector-similarity.csv",
+  "database_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/deepsearch_complete.csv",
+  "model": null,
+  "model_type": "vision",
+  "num_cases": 5,
+  "modes": {
+    "baseline": {
+      "correct": 2,
+      "total": 5,
+      "accuracy": 0.4,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Midline pineal region homogeneous, intensely enhancing mass causing obstructive hydrocephalus in an adult male; biopsy then excellent response to radiotherapy is classic for pineal germinoma \u2014 highly radiosensitive. Imaging and clinical course favor intracranial germ cell tumour (germinoma).",
+          "mode": "baseline",
+          "elapsed_time": 15.6,
+          "session_id": "fewshot_baseline_20260216_100708_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "Pelvic CT-urography shows irregular, very high-attenuation material in the pelvis that matches the distribution of contrast seen on the preoperative barium enema; 3D images confirm dense particulate deposits consistent with extraluminal enteric (barium) material rather than a fluid abscess or urinoma (no progressive urinary contrast leak or hydronephrosis). Therefore most likely diagnosis is extraluminal enteric material.",
+          "mode": "baseline",
+          "elapsed_time": 22.1,
+          "session_id": "fewshot_baseline_20260216_100724_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "Lobulated volar tendon-sheath mass with low T2 signal and heterogeneous enhancement consistent with hemosiderin-rich, solid lesion rather than a fluid ganglion; favors giant-cell tumor of tendon sheath (localized PVNS).",
+          "mode": "baseline",
+          "elapsed_time": 17.3,
+          "session_id": "fewshot_baseline_20260216_100746_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "CT and US show a left upper\u2011quadrant, thin\u2011walled multilocular cystic mass with surrounding inflammatory changes; patient has fever and leukocytosis. Imaging and clinical picture most consistent with an infected mesenteric/omental lymphangioma (lymphangioma with inflammatory changes). Non\u2011pancreatic pseudocyst lacks pancreatitis history, enteric duplication/enteric cyst would be closely associated with bowel wall, and mesothelial cyst is less likely in this location.",
+          "mode": "baseline",
+          "elapsed_time": 16.8,
+          "session_id": "fewshot_baseline_20260216_100804_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "Teenage patient with a large multilocular adnexal mass and elevated androstenedione consistent with an androgen-secreting tumor; MRI shows cystic mass with solid nodules and histology demonstrates retiform and poorly differentiated features characteristic of a Sertoli\u2013Leydig cell tumour (SCLT).",
+          "mode": "baseline",
+          "elapsed_time": 15.1,
+          "session_id": "fewshot_baseline_20260216_100821_9"
+        }
+      ]
+    },
+    "fewshot": {
+      "correct": 1,
+      "total": 5,
+      "accuracy": 0.2,
+      "results": [
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Midline pineal-region homogenously enhancing mass causing obstructive hydrocephalus with biopsy confirmation and excellent radiotherapy response \u2014 classic for intracranial germ cell tumour (germinoma). Imaging shows central/engulfed pineal calcification and homogeneous enhancement, favoring germinoma over pineoblastoma, tectal glioma, meningioma or dermoid.",
+          "mode": "fewshot",
+          "elapsed_time": 9.2,
+          "session_id": "fewshot_fewshot_20260216_100836_4"
+        },
+        {
+          "case_index": 5,
+          "case_title": "Case number 10142",
+          "case_number": "10142",
+          "ground_truth": "C",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "Preoperative barium enema and postoperative CT show high-attenuation material in the pelvis consistent with extraluminal enteric contrast/barium leakage (extraluminal enteric material), not a simple seroma/urinoma or ascites.",
+          "mode": "fewshot",
+          "elapsed_time": 13.9,
+          "session_id": "fewshot_fewshot_20260216_100846_5"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "Volar wrist mass arising from tendon sheath, solid heterogeneous lesion with internal low-signal areas on T2/gradient and avid enhancement consistent with hemosiderin and solid tumor\u2014typical for giant cell tumor of tendon sheath (tenosynovial giant cell tumor).",
+          "mode": "fewshot",
+          "elapsed_time": 11.5,
+          "session_id": "fewshot_fewshot_20260216_100900_6"
+        },
+        {
+          "case_index": 7,
+          "case_title": "Case number 10186",
+          "case_number": "10186",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "CT and US show a unilocular mesenteric cyst with internal debris, thick enhancing wall and surrounding fat stranding consistent with an inflamed mesenteric (non-pancreatic) pseudocyst; clinical fever and leukocytosis support an infected pseudocyst.",
+          "mode": "fewshot",
+          "elapsed_time": 11.1,
+          "session_id": "fewshot_fewshot_20260216_100912_7"
+        },
+        {
+          "case_index": 9,
+          "case_title": "Case number 10653",
+          "case_number": "10653",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "13-year-old with virilizing biochemical profile (\u2191 \u03944-androstenedione), large solid-cystic adnexal mass on MRI and histology showing retiform/poorly differentiated sex-cord pattern \u2014 classic for Sertoli\u2013Leydig cell tumour.",
+          "mode": "fewshot",
+          "elapsed_time": 7.4,
+          "session_id": "fewshot_fewshot_20260216_100923_9"
+        }
+      ]
+    }
+  }
+}

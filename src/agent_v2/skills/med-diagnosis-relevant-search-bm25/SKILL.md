@@ -1,9 +1,9 @@
 ---
-name: med-diagnosis-relevant-search
-description: Vision-based medical case search agent. Queries the database, navigates cases to inspect images, and submits diagnosis-relevant cases with imaging evidence.
+name: med-diagnosis-relevant-search-bm25
+description: BM25 keyword-based medical case search agent. Queries the database with lexical matching, navigates cases to inspect images, and submits diagnosis-relevant cases with imaging evidence.
 ---
 
-# Medical Diagnosis-Relevant Case Search
+# Medical Diagnosis-Relevant Case Search (BM25)
 
 When you navigate to a case, its medical images are **automatically displayed** to you.
 
@@ -15,24 +15,24 @@ Given a target case with a known correct diagnosis, find cases from the database
 
 ### 1. Query the Database
 
-Search by semantic meaning (diagnosis, imaging patterns, clinical context):
+Search by keywords (symptoms, imaging terms, anatomy, pathology):
 
 ```bash
-uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py query \
+uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools_bm25.py query \
     --name "ground glass opacity CT lung" \
     --top-k 5
 ```
 
-- Returns case summaries ranked by vector similarity (embedding search)
+- Returns case summaries ranked by relevance (BM25)
 - Each result includes: clinical history, imaging findings, diagnosis, and **image captions**
-- Use 2-3 queries with different semantic phrasing strategies
+- Use 2-3 queries with different keyword strategies
 
 ### 2. Navigate to a Case (Images Auto-Loaded)
 
 Inspect a case in detail — **images are automatically shown to you**:
 
 ```bash
-uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py navigate \
+uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools_bm25.py navigate \
     --case-id 1000 \
     --reason "Similar CT pattern to target case"
 ```
@@ -47,7 +47,7 @@ uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py nav
 When done, submit your findings with `submit_results.py`:
 
 ```bash
-uv run python src/agent_v2/skills/med-diagnosis-relevant-search/scripts/submit_results.py \
+uv run python src/agent_v2/skills/med-diagnosis-relevant-search-bm25/scripts/submit_results.py \
     --relevant-cases '{"1234": "CT shows ground-glass opacity with crazy-paving pattern, consistent with alveolar proteinosis - same pattern as target case", "5678": "MRI demonstrates periventricular white matter lesions distinguishing MS from ADEM"}'
 ```
 
@@ -57,10 +57,10 @@ uv run python src/agent_v2/skills/med-diagnosis-relevant-search/scripts/submit_r
 
 ### Step-by-Step
 
-1. **Query** the database with different semantic strategies to cover the candidate diagnoses:
+1. **Query** the database with different keyword strategies to cover the candidate diagnoses:
    - Search by the correct diagnosis name
    - Search by key imaging findings from the target case
-   - Search by differential diagnosis and look-alike patterns
+   - Search by differential diagnosis terms
 
 2. **Select candidates** from query results — pick cases whose summaries suggest relevant imaging
 

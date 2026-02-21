@@ -16,3 +16,5 @@ src/agent_v2/sessions/
 
 # Downloaded image cache
 data/image_cache/
+
+EURORAD/

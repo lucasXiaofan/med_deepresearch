@@ -25,7 +25,7 @@ All research tools are in `src/agent_v2/skills/med-deepresearch/scripts/research
 
 **IMPORTANT SYNTAX**: Always use the required flags!
 
-**Query Command** - Search for similar cases:
+**Query Command** - Search for semantically similar cases:
 ```bash
 uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py query \
     --name "search terms" \
@@ -34,8 +34,15 @@ uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py que
 - **Required**: `--name "search terms"` or `-n "search terms"`
 - **Optional**: `--top-k N` (default: 5)
 - Use medical terminology (symptoms, diagnoses, procedures)
-- Returns ranked list of relevant cases
+- Returns ranked list by vector similarity
 - Each result shows: case number, similarity score, brief summary
+
+BM25 fallback (keyword lexical matching):
+```bash
+uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools_bm25.py query \
+    --name "search terms" \
+    --top-k 5
+```
 
 **Navigate Command** - Get detailed case information:
 ```bash
