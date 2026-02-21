@@ -40,7 +40,7 @@ uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py nav
 - Shows full case details (history, findings, diagnosis, related cases)
 - **Medical images for the case are automatically injected into your context**
 - You can directly see and analyze the images
-- **LIMIT: Navigate at most 10 cases total** — choose wisely
+- **LIMIT: Navigate at most 12 cases total** — choose wisely
 
 ### 3. Submit Results
 

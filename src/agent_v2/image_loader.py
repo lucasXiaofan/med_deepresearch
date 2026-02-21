@@ -164,13 +164,21 @@ class ImageLoader:
     """
 
     DEFAULT_CACHE_DIR = Path(__file__).parent.parent.parent / "data" / "image_cache"
+    DEFAULT_LOCAL_INDEX_CSV = Path(__file__).parent.parent.parent / "data" / "image_local_index.csv"
 
-    def __init__(self, csv_path: str | Path, cache_dir: Optional[str | Path] = None):
+    def __init__(
+        self,
+        csv_path: str | Path,
+        cache_dir: Optional[str | Path] = None,
+        local_index_csv: Optional[str | Path] = None,
+    ):
         self.csv_path = Path(csv_path)
         self.cache_dir = Path(cache_dir) if cache_dir else self.DEFAULT_CACHE_DIR
         self._index: Dict[str, List[Dict[str, str]]] = {}
+        self._local_path_index: Dict[tuple[str, str], Path] = {}
         self._fetcher: Optional[BrowserFetcher] = None
         self._load()
+        self._load_local_index(local_index_csv)
 
     def _extract_case_id(self, plink: str) -> Optional[str]:
         """Extract case ID from eurorad URL."""
@@ -212,8 +220,41 @@ class ImageLoader:
     def has_images(self, case_id: str | int) -> bool:
         return str(case_id) in self._index
 
+    def _debug_case_images(self, case_id: str, images: List[Dict[str, str]]) -> None:
+        """Print debug info for case image loading."""
+        img_ids = [img.get("img_id", "") for img in images if img.get("img_id")]
+        print(f"[ImageLoader] Case {case_id}: {len(images)} image(s) loaded. img_id(s): {img_ids}")
+
+    def _load_local_index(self, local_index_csv: Optional[str | Path]) -> None:
+        """Load optional local image index CSV (case_id + img_id -> local_path)."""
+        csv_path = Path(local_index_csv) if local_index_csv else self.DEFAULT_LOCAL_INDEX_CSV
+        if not csv_path.exists():
+            return
+
+        loaded = 0
+        with open(csv_path, "r", encoding="utf-8", errors="replace") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                case_id = str(row.get("case_id", "")).strip()
+                img_id = str(row.get("img_id", "")).strip()
+                local_path = str(row.get("local_path", "")).strip()
+                if not case_id or not img_id or not local_path:
+                    continue
+                path = Path(local_path)
+                if not path.exists():
+                    continue
+                self._local_path_index[(case_id, img_id)] = path
+                loaded += 1
+
+        if loaded:
+            print(f"[ImageLoader] Loaded {loaded} local image mappings from {csv_path}")
+
     def _get_cached_path(self, case_id: str, img_id: str) -> Optional[Path]:
         """Find cached image file."""
+        mapped = self._local_path_index.get((case_id, img_id))
+        if mapped and mapped.exists():
+            return mapped
+
         case_dir = self.cache_dir / case_id
         if not case_dir.exists():
             return None
@@ -292,7 +333,9 @@ class ImageLoader:
         case_id_str = str(case_id)
         images = self.get_images(case_id_str)
         if not images:
+            print(f"[ImageLoader] Case {case_id_str}: 0 image(s) loaded. img_id(s): []")
             return []
+        self._debug_case_images(case_id_str, images)
 
         blocks: List[Dict[str, Any]] = []
         for i, img in enumerate(images, 1):
@@ -317,11 +360,14 @@ class ImageLoader:
 
     def format_as_text(self, case_id: str | int) -> str:
         """Format case images as text description (for non-vision models)."""
-        images = self.get_images(case_id)
+        case_id_str = str(case_id)
+        images = self.get_images(case_id_str)
         if not images:
+            print(f"[ImageLoader] Case {case_id_str}: 0 image(s) loaded. img_id(s): []")
             return ""
+        self._debug_case_images(case_id_str, images)
 
-        lines = [f"Case {case_id} has {len(images)} image(s):"]
+        lines = [f"Case {case_id_str} has {len(images)} image(s):"]
         for i, img in enumerate(images, 1):
             caption = img["caption"] or "No caption"
             lines.append(f"  {i}. {caption} (URL: {img['url']})")

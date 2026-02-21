@@ -156,7 +156,8 @@ class Agent:
             self._setup_client_from_config(model_cfg, model_override=model)
         elif model:
             self.model = model
-            self.supports_vision = False  # explicit model, unknown vision support
+            # Infer vision capability from configured model IDs when model_type is omitted.
+            self.supports_vision = self._infer_supports_vision(self.model)
             self._setup_client()
         elif model_type:
             model_cfg = get_model_config(self.config, model_type)
@@ -200,6 +201,14 @@ class Agent:
                 base_url=self.DEFAULT_BASE_URL
             )
             self.model_id = self.model
+
+    def _infer_supports_vision(self, model_id: str) -> bool:
+        """Infer vision support for an explicit model ID using configured model profiles."""
+        configured_models = self.config.get("models", {})
+        for cfg in configured_models.values():
+            if cfg.get("model_id") == model_id:
+                return bool(cfg.get("supports_vision", False))
+        return False
 
     def _setup_client_from_config(self, model_cfg: Dict[str, Any], model_override: Optional[str] = None):
         """Setup the OpenAI client from config model entry."""
@@ -337,8 +346,13 @@ class Agent:
 
         Detects patterns like:
             research_tools.py navigate --case-id 1234
+            research_tools.py navigate -c 1234
         """
-        match = re.search(r'navigate\s+--case-id\s+(\d+)', command)
+        match = re.search(
+            r'\bnavigate\b.*?(?:--case-id|-c)(?:\s+|=)(\d+)\b',
+            command,
+            re.IGNORECASE | re.DOTALL
+        )
         return match.group(1) if match else None
 
     def _inject_case_images(self, case_id: str, messages: List[Dict]) -> bool:
