@@ -103,7 +103,7 @@ def focus_input_box(pyautogui, x: int | None, y: int | None, pause_seconds: floa
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run forward-then-backward GUI automation for multiple cases")
     parser.add_argument("--case-ids", nargs="+", help="Case ids, e.g. 19172 19173 (overrides auto-pick)")
-    parser.add_argument("--k", type=int, default=5, help="Auto-pick this many unprocessed case ids")
+    parser.add_argument("--k", type=int, default=15, help="Auto-pick this many unprocessed case ids")
     parser.add_argument(
         "--source-csv",
         type=Path,

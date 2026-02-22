@@ -1,0 +1,705 @@
+{
+  "timestamp": "20260222_140646",
+  "cases_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/medd_selected_50.csv",
+  "relevant_csv": "src/agent_v2/results/med-diagnosis-relevant-search-filtered-high.csv",
+  "database_csv": "/Users/xiaofanlu/Documents/github_repos/med_deepresearch/deepsearch_complete.csv",
+  "model": "x-ai/grok-4.1-fast",
+  "model_type": "vision",
+  "num_cases": 16,
+  "modes": {
+    "baseline": {
+      "correct": 1,
+      "total": 16,
+      "accuracy": 0.0625,
+      "results": [
+        {
+          "case_index": 3,
+          "case_title": "Case number 19078",
+          "case_number": "19078",
+          "ground_truth": "C",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Painful palpable mass with acute onset in premenopausal woman, mammo asymmetry upper outer quadrant, US hypoechoic area, contrast mammo non-mass enhancement 7cm, resolves completely after conservative treatment at 1-year follow-up. Consistent with granulomatous mastitis, an inflammatory condition mimicking malignancy, common in this demographic, responds to conservative management (antibiotics/steroids). Carcinoma unlikely to resolve; no trauma history for D; lymphocytic mastopathy not typically acute painful/resolving; PAN rare.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 11.8,
+          "session_id": "fewshot_baseline_20260222_135832_3",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"B\", \"reasoning\": \"Painful palpable mass with acute onset in premenopausal woman, mammo asymmetry upper outer quadrant, US hypoechoic area, contrast mammo non-mass enhancement 7cm, resolves completely after conservative treatment at 1-year follow-up. Consistent with granulomatous mastitis, an inflammatory condition mimicking malignancy, common in this demographic, responds to conservative management (antibiotics/steroids). Carcinoma unlikely to resolve; no trauma history for D; lympho"
+        },
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Pineal region mass causing obstructive hydrocephalus (dilated lateral and third ventricles, tectal compression), relieved by ETV. Biopsy confirmed diagnosis, no further surgery due to location, radical RT with good response (post-RT MRI shows reduced ventricular size, smaller lesion). Classic for germinoma (intracranial germ cell tumor), radiosensitive, occurs in young adults, pineal location.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 13.6,
+          "session_id": "fewshot_baseline_20260222_135832_4",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"D\", \"reasoning\": \"Pineal region mass causing obstructive hydrocephalus (dilated lateral and third ventricles, tectal compression), relieved by ETV. Biopsy confirmed diagnosis, no further surgery due to location, radical RT with good response (post-RT MRI shows reduced ventricular size, smaller lesion). Classic for germinoma (intracranial germ cell tumor), radiosensitive, occurs in young adults, pineal location.\", \"timestamp\": \"2026-02-22T13:58:52.075065\"}"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "C",
+          "correct": false,
+          "reasoning": "",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 20.5,
+          "session_id": "fewshot_baseline_20260222_135832_6",
+          "attempts": 1,
+          "raw_output_preview": "uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py submit --answer C --reasoning \"Solid lobulated volar wrist mass intimately related to flexor tendon sheath, low-intermediate signal on T1/T2 MRI sequences, heterogeneous enhancement post-contrast. Classic for giant cell tumor of tendon sheath (GCTTS), the most common solid tumor in this location. Not cystic like ganglion (high T2). Fibroma less common with similar but typically more fibrous low signal without hemosideri"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Neurogenic tumour best fits the presentation of a growing mass causing posterior tibial nerve compression symptoms in the tarsal tunnel region. Imaging shows a soft tissue mass posterior medial ankle consistent with schwannoma or neurofibroma along the nerve course, separate from or adjacent to the known osteochondroma. Other options like sarcomas are less likely to specifically compress the nerve without bone destruction.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 27.7,
+          "session_id": "fewshot_baseline_20260222_135832_12",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"D\", \"reasoning\": \"Neurogenic tumour best fits the presentation of a growing mass causing posterior tibial nerve compression symptoms in the tarsal tunnel region. Imaging shows a soft tissue mass posterior medial ankle consistent with schwannoma or neurofibroma along the nerve course, separate from or adjacent to the known osteochondroma. Other options like sarcomas are less likely to specifically compress the nerve without bone destruction.\", \"timestamp\": \"2026-02-22T13:59:06.173261\""
+        },
+        {
+          "case_index": 16,
+          "case_title": "Case number 11692",
+          "case_number": "11692",
+          "ground_truth": "B",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "Clinical presentation mimics appendicitis. US shows blind-ending fluid-filled structure in RLQ. CT demonstrates sac-like outpouching from distal ileum (not cecum), with surrounding inflammation. Specimen photograph shows inflamed diverticulum with thin vascular stalk, characteristic of Meckel's diverticulitis. Other options do not match imaging or pathology: epiploic appendagitis lacks mucosal surface, omental infarction no bowel attachment, duplication cyst not inflamed.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 18.3,
+          "session_id": "fewshot_baseline_20260222_135832_16",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"A\", \"reasoning\": \"Clinical presentation mimics appendicitis. US shows blind-ending fluid-filled structure in RLQ. CT demonstrates sac-like outpouching from distal ileum (not cecum), with surrounding inflammation. Specimen photograph shows inflamed diverticulum with thin vascular stalk, characteristic of Meckel's diverticulitis. Other options do not match imaging or pathology: epiploic appendagitis lacks mucosal surface, omental infarction no bowel attachment, duplication cyst not inf"
+        },
+        {
+          "case_index": 17,
+          "case_title": "Case number 11845",
+          "case_number": "11845",
+          "ground_truth": "B",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "test",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 34.1,
+          "session_id": "fewshot_baseline_20260222_135850_17",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"E\", \"reasoning\": \"test\", \"timestamp\": \"2026-02-22T13:59:25.479163\"}"
+        },
+        {
+          "case_index": 20,
+          "case_title": "Case number 12691",
+          "case_number": "12691",
+          "ground_truth": "C",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "Chronic recurrent heel pain with no sensory loss. Imaging shows atrophy of abductor digiti minimi quinti muscle (Images 1-2: normal vs pathologic ADM), sites of entrapment consistent with Baxter's neuropathy (Images 3-5), and calcaneal spur formation associated with plantar fasciitis (Images 6-7). This indicates abductor digiti minimi atrophy due to chronic entrapment of inferior calcaneal nerve (Baxter's nerve) in setting of plantar fasciitis.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 12.7,
+          "session_id": "fewshot_baseline_20260222_135852_20",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"E\", \"reasoning\": \"Chronic recurrent heel pain with no sensory loss. Imaging shows atrophy of abductor digiti minimi quinti muscle (Images 1-2: normal vs pathologic ADM), sites of entrapment consistent with Baxter's neuropathy (Images 3-5), and calcaneal spur formation associated with plantar fasciitis (Images 6-7). This indicates abductor digiti minimi atrophy due to chronic entrapment of inferior calcaneal nerve (Baxter's nerve) in setting of plantar fasciitis.\", \"timestamp\": \"2026-"
+        },
+        {
+          "case_index": 24,
+          "case_title": "Case number 13122",
+          "case_number": "13122",
+          "ground_truth": "A",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "Unenhanced MRI shows tubular, fluid-filled (T2 hyperintense) convoluted structures in the adnexa, consistent with bilateral hydrosalpinx. Thin walls, no thick enhancing rims (no contrast). No solid components for neoplasm (D). No fever or acute signs against abscess (A, C). Chronic presentation with pelvic pain/tenderness fits chronic PID causing hydrosalpinx (E) over TB (B), which often has more granulomatous features or calcifications not seen. History of myomectomy may contribute to adhesions.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 23.3,
+          "session_id": "fewshot_baseline_20260222_135856_24",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"E\", \"reasoning\": \"Unenhanced MRI shows tubular, fluid-filled (T2 hyperintense) convoluted structures in the adnexa, consistent with bilateral hydrosalpinx. Thin walls, no thick enhancing rims (no contrast). No solid components for neoplasm (D). No fever or acute signs against abscess (A, C). Chronic presentation with pelvic pain/tenderness fits chronic PID causing hydrosalpinx (E) over TB (B), which often has more granulomatous features or calcifications not seen. History of myomecto"
+        },
+        {
+          "case_index": 25,
+          "case_title": "Case number 13497",
+          "case_number": "13497",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "Patient presents with cardiogenic shock and chest pain post-MI likely complication. Hyperechoic pericardial effusion on echo indicates hemopericardium. CT shows pericardial effusion (Image 1), contrast extravasation from LV wall (Image 2 arrows), consistent with ventricular free wall rupture. Other options do not fit: no septal defect (A), no flap (D), no MR indication (E), aneurysm chronic (C).",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 14.8,
+          "session_id": "fewshot_baseline_20260222_135859_25",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"B\", \"reasoning\": \"Patient presents with cardiogenic shock and chest pain post-MI likely complication. Hyperechoic pericardial effusion on echo indicates hemopericardium. CT shows pericardial effusion (Image 1), contrast extravasation from LV wall (Image 2 arrows), consistent with ventricular free wall rupture. Other options do not fit: no septal defect (A), no flap (D), no MR indication (E), aneurysm chronic (C).\", \"timestamp\": \"2026-02-22T13:59:18.796465\"}"
+        },
+        {
+          "case_index": 26,
+          "case_title": "Case number 13534",
+          "case_number": "13534",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "The clinical history describes a sudden nodular axillary tumefaction in a postpartum woman without inflammatory signs. US images show multiple tubular/ductal structures with color Doppler flow, consistent with engorged lactating glandular tissue. Photograph of left axilla reveals swelling with a central nipple-like structure, and right axilla is normal. Left infra-mammary photo shows supernumerary nipple. These findings indicate lactating accessory axillary breast tissue with supernumerary nipple, not abscess (no symptoms/debris), not lymphadenopathy (not nodal morphology), and more specific than B.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 11.8,
+          "session_id": "fewshot_baseline_20260222_135906_26",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"C\", \"reasoning\": \"The clinical history describes a sudden nodular axillary tumefaction in a postpartum woman without inflammatory signs. US images show multiple tubular/ductal structures with color Doppler flow, consistent with engorged lactating glandular tissue. Photograph of left axilla reveals swelling with a central nipple-like structure, and right axilla is normal. Left infra-mammary photo shows supernumerary nipple. These findings indicate lactating accessory axillary breast t"
+        },
+        {
+          "case_index": 37,
+          "case_title": "Case number 16686",
+          "case_number": "16686",
+          "ground_truth": "C",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Duodenal perforation confirmed by wall thickening, discontinuity, and oral contrast extravasation (Images 1,2,6). Paravertebral abscess with extension to intervertebral disc spaces and anterior epidural space (Images 3,4,5). Communication between perforation and collection. Blood culture positive for Streptococcus anginosus, a pyogenic bacterium associated with GI sources and abscesses. Previous L2-L3 vertebroplasty noted (Image 7) but not the primary source. Peri-pancreatic adenopathies and pleural effusions consistent with sepsis. Acute presentation excludes TB/fungal. Diagnosis: pyogenic spondylodiscitis due to S. anginosus from intestinal perforation.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 24.6,
+          "session_id": "fewshot_baseline_20260222_135906_37",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"D\", \"reasoning\": \"Duodenal perforation confirmed by wall thickening, discontinuity, and oral contrast extravasation (Images 1,2,6). Paravertebral abscess with extension to intervertebral disc spaces and anterior epidural space (Images 3,4,5). Communication between perforation and collection. Blood culture positive for Streptococcus anginosus, a pyogenic bacterium associated with GI sources and abscesses. Previous L2-L3 vertebroplasty noted (Image 7) but not the primary source. Peri-p"
+        },
+        {
+          "case_index": 39,
+          "case_title": "Case number 16760",
+          "case_number": "16760",
+          "ground_truth": "B",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "test",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 6.9,
+          "session_id": "fewshot_baseline_20260222_135918_39",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"A\", \"reasoning\": \"test\", \"timestamp\": \"2026-02-22T13:59:27.053183\"}"
+        },
+        {
+          "case_index": 43,
+          "case_title": "Case number 9232",
+          "case_number": "9232",
+          "ground_truth": "E",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "US with color Doppler shows hypervascular lesion with high flow (mixed red/blue signals indicating turbulent flow). Histology reveals disorganized skeletal muscle, adipose tissue, and vascular channels containing RBCs, consistent with intramuscular hemangioma, a high-flow vascular malformation. MR shows intramuscular mass in right thigh. Bone changes on X-ray/CT likely reactive. Clinical acute pain post-effort fits. Low-flow (B,E) contradicted by Doppler; sarcomas (C,D) not matching histology.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 14.5,
+          "session_id": "fewshot_baseline_20260222_135920_43",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"A\", \"reasoning\": \"US with color Doppler shows hypervascular lesion with high flow (mixed red/blue signals indicating turbulent flow). Histology reveals disorganized skeletal muscle, adipose tissue, and vascular channels containing RBCs, consistent with intramuscular hemangioma, a high-flow vascular malformation. MR shows intramuscular mass in right thigh. Bone changes on X-ray/CT likely reactive. Clinical acute pain post-effort fits. Low-flow (B,E) contradicted by Doppler; sarcomas ("
+        },
+        {
+          "case_index": 45,
+          "case_title": "Case number 9299",
+          "case_number": "9299",
+          "ground_truth": "C",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "HIV patient with CD4 250, recurrent bloody diarrhea: classic for CMV colitis, an opportunistic infection. IBD less likely in this context. Imaging shows colonic involvement improving post-treatment.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 12.2,
+          "session_id": "fewshot_baseline_20260222_135921_45",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"A\", \"reasoning\": \"HIV patient with CD4 250, recurrent bloody diarrhea: classic for CMV colitis, an opportunistic infection. IBD less likely in this context. Imaging shows colonic involvement improving post-treatment.\", \"timestamp\": \"2026-02-22T13:59:35.644024\"}"
+        },
+        {
+          "case_index": 46,
+          "case_title": "Case number 9435",
+          "case_number": "9435",
+          "ground_truth": "C",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "11-year-old farm boy with subacute fever, hip/buttock pain, non-weight bearing, elevated CRP. Imaging shows abnormality in right sacral ala/ilium with bone marrow signal change and adjacent soft tissue involvement consistent with osteomyelitis/sacroiliitis. Farm exposure strongly suggests Brucellosis, which commonly causes unilateral sacroiliitis/osteomyelitis with this presentation. Pyogenic less specific, though possible; sickle cell unlikely without history.",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 24.6,
+          "session_id": "fewshot_baseline_20260222_135925_46",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"A\", \"reasoning\": \"11-year-old farm boy with subacute fever, hip/buttock pain, non-weight bearing, elevated CRP. Imaging shows abnormality in right sacral ala/ilium with bone marrow signal change and adjacent soft tissue involvement consistent with osteomyelitis/sacroiliitis. Farm exposure strongly suggests Brucellosis, which commonly causes unilateral sacroiliitis/osteomyelitis with this presentation. Pyogenic less specific, though possible; sickle cell unlikely without history.\", \"t"
+        },
+        {
+          "case_index": 49,
+          "case_title": "Case number 9905",
+          "case_number": "9905",
+          "ground_truth": "B",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "",
+          "mode": "baseline",
+          "relevant_cases_loaded": [],
+          "elapsed_time": 310.9,
+          "session_id": "fewshot_baseline_20260222_135927_49",
+          "attempts": 1,
+          "raw_output_preview": "**Final Answer**\n\n**Most likely diagnosis: E. Metastatic lesion of follicular carcinoma of the thyroid gland**\n\n### Summary of analysis:\n- **Clinical history**: 66-year-old woman with history of thyroidectomy for follicular thyroid carcinoma, presenting with a painless, gradually enlarging right cheek mass over 2 months. No skin changes or neck nodes.\n- **Imaging findings**: CT (images 1-4) shows a well-defined, expansile unilocular cystic lesion in the right maxilla (alveolar process/body), wit"
+        }
+      ]
+    },
+    "fewshot": {
+      "correct": 6,
+      "total": 16,
+      "accuracy": 0.375,
+      "results": [
+        {
+          "case_index": 3,
+          "case_title": "Case number 19078",
+          "case_number": "19078",
+          "ground_truth": "C",
+          "agent_answer": "C",
+          "correct": true,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "2185",
+              "reason": "Mammography demonstrates focal parenchymal condensations in the upper outer quadrant (arrows in Image 1) corresponding to palpable lump, matching the target case UOQ asymmetry; ultrasound shows hypoechoic masses with posterior acoustic shadowing (Image 2), similar to target hypoechoic palpable mass with indistinct margins and no vascularity, confirming typical imaging features of diabetic mastopathy (synonymous with lymphocytic mastopathy)"
+            },
+            {
+              "case_id": "8545",
+              "reason": "Focal asymmetry of density in upper left quadrant on mediolateral oblique mammogram (Image 1), akin to target asymmetry; ultrasound reveals ill-defined markedly hypoechoic area with slight posterior acoustic attenuation (Image 3) underlying palpable mass, directly comparable to target hypoechoic indistinct mass; normal MRI with no enhancement supports benign etiology distinguishing from carcinoma"
+            },
+            {
+              "case_id": "14178",
+              "reason": "Mammography shows focal asymmetric densities in upper-outer quadrant (Image 1); ultrasound depicts areas of strong acoustic shadowing without definable masses (Image 3), resembling target large hypoechoic indistinct area; follow-up stability reinforces concordance with benign lymphocytic mastopathy"
+            },
+            {
+              "case_id": "12236",
+              "reason": "Mammography exhibits moderate density nodule with ill-defined contours upper outer quadrant (Images 1-2); US confirms hypoechoic nodule with indistinct margins 3cm (Image 3), matching target imaging; follow-up mammogram shows resolution (Image 5), consistent with target resolution post-treatment"
+            }
+          ],
+          "elapsed_time": 29.0,
+          "session_id": "fewshot_fewshot_20260222_140439_3",
+          "attempts": 1,
+          "raw_output_preview": "uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py submit --answer C --reasoning \"Imaging findings match reference cases of lymphocytic mastopathy: focal asymmetry in UOQ on mammography, ill-defined hypoechoic area on US corresponding to palpable mass. Resolution on 1-year follow-up mammogram consistent with case 12236. Despite lack of diabetes history and pain, patterns align best with C over others; carcinoma unlikely due to resolution, no trauma history for D, GM typ"
+        },
+        {
+          "case_index": 4,
+          "case_title": "Case number 10128",
+          "case_number": "10128",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "1828",
+              "reason": "Sagittal and axial post-contrast MR show a lobulated, heterogeneously enhancing pineal mass with subsequent multiple nodular leptomeningeal and ependymal enhancing deposits (\"sugar-icing\" pattern) \u2014 demonstrates typical CSF dissemination of pineoblastoma."
+            },
+            {
+              "case_id": "6806",
+              "reason": "Sagittal T1 and post-contrast images show an irregular, heterogeneously enhancing pineal mass that invades the tectum and extends through the aqueduct causing obstructive hydrocephalus \u2014 illustrates aggressive, infiltrative behavior of pineoblastoma."
+            }
+          ],
+          "elapsed_time": 42.9,
+          "session_id": "fewshot_fewshot_20260222_140439_4",
+          "attempts": 1,
+          "raw_output_preview": "uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py submit --answer E --reasoning \"Pineal region mass causing obstructive hydrocephalus, matching imaging patterns in reference pineoblastoma cases (pineal mass, heterogeneous appearance, hydrocephalus). Biopsy confirmed diagnosis, treated with ETV and radical RT with good response. References demonstrate typical features of pineoblastoma: lobulated pineal mass, aggressive behavior, leptomeningeal spread potential. Age atyp"
+        },
+        {
+          "case_index": 6,
+          "case_title": "Case number 10146",
+          "case_number": "10146",
+          "ground_truth": "A",
+          "agent_answer": "A",
+          "correct": true,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "8890",
+              "reason": "MRI shows a well-defined tenosynovial mass isointense to muscle on T1 with no susceptibility artifacts on GRE (absence of hemosiderin) and collagenous hypocellular histology \u2014 imaging pattern supports fibroma of the tendon sheath (FTS)"
+            },
+            {
+              "case_id": "1066",
+              "reason": "GCTTS case with low-intermediate signal on T1 and T2 attributed to hemosiderin and strong post-contrast enhancement \u2014 demonstrates imaging features (hemosiderin-related low signal and marked enhancement) that help differentiate GCTTS from FTS"
+            },
+            {
+              "case_id": "18540",
+              "reason": "Localized tenosynovial giant cell tumour showing T1 hypointense mass, areas of signal drop on susceptibility/FFE (blooming from hemosiderin) and prominent enhancement \u2014 useful to exclude FTS when susceptibility artifacts are present"
+            }
+          ],
+          "elapsed_time": 82.4,
+          "session_id": "fewshot_fewshot_20260222_140439_6",
+          "attempts": 1,
+          "raw_output_preview": "uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py submit --answer A --reasoning \"Mass at volar wrist, MRI shows well-defined lesion isointense on T1 similar to muscle, hyperintense heterogeneous on T2, no evidence of susceptibility artifacts/hemosiderin (distinguishing from GCTTS), enhancement present, matches FTS pattern in reference case 8890 (knee but similar imaging: T1 iso-muscle, no GRE artifacts, collagenous). GCTTS typically shows low T2 signal and blooming due"
+        },
+        {
+          "case_index": 12,
+          "case_title": "Case number 13960",
+          "case_number": "13960",
+          "ground_truth": "E",
+          "agent_answer": "E",
+          "correct": true,
+          "reasoning": "Imaging features match reference cases for extraskeletal Ewing sarcoma: lobulated hypoechoic hypervascular mass on US (Image 2), T1 hypointense (Image 3), T2 hyperintense lobulated (Image 5), likely heterogeneous enhancement (Image 6). Clinical nerve symptoms similar to ref 11296. Known osteochondroma is separate; growing soft tissue mass consistent with malignant small round cell tumor rather than benign neurogenic (as per ref reasoning). Age atypical but possible.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11296",
+              "reason": "US shows lobulated hypoechoic soft-tissue mass with marked hypervascularity on power Doppler; MRI T1 hypointense/T2 hyperintense lesion with diffusion restriction and heterogeneous centripetal contrast enhancement (necrotic areas) and PET-CT hypermetabolism \u2014 imaging pattern strongly supports malignant small-round-cell tumour (extraskeletal Ewing sarcoma) rather than benign neurogenic lesion."
+            },
+            {
+              "case_id": "8549",
+              "reason": "Contrast CT shows an extrapulmonary paravertebral heterogeneously enhancing soft-tissue mass with no vertebral bone invasion \u2014 demonstrates extraskeletal presentation of Ewing sarcoma in soft tissues and differentiates from primary bone Ewing or benign nerve sheath tumours that typically show nerve-related morphology."
+            }
+          ],
+          "elapsed_time": 34.5,
+          "session_id": "fewshot_fewshot_20260222_140439_12",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"E\", \"reasoning\": \"Imaging features match reference cases for extraskeletal Ewing sarcoma: lobulated hypoechoic hypervascular mass on US (Image 2), T1 hypointense (Image 3), T2 hyperintense lobulated (Image 5), likely heterogeneous enhancement (Image 6). Clinical nerve symptoms similar to ref 11296. Known osteochondroma is separate; growing soft tissue mass consistent with malignant small round cell tumor rather than benign neurogenic (as per ref reasoning). Age atypical but possible."
+        },
+        {
+          "case_index": 16,
+          "case_title": "Case number 11692",
+          "case_number": "11692",
+          "ground_truth": "B",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "Options A and B are identical (Meckel's diverticulitis). Clinical presentation mimics appendicitis. CT images show a focal fat-density lesion with central hyperdensity and rim enhancement in RLQ, characteristic of epiploic appendagitis (hyperdense dot sign). US shows similar. Specimen photo confirms resected inflamed fatty structure consistent with torsed epiploic appendage. Reference cases are Meckel's but this matches epiploic appendagitis pattern: focal RLQ pain, no leukocytosis, characteristic imaging.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "17121",
+              "reason": "CT shows a thick-walled blind-ending tubular structure arising from the distal ileum separate from a normal appendix, with surrounding fat stranding and mesenteric lymphadenopathy \u2014 classic imaging for Meckel's diverticulitis and distinguishes it from appendicitis."
+            },
+            {
+              "case_id": "11923",
+              "reason": "Contrast-enhanced CT demonstrates a localized fluid collection adjacent to thickened small bowel and reactive mesenteric changes consistent with an inflamed Meckel's diverticulum (surgically confirmed). The focal collection and adjacent bowel wall thickening support the diagnosis."
+            },
+            {
+              "case_id": "14495",
+              "reason": "CT shows a rounded fluid collection with air-fluid level and faecal material near the ileum with minimal fat stranding; differential included ruptured appendix vs Meckel's, with surgery confirming strangulated Meckel's diverticulitis \u2014 demonstrates how Meckel can mimic appendiceal abscess on CT."
+            }
+          ],
+          "elapsed_time": 8.3,
+          "session_id": "fewshot_fewshot_20260222_140439_16",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"D\", \"reasoning\": \"Options A and B are identical (Meckel's diverticulitis). Clinical presentation mimics appendicitis. CT images show a focal fat-density lesion with central hyperdensity and rim enhancement in RLQ, characteristic of epiploic appendagitis (hyperdense dot sign). US shows similar. Specimen photo confirms resected inflamed fatty structure consistent with torsed epiploic appendage. Reference cases are Meckel's but this matches epiploic appendagitis pattern: focal RLQ pain,"
+        },
+        {
+          "case_index": 17,
+          "case_title": "Case number 11845",
+          "case_number": "11845",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "9848",
+              "reason": "Large lumbosacral intradural extramedullary mass isointense on T1, hyperintense on T2, with intense post-contrast enhancement and T2* hypointense foci (intratumoral haemorrhage) plus vertebral scalloping and craniospinal dissemination \u2014 imaging features of myxopapillary ependymoma that support the diagnosis in the target case."
+            },
+            {
+              "case_id": "16402",
+              "reason": "Well-defined tubular/sausage-shaped long-segment intradural extramedullary lesion within thecal sac that is T2 hyperintense and shows intense homogeneous enhancement, compressing cauda equina \u2014 matches the sausage-shaped enhancing L2-L3 lesion in the target and supports ependymoma."
+            }
+          ],
+          "elapsed_time": 31.3,
+          "session_id": "fewshot_fewshot_20260222_140453_17",
+          "attempts": 1,
+          "raw_output_preview": "uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py submit --answer B --reasoning \"The reference cases 9848 and 16402 describe imaging features highly matching the target case's likely appearance: sausage-shaped intradural extramedullary enhancing mass at lumbosacral level compressing cauda equina, typical for myxopapillary ependymoma. Sagittal and axial images suggest long-segment lesion in lumbar thecal sac. Among options, B specifies confirmation by pathology, fitting"
+        },
+        {
+          "case_index": 20,
+          "case_title": "Case number 12691",
+          "case_number": "12691",
+          "ground_truth": "C",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "18473",
+              "reason": "Shoulder MRI shows focal suprascapular nerve enlargement and T2 hyperintensity at the suprascapular notch with acute muscle oedema and chronic fatty atrophy of supraspinatus/infraspinatus \u2014 demonstrates the MRI pattern of denervation (acute STIR/T2 hyperintensity followed by chronic T1 fatty replacement) analogous to selective abductor digiti minimi fatty replacement in Baxter neuropathy."
+            },
+            {
+              "case_id": "19235",
+              "reason": "Pelvic MRI demonstrates obturator nerve thickening and T2 hyperintensity where the nerve is encased by iliac adenopathy, with oedema in obturator-innervated muscles and secondary mild fatty atrophy \u2014 an example of peripheral nerve entrapment producing selective muscle denervation and fatty replacement, matching the mechanism in Baxter neuropathy."
+            },
+            {
+              "case_id": "9784",
+              "reason": "MR shows increased T2/STIR signal (muscle oedema) and T1 hyperintense fatty infiltration/atrophy of muscles supplied by the anterior interosseous nerve \u2014 a clear example of focal motor denervation causing selective fatty muscle replacement, supporting interpretation of abductor digiti minimi fatty change as neurogenic."
+            }
+          ],
+          "elapsed_time": 19.6,
+          "session_id": "fewshot_fewshot_20260222_140514_20",
+          "attempts": 1,
+          "raw_output_preview": "uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py submit --answer E --reasoning \"Chronic recurrent heel pain without sensory loss, imaging shows selective fatty atrophy of abductor digiti minimi (ADM) muscle (Image 1 pathologic appearance, Image 2 star on ADM), consistent with chronic denervation from inferior calcaneal nerve (Baxter's nerve) entrapment, often associated with plantar fasciitis/calcaneal spur (Images 6-7). Matches reference cases of nerve entrapment cau"
+        },
+        {
+          "case_index": 24,
+          "case_title": "Case number 13122",
+          "case_number": "13122",
+          "ground_truth": "A",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "No fever or acute inflammatory signs; postmenopausal G0 patient with pelvic pain. Imaging shows bilateral tubular cystic adnexal structures consistent with hydrosalpinx (dilated fallopian tubes with thin walls, simple fluid on unenhanced MRI/TVUS), likely sequela of chronic pelvic inflammatory disease. Lacks features of acute TOA (thick walls, enhancement, debris, hypervascularity, systemic symptoms as in references); no bowel pathology for C; no solid/nodular components for neoplasm D; TB unlikely without risk factors or specific features like calcifications.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "15389",
+              "reason": "TVUS and contrast-enhanced CT show tubular multiloculated adnexal collections with fluid/fluid layering, thick hypervascular septa and thick-enhancing walls \u2014 imaging classic for pyosalpinx/tubo-ovarian complex (TOA)."
+            },
+            {
+              "case_id": "10362",
+              "reason": "Transvaginal US and contrast-enhanced CT demonstrate an 8-cm multiloculated adnexal complex mass with thickened peripheral wall and contrast-enhancing septa \u2014 features typical of tubo-ovarian abscess; adjacency to inflamed sigmoid colon shows secondary TOA from diverticulitis."
+            },
+            {
+              "case_id": "9865",
+              "reason": "Contrast-enhanced CT shows a parauterine fluid collection with internal air and surrounding fat stranding adjacent to sigmoid diverticulitis \u2014 presence of internal gas within adnexal collection and inflammatory change strongly supports abscess (tubo-ovarian abscess) rather than neoplasm."
+            }
+          ],
+          "elapsed_time": 25.3,
+          "session_id": "fewshot_fewshot_20260222_140520_24",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"E\", \"reasoning\": \"No fever or acute inflammatory signs; postmenopausal G0 patient with pelvic pain. Imaging shows bilateral tubular cystic adnexal structures consistent with hydrosalpinx (dilated fallopian tubes with thin walls, simple fluid on unenhanced MRI/TVUS), likely sequela of chronic pelvic inflammatory disease. Lacks features of acute TOA (thick walls, enhancement, debris, hypervascularity, systemic symptoms as in references); no bowel pathology for C; no solid/nodular compo"
+        },
+        {
+          "case_index": 25,
+          "case_title": "Case number 13497",
+          "case_number": "13497",
+          "ground_truth": "A",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "14120",
+              "reason": "Contrast-enhanced CT angiography shows a lobulated saccular pseudoaneurysm disrupting the basal anterior interventricular septum with a visible defect and direct communication between the LV cavity and the RV \u2014 demonstrates how post\u2011MI septal rupture/pseudoaneurysm appears as a contrast\u2011filled septal defect connecting ventricles."
+            },
+            {
+              "case_id": "13386",
+              "reason": "Emergency MDCT shows high\u2011attenuation haemopericardium and contrast extravasation through a full\u2011thickness discontinuity of the LV free wall into the pericardial sac \u2014 exemplary imaging of free\u2011wall rupture and haemopericardium to differentiate from interventricular septal rupture, which produces intracardiac communication rather than pericardial extravasation."
+            }
+          ],
+          "elapsed_time": 9.3,
+          "session_id": "fewshot_fewshot_20260222_140526_25",
+          "attempts": 1,
+          "raw_output_preview": "uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py submit --answer B --reasoning \"Clinical presentation of cardiogenic shock, chest pain, and hyperechoic pericardial effusion on echo suggests hemopericardium. Unenhanced CT (Image 1) shows hyperdense pericardial effusion. Contrast-enhanced CTs (Images 2-3) demonstrate LV free wall discontinuity with contrast extravasation into pericardium, matching reference Case 13386 (LV free wall rupture). No interventricular septal d"
+        },
+        {
+          "case_index": 26,
+          "case_title": "Case number 13534",
+          "case_number": "13534",
+          "ground_truth": "C",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "US images show serpiginous anechoic tubular structures (dilated lactiferous ducts) with surrounding echogenic stroma and prominent vascularity on color Doppler, typical of engorged lactating breast parenchyma. Clinical context of sudden axillary swelling on day 1 puerperium without pain or inflammation fits engorgement of ectopic axillary breast tissue. Matches reference case 7137. No features of abscess or lymphadenopathy. Supernumerary nipple in inframammary fold is accessory finding but not directly diagnostic of the axillary mass.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "7137",
+              "reason": "US images demonstrate multiple serpiginous tubular anechoic structures (dilated ducts) admixed with echogenic stroma and prominent vascular flow on power Doppler, mirroring the target case s lactating ectopic axillary breast tissue features"
+            },
+            {
+              "case_id": "11598",
+              "reason": "US shows heterogeneous axillary soft tissue with hypoechoic glandular elements intermixed with echogenic fat, characteristic of accessory breast glandular tissue without the prominent dilated ducts but confirming ectopic location"
+            }
+          ],
+          "elapsed_time": 45.4,
+          "session_id": "fewshot_fewshot_20260222_140528_26",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"B\", \"reasoning\": \"US images show serpiginous anechoic tubular structures (dilated lactiferous ducts) with surrounding echogenic stroma and prominent vascularity on color Doppler, typical of engorged lactating breast parenchyma. Clinical context of sudden axillary swelling on day 1 puerperium without pain or inflammation fits engorgement of ectopic axillary breast tissue. Matches reference case 7137. No features of abscess or lymphadenopathy. Supernumerary nipple in inframammary fold "
+        },
+        {
+          "case_index": 37,
+          "case_title": "Case number 16686",
+          "case_number": "16686",
+          "ground_truth": "C",
+          "agent_answer": "D",
+          "correct": false,
+          "reasoning": "CT shows duodenal perforation with oral contrast leak into gas-containing paravertebral abscess extending to L2-L4 disc/epidural spaces, direct communication confirmed. Blood culture positive for Streptococcus anginosus, a pyogenic bacterium associated with GI perforations/abscesses. Matches ref cases 13232 (bowel fistula to spondylodiscitis), 19122 (pyogenic with gas). Previous vertebroplasty at L2-L3 incidental, not causative. Acute septic presentation rules out TB/fungal.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "13232",
+              "reason": "CT axial shows decreased L5-S1 intervertebral space, endplate irregularity, and anterior paravertebral soft tissue thickening; MRI sagittal/axial T1/T2 demonstrate low T1/high T2 signal in disc/endplates with enhancement, anterior paravertebral abscess, and fistula tract connecting to sigmoid colon ulcer - directly analogous to duodenal fistula tract opacified by oral contrast leading to paravertebral abscess/disc spaces in target case, confirming bowel perforation as cause of spondylodiscitis"
+            },
+            {
+              "case_id": "19122",
+              "reason": "CT coronal/axial shows gas bubbles (arrows) in bilateral psoas muscles and within L3 vertebral body; MRI axial T2 hyperintense multiple round collections in psoas/paraspinal muscles, post-contrast T1 enhancing lesions, sagittal T1 subtle enhancement L2-L5 vertebrae/discs with T2/STIR hyperintensity - matches gas-containing paravertebral collection surrounding aorta L2-L4 extending to disc/epidural spaces in target, confirming pyogenic spondylodiscitis pattern"
+            },
+            {
+              "case_id": "4822",
+              "reason": "CT axial shows multiple arrows to free intraperitoneal gas indicating perforated viscus (prepyloric ulcer), L1 inferior endplate destruction with epidural/psoas collections; coronal psoas abscess extension, amorphous peripheral calcifications in psoas abscess - demonstrates association of bowel perforation with spondylodiscitis/psoas abscess but differentiates TB via calcifications from pyogenic Strep anginosus etiology in target"
+            }
+          ],
+          "elapsed_time": 22.5,
+          "session_id": "fewshot_fewshot_20260222_140535_37",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"D\", \"reasoning\": \"CT shows duodenal perforation with oral contrast leak into gas-containing paravertebral abscess extending to L2-L4 disc/epidural spaces, direct communication confirmed. Blood culture positive for Streptococcus anginosus, a pyogenic bacterium associated with GI perforations/abscesses. Matches ref cases 13232 (bowel fistula to spondylodiscitis), 19122 (pyogenic with gas). Previous vertebroplasty at L2-L3 incidental, not causative. Acute septic presentation rules out T"
+        },
+        {
+          "case_index": 39,
+          "case_title": "Case number 16760",
+          "case_number": "16760",
+          "ground_truth": "B",
+          "agent_answer": "B",
+          "correct": true,
+          "reasoning": "The reference case highlights Warthin tumor's low T2 signal, differing from this case's presumed T2 hyperintensity typical of acinic cell carcinoma. Restricted diffusion and type b enhancement curve are consistent with cellular malignancy like acinic cell ca. Non-smoker female, incidental asymptomatic mass fits. Well-marginated but heterogeneous. Differentiation aided by reference.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "959",
+              "reason": "Warthin tumor parotid MRI demonstrates low T2 signal intensity lesion (dark mass on axial T2 images 1-2), differing from target acinic cell carcinoma T2 hyperintensity, aiding differentiation from Warthin tumor."
+            }
+          ],
+          "elapsed_time": 40.4,
+          "session_id": "fewshot_fewshot_20260222_140537_39",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"B\", \"reasoning\": \"The reference case highlights Warthin tumor's low T2 signal, differing from this case's presumed T2 hyperintensity typical of acinic cell carcinoma. Restricted diffusion and type b enhancement curve are consistent with cellular malignancy like acinic cell ca. Non-smoker female, incidental asymptomatic mass fits. Well-marginated but heterogeneous. Differentiation aided by reference.\", \"timestamp\": \"2026-02-22T14:06:18.651546\"}"
+        },
+        {
+          "case_index": 43,
+          "case_title": "Case number 9232",
+          "case_number": "9232",
+          "ground_truth": "E",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "US shows hypoechoic intramuscular lesion with prominent mosaic color Doppler flow suggesting high-flow vascularity (aliasing-like), MRI depicts central nidus with flow voids and adjacent femoral cortical thickening/erosion on X-ray/CT matching hypervascular high-flow AVM bone remodeling as in ref cases 13949/16243/17667; histology muscle with vascular channels; acute pain post-effort likely intralesional bleed/thrombosis in hemangioma/AVM excluding low-flow VMs (no phleboliths/slow flow) or sarcomas (solid echotexture, peripheral flow, no bone erosion pattern). E incorrect as venous MFs are low-flow.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "16243",
+              "reason": "US shows hypoechoic lesion in posterior thigh with prominent color Doppler flow signals (arterial and venous labeled A/V), MRI demonstrates serpiginous abnormal vascular channels abutting thickened sciatic nerve with fatty muscle atrophy - mirrors target case US inhomogeneous muscle mass with Doppler signals and MRI vascular replacement of muscle confirming high-flow vascular malformation"
+            },
+            {
+              "case_id": "17667",
+              "reason": "US crooked hypoechoic interdigital lesion with color Doppler aliasing and spectral low-resistance high-velocity arterial flow (peak 274 cm/s), MRI T1 hypo mass with central nidus of linear hypointense flow voids on DP FS - classic high-flow AVM imaging distinguishing from low-flow VMs or sarcomas lacking flow voids"
+            },
+            {
+              "case_id": "13949",
+              "reason": "Plain film and CT show cortical thickening and multiple lytic punch-out lesions in tibia/fibula without permeative pattern, MRI depicts abnormal serpiginous vessels in posterior calf muscles extending interosseously with T2 FS flow voids and early arterial enhancement - parallels target femoral diaphysis sclerosis/thickening and flow voids due to high-flow hyperemia"
+            },
+            {
+              "case_id": "15905",
+              "reason": "US multiple tortuous anechoic tubular channels with power Doppler complete color saturation, high-velocity pulsatile arterial waveform (spectral broadening) and arterialized venous flow; MRI muscle infiltration with aneurysmal dilatations - direct match to target US well-defined squeezable mass with clear Doppler signals confirming high-flow pattern vs solid sarcomas"
+            }
+          ],
+          "elapsed_time": 16.8,
+          "session_id": "fewshot_fewshot_20260222_140546_43",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"A\", \"reasoning\": \"US shows hypoechoic intramuscular lesion with prominent mosaic color Doppler flow suggesting high-flow vascularity (aliasing-like), MRI depicts central nidus with flow voids and adjacent femoral cortical thickening/erosion on X-ray/CT matching hypervascular high-flow AVM bone remodeling as in ref cases 13949/16243/17667; histology muscle with vascular channels; acute pain post-effort likely intralesional bleed/thrombosis in hemangioma/AVM excluding low-flow VMs (no "
+        },
+        {
+          "case_index": 45,
+          "case_title": "Case number 9299",
+          "case_number": "9299",
+          "ground_truth": "C",
+          "agent_answer": "A",
+          "correct": false,
+          "reasoning": "HIV patient on HAART with CD4 250, recurrent bloody diarrhea and abdominal pain. CT shows right-sided colitis with circumferential wall thickening of cecum/ascending colon, likely thumbprinting (submucosal edema), pericolic stranding, improving on follow-up after medical treatment (likely ganciclovir). Matches reference CMV colitis case 17079: diffuse colonic thickening with thumbprinting in AIDS, spared ileum. Amoebic more mass-like/annular without liver involvement here. IBD less acute in this context; no neutropenia for typhlitis.",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "9439",
+              "reason": "Axial and coronal contrast-enhanced CT shows marked annular tumoural thickening of the ascending colon with luminal narrowing and multiple hypoattenuating liver lesions, confirming amoebic colitis/ameboma can produce similar concentric right colon wall thickening as target case"
+            },
+            {
+              "case_id": "17728",
+              "reason": "CT and MRI demonstrate subtle but persistent caecal wall thickening, biopsy-confirmed amoebic colitis - matches target caecum involvement with mural edema"
+            },
+            {
+              "case_id": "17079",
+              "reason": "Coronal and sagittal CT reveals diffuse wall thickening of ascending, transverse, and descending colon with thumbprinting (submucosal oedema), right pericolonic fat stranding, and ascites (spared ileum); distinguishes CMV colitis by extension beyond hepatic flexure"
+            }
+          ],
+          "elapsed_time": 26.4,
+          "session_id": "fewshot_fewshot_20260222_140559_45",
+          "attempts": 1,
+          "raw_output_preview": "{\"answer\": \"A\", \"reasoning\": \"HIV patient on HAART with CD4 250, recurrent bloody diarrhea and abdominal pain. CT shows right-sided colitis with circumferential wall thickening of cecum/ascending colon, likely thumbprinting (submucosal edema), pericolic stranding, improving on follow-up after medical treatment (likely ganciclovir). Matches reference CMV colitis case 17079: diffuse colonic thickening with thumbprinting in AIDS, spared ileum. Amoebic more mass-like/annular without liver involvemen"
+        },
+        {
+          "case_index": 46,
+          "case_title": "Case number 9435",
+          "case_number": "9435",
+          "ground_truth": "C",
+          "agent_answer": "B",
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "8494",
+              "reason": "MRI demonstrates hyperintense fluid collection in right iliacus muscle adjacent to SI joint with surrounding marrow signal changes in sacrum and ilium, mirroring the adjacent muscle high signal and sacral bone involvement seen in target case"
+            },
+            {
+              "case_id": "10303",
+              "reason": "CT shows cortical erosions and irregularities at left SI joint involving sacrum and ilium with low-density abscess collections in iliopsoas, obturator, and gluteus minimus muscles, matching cortical loss at SI joint and adjacent muscle thickening in target"
+            },
+            {
+              "case_id": "17605",
+              "reason": "MRI T2 hyperintensity in right sacral and iliac bone marrow adjacent to SI joint with peripheral enhancing abscesses in iliacus muscle, directly comparable to target hyperintense sacral lesion with soft tissue collection and enhancement"
+            },
+            {
+              "case_id": "18506",
+              "reason": "MRI PDw fat-sat shows central low-signal bone sequestrum surrounded by hyperintense marrow edema and cortical cloacae with adjacent vastus muscle high signal myositis, exemplifying the low-signal central sequestrum and muscle involvement in target sacral osteomyelitis"
+            }
+          ],
+          "elapsed_time": 35.9,
+          "session_id": "fewshot_fewshot_20260222_140604_46",
+          "attempts": 1,
+          "raw_output_preview": "uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py submit --answer B --reasoning \"Clinical presentation of acute fever, hip/buttock pain, elevated CRP in child consistent with acute pyogenic osteomyelitis. Imaging shows lytic lesion in right sacrum on CT, T1 hypointense, T2 hyperintense marrow lesion with possible central collection consistent with intraosseous abscess in osteomyelitis, matching reference cases of pyogenic infections like Staph aureus septic sacroiliiti"
+        },
+        {
+          "case_index": 49,
+          "case_title": "Case number 9905",
+          "case_number": "9905",
+          "ground_truth": "B",
+          "agent_answer": "E",
+          "correct": false,
+          "reasoning": "",
+          "mode": "fewshot",
+          "relevant_cases_loaded": [
+            {
+              "case_id": "11941",
+              "reason": "CT shows well-defined unilocular expansile cystic lesion in anterior mandible with cortical thinning and breach, mirroring the target case\u2019s CT cystic unilocular mass with bone cortex thinning and defects"
+            },
+            {
+              "case_id": "13229",
+              "reason": "CT bone window: expansile hypodense lesion with cortical thinning, loculations, and soft tissue window reveals peripheral enhancing septum akin to target\u2019s enhancing mural nodule on medial wall"
+            },
+            {
+              "case_id": "15243",
+              "reason": "MRI demonstrates multilocular solid/cystic mass with vivid enhancement of papillary solid projections and irregular margins, cortical thinning/erosion on CT, confirming enhancing solid components in ameloblastoma vs pure cyst"
+            },
+            {
+              "case_id": "18495",
+              "reason": "CT exhibits cortical expansion, scalloping, thinning with soap-bubble multiloculated expansile lesion; enhancing solid papillary projections on CT/MRI match target\u2019s intramural enhancing nodule and scalloped cystic borders"
+            },
+            {
+              "case_id": "10867",
+              "reason": "CT/MRI show polycystic expansile lesion in posterior body/ramus with cortical deformation, fluid and parenchymatous components with heterogeneous enhancement, similar location and mixed cystic-solid features"
+            }
+          ],
+          "elapsed_time": 37.8,
+          "session_id": "fewshot_fewshot_20260222_140607_49",
+          "attempts": 1,
+          "raw_output_preview": "uv run python src/agent_v2/skills/med-deepresearch/scripts/research_tools.py submit --answer E --reasoning \"The lesion is a unilocular cystic mass in the right cheek soft tissues without bone involvement or expansile intraosseous changes typical of odontogenic tumors like ameloblastoma, OKC, or dentigerous cyst seen in reference cases. History of follicular thyroid carcinoma suggests metastatic lesion, despite unusual cystic appearance.\""
+        }
+      ]
+    }
+  }
+}

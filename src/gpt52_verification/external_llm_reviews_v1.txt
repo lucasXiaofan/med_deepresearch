@@ -1,0 +1,2347 @@
+====================================================================================================
+CASE_ID: 19172
+TIMESTAMP: 2026-02-21T16:07:24.782230
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "19172",
+  "short_target_summary": "A 27-year-old pregnant woman at 32 weeks with no prior imaging was found on ultrasound to have a thin avascular central uterine septum partially dividing the cavity, with a single amniotic sac and fetus crossing both hemicavities. The placenta was partially implanted on the septum, leading to a diagnosis of gravid septate uterus with septal placental implantation.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiating a septate uterus from bicornuate or didelphys uterus relies on subtle ultrasound features such as septal thickness, continuity of the amniotic sac, fetal parts crossing hemicavities, external fundal contour, and Doppler vascularity of the septum.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "16525",
+      "relevance_score": 4,
+      "rationale": "This case clearly demonstrates a bicornuate uterus with two distinct cavities and independent contents, providing a strong contrast to the target case where a thin septum and shared gestation argue against bicornuate anatomy.",
+      "most_important_signal": "Two completely separate uterine horns with independent contents (gestation in one horn, IUD in the other), highlighting features not seen in a septate uterus."
+    },
+    {
+      "relevant_case_id": "14563",
+      "relevance_score": 3,
+      "rationale": "The case illustrates classic uterus didelphys anatomy with no communication between cavities and associated anomalies, which is useful for exclusion but differs significantly from the gravid septate uterus in the target case.",
+      "most_important_signal": "Complete duplication with two cervices, widely divergent horns, and no inter-cavitary communication."
+    },
+    {
+      "relevant_case_id": "Relevant Case 3",
+      "relevance_score": 3,
+      "rationale": "Although details are limited, the emphasis on widely divergent horns and a deep fundal cleft helps conceptually distinguish didelphys or bicornuate uterus from a septate uterus with a preserved external fundal contour.",
+      "most_important_signal": "External fundal cleft greater than 1 cm indicating duplication rather than a septate configuration."
+    },
+    {
+      "relevant_case_id": "10893",
+      "relevance_score": 3,
+      "rationale": "This case demonstrates uterus didelphys with complete separation of uterine bodies, serving as a comparative example to exclude complete duplication in the target case.",
+      "most_important_signal": "Complete separation of uterine body into two distinct uteri rather than a thin internal septum."
+    },
+    {
+      "relevant_case_id": "18804",
+      "relevance_score": 4,
+      "rationale": "The case provides a useful differential comparison by showing a rudimentary horn pregnancy, emphasizing lack of continuity with the main uterine cavity and different myometrial characteristics compared with a septate uterus.",
+      "most_important_signal": "Gestational sac surrounded by myometrium with no continuity to cervix or endometrial cavity, contrasting with a central avascular septum allowing fetal extension across cavities."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 9905
+TIMESTAMP: 2026-02-21T16:27:54.360008
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "9905",
+  "short_target_summary": "A 66-year-old woman with prior follicular thyroid carcinoma presented with a painless, enlarging right mandibular/masticatory space mass. Imaging showed a unilocular cystic expansile mandibular lesion with scalloped borders, cortical thinning/defects, and a characteristic enhancing peripheral rim with an intramural enhancing soft-tissue nodule; final diagnosis was ameloblastoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Distinguishing ameloblastoma from odontogenic cysts or metastasis relies on nuanced imaging features such as unilocular vs multilocular architecture, scalloped margins, cortical breach, and especially the presence of enhancing mural or papillary solid components on CT/MRI.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "11941",
+      "relevance_score": 4,
+      "rationale": "Demonstrates a unilocular expansile cystic mandibular lesion with cortical thinning and breach, closely matching the target case morphology. Although located in the anterior mandible of a younger patient, it supports the diagnosis of unicystic ameloblastoma as a key differential.",
+      "most_important_signal": "Well-defined unilocular expansile cystic lesion with cortical breach consistent with unicystic ameloblastoma."
+    },
+    {
+      "relevant_case_id": "13229",
+      "relevance_score": 5,
+      "rationale": "Shows classic CT features of mandibular ameloblastoma including expansile hypodense lesion, cortical thinning/disruption, and peripheral enhancing septa, directly paralleling the target case’s enhancing mural nodule and cystic nature.",
+      "most_important_signal": "Peripheral enhancing septum/solid component within a cystic expansile mandibular lesion."
+    },
+    {
+      "relevant_case_id": "15243",
+      "relevance_score": 4,
+      "rationale": "Provides strong multimodality correlation of ameloblastoma with enhancing solid papillary projections and diffusion restriction, reinforcing the significance of intramural enhancement in differentiating ameloblastoma from simple cysts.",
+      "most_important_signal": "Enhancing solid papillary projections within a cystic mandibular mass."
+    },
+    {
+      "relevant_case_id": "18495",
+      "relevance_score": 4,
+      "rationale": "Illustrates advanced ameloblastoma imaging with multiloculated cystic-solid architecture, papillary projections, and cortical scalloping, supporting the spectrum of imaging appearances relevant to the target diagnosis.",
+      "most_important_signal": "Enhancing solid components and papillary projections with cortical expansion and scalloping."
+    },
+    {
+      "relevant_case_id": "10867",
+      "relevance_score": 5,
+      "rationale": "Highly relevant due to similar posterior mandibular/ramus location, polycystic expansile nature, mixed cystic-parenchymal components, and MRI enhancement patterns diagnostic of ameloblastoma.",
+      "most_important_signal": "Posterior mandibular polycystic lesion with mixed fluid and enhancing parenchymatous components."
+    },
+    {
+      "relevant_case_id": "16132",
+      "relevance_score": 3,
+      "rationale": "Useful mainly as a contrast case showing odontogenic keratocyst, highlighting the absence of a mural enhancing nodule and only weak rim enhancement, which helps differentiate from ameloblastoma rather than directly support it.",
+      "most_important_signal": "Weak thin peripheral rim enhancement without enhancing mural nodule, arguing against ameloblastoma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 9823
+TIMESTAMP: 2026-02-21T16:28:13.077459
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "9823",
+  "short_target_summary": "A 51-year-old woman with a rapidly growing, painless purple mass of the left upper eyelid initially misdiagnosed as a chalazion. Imaging showed a well-defined exophytic eyelid lesion without globe invasion; biopsy and immunohistochemistry confirmed Merkel cell carcinoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation relies on subtle imaging features such as lesion location (superficial eyelid), margins, signal characteristics, absence of bone or globe invasion, and comparison with other malignant eyelid tumors, which require direct image interpretation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "18687",
+      "relevance_score": 3,
+      "rationale": "Demonstrates a malignant upper eyelid mass with overlapping CT/MR characteristics, but the final diagnosis is sebaceous gland carcinoma, a different pathology with some distinct clinical and imaging behavior.",
+      "most_important_signal": "Shows how malignant eyelid tumors can appear similar on imaging, underscoring that imaging alone cannot distinguish Merkel cell carcinoma from sebaceous carcinoma."
+    },
+    {
+      "relevant_case_id": "583",
+      "relevance_score": 5,
+      "rationale": "Confirms Merkel cell carcinoma imaging and clinical presentation, albeit in a different anatomical location (leg), reinforcing the neuroendocrine tumor behavior and violaceous nodular appearance.",
+      "most_important_signal": "Histologically proven Merkel cell carcinoma with violaceous nodular lesions supports the target diagnosis conceptually despite different site."
+    },
+    {
+      "relevant_case_id": "16278",
+      "relevance_score": 2,
+      "rationale": "Represents a small round blue cell tumor of the conjunctiva with orbital infiltration, which is deeper and more aggressive than the superficial eyelid lesion in the target case.",
+      "most_important_signal": "Orbital infiltration and globe distortion highlight features not present in Merkel cell carcinoma of the eyelid."
+    },
+    {
+      "relevant_case_id": "17957",
+      "relevance_score": 3,
+      "rationale": "Provides a useful contrast case of periocular basal cell carcinoma with bone destruction and deep infiltration, helping to differentiate from Merkel cell carcinoma.",
+      "most_important_signal": "Presence of bone erosion and infiltrative growth pattern distinguishes basal cell carcinoma from Merkel cell carcinoma."
+    },
+    {
+      "relevant_case_id": "16230",
+      "relevance_score": 2,
+      "rationale": "Describes a deep orbital adnexal carcinoma rather than a superficial eyelid tumor, limiting its direct relevance.",
+      "most_important_signal": "Deep intraconal location and T2 hypointensity contrast with the superficial, T2 hyperintense Merkel cell carcinoma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 10790
+TIMESTAMP: 2026-02-21T16:35:02.913201
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "10790",
+  "short_target_summary": "A 40-year-old woman with rectal bleeding had a small polypoid rectal wall lesion showing homogeneous signal, mild T2 hyperintensity, contrast enhancement and marked diffusion restriction on MRI. Biopsy confirmed stage I extranodal marginal zone B-cell (MALT) lymphoma of the rectum.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Distinguishing rectal lymphoma from adenocarcinoma, GIST, or other submucosal lesions relies heavily on MRI features such as homogeneity, diffusion restriction, enhancement pattern, and degree of mesorectal invasion.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "11253",
+      "relevance_score": 5,
+      "rationale": "This case shows classic MRI features of rectal B-cell lymphoma—bulky homogeneous mass, well-defined margins, concentric wall thickening and diffusion restriction—which directly parallels the imaging phenotype of the target MALT lymphoma and supports lymphoma over adenocarcinoma or GIST.",
+      "most_important_signal": "Homogeneous rectal mass with marked diffusion restriction and minimal invasive behavior, typical for rectal lymphoma."
+    },
+    {
+      "relevant_case_id": "10587",
+      "relevance_score": 5,
+      "rationale": "Demonstrates primary rectal B-cell lymphoma with extensive homogeneous concentric thickening and limited mesorectal invasion, reinforcing MRI patterns that help differentiate lymphoma from more heterogeneous rectal malignancies.",
+      "most_important_signal": "Diffuse, homogeneous concentric rectal wall thickening with limited mesorectal infiltration."
+    },
+    {
+      "relevant_case_id": "15471",
+      "relevance_score": 3,
+      "rationale": "Although not lymphoma, this case is relevant as a key imaging mimic. The lack of enhancement, low T2 signal and absence of diffusion restriction help exclude lymphoma and highlight important negative imaging criteria.",
+      "most_important_signal": "Low T2 signal and no contrast enhancement, arguing against lymphoma."
+    },
+    {
+      "relevant_case_id": "16138",
+      "relevance_score": 3,
+      "rationale": "Provides a useful differential comparison. Anorectal melanoma can show diffusion restriction but is distinguished by intrinsic T1 hyperintensity and low T2 signal, features absent in rectal MALT lymphoma.",
+      "most_important_signal": "Intrinsic high T1 signal from melanin, not seen in lymphoma."
+    },
+    {
+      "relevant_case_id": "15210",
+      "relevance_score": 4,
+      "rationale": "Although located in the stomach, this case illustrates classic MALT lymphoma behavior—homogeneous wall thickening and preserved fat planes—which is conceptually and pathophysiologically analogous to rectal MALT lymphoma.",
+      "most_important_signal": "Homogeneous GI wall involvement with preserved surrounding fat planes, characteristic of MALT lymphoma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 10653
+TIMESTAMP: 2026-02-21T16:35:21.612706
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "10653",
+  "short_target_summary": "A 13-year-old girl with abdominal pain and biochemical androgen excess was found to have a solid right ovarian mass on MRI. Imaging and pathology confirmed a poorly differentiated Sertoli–Leydig cell tumour with retiform areas.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies on MRI signal characteristics, morphology (solid vs cystic components), ovarian origin (beak sign), and exclusion of other sex-cord stromal tumours based on nuanced imaging features.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "9884",
+      "relevance_score": 5,
+      "rationale": "This case represents an androgen-producing Sertoli–Leydig cell tumour with very similar MRI features (solid–cystic adnexal mass, intermediate T1, low–intermediate T2 solid component) and clinical hyperandrogenism, directly mirroring the target case apart from age and pregnancy status.",
+      "most_important_signal": "Combination of androgen excess with a well-circumscribed solid–cystic ovarian mass showing intermediate T1 and low–intermediate T2 signal in the solid portions."
+    },
+    {
+      "relevant_case_id": "7243",
+      "relevance_score": 3,
+      "rationale": "This case involves a sex-cord stromal tumour in an adolescent with a predominantly solid ovarian mass, overlapping in tumour family and patient age but differing in histology, enhancement pattern, and lack of hormonal abnormalities.",
+      "most_important_signal": "Demonstrates imaging overlap among sex-cord stromal tumours, highlighting limited specificity without hormonal or pathological correlation."
+    },
+    {
+      "relevant_case_id": "10870",
+      "relevance_score": 4,
+      "rationale": "Provides a key differential diagnosis (sclerosing stromal tumour) in a similarly aged patient, with MRI features that help distinguish it from SLCT by characteristic peripheral low-T2 rim and avid peripheral enhancement.",
+      "most_important_signal": "Peripheral low-T2 rim with early avid peripheral enhancement, a pattern atypical for Sertoli–Leydig cell tumours."
+    },
+    {
+      "relevant_case_id": "9059",
+      "relevance_score": 2,
+      "rationale": "This postmenopausal case illustrates fibrous ovarian tumours with very low T2 signal, useful mainly for exclusion rather than direct comparison due to different age group, pathology, and imaging phenotype.",
+      "most_important_signal": "Very low T2 signal intensity indicating fibrous tissue, contrasting with the intermediate–high T2 signal of SLCT."
+    },
+    {
+      "relevant_case_id": "13305",
+      "relevance_score": 3,
+      "rationale": "Granulosa cell tumour is an important differential diagnosis for SLCT; this case shows overlapping solid–cystic morphology but differs in patient age, lack of androgen excess, and strong post-contrast enhancement.",
+      "most_important_signal": "Solid adnexal mass with myometrium-like T1/T2 signal and strong enhancement, underscoring overlap but also differences from SLCT."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 10186
+TIMESTAMP: 2026-02-21T16:35:40.344688
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "10186",
+  "short_target_summary": "A 38-year-old woman with acute abdominal pain, fever, and leukocytosis showed a well-defined mesenteric cystic mass with fluid–fluid level, fat attenuation components, peripheral enhancement, and adjacent inflammatory fat stranding on US and CT. Surgical excision confirmed an inflamed mesenteric lymphangioma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies on recognizing imaging nuances such as chylous/fat–fluid levels, lack of internal vascularity, thin walls or septa, and inflammatory fat stranding, which distinguish lymphangioma from duplication cysts, pseudocysts, or teratomas.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "12978",
+      "relevance_score": 4,
+      "rationale": "Demonstrates a classic mesenteric cystic lymphangioma with thin walls, septations, and fluid attenuation, closely matching the target pathology though without inflammatory changes or fat–fluid levels.",
+      "most_important_signal": "Large thin-walled multiloculated mesenteric cystic mass with enhancing septa typical of lymphangioma."
+    },
+    {
+      "relevant_case_id": "6424",
+      "relevance_score": 4,
+      "rationale": "Shows a multiloculated mesenteric lymphangioma with variable contents and close bowel relationship, supporting the diagnosis though the case lacks acute inflammatory features seen in the target.",
+      "most_important_signal": "Large lobulated multicystic mesenteric mass displacing bowel loops without solid components."
+    },
+    {
+      "relevant_case_id": "19174",
+      "relevance_score": 3,
+      "rationale": "Illustrates mesenteric lymphangioma with complications and enhancing septa, relevant conceptually but more complex due to obstruction and volvulus compared with the target case.",
+      "most_important_signal": "Multiloculated cystic mass with thin enhancing septa and mass effect on bowel."
+    },
+    {
+      "relevant_case_id": "8152",
+      "relevance_score": 5,
+      "rationale": "Very close match to the target case, showing a cystic lymphangioma with fat attenuation, fluid components, wall enhancement, and surrounding inflammatory changes.",
+      "most_important_signal": "Fat-density cystic lesion with wall enhancement and adjacent mesenteric inflammation indicating inflamed chylous lymphangioma."
+    },
+    {
+      "relevant_case_id": "17202",
+      "relevance_score": 2,
+      "rationale": "Primarily useful as a differential comparator; highlights features of an enteric duplication cyst that are absent in the target case.",
+      "most_important_signal": "Thick enhancing wall with gut signature and shared bowel wall, which argues against lymphangioma."
+    },
+    {
+      "relevant_case_id": "5016",
+      "relevance_score": 2,
+      "rationale": "Provides contrast with teratoma imaging features, helping exclusion but not directly supporting the target diagnosis.",
+      "most_important_signal": "Presence of calcified solid Rokitansky protuberance favoring teratoma rather than lymphangioma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 10146
+TIMESTAMP: 2026-02-21T16:35:59.096362
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "10146",
+  "short_target_summary": "A 62-year-old man with a slow-growing volar wrist mass in the carpal tunnel showing low–intermediate T1 signal, predominantly low T2 signal, and inhomogeneous enhancement on MRI. Surgical excision and biopsy confirmed fibroma of the tendon sheath.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Distinguishing fibroma of the tendon sheath from tenosynovial giant cell tumour and other soft-tissue masses relies on nuanced MRI features such as signal intensity patterns, presence or absence of susceptibility from hemosiderin, and enhancement characteristics.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "8890",
+      "relevance_score": 5,
+      "rationale": "This case demonstrates classic MRI and histologic features of fibroma of the tendon sheath, directly matching the target diagnosis despite a different anatomical location.",
+      "most_important_signal": "Isointense-to-muscle T1 signal, collagenous hypocellular histology, and absence of hemosiderin/susceptibility artifacts supporting fibroma of the tendon sheath."
+    },
+    {
+      "relevant_case_id": "1066",
+      "relevance_score": 4,
+      "rationale": "Provides a strong contrast case of giant cell tumor of the tendon sheath in the hand, which is a key differential diagnosis for the target case.",
+      "most_important_signal": "Low signal on both T1 and T2 related to hemosiderin deposition and strong enhancement, helping differentiate GCTTS from fibroma of the tendon sheath."
+    },
+    {
+      "relevant_case_id": "18540",
+      "relevance_score": 4,
+      "rationale": "Illustrates imaging features of localized tenosynovial giant cell tumour that overlap clinically with fibroma of the tendon sheath but differ on susceptibility imaging.",
+      "most_important_signal": "Blooming/signal drop on susceptibility sequences from hemosiderin, which would argue against fibroma of the tendon sheath."
+    },
+    {
+      "relevant_case_id": "15087",
+      "relevance_score": 2,
+      "rationale": "Represents diffuse tenosynovial giant cell tumour (PVNS) of the wrist, which is clinically and radiologically more aggressive and less similar to the target case.",
+      "most_important_signal": "Diffuse synovial thickening with hemosiderin-related low signal and bone erosions, features not seen in fibroma of the tendon sheath."
+    },
+    {
+      "relevant_case_id": "885",
+      "relevance_score": 3,
+      "rationale": "Another example of giant cell tumor of the tendon sheath that reinforces imaging differences but provides limited additional discriminatory detail.",
+      "most_important_signal": "Uniform low signal intensity due to hemosiderin, supporting GCTTS rather than fibroma of the tendon sheath."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 10128
+TIMESTAMP: 2026-02-21T16:36:17.814936
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "10128",
+  "short_target_summary": "A 43-year-old man with obstructive hydrocephalus due to a pineal region mass; biopsy confirmed pineoblastoma. Surgical resection was not feasible and the patient responded well to radical radiotherapy.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation of pineal region tumors relies heavily on imaging nuances such as enhancement pattern, calcification, invasion, and CSF dissemination, which are critical to distinguishing pineoblastoma from other pineal lesions.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "1828",
+      "relevance_score": 5,
+      "rationale": "This case represents classic pineoblastoma with obstructive hydrocephalus and subsequent leptomeningeal and ependymal dissemination, directly matching the target diagnosis and typical disease behavior.",
+      "most_important_signal": "Aggressive pineal mass with CSF dissemination (sugar-icing pattern) characteristic of pineoblastoma."
+    },
+    {
+      "relevant_case_id": "6806",
+      "relevance_score": 5,
+      "rationale": "Demonstrates invasive pineoblastoma causing aqueductal obstruction and hydrocephalus, closely paralleling the imaging and clinical scenario of the target case.",
+      "most_important_signal": "Infiltrative pineal tumor invading the tectum and aqueduct with heterogeneous enhancement."
+    },
+    {
+      "relevant_case_id": "16434",
+      "relevance_score": 3,
+      "rationale": "Provides a useful contrast case of pineal germinoma, highlighting imaging features that help differentiate it from pineoblastoma, though the final diagnosis differs.",
+      "most_important_signal": "Homogeneous enhancement with central calcification favoring germinoma over pineoblastoma."
+    },
+    {
+      "relevant_case_id": "15105",
+      "relevance_score": 2,
+      "rationale": "Primarily concerns a cystic pineal lesion in the context of trilateral retinoblastoma; only indirectly relevant by illustrating how atypical pineal cysts can raise suspicion for pineoblastoma.",
+      "most_important_signal": "Cystic pineal lesion with nodular enhancing wall and interval growth mimicking malignant pineal tumors."
+    },
+    {
+      "relevant_case_id": "5483",
+      "relevance_score": 2,
+      "rationale": "Shows a pineal teratoma with fat components, which is useful mainly to exclude pineoblastoma rather than support its diagnosis.",
+      "most_important_signal": "Presence of macroscopic fat and fat droplets indicating teratoma, a key exclusion feature for pineoblastoma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 19090
+TIMESTAMP: 2026-02-22T09:58:57.387833
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "19090",
+  "short_target_summary": "A 74-year-old woman with a prior benign breast surgery presented with a superficial, well-defined lobulated hypoechoic mass adjacent to a surgical scar. Biopsy demonstrated dense fibrosis with polyclonal lymphoplasmacytic infiltrate rich in IgG4-positive plasma cells, consistent with IgG4-related breast disease.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiating IgG4-related breast disease from carcinoma and other inflammatory or fibroepithelial lesions relies heavily on nuanced ultrasound features such as lesion margins, vascularity, relation to surgical scar, and stability on follow-up imaging.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "2185",
+      "relevance_score": 3,
+      "rationale": "This case illustrates diabetic mastopathy, a benign fibroinflammatory breast condition that can mimic malignancy on imaging and histology. While the underlying pathology differs from IgG4-related disease, it is relevant as a comparison entity in elderly patients with mass-like hypoechoic lesions and dense lymphocytic infiltrates.",
+      "most_important_signal": "Demonstrates that benign fibroinflammatory breast diseases can present as hard hypoechoic masses suspicious for cancer, emphasizing the need for histological confirmation."
+    },
+    {
+      "relevant_case_id": "14144",
+      "relevance_score": 3,
+      "rationale": "Idiopathic granulomatous mastitis is an important differential diagnosis listed in the target case. This retrieved case provides contrasting imaging features such as multiple connected hypoechoic lesions, inflammatory symptoms, and peripheral vascularity, helping distinguish it from IgG4-related disease.",
+      "most_important_signal": "Shows inflammatory, multifocal, and vascular patterns on ultrasound that differ from the solitary, minimally vascular IgG4-related lesion."
+    },
+    {
+      "relevant_case_id": "15270",
+      "relevance_score": 2,
+      "rationale": "This case of benign phyllodes tumor shares the feature of a well-defined lobulated hypoechoic mass, but represents a neoplastic fibroepithelial process with much larger size and different clinical behavior, making it only weakly relevant.",
+      "most_important_signal": "Highlights that lobulated, well-circumscribed masses can also represent benign tumors, which may be misleading without considering size, growth, and histology."
+    },
+    {
+      "relevant_case_id": "18097",
+      "relevance_score": 4,
+      "rationale": "Granulomatous mastitis in this case closely resembles the target lesion in size, shape, and lack of vascularity on ultrasound, making it a strong comparator within the differential diagnosis of benign inflammatory breast masses.",
+      "most_important_signal": "Demonstrates that granulomatous mastitis can present as a well-defined, avascular hypoechoic mass around 20 mm, closely mimicking the target case on imaging."
+    },
+    {
+      "relevant_case_id": "4240",
+      "relevance_score": 2,
+      "rationale": "This overview of phyllodes tumors reinforces that lobulated hypoechoic breast masses with smooth margins are commonly benign, but the pathology and patient demographics differ substantially from IgG4-related disease.",
+      "most_important_signal": "Confirms that lobulated hypoechoic morphology alone is nonspecific and shared by multiple benign and malignant entities."
+    },
+    {
+      "relevant_case_id": "17775",
+      "relevance_score": 2,
+      "rationale": "This case of idiopathic granulomatous mastitis demonstrates a diffuse, ill-defined, and infiltrative imaging pattern that contrasts with the discrete, well-circumscribed lesion in the target case, making it useful mainly for exclusion.",
+      "most_important_signal": "Provides a clear example of infiltrative inflammatory breast disease with ill-defined margins, helping differentiate it from localized IgG4-related lesions."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 10142
+TIMESTAMP: 2026-02-22T09:59:16.093820
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "10142",
+  "short_target_summary": "A 66-year-old man developed postoperative abdominal pain and fever after elective colonic recanalization. Excretory-phase CT demonstrated contrast opacification of a pelvic fluid collection from a distal ureteral leak, confirming an iatrogenic urinoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "The key diagnosis depends on recognizing delayed/excretory-phase contrast extravasation from the ureter into a postoperative fluid collection and differentiating it from abscess, seroma, or ascites based on attenuation and temporal opacification.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "12226",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target scenario: postoperative pelvic surgery complicated by ureteral injury, with excretory-phase CT showing partial opacification of a pelvic fluid collection diagnostic of urinoma.",
+      "most_important_signal": "Delayed CT demonstrating contrast tracking from the distal ureter into a pelvic collection."
+    },
+    {
+      "relevant_case_id": "9710",
+      "relevance_score": 4,
+      "rationale": "Although the etiology is spontaneous rather than iatrogenic, this case clearly illustrates how excretory-phase CT confirms urinoma by increased attenuation of a fluid collection.",
+      "most_important_signal": "Marked hyperattenuation of perirenal fluid on excretory-phase CT indicating urine extravasation."
+    },
+    {
+      "relevant_case_id": "3",
+      "relevance_score": 3,
+      "rationale": "Conceptually relevant in demonstrating the role of delayed imaging and 3D reformations to differentiate urinoma from other collections, but lacks specific clinical and anatomical detail.",
+      "most_important_signal": "Use of delayed imaging to establish communication with the urinary collecting system."
+    },
+    {
+      "relevant_case_id": "12181",
+      "relevance_score": 4,
+      "rationale": "Shows ureteral disruption with urine leakage identified on excretory-phase CT, reinforcing imaging principles used in the target case, though the cause is traumatic rather than surgical.",
+      "most_important_signal": "Visualization of opacified urine leaking from the ureteropelvic junction on delayed CT."
+    },
+    {
+      "relevant_case_id": "9613",
+      "relevance_score": 3,
+      "rationale": "Demonstrates extensive urinary contrast extravasation and urinoma formation, but the bilateral spontaneous rupture and severe renal dysfunction differ from the target case context.",
+      "most_important_signal": "Progressive contrast leakage from ureters into a large retroperitoneal collection on urographic phase."
+    },
+    {
+      "relevant_case_id": "12239",
+      "relevance_score": 2,
+      "rationale": "Relevant mainly for differential diagnosis, as it illustrates urinary fistula rather than urinoma; helps avoid misinterpretation of pelvic contrast opacification.",
+      "most_important_signal": "Direct opacification of the vagina on excretory-phase CT indicating fistulous communication."
+    },
+    {
+      "relevant_case_id": "7",
+      "relevance_score": 2,
+      "rationale": "Conceptually useful for distinguishing types of urinary leaks after pelvic surgery, but insufficient detail limits direct diagnostic support.",
+      "most_important_signal": "General distinction between urinoma and urinary fistula based on leak localization."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 13497
+TIMESTAMP: 2026-02-22T09:59:34.827400
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "13497",
+  "short_target_summary": "An 83-year-old man with cardiogenic shock and chest pain underwent CT showing high-attenuation haemopericardium and a contrast-visible defect in the interventricular septum with delayed hypoenhancement consistent with acute myocardial infarction. The final diagnosis was post-infarction ventricular septal rupture.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis depends on recognizing subtle CT signs such as a septal discontinuity, contrast passage between ventricles, myocardial hypoenhancement indicating infarction, and differentiating these from free-wall rupture or aortic pathology.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "14120",
+      "relevance_score": 5,
+      "rationale": "This case directly demonstrates post-myocardial infarction septal disruption with a visible interventricular communication on CT, closely mirroring the mechanism and imaging appearance of ventricular septal rupture in the target case.",
+      "most_important_signal": "Contrast-filled defect in the interventricular septum with communication between left and right ventricles after myocardial infarction."
+    },
+    {
+      "relevant_case_id": "18238",
+      "relevance_score": 2,
+      "rationale": "Although it clearly shows a ventricular septal defect on CT, this is a congenital lesion in a young patient rather than an acute post-infarction rupture, limiting its diagnostic relevance.",
+      "most_important_signal": "Anatomic depiction of a large congenital septal defect, which may mislead if not distinguished from acute rupture."
+    },
+    {
+      "relevant_case_id": "18025",
+      "relevance_score": 3,
+      "rationale": "This case illustrates CT detection of abnormal intracardiac shunting through a septal defect using contrast timing, which is conceptually helpful but occurs in a chronic/congenital and infectious context rather than acute infarction.",
+      "most_important_signal": "Early abnormal contrast enhancement indicating shunt flow through a septal defect."
+    },
+    {
+      "relevant_case_id": "13386",
+      "relevance_score": 4,
+      "rationale": "This case is highly relevant for differential diagnosis, as it exemplifies left ventricular free-wall rupture with haemopericardium, a key alternative considered in the target case that must be distinguished from septal rupture.",
+      "most_important_signal": "Contrast extravasation from the left ventricular free wall into the pericardial sac causing haemopericardium."
+    },
+    {
+      "relevant_case_id": "9496",
+      "relevance_score": 2,
+      "rationale": "The case shows haemopericardium and myocardial perforation, but in a traumatic context, making it only tangentially useful for understanding imaging signs of cardiac rupture.",
+      "most_important_signal": "High-attenuation pericardial effusion with contrast leakage due to traumatic ventricular wall laceration."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 13122
+TIMESTAMP: 2026-02-22T09:59:53.544468
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "13122",
+  "short_target_summary": "A postmenopausal woman with pelvic pain and mildly elevated inflammatory markers had a complex multiloculated right adnexal mass on ultrasound and non-contrast MRI. MRI features including a dilated fallopian tube and surrounding inflammatory edema favored tubo-ovarian abscess, confirmed by response to antibiotics.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation between tubo-ovarian abscess and neoplastic or other inflammatory adnexal masses relies on nuanced imaging features such as tubular morphology, septations, rim characteristics, surrounding fat edema, and interval response on follow-up imaging.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "15389",
+      "relevance_score": 5,
+      "rationale": "This case demonstrates classic imaging features of tubo-ovarian abscess/complex on ultrasound and CT, closely paralleling the target case in morphology (tubular multiloculated adnexal collections) and inflammatory context, directly supporting the same diagnosis.",
+      "most_important_signal": "Tubular multiloculated adnexal collections with thick walls/septa and surrounding inflammatory changes typical of TOA."
+    },
+    {
+      "relevant_case_id": "10362",
+      "relevance_score": 4,
+      "rationale": "Shows a multiloculated adnexal abscess with thickened walls and septa consistent with TOA, though secondary to diverticulitis rather than primary gynecologic infection, making it slightly less directly comparable.",
+      "most_important_signal": "Complex multiloculated tubo-adnexal mass with enhancing walls/septa indicating abscess rather than neoplasm."
+    },
+    {
+      "relevant_case_id": "9865",
+      "relevance_score": 4,
+      "rationale": "Illustrates a tubo-ovarian abscess in a postmenopausal patient, similar to the target case, but caused by colosalpingeal fistulisation from diverticulitis, which differs etiologically.",
+      "most_important_signal": "Adnexal fluid collection with internal gas and inflammatory fat stranding supporting abscess diagnosis."
+    },
+    {
+      "relevant_case_id": "10088",
+      "relevance_score": 3,
+      "rationale": "Demonstrates imaging findings of severe PID with pyosalpinx/TOA; however, the clinical context (sepsis, IUD, immunocompromise) and extensive peritonitis differ from the more indolent presentation of the target case.",
+      "most_important_signal": "Fluid-filled tubular adnexal structure with enhancing walls consistent with pyosalpinx."
+    },
+    {
+      "relevant_case_id": "11883",
+      "relevance_score": 2,
+      "rationale": "Primarily relevant as a differential diagnosis, showing how pelvic tuberculosis can mimic TOA on imaging; however, its final diagnosis and systemic features differ substantially from the target case.",
+      "most_important_signal": "Multicystic adnexal masses with thick walls but normal ovaries and associated pulmonary/lymph node TB features distinguishing it from TOA."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 12956
+TIMESTAMP: 2026-02-22T10:00:12.260721
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "12956",
+  "short_target_summary": "A 36-year-old asymptomatic man with an incidental left posterior mediastinal paravertebral mass showing well-defined margins and homogeneous contrast enhancement on CT, surgically proven to be unicentric hyaline-vascular Castleman disease.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis and relevance depend on recognizing imaging nuances such as location in the posterior mediastinum, hypervascular homogeneous enhancement, presence or absence of calcification, and relationship to adjacent structures, which are key to differentiating Castleman disease from neurogenic tumors, lymphoma, or extramedullary hematopoiesis.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "9553",
+      "relevance_score": 5,
+      "rationale": "This case is almost identical in presentation: an asymptomatic patient with a well-defined paravertebral mediastinal mass showing avid homogeneous enhancement and histologically proven hyaline-vascular Castleman disease.",
+      "most_important_signal": "Posterior mediastinal paravertebral mass with homogeneous avid enhancement characteristic of hyaline-vascular Castleman disease."
+    },
+    {
+      "relevant_case_id": "s posterior mediastinal, hypervascular appearance and helps distinguish from necrotic lymphoma or cystic neurogenic tumours.",
+      "relevance_score": 2,
+      "rationale": "Although it references posterior mediastinal hypervascularity, the lack of concrete case details and imaging-pathologic correlation limits its diagnostic usefulness.",
+      "most_important_signal": "General mention of hypervascular posterior mediastinal mass without specific diagnostic confirmation."
+    },
+    {
+      "relevant_case_id": "16700",
+      "relevance_score": 4,
+      "rationale": "Demonstrates unicentric Castleman disease with similar imaging behavior (well-defined soft-tissue mass, enhancement, FDG avidity), though located in the neck/upper mediastinum rather than posterior mediastinum.",
+      "most_important_signal": "Well-circumscribed unicentric Castleman mass with characteristic enhancement and non-invasive vessel encasement."
+    },
+    {
+      "relevant_case_id": "shows unicentric Castleman can present as an isolated hypervascular mediastinal/neck mass that may encase but not infiltrate adjacent vessels, aiding differentiation from aggressive malignancies.",
+      "relevance_score": 2,
+      "rationale": "Conceptually relevant but lacks specific imaging data or a defined case, limiting its direct applicability.",
+      "most_important_signal": "Non-invasive encasement of vessels suggesting benign lymphoproliferative disease."
+    },
+    {
+      "relevant_case_id": "1882",
+      "relevance_score": 3,
+      "rationale": "Shows hyaline-vascular Castleman disease presenting as a well-defined enhancing thoracic mass, but arising from pleura/paracardiac region rather than posterior mediastinum.",
+      "most_important_signal": "Encapsulated hypervascular thoracic mass with classic hyaline-vascular histology."
+    },
+    {
+      "relevant_case_id": "19020",
+      "relevance_score": 3,
+      "rationale": "Illustrates unicentric Castleman disease with avid homogeneous enhancement and calcification, supporting the imaging pattern, though the abdominal location reduces direct relevance.",
+      "most_important_signal": "Solitary avidly enhancing lymph node with central calcification typical of unicentric Castleman disease."
+    },
+    {
+      "relevant_case_id": "endoscopic ultrasound shows a hypoechoic solid lesion and histology confirms hyaline-vascular Castleman. This case highlights solitary, avidly enhancing lymphoid mass with possible central calcification seen in unicentric Castleman disease, paralleling imaging features of the target mediastinal lesion.",
+      "relevance_score": 2,
+      "rationale": "Provides supportive general features of unicentric Castleman disease but lacks specific thoracic imaging context and full case details.",
+      "most_important_signal": "Solitary avidly enhancing lymphoid mass consistent with hyaline-vascular Castleman disease."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 12781
+TIMESTAMP: 2026-02-22T10:00:30.974439
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "12781",
+  "short_target_summary": "A 9-year-old girl presented with a first epileptic seizure and headache. Imaging showed a superficial right parietal cortical–subcortical mass with cystic components, hemorrhagic elements, meningeal involvement, and bone scalloping, ultimately diagnosed as pleomorphic xanthoastrocytoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Key diagnostic clues for pleomorphic xanthoastrocytoma depend on nuanced imaging features such as superficial cortical location, cystic architecture, hemorrhagic/calcific components, meningeal involvement, and bone scalloping, which require direct image interpretation rather than text alone.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "16976",
+      "relevance_score": 3,
+      "rationale": "This case shares seizure presentation and a superficial cortical lesion with cystic changes and calcifications, which overlaps with the imaging spectrum of PXA. However, the absence of enhancement, lack of meningeal involvement, adult age, and final diagnosis of oligodendroglioma limit its direct diagnostic support.",
+      "most_important_signal": "Cortical-based cystic lesion with intralesional calcifications causing seizures, illustrating overlap but also potential diagnostic pitfall with oligodendroglioma."
+    },
+    {
+      "relevant_case_id": "18319",
+      "relevance_score": 2,
+      "rationale": "Although this case demonstrates a cystic mass with calcifications and an enhancing solid component—features sometimes seen in PXA—the deep bi-frontal, aggressive behavior, restricted diffusion, and anaplastic oligodendroglioma diagnosis make it largely misleading for a pediatric superficial PXA.",
+      "most_important_signal": "Enhancing solid component with restricted diffusion suggesting high-grade pathology rather than a typical low-grade superficial PXA."
+    },
+    {
+      "relevant_case_id": "10491",
+      "relevance_score": 3,
+      "rationale": "The cyst with an avidly enhancing mural nodule and pial-based origin provides a useful morphological comparison for superficial cortical tumors like PXA. However, the vascular perfusion profile and final diagnosis of haemangioblastoma reduce its specificity.",
+      "most_important_signal": "Superficial pial-based mural nodule architecture, a helpful morphological analogue for PXA despite different pathology."
+    },
+    {
+      "relevant_case_id": "18963",
+      "relevance_score": 4,
+      "rationale": "This case closely mirrors several key imaging features of the target case, including cortical/subcortical location, coarse calcifications, hemorrhagic elements, minimal enhancement, and bone remodeling/scalloping, all of which are characteristic of PXA, even though the final diagnosis was oligodendroglioma.",
+      "most_important_signal": "Bone remodeling/scalloping with superficial cortical tumors and calcifications, a strong supportive imaging feature for considering PXA."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 12773
+TIMESTAMP: 2026-02-22T10:00:49.695528
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "12773",
+  "short_target_summary": "A 74-year-old man with obstructive jaundice, weight loss and fever was found on CT to have long-segment, homogeneous, hypovascular circumferential thickening of the 2nd–4th portions of the duodenum with biliary and pancreatic duct dilatation and associated lymphadenopathy, ultimately diagnosed as duodenal lymphoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Distinguishing duodenal lymphoma from adenocarcinoma or inflammatory disease relies heavily on imaging nuances such as long-segment homogeneous wall thickening, lack of obstruction, hypovascularity, and associated lymphadenopathy, which require direct image interpretation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "11221",
+      "relevance_score": 5,
+      "rationale": "This case is a near-direct match to the target, involving primary duodenal diffuse large B-cell lymphoma with circumferential homogeneous thickening of the 2nd–3rd portions of the duodenum and para-aortic lymphadenopathy on CT.",
+      "most_important_signal": "Long-segment, homogeneous circumferential duodenal wall thickening with associated lymphadenopathy, classic for duodenal lymphoma."
+    },
+    {
+      "relevant_case_id": "18130",
+      "relevance_score": 3,
+      "rationale": "Although the anatomic location differs (terminal ileum rather than duodenum), this case demonstrates typical imaging features of gastrointestinal lymphoma, supporting pattern recognition but with limited site-specific relevance.",
+      "most_important_signal": "Bulky, homogeneous, hypovascular bowel wall thickening with lymphadenopathy and absence of obstruction, characteristic of lymphoma."
+    },
+    {
+      "relevant_case_id": "Relevant Case 3",
+      "relevance_score": 2,
+      "rationale": "Without full case details, this example provides only general conceptual support regarding chemotherapy responsiveness and non-obstructive bulky lymphoma, but lacks specific diagnostic imaging correlation.",
+      "most_important_signal": "General demonstration of lymphoma behavior (bulky, homogeneous, chemo-sensitive), but nonspecific."
+    },
+    {
+      "relevant_case_id": "10338",
+      "relevance_score": 4,
+      "rationale": "This case of duodenal adenocarcinoma is valuable as a contrast case, highlighting imaging features that differ from lymphoma and thereby helping refine the differential diagnosis in the target case.",
+      "most_important_signal": "Focal, stenosing, irregular duodenal mass typical of adenocarcinoma, contrasting with lymphoma’s long-segment homogeneous pattern."
+    },
+    {
+      "relevant_case_id": "11683",
+      "relevance_score": 4,
+      "rationale": "This case shows extranodal lymphoma causing obstructive jaundice and mimicking biliary malignancy, closely paralleling the clinical presentation of the target case despite a different primary site.",
+      "most_important_signal": "Lymphoma presenting with obstructive jaundice and circumferential ductal/ampullary involvement, mimicking cholangiocarcinoma."
+    },
+    {
+      "relevant_case_id": "Relevant Case 6",
+      "relevance_score": 4,
+      "rationale": "Although full details are unavailable, this biopsy-proven lymphoma case presenting with obstructive jaundice directly supports the diagnostic challenge seen in the target case.",
+      "most_important_signal": "Obstructive jaundice caused by lymphoma mimicking biliary or ampullary carcinoma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 12691
+TIMESTAMP: 2026-02-22T10:01:08.436675
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "12691",
+  "short_target_summary": "A 66-year-old woman with chronic recurrent heel pain shows MRI evidence of plantar fasciitis with selective fatty replacement of the abductor digiti minimi muscle, consistent with chronic inferior calcaneal nerve entrapment (Baxter’s neuropathy).",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies on recognizing MRI patterns of selective muscle denervation (fatty replacement of abductor digiti minimi) and correlating them with plantar fascial pathology, which requires nuanced image interpretation rather than clinical data alone.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "18473",
+      "relevance_score": 4,
+      "rationale": "Demonstrates classic MRI evolution of peripheral nerve entrapment with selective muscle oedema and chronic fatty atrophy, which is directly analogous to the denervation pattern seen in Baxter’s neuropathy, despite a different anatomic location.",
+      "most_important_signal": "Combination of nerve abnormality with selective muscle oedema and fatty atrophy indicating chronic denervation."
+    },
+    {
+      "relevant_case_id": "19235",
+      "relevance_score": 4,
+      "rationale": "Shows peripheral nerve entrapment with downstream muscle oedema and early fatty atrophy, reinforcing the concept of selective neurogenic muscle changes that support interpretation of abductor digiti minimi fatty replacement as neuropathic.",
+      "most_important_signal": "Selective denervation oedema and fatty atrophy in muscles innervated by an entrapped nerve."
+    },
+    {
+      "relevant_case_id": "9784",
+      "relevance_score": 5,
+      "rationale": "Provides a clear, textbook example of MRI findings in subacute-to-chronic motor nerve denervation with fatty infiltration, closely mirroring the key diagnostic imaging feature in Baxter’s neuropathy.",
+      "most_important_signal": "T1 fatty infiltration with T2/STIR muscle oedema confined to a specific nerve distribution."
+    },
+    {
+      "relevant_case_id": "19012",
+      "relevance_score": 3,
+      "rationale": "Useful mainly as an exclusion case, illustrating imaging characteristics of a true lipoma that help differentiate focal encapsulated fat masses from diffuse neurogenic fatty muscle replacement in the target case.",
+      "most_important_signal": "Encapsulated mass with homogeneous fat signal and complete fat suppression, unlike diffuse denervation-related fatty atrophy."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 12185
+TIMESTAMP: 2026-02-22T10:01:27.150183
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "12185",
+  "short_target_summary": "A 7-year-old girl with a rapidly enlarging retroperitoneal abdominal mass causing organ displacement and hydronephrosis. Imaging showed a large predominantly cystic but vascular mass without fat, ultimately diagnosed as retroperitoneal non-rhabdomyosarcoma soft tissue sarcoma (NRSTS).",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation from key pediatric retroperitoneal differentials (neuroblastoma, liposarcoma, desmoid) depends on imaging nuances such as vascularity, presence or absence of fat, organ encasement versus displacement, and cystic versus solid components.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "13341",
+      "relevance_score": 5,
+      "rationale": "This case closely matches the target case in patient age, retroperitoneal location, mass effect without invasion, and final diagnosis of a malignant soft tissue sarcoma, directly supporting the diagnosis of pediatric retroperitoneal NRSTS.",
+      "most_important_signal": "Large heterogeneous retroperitoneal sarcoma with mass effect and prominent intratumoral vessels but no organ invasion."
+    },
+    {
+      "relevant_case_id": "9046",
+      "relevance_score": 4,
+      "rationale": "Provides an important differential comparison by illustrating dedifferentiated liposarcoma, a key alternative diagnosis considered in the target case, and highlights imaging features that help exclude it.",
+      "most_important_signal": "Presence of macroscopic fat and septations on CT, which distinguishes liposarcoma from NRSTS."
+    },
+    {
+      "relevant_case_id": "12705",
+      "relevance_score": 3,
+      "rationale": "Relevant as a pediatric retroperitoneal mass differential, but the adrenal origin, biochemical markers, and metastatic pattern differ from the target case presentation.",
+      "most_important_signal": "Adrenal-based mass with vascular encasement and liver metastases typical of neuroblastoma."
+    },
+    {
+      "relevant_case_id": "16458",
+      "relevance_score": 2,
+      "rationale": "Demonstrates a desmoid tumor with cystic features, but the adult age group, mesenteric location, and lack of aggressive vascular involvement limit its applicability.",
+      "most_important_signal": "Well-defined non-aggressive cystic mass without vascular encasement, contrasting with NRSTS behavior."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 12166
+TIMESTAMP: 2026-02-22T10:01:45.881883
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "12166",
+  "short_target_summary": "A man with altered bowel habits underwent water-enema CT colonography showing a short, nondistensible colonic segment mimicking carcinoma. Repeat acquisition after further hypotonisation and distension demonstrated complete resolution, confirming a transient segmental colonic spasm artefact.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis hinges on recognizing transient imaging features (apparent circumferential wall thickening and shouldering) that completely resolve on repeat CT, which requires careful comparison of serial images rather than clinical data alone.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "15169",
+      "relevance_score": 3,
+      "rationale": "This case illustrates a transient CT artefact that disappears on a later phase, conceptually similar to the reversible finding in the target case, but it involves a different organ and artefact mechanism.",
+      "most_important_signal": "Disappearance of an apparent abnormal structure on repeat/alternate-phase CT indicating artefact."
+    },
+    {
+      "relevant_case_id": "12572",
+      "relevance_score": 5,
+      "rationale": "Provides a clear contrast between true colon carcinoma and artefact: malignant strictures persist despite adequate distension and repeat imaging, unlike the transient spasm in the target case.",
+      "most_important_signal": "Fixed circumferential enhancing stricture with shouldering that does not resolve on repeat imaging."
+    },
+    {
+      "relevant_case_id": "10189",
+      "relevance_score": 4,
+      "rationale": "Demonstrates inflammatory colonic disease causing persistent poor distension and mural thickening, helping differentiate chronic pathology from transient spasm artefact.",
+      "most_important_signal": "Rigid, poorly distended colon with consistent mural thickening and inflammatory ancillary signs."
+    },
+    {
+      "relevant_case_id": "16556",
+      "relevance_score": 4,
+      "rationale": "Shows fixed, smooth strictures on CT colonography that remain unchanged on follow-up, reinforcing the importance of persistence versus reversibility in diagnosis.",
+      "most_important_signal": "Stable focal luminal narrowing on interval imaging indicating true structural disease."
+    },
+    {
+      "relevant_case_id": "16038",
+      "relevance_score": 2,
+      "rationale": "An example of an intraluminal mimic on CT colonography, but the pathology and imaging characteristics differ substantially from spasm-related mural thickening.",
+      "most_important_signal": "Gas-filled intramural cysts without mural enhancement or shouldering."
+    },
+    {
+      "relevant_case_id": "2757",
+      "relevance_score": 3,
+      "rationale": "Illustrates colonic narrowing due to chronic muscular spasm and fibrosis, useful as a conceptual comparison but distinct from an acute, reversible spasm artefact.",
+      "most_important_signal": "Long, rigid, narrowed colon with flattened haustra reflecting chronic disease rather than transient change."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 11845
+TIMESTAMP: 2026-02-22T10:02:04.627107
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "11845",
+  "short_target_summary": "A 50-year-old man with lower back pain was found on MRI to have multiple intradural extramedullary lumbosacral masses that were T2 hyperintense, T1 isointense, and intensely enhancing, without foraminal extension or vertebral scalloping. Pathology confirmed ependymoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "The diagnosis relies on nuanced MRI features such as intradural extramedullary location, sausage-shaped morphology, enhancement pattern, multiplicity, and absence of foraminal extension or bone scalloping, which are critical to distinguish ependymoma from schwannoma, metastases, or neurofibroma.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "9848",
+      "relevance_score": 4,
+      "rationale": "This case demonstrates classic imaging features of myxopapillary ependymoma in the lumbosacral region with T1 isointensity, T2 hyperintensity, and strong enhancement, directly supporting ependymoma as a diagnosis. However, it includes extensive craniospinal dissemination, haemorrhage, and vertebral scalloping, which are absent in the target case.",
+      "most_important_signal": "Intradural extramedullary lumbosacral mass with T2 hyperintensity and intense enhancement characteristic of ependymoma, contrasted by dissemination and scalloping not seen in the target."
+    },
+    {
+      "relevant_case_id": "16402",
+      "relevance_score": 5,
+      "rationale": "This case closely matches the target with a sausage-shaped, tubular intradural extramedullary lesion in the lumbar spine that is T2 hyperintense and intensely enhancing, without foraminal or osseous involvement, strongly supporting the diagnosis of ependymoma.",
+      "most_important_signal": "Sausage-shaped, long-segment intradural extramedullary lesion with intense homogeneous enhancement typical of myxopapillary ependymoma."
+    },
+    {
+      "relevant_case_id": "11446",
+      "relevance_score": 3,
+      "rationale": "While this case confirms ependymoma as a lumbosacral neoplasm with T2 hyperintensity and enhancement, it represents an aggressive pediatric form with extensive invasion, vertebral scalloping, foraminal expansion, and metastases, limiting its direct comparability to the more indolent target case.",
+      "most_important_signal": "Demonstrates how aggressive ependymoma can cause vertebral scalloping and invasion, features notably absent in the target case."
+    },
+    {
+      "relevant_case_id": "13239",
+      "relevance_score": 2,
+      "rationale": "This case illustrates imaging features of a cystic schwannoma with intraforaminal location, neural foraminal widening, scalloping, and ring-like enhancement, serving mainly as a contrasting example rather than direct support for diagnosing ependymoma.",
+      "most_important_signal": "Foraminal widening and peripheral ring-like enhancement characteristic of schwannoma, helping exclude nerve sheath tumors in the target case."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 11692
+TIMESTAMP: 2026-02-22T10:02:23.377102
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "11692",
+  "short_target_summary": "A 17-year-old male with right lower quadrant pain mimicking appendicitis was found on ultrasound and CT to have a normal appendix and an inflamed blind-ending tubular structure arising from the terminal ileum, consistent with Meckel's diverticulitis, confirmed surgically and histologically.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Accurate diagnosis depends on recognizing subtle imaging distinctions between a normal appendix and a second blind-ending ileal structure with inflammation, fat stranding, and lymphadenopathy—features that require careful image interpretation rather than clinical data alone.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "17121",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target case: a young male with RLQ pain, normal appendix, and CT showing a thick-walled blind-ending tubular structure from distal ileum with surrounding fat stranding and lymphadenopathy, classic for Meckel's diverticulitis.",
+      "most_important_signal": "CT demonstration of a blind-ending ileal structure separate from a normal appendix with inflammatory changes."
+    },
+    {
+      "relevant_case_id": "11923",
+      "relevance_score": 4,
+      "rationale": "Demonstrates CT features of inflamed Meckel's diverticulum confirmed surgically, supporting the diagnosis, though presentation includes a larger localized fluid collection and more severe inflammatory markers than the target case.",
+      "most_important_signal": "Localized inflammatory changes and fluid collection adjacent to thickened small bowel consistent with Meckel’s diverticulitis."
+    },
+    {
+      "relevant_case_id": "17257",
+      "relevance_score": 3,
+      "rationale": "Shows Meckel's diverticulum as the underlying pathology but with torsion, obstruction, ischemia, and gastric heterotopia in a much younger patient, making it only partially comparable to uncomplicated diverticulitis.",
+      "most_important_signal": "Identification of a Meckel’s diverticulum at the distal ileum causing acute pathology, though mechanism differs."
+    },
+    {
+      "relevant_case_id": "9137",
+      "relevance_score": 3,
+      "rationale": "Illustrates sonographic identification of Meckel's diverticulum connected to small bowel with inflammatory changes, but in an infant with perforation and an intussusception-like presentation, limiting direct comparability.",
+      "most_important_signal": "Ultrasound visualization of a mass with a neck connecting to small bowel, confirming Meckel’s origin."
+    },
+    {
+      "relevant_case_id": "14495",
+      "relevance_score": 4,
+      "rationale": "CT findings initially mimicked appendiceal pathology but surgery confirmed strangulated Meckel's diverticulitis, reinforcing the concept of Meckel’s as an appendicitis mimic similar to the target case.",
+      "most_important_signal": "CT depiction of an inflammatory blind-ending structure near ileum leading to diagnostic confusion with appendix."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 11532
+TIMESTAMP: 2026-02-22T10:02:42.092793
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "11532",
+  "short_target_summary": "A 56-year-old man with fever and left flank pain and a history of horseshoe kidney was found to have a lobulated, predominantly cystic mass in the left renal sinus. Multiphase CT demonstrated peripheral nodular enhancement with persistent enhancement and early venous drainage, leading to a final diagnosis of renal haemangioma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis hinges on recognizing specific multiphase enhancement patterns (peripheral nodular/persistent enhancement, early venous drainage, phleboliths) that distinguish haemangioma from cystic RCC, abscess, or other renal sinus tumors.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "18427",
+      "relevance_score": 5,
+      "rationale": "Demonstrates a perirenal haemangioma with classic persistent peripheral enhancement and target-like appearance on CT/MRI, closely mirroring the enhancement behavior seen in the target renal haemangioma.",
+      "most_important_signal": "Persistent peripheral rim enhancement with vascular supply, supporting a benign vascular lesion."
+    },
+    {
+      "relevant_case_id": "17989",
+      "relevance_score": 4,
+      "rationale": "Shows that renal haemangioma variants can be intensely hypervascular and mimic RCC, reinforcing haemangioma as a key differential in hypervascular renal lesions despite some differences in size and solid appearance.",
+      "most_important_signal": "Isodensity to blood pool and vivid arterial enhancement indicating vascular nature."
+    },
+    {
+      "relevant_case_id": "recognition of isodensity to blood pool and early enhancement helps identify a vascular haemangioma variant.",
+      "relevance_score": 1,
+      "rationale": "Insufficient case information and lack of specific imaging or clinical details limit its diagnostic relevance to the target case.",
+      "most_important_signal": "Absence of concrete imaging findings makes it non-contributory."
+    },
+    {
+      "relevant_case_id": "10070",
+      "relevance_score": 3,
+      "rationale": "Although involving the liver rather than kidney, it exemplifies the canonical haemangioma enhancement pattern that conceptually supports interpreting peripheral nodular enhancement as haemangioma.",
+      "most_important_signal": "Peripheral nodular enhancement with progressive fill-in characteristic of haemangioma."
+    },
+    {
+      "relevant_case_id": "18088",
+      "relevance_score": 2,
+      "rationale": "Provides a useful negative comparator for renal sinus masses, but its homogeneous enhancement pattern contrasts with the peripheral nodular enhancement of haemangioma.",
+      "most_important_signal": "Homogeneous solid enhancement helps exclude haemangioma when present."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 13960
+TIMESTAMP: 2026-02-22T10:03:00.831662
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "13960",
+  "short_target_summary": "A 40-year-old woman with a known distal tibial osteochondroma presented with a growing ankle soft-tissue mass causing posterior tibial nerve compression. MRI showed an enhancing soft-tissue lesion in the Kager fat pad with apparent nerve involvement; biopsy confirmed extraskeletal Ewing sarcoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Key diagnostic nuance relies on MRI features such as signal characteristics, enhancement pattern, lack of medullary invasion, and the apparent relationship of the mass to the posterior tibial nerve, which can mimic a neurogenic tumor.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "11296",
+      "relevance_score": 5,
+      "rationale": "This case demonstrates classic imaging and histopathologic features of extraskeletal Ewing sarcoma, including soft-tissue origin, aggressive enhancement, diffusion restriction, and molecular confirmation, directly supporting the target diagnosis.",
+      "most_important_signal": "Soft-tissue small round cell sarcoma with characteristic MRI enhancement and confirmed EWSR1 translocation."
+    },
+    {
+      "relevant_case_id": "MRI T1 hypointense/T2 hyperintense lesion with diffusion restriction and heterogeneous centripetal contrast enhancement",
+      "relevance_score": 4,
+      "rationale": "Although not a fully specified case, the described imaging pattern closely matches malignant small round cell tumors such as extraskeletal Ewing sarcoma and helps distinguish it from benign neurogenic lesions.",
+      "most_important_signal": "Combination of diffusion restriction and heterogeneous enhancement suggesting aggressive malignancy rather than benign nerve sheath tumor."
+    },
+    {
+      "relevant_case_id": "8549",
+      "relevance_score": 4,
+      "rationale": "This case illustrates an extraskeletal Ewing sarcoma presenting as a soft-tissue mass without bone invasion, reinforcing the concept that Ewing sarcoma can arise in soft tissues and mimic other entities.",
+      "most_important_signal": "Extrapulmonary soft-tissue mass with no adjacent bone involvement and CD99 positivity."
+    },
+    {
+      "relevant_case_id": "10781",
+      "relevance_score": 3,
+      "rationale": "The case confirms imaging and pathological features of extraskeletal Ewing sarcoma but represents disseminated intra-abdominal disease, which is less directly comparable to the localized ankle presentation of the target case.",
+      "most_important_signal": "Small round cell neoplasm with CD99 positivity confirming extraskeletal Ewing sarcoma."
+    },
+    {
+      "relevant_case_id": "17053",
+      "relevance_score": 3,
+      "rationale": "This mediastinal case supports awareness of extraskeletal Ewing sarcoma as an aggressive soft-tissue tumor in atypical locations but offers limited anatomic or differential overlap with the ankle lesion.",
+      "most_important_signal": "Large heterogeneously enhancing soft-tissue mass consistent with aggressive extraskeletal sarcoma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 10827
+TIMESTAMP: 2026-02-22T10:03:19.545322
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "10827",
+  "short_target_summary": "Patient with coeliac disease and weight loss underwent CT for abdominal pain, which revealed multiple hypodense subcutaneous nodules with surrounding fat stranding in mammary, gluteal and thigh regions. Imaging findings were consistent with inflammatory reaction to self-injected oil bubbles.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies on recognizing the characteristic distribution, density, and inflammatory changes of subcutaneous nodules on CT that differentiate injected oil or silicone from metastases, neurofibromas, or air.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "17026",
+      "relevance_score": 5,
+      "rationale": "This case shows CT and US features of injected silicone with bilateral subcutaneous nodules and fat stranding, which closely parallels the target case’s CT findings of multiple subcutaneous hypodense nodules due to injected oil.",
+      "most_important_signal": "Multiple bilateral subcutaneous nodules with surrounding fat stranding after filler injection, mimicking but distinguishable from metastases."
+    },
+    {
+      "relevant_case_id": "13272",
+      "relevance_score": 3,
+      "rationale": "Demonstrates migration of silicone and the snowstorm sign, supporting the concept of foreign material causing misleading imaging findings, though focused on lymph nodes rather than diffuse subcutaneous tissue.",
+      "most_important_signal": "Snowstorm sign and silicone-specific MRI signal confirming foreign material rather than malignancy."
+    },
+    {
+      "relevant_case_id": "16557",
+      "relevance_score": 4,
+      "rationale": "Illustrates classic imaging appearances of direct self-injection of silicone in subcutaneous breast tissue, reinforcing recognition of injected foreign material as the cause of nodules.",
+      "most_important_signal": "Multiple echogenic subcutaneous masses with dirty shadowing consistent with injected silicone."
+    },
+    {
+      "relevant_case_id": "16904",
+      "relevance_score": 3,
+      "rationale": "Highlights that injected fillers can appear as metabolically active subcutaneous lesions and mimic metastases, relevant to differential diagnosis though using PET/CT rather than standard CT.",
+      "most_important_signal": "FDG-avid subcutaneous filler deposits that could be mistaken for malignancy."
+    },
+    {
+      "relevant_case_id": "12579",
+      "relevance_score": 2,
+      "rationale": "Shows imaging of an oil cyst from traumatic fat necrosis, which involves oil-containing lesions but represents a localized, encapsulated process rather than diffuse injected oil bubbles.",
+      "most_important_signal": "Well-circumscribed fat-containing oil cyst distinguishing organized fat necrosis from scattered injected oil droplets."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 16251
+TIMESTAMP: 2026-02-22T10:09:23.203929
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "16251",
+  "short_target_summary": "A 47-year-old woman with progressive exercise-related buttock pain and hip abductor weakness. MRI showed STIR hyperintensity and mild fatty change in the tensor fasciae latae, gluteus medius, and minimus, consistent with subacute superior gluteal nerve entrapment.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "The diagnosis relies on recognizing indirect MRI signs of nerve impingement, specifically the pattern and distribution of muscle edema and fatty change on STIR and T1 sequences rather than direct nerve visualization.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "18034",
+      "relevance_score": 4,
+      "rationale": "Demonstrates MRI features of denervation edema in gluteal muscles following nerve injury, which closely parallels the indirect muscle-based signs used to diagnose superior gluteal nerve impingement in the target case, although the affected nerve and etiology differ.",
+      "most_important_signal": "STIR hyperintensity in gluteal muscles indicating subacute denervation."
+    },
+    {
+      "relevant_case_id": "19188",
+      "relevance_score": 3,
+      "rationale": "Shows fatty degeneration of the gluteus minimus and involvement of the tensor fascia lata, providing partial overlap with chronic or subacute muscle changes seen in nerve-related pathology, but the primary diagnosis is muscular hypertrophy rather than neuropathy.",
+      "most_important_signal": "High T1 signal within gluteus minimus consistent with fatty degeneration."
+    },
+    {
+      "relevant_case_id": "18854",
+      "relevance_score": 2,
+      "rationale": "Involves gluteal and tensor fascia lata abnormalities but relates to tendinopathy and muscle hypertrophy rather than denervation, making it mostly tangential and potentially misleading if muscle edema is over-interpreted as neuropathic.",
+      "most_important_signal": "PD fat-sat high signal at gluteal tendon insertions rather than muscle denervation."
+    },
+    {
+      "relevant_case_id": "10762",
+      "relevance_score": 3,
+      "rationale": "Illustrates chronic denervation with fatty infiltration without edema, serving as a useful contrast to the subacute stage in the target case and helping distinguish timing of nerve injury.",
+      "most_important_signal": "Fatty muscle infiltration on T1 without STIR edema indicating chronic denervation."
+    },
+    {
+      "relevant_case_id": "17825",
+      "relevance_score": 2,
+      "rationale": "Demonstrates a focal piriformis abscess compressing the sciatic nerve, relevant mainly as an alternative cause of buttock pain and nerve compression, but imaging shows a clear mass lesion unlike the indirect denervation pattern of the target case.",
+      "most_important_signal": "Rim-enhancing piriformis mass directly compressing the sciatic nerve."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 16138
+TIMESTAMP: 2026-02-22T10:09:41.924840
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "16138",
+  "short_target_summary": "An 83-year-old man with painless rectal bleeding and a friable anorectal mass showing T1 hyperintensity, T2 hypointensity, and restricted diffusion on MRI, confined to the submucosa. Final diagnosis was primary anorectal melanoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies heavily on recognizing characteristic MRI signal features of melanoma (T1 hyperintensity from melanin, T2 hypointensity, diffusion restriction) and precise assessment of mural layer invasion, which require nuanced image interpretation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "16849",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target case in patient age, location at the anorectal junction, submucosal confinement on EUS, and MRI features including T1 hyperintensity and restricted diffusion, with the same final diagnosis of anal melanoma.",
+      "most_important_signal": "Combination of T1 hyperintensity, diffusion restriction, and submucosal confinement confirming anorectal melanoma."
+    },
+    {
+      "relevant_case_id": "MRI T1 hyperintense endoluminal lobulated mass at anorectal junction (yellow arrows Images 1-4) due to melanin",
+      "relevance_score": 4,
+      "rationale": "Although details are incomplete, the described key imaging feature (T1 hyperintensity due to melanin at the anorectal junction) directly supports melanoma diagnosis.",
+      "most_important_signal": "Intrinsic T1 hyperintensity caused by melanin."
+    },
+    {
+      "relevant_case_id": "restricted diffusion (high b1000/low ADC, Images 5-6)",
+      "relevance_score": 4,
+      "rationale": "Restricted diffusion is a characteristic functional imaging feature of melanoma and aligns well with the target case MRI findings.",
+      "most_important_signal": "Marked diffusion restriction on DWI/ADC."
+    },
+    {
+      "relevant_case_id": "9271",
+      "relevance_score": 2,
+      "rationale": "This case represents anal squamous cell carcinoma with infiltrative circumferential growth and nodal disease, which contrasts with the polypoid, T1-hyperintense melanoma in the target case.",
+      "most_important_signal": "Circumferential infiltrative morphology without T1 hyperintensity, more typical of SCC."
+    },
+    {
+      "relevant_case_id": "follow-up exophytic progression/necrosis (Images 9-14)",
+      "relevance_score": 2,
+      "rationale": "Describes progression and necrosis typical of advanced anal SCC, mainly useful as a negative comparator rather than supporting melanoma diagnosis.",
+      "most_important_signal": "Infiltrative exophytic growth with necrosis lacking melanoma-specific signal features."
+    },
+    {
+      "relevant_case_id": "1586",
+      "relevance_score": 3,
+      "rationale": "Provides a comparison with rectal adenocarcinoma, which can present as a polypoid lesion but typically shows higher T2 signal and lacks T1 hyperintensity and marked diffusion restriction.",
+      "most_important_signal": "Intermediate–high T2 signal without T1 hyperintensity, favoring adenocarcinoma over melanoma."
+    },
+    {
+      "relevant_case_id": "18718",
+      "relevance_score": 2,
+      "rationale": "This case illustrates an internal haemorrhoid mimicking a polypoid lesion, but imaging features (T2 hyperintensity, no diffusion restriction) differ clearly from melanoma.",
+      "most_important_signal": "Absence of diffusion restriction and T2 hyperintensity suggesting benign vascular lesion."
+    },
+    {
+      "relevant_case_id": "no DWI restriction (Images 3-4)",
+      "relevance_score": 3,
+      "rationale": "Useful as a differentiating example showing that lack of diffusion restriction and vascular signal behavior argues against melanoma.",
+      "most_important_signal": "No diffusion restriction distinguishing haemorrhoid from melanoma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 15727
+TIMESTAMP: 2026-02-22T10:10:00.639101
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "15727",
+  "short_target_summary": "An 18-year-old man with acute subacute neurological deficits showed multifocal confluent T2/FLAIR hyperintensities involving white matter and deep gray nuclei with incomplete ring enhancement and subsequent radiologic improvement. Findings and clinical course were consistent with acute disseminated encephalomyelitis (ADEM).",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies heavily on MRI pattern recognition, including lesion distribution (deep gray matter, brainstem), incomplete/open ring enhancement, absence of mass effect, and interval resolution, which cannot be inferred without detailed image assessment.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "18459",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target with deep gray matter involvement, incomplete ring enhancement, normal CSF, post-infectious context, and marked improvement on follow-up imaging, all classic for ADEM.",
+      "most_important_signal": "Peripheral incomplete ring enhancement in thalamic/deep lesions with subsequent radiologic resolution."
+    },
+    {
+      "relevant_case_id": "17966",
+      "relevance_score": 4,
+      "rationale": "Shows symmetric involvement of internal capsules, midbrain, and brainstem with subtle CT hypodensities and MRI demyelinating features similar to the target, though with additional spinal cord involvement and older patient.",
+      "most_important_signal": "Symmetric T2/FLAIR hyperintensities in deep gray and brainstem structures supporting demyelinating etiology."
+    },
+    {
+      "relevant_case_id": "8615",
+      "relevance_score": 3,
+      "rationale": "Demonstrates adult ADEM with monophasic disseminated demyelination and steroid responsiveness, but lesion distribution and enhancement pattern are less specific compared to the target case.",
+      "most_important_signal": "Monophasic multifocal demyelination with clinical and radiologic improvement after steroids."
+    },
+    {
+      "relevant_case_id": "15617",
+      "relevance_score": 3,
+      "rationale": "Illustrates open ring enhancement characteristic of demyelination and helps distinguish inflammatory lesions from neoplasm, but represents tumefactive demyelination rather than classic ADEM.",
+      "most_important_signal": "Open ring enhancement morphology favoring demyelination over tumor."
+    },
+    {
+      "relevant_case_id": "18443",
+      "relevance_score": 3,
+      "rationale": "Shares overlapping imaging features such as confluent deep gray and brainstem lesions, but final diagnosis was MOGAD, which is a key differential rather than direct confirmation of ADEM.",
+      "most_important_signal": "Large, fluffy, poorly demarcated bilateral deep gray and brainstem lesions suggesting inflammatory demyelination."
+    },
+    {
+      "relevant_case_id": "6530",
+      "relevance_score": 2,
+      "rationale": "Demonstrates resolving demyelinating lesions with variable peripheral enhancement, but lesion location and pseudotumoral pattern are less aligned with the target case.",
+      "most_important_signal": "Temporal evolution with enhancement resolving over time supporting inflammatory demyelination."
+    },
+    {
+      "relevant_case_id": "8289",
+      "relevance_score": 2,
+      "rationale": "Highlights incomplete open ring enhancement typical of tumefactive demyelination, useful for differentiation from neoplasm, but lesion size and subcortical focus differ from classic ADEM presentation.",
+      "most_important_signal": "Incomplete open ring enhancement facing cortex indicating demyelination rather than abscess or tumor."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 15699
+TIMESTAMP: 2026-02-22T10:10:19.367385
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "15699",
+  "short_target_summary": "A 2-year-old boy with atraumatic pain and swelling of the right arm showed an aggressive permeative humeral lesion with discontinuous periosteal reaction and enhancing soft tissue mass. Biopsy confirmed bone metastasis of neuroblastoma with no identifiable primary tumor on whole-body MRI or MIBG scan.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation relies heavily on recognizing aggressive bone destruction patterns, periosteal reaction type, marrow signal characteristics, and enhancement patterns on radiograph and MRI to distinguish neuroblastoma metastasis from Ewing sarcoma, leukemia, lymphoma, or osteomyelitis.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "18420",
+      "relevance_score": 5,
+      "rationale": "Demonstrates lytic metastatic bone lesions in a child with confirmed stage IV neuroblastoma, directly supporting the diagnosis of neuroblastoma bone metastasis as seen in the target case.",
+      "most_important_signal": "Presence of multifocal lytic medullary bone metastases from neuroblastoma in a pediatric patient."
+    },
+    {
+      "relevant_case_id": "13144",
+      "relevance_score": 4,
+      "rationale": "Shows skull metastasis of neuroblastoma with aggressive periosteal reaction and soft tissue mass, reinforcing typical metastatic bone behavior of neuroblastoma though in a different skeletal location.",
+      "most_important_signal": "Aggressive periosteal reaction and enhancing soft tissue mass associated with neuroblastoma bone metastasis."
+    },
+    {
+      "relevant_case_id": "8113",
+      "relevance_score": 3,
+      "rationale": "Illustrates leukemic bone infiltration in the humerus, which is an important differential diagnosis but shows more subtle osteolytic changes compared with the extensive permeative destruction in the target case.",
+      "most_important_signal": "Diffuse marrow signal changes on MRI consistent with leukemia rather than a focal aggressive metastatic lesion."
+    },
+    {
+      "relevant_case_id": "2563",
+      "relevance_score": 3,
+      "rationale": "Classic Ewing sarcoma imaging with onion-skin periosteal reaction and large soft tissue mass, useful as a comparator but differs in periosteal pattern and typical age range.",
+      "most_important_signal": "Multilayered onion-skin periosteal reaction characteristic of Ewing sarcoma."
+    },
+    {
+      "relevant_case_id": "12303",
+      "relevance_score": 2,
+      "rationale": "Represents subacute osteomyelitis with penumbra sign and fluid collections, helping exclusion but largely tangential to metastatic neuroblastoma.",
+      "most_important_signal": "Penumbra sign and rim-enhancing abscess collections indicating infection rather than neoplasm."
+    },
+    {
+      "relevant_case_id": "11625",
+      "relevance_score": 3,
+      "rationale": "Infantile Ewing sarcoma with aggressive pelvic bone changes and periosteal reaction; relevant as a close imaging mimic but ultimately a different pathology.",
+      "most_important_signal": "Lamellar and radiating periosteal pattern more typical of Ewing sarcoma."
+    },
+    {
+      "relevant_case_id": "19119",
+      "relevance_score": 3,
+      "rationale": "Shows aggressive marrow-replacing lymphoma with soft tissue mass and periosteal reaction in a toddler, highlighting overlap with the target but differing systemic and pathological features.",
+      "most_important_signal": "Diffuse marrow replacement with associated lymphadenopathy suggesting hematologic malignancy."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 15630
+TIMESTAMP: 2026-02-22T10:10:38.072043
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "15630",
+  "short_target_summary": "A 64-year-old woman with splenomegaly and a solitary splenic mass showing a target sign on US and MRI, with central necrosis on pathology. Final diagnosis was primary non-Hodgkin lymphoma of the spleen.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation relies on imaging nuances such as the target sign, heterogeneous enhancement, and central necrosis to distinguish lymphoma from abscesses or benign splenic masses.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "17318",
+      "relevance_score": 5,
+      "rationale": "This case describes a solitary primary splenic lymphoma with highly similar imaging features across US, CT, and MRI, including a heterogeneous hypoechoic mass and hypovascular enhancement pattern, directly matching the target case.",
+      "most_important_signal": "Solitary solid splenic mass with heterogeneous signal and poor arterial enhancement typical of splenic lymphoma."
+    },
+    {
+      "relevant_case_id": "1484",
+      "relevance_score": 4,
+      "rationale": "Demonstrates splenic large cell lymphoma with heterogeneous enhancement and ill-defined margins, supporting malignant splenic infiltration, though complicated by hemorrhage and pseudoaneurysm.",
+      "most_important_signal": "Inhomogeneous enhancement of an enlarged spleen consistent with lymphomatous involvement."
+    },
+    {
+      "relevant_case_id": "2357",
+      "relevance_score": 3,
+      "rationale": "Provides a key differential diagnosis (splenic abscess) with overlapping hypoechoic and hypodense features, useful mainly for exclusion rather than confirmation.",
+      "most_important_signal": "Non-enhancing hypodense lesion with systemic infection signs favoring abscess over lymphoma."
+    },
+    {
+      "relevant_case_id": "9080",
+      "relevance_score": 2,
+      "rationale": "Illustrates splenic abscess imaging with fluid characteristics and rim enhancement, which contrasts with the solid necrotic mass of lymphoma.",
+      "most_important_signal": "Purely cystic/proteinaceous content with thin rim enhancement, misleading if image texture is not carefully assessed."
+    },
+    {
+      "relevant_case_id": "9426",
+      "relevance_score": 3,
+      "rationale": "Shows SANT, an important benign mimic of splenic lymphoma, highlighting differences in enhancement pattern and PET uptake.",
+      "most_important_signal": "Progressive inhomogeneous enhancement and moderate FDG uptake suggesting benign vascular lesion rather than lymphoma."
+    },
+    {
+      "relevant_case_id": "16827",
+      "relevance_score": 3,
+      "rationale": "Another SANT case with characteristic spoke-wheel enhancement and low T2 signal, helpful for differential diagnosis but not directly supporting lymphoma.",
+      "most_important_signal": "Spoke-and-wheel progressive enhancement pattern distinguishing SANT from necrotic lymphoma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 15315
+TIMESTAMP: 2026-02-22T10:10:56.803822
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "15315",
+  "short_target_summary": "Middle-aged patient with chest pain underwent CT coronary angiography showing a rare benign congenital anomaly: a single (mono) coronary artery arising from the non-coronary cusp with prepulmonic LAD and retro-aortic LCx courses, without malignant features or stenosis.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Determining the exact origin and three-dimensional course of anomalous coronary arteries (prepulmonic vs interarterial vs retro-aortic), as well as excluding malignant features such as slit-like ostium or intramural segments, relies on detailed CT image interpretation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "14073",
+      "relevance_score": 3,
+      "rationale": "This case involves congenital absence of a coronary artery with compensatory superdominant supply, which is conceptually related to congenital coronary variants but differs from a true mono-coronary origin from a single ostium.",
+      "most_important_signal": "Demonstrates how altered coronary dominance and retro-aortic supply can mimic or compensate for missing vessels, but lacks a single-ostium mono-coronary anatomy."
+    },
+    {
+      "relevant_case_id": "4847",
+      "relevance_score": 4,
+      "rationale": "Shows a single-ostium coronary anomaly with an anomalous prepulmonic course and absence of malignant features, closely paralleling the benign course assessment required in the target case, though involving the RCA rather than a mono-coronary system.",
+      "most_important_signal": "Benign anterior/prepulmonic course without slit-like ostium or intramural segment supporting non-malignant classification."
+    },
+    {
+      "relevant_case_id": "16640",
+      "relevance_score": 4,
+      "rationale": "Provides a clear contrast case of a malignant interarterial course arising from a common origin, useful for differentiating high-risk ACAOS patterns from the benign configuration in the target case.",
+      "most_important_signal": "Interarterial course of the left main between aorta and pulmonary trunk as a defining malignant feature absent in the target case."
+    },
+    {
+      "relevant_case_id": "11134",
+      "relevance_score": 4,
+      "rationale": "Illustrates malignant coronary anomaly with slit-like ostium and acute angulation, serving as an important comparator to highlight which dangerous features are specifically excluded in the target diagnosis.",
+      "most_important_signal": "Slit-like opening and acute angulation at origin—key malignant signs not present in the target mono-coronary case."
+    },
+    {
+      "relevant_case_id": "5946",
+      "relevance_score": 3,
+      "rationale": "Demonstrates a classic malignant interarterial RCA anomaly, relevant mainly as a differential exclusion rather than direct support for the target benign diagnosis.",
+      "most_important_signal": "RCA coursing between aorta and pulmonary artery, defining an interarterial malignant pattern."
+    },
+    {
+      "relevant_case_id": "6587",
+      "relevance_score": 3,
+      "rationale": "Another example of malignant interarterial coronary anatomy, useful for comparison but not directly supportive of the benign mono-coronary variant seen in the target case.",
+      "most_important_signal": "Interarterial course with malignant potential emphasizing the absence of such a course in the target case."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 15136
+TIMESTAMP: 2026-02-22T10:11:15.539330
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "15136",
+  "short_target_summary": "A 26-year-old man with median nerve sensory symptoms was found to have a small intraneural hemorrhagic, enhancing lesion in the carpal tunnel, confirmed on histopathology as an intraneural venous malformation.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis depends on subtle MRI features such as intraneural location, hemorrhagic components with GRE blooming, and heterogeneous enhancement that distinguish venous malformation from schwannoma or fibrolipomatous lesions.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "11028",
+      "relevance_score": 4,
+      "rationale": "Directly relevant as an important differential diagnosis of median nerve lesions; highlights imaging features that clearly differ from the target case.",
+      "most_important_signal": "Presence of macroscopic fat with classic coaxial cable/spaghetti appearance, which is absent in the target case."
+    },
+    {
+      "relevant_case_id": "11774",
+      "relevance_score": 4,
+      "rationale": "Useful comparator as a common intraneural tumor of the median nerve, helping to distinguish neoplastic from vascular causes.",
+      "most_important_signal": "Homogeneous enhancement and lack of hemorrhagic blooming, contrasting with the target’s heterogeneous enhancement and intralesional bleed."
+    },
+    {
+      "relevant_case_id": "16243",
+      "relevance_score": 3,
+      "rationale": "Partially relevant by demonstrating vascular malformations associated with peripheral nerves, though primarily extrinsic rather than intraneural.",
+      "most_important_signal": "Abnormal vascular channels and nerve thickening indicating vascular etiology, but with arterial flow and extrinsic involvement unlike the target."
+    },
+    {
+      "relevant_case_id": "4265",
+      "relevance_score": 3,
+      "rationale": "Relevant as another example of intraneural hemangioma/vascular lesion, albeit in a different nerve and anatomical context.",
+      "most_important_signal": "Strong enhancement and T2 hyperintensity of an intraneural vascular lesion, though associated with bony changes not seen in the target."
+    },
+    {
+      "relevant_case_id": "1308",
+      "relevance_score": 2,
+      "rationale": "Weak relevance; represents schwannoma in the hand region but with different size, chronicity, and imaging behavior.",
+      "most_important_signal": "Encapsulated mass with enhancement but no hemorrhagic blooming or intraneural vascular channels, making it potentially misleading if overemphasized."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 14455
+TIMESTAMP: 2026-02-22T10:11:34.275190
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "14455",
+  "short_target_summary": "A 53-year-old man with a slowly growing, mildly painful intramuscular thigh mass showing a well-defined multilocular cystic lesion with daughter cysts, low T1/high T2 signal, and peripheral capsular enhancement. Imaging features are classic for primary intramuscular hydatid disease.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies heavily on recognizing specific imaging signs such as multiloculated cystic architecture, daughter cysts, detached membranes, and characteristic enhancement patterns that distinguish hydatid disease from abscesses, tumors, or hematomas.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "5522",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target case with an intramuscular thigh cystic mass, similar clinical presentation, and confirmed muscular hydatid disease on imaging and pathology.",
+      "most_important_signal": "Intramuscular cystic mass of the thigh with imaging-confirmed echinococcosis."
+    },
+    {
+      "relevant_case_id": "15931",
+      "relevance_score": 5,
+      "rationale": "Shows nearly identical MRI and ultrasound features including multiloculated cysts, daughter cysts, and minimal peripheral enhancement in the thigh, directly supporting the same diagnosis.",
+      "most_important_signal": "Presence of daughter cysts within a multiloculated intramuscular thigh lesion."
+    },
+    {
+      "relevant_case_id": "16807",
+      "relevance_score": 5,
+      "rationale": "Provides classic and detailed hydatid imaging signs (daughter cysts, double-line sign, detached membranes) in an intramuscular thigh location, strongly reinforcing diagnostic confidence.",
+      "most_important_signal": "Classic hydatid signs such as daughter cyst clusters and detached membranes on US and MRI."
+    },
+    {
+      "relevant_case_id": "11775",
+      "relevance_score": 4,
+      "rationale": "Demonstrates characteristic cyst-within-cyst appearance and intramuscular localization, though in the gluteal region rather than thigh, making it strongly but not perfectly matched.",
+      "most_important_signal": "Cyst-within-cyst (daughter cyst) pattern on ultrasound and MRI."
+    },
+    {
+      "relevant_case_id": "6515",
+      "relevance_score": 2,
+      "rationale": "While it presents a large multiloculated cystic mass in the thigh, the presence of gas, systemic infection, and subcutaneous location make it primarily useful as a contrasting non-hydatid diagnosis.",
+      "most_important_signal": "Gas within cystic locules indicating abscess rather than hydatid disease."
+    },
+    {
+      "relevant_case_id": "17597",
+      "relevance_score": 3,
+      "rationale": "Shows hydatid disease with internal round hypointense structures and septations, but differs in anatomical location (retro-scapular, subcutaneous) and enhancement pattern.",
+      "most_important_signal": "Internal rounded hypointense formations consistent with daughter cysts supporting hydatid etiology."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 13775
+TIMESTAMP: 2026-02-22T10:11:53.000759
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "13775",
+  "short_target_summary": "A 47-year-old woman with an incidentally detected left adnexal mass showing classic MRI features of fat-containing ovarian lesion, including T1/T2 hyperintensity with fat suppression and restricted diffusion, diagnosed as a mature cystic ovarian teratoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies on recognizing specific MRI signal characteristics of fat (T1/T2 hyperintensity with fat suppression), fluid–fluid levels, and floating intracystic components that distinguish teratoma from hemorrhagic or malignant lesions.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "2761",
+      "relevance_score": 4,
+      "rationale": "Demonstrates MRI identification of small amounts of fat in an ovarian mature cystic teratoma using T1 hyperintensity and fat suppression, directly supporting the key diagnostic principle of the target case, though with less complex internal architecture.",
+      "most_important_signal": "T1 hyperintense focus suppressed on fat-saturated sequences confirming fat content."
+    },
+    {
+      "relevant_case_id": "12570",
+      "relevance_score": 5,
+      "rationale": "Shows classic MRI appearance of a dermoid cyst with floating fat globules and mixed cystic components, closely mirroring the target case’s fat–fluid level and intracystic fat with identical diagnostic implications.",
+      "most_important_signal": "Floating intracystic fat hyperintense on T1/T2 without enhancement."
+    },
+    {
+      "relevant_case_id": "14177",
+      "relevance_score": 4,
+      "rationale": "CT-based demonstration of fat–fluid levels and mobile fat within a mature cystic teratoma reinforces the same pathognomonic feature seen on MRI in the target case, despite different modality.",
+      "most_important_signal": "Fat–fluid level with positional change indicating mobile intralesional fat."
+    },
+    {
+      "relevant_case_id": "15364",
+      "relevance_score": 3,
+      "rationale": "Illustrates advanced and complicated mature teratoma with rupture and malignant transformation; relevant for recognizing classic fat and calcified components but less directly applicable due to acute complications absent in the target case.",
+      "most_important_signal": "Rokitansky nodule with fat–fluid levels and calcifications."
+    },
+    {
+      "relevant_case_id": "11811",
+      "relevance_score": 2,
+      "rationale": "Confirms fat-containing ovarian teratoma on CT but in a pediatric patient with torsion, offering limited direct relevance to MRI-based diagnosis in an adult incidental adnexal mass.",
+      "most_important_signal": "CT-detected fat attenuation within an ovarian mass."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 13534
+TIMESTAMP: 2026-02-22T10:12:11.696692
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "13534",
+  "short_target_summary": "A 35-year-old postpartum woman presented with a sudden axillary mass. Ultrasound showed multiple tubular anechoic structures with intervening vascularized tissue, consistent with lactating accessory axillary breast tissue associated with supernumerary nipples.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies on recognizing the characteristic ultrasound pattern of lactating breast tissue (tubular anechoic ducts with vascular stroma) and distinguishing it from lymphadenopathy or abscess, which requires nuanced image interpretation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "7137",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target case with postpartum presentation, bilateral axillary masses, and ultrasound findings of serpiginous anechoic ducts with increased vascularity, directly supporting the same diagnosis.",
+      "most_important_signal": "Postpartum status with axillary masses showing dilated tubular ducts and hypervascular stroma on ultrasound."
+    },
+    {
+      "relevant_case_id": "11598",
+      "relevance_score": 4,
+      "rationale": "Demonstrates accessory axillary breast tissue with supportive MRI and ultrasound features, reinforcing the concept of ectopic breast tissue, though lacking lactational ductal prominence and postpartum context.",
+      "most_important_signal": "Glandular breast tissue admixed with fat in the axilla, separate from the pectoral breast."
+    },
+    {
+      "relevant_case_id": "16605",
+      "relevance_score": 2,
+      "rationale": "Although it involves accessory breast tissue and a supernumerary nipple, the pathology is a fibroadenoma located along the milk line rather than lactating axillary tissue, limiting its diagnostic relevance.",
+      "most_important_signal": "Presence of an accessory nipple with a solid hypoechoic mass rather than tubular lactating ducts."
+    },
+    {
+      "relevant_case_id": "18823",
+      "relevance_score": 3,
+      "rationale": "Provides a useful contrast case illustrating ultrasound features of pathological lymphadenopathy, aiding differentiation from lactating accessory breast tissue, but does not support the target diagnosis itself.",
+      "most_important_signal": "Discrete lymph nodes with cortical thickening and loss of fatty hilum, unlike diffuse tubular ductal structures."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 11678
+TIMESTAMP: 2026-02-22T10:12:30.436485
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "11678",
+  "short_target_summary": "A 45-year-old man with chest pain and dyspnoea underwent CT pulmonary angiography for suspected pulmonary embolism, which instead revealed an anomalous systemic arterial supply to a hypodense left lower lobe lesion. Imaging findings were consistent with pulmonary sequestration.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis hinges on recognising subtle vascular anatomy on CT angiography, specifically an anomalous systemic arterial supply and parenchymal features that can mimic emphysema or other cystic lung disease.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "10251",
+      "relevance_score": 5,
+      "rationale": "This case is nearly identical to the target, with the same location (posterobasal left lower lobe), emphysema-mimicking hypodensity, and anomalous arterial supply from the descending thoracic aorta, directly supporting the diagnosis of pulmonary sequestration.",
+      "most_important_signal": "Systemic arterial branch from the descending thoracic aorta supplying abnormal left lower lobe parenchyma."
+    },
+    {
+      "relevant_case_id": "6860",
+      "relevance_score": 4,
+      "rationale": "Demonstrates classic imaging findings of pulmonary sequestration in the left lower lobe with anomalous systemic arterial supply, closely aligning with the target case though with more obvious consolidation and air-fluid level.",
+      "most_important_signal": "Anomalous arterial supply to left lower lobe mass with compensatory emphysema."
+    },
+    {
+      "relevant_case_id": "16797",
+      "relevance_score": 4,
+      "rationale": "Shows a systemic arterial supply from the descending thoracic aorta to a left lower lobe lesion, reinforcing the key vascular hallmark of sequestration despite differing internal lesion morphology.",
+      "most_important_signal": "Large calibre systemic artery arising from descending thoracic aorta supplying left lower lobe lesion."
+    },
+    {
+      "relevant_case_id": "8153",
+      "relevance_score": 3,
+      "rationale": "Illustrates pulmonary sequestration with anomalous arterial supply, but the multiloculated cystic and infected appearance with dual venous drainage makes it less directly comparable to the target case.",
+      "most_important_signal": "Anomalous systemic arterial supply identified on CT angiography."
+    },
+    {
+      "relevant_case_id": "3184",
+      "relevance_score": 3,
+      "rationale": "Confirms the diagnostic importance of identifying a systemic feeding artery in pulmonary sequestration, though patient age, presentation, and arterial origin differ substantially from the target.",
+      "most_important_signal": "Enhancing left lower lobe lesion supplied by anomalous systemic artery."
+    },
+    {
+      "relevant_case_id": "9442",
+      "relevance_score": 2,
+      "rationale": "Partially relevant by demonstrating systemic arterial supply in a congenital lung lesion, but primarily represents CPAM with associated sequestration in a neonatal context, limiting direct diagnostic comparison.",
+      "most_important_signal": "Feeding artery from abdominal aorta distinguishing sequestration component from pure CPAM."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 11575
+TIMESTAMP: 2026-02-22T10:12:49.175384
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "11575",
+  "short_target_summary": "A 54-year-old woman with a small unilocular cystic lesion at the porta hepatis showing high T1 signal and communication with the left hepatic duct. Surgical pathology confirmed a unilocular mucinous biliary cystadenoma with ovarian-like stroma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies on subtle imaging features such as T1 hyperintensity from mucinous content, thin walls without nodules, and clear communication with the bile duct, which are only appreciable through detailed image interpretation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "13885",
+      "relevance_score": 4,
+      "rationale": "Demonstrates biliary cystadenoma with bile duct communication and T1 hyperintensity, directly supporting the same disease entity, though the lesion is multilocular and much larger than in the target case.",
+      "most_important_signal": "Hepatobiliary-phase contrast accumulation proving bile duct communication in a cystic hepatic lesion."
+    },
+    {
+      "relevant_case_id": "6406",
+      "relevance_score": 5,
+      "rationale": "Classic imaging-pathologic correlation of mucinous biliary cystadenoma with proteinaceous/mucinous content explaining atypical density/signal, closely matching the target diagnosis.",
+      "most_important_signal": "Non-simple cyst characteristics with mucinous content confirmed histologically as biliary cystadenoma."
+    },
+    {
+      "relevant_case_id": "11744",
+      "relevance_score": 3,
+      "rationale": "Useful as a contrasting malignant counterpart, highlighting features absent in the target case, but not directly supportive of the benign diagnosis.",
+      "most_important_signal": "Presence of thick irregular walls, papillary projections, and enhancing vegetations indicating cystadenocarcinoma."
+    },
+    {
+      "relevant_case_id": "9127",
+      "relevance_score": 4,
+      "rationale": "Histologically proven mucinous hepatobiliary cystadenoma with ovarian-type stroma, reinforcing the same pathological entity despite differences in size and complexity.",
+      "most_important_signal": "Ovarian-type stroma and epithelial lining confirming mucinous hepatobiliary cystadenoma."
+    },
+    {
+      "relevant_case_id": "18211",
+      "relevance_score": 2,
+      "rationale": "Represents a benign cystic liver lesion in the differential diagnosis but lacks bile duct communication and mucinous imaging features seen in the target case.",
+      "most_important_signal": "Mobile echogenic contents and lack of duct communication favoring ciliated hepatic foregut cyst."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 10280
+TIMESTAMP: 2026-02-22T10:13:07.928497
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "10280",
+  "short_target_summary": "A 65-year-old man with chest pain, dysphagia, and respiratory failure was found on CT to have a saccular descending thoracic aortic aneurysm from a penetrating atherosclerotic ulcer, complicated by intramural/periaortic gas and contrast extravasation into the gastrointestinal tract. Surgical exploration confirmed an aortoesophageal fistula with fatal outcome.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis hinges on subtle CT findings such as intramural or periaortic gas, hazy aortic wall, aneurysm morphology, and contrast extravasation, which require careful image interpretation rather than clinical data alone.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "7657",
+      "relevance_score": 5,
+      "rationale": "This case demonstrates classic CT signs of aortoesophageal fistula, including gas between the aorta and esophagus and active contrast leakage, directly paralleling the imaging hallmarks used to diagnose the target case.",
+      "most_important_signal": "Periaortic/paraesophageal gas with active contrast extravasation confirming aortoesophageal fistula."
+    },
+    {
+      "relevant_case_id": "14192",
+      "relevance_score": 5,
+      "rationale": "Shows intramural air within a thoracic aortic aneurysm and associated gastrointestinal hemorrhage, strongly reinforcing the diagnostic significance of air bubbles in the aortic wall as a sign of aortoesophageal fistula.",
+      "most_important_signal": "Air bubbles within aneurysm mural thrombus associated with massive upper GI bleeding."
+    },
+    {
+      "relevant_case_id": "4124",
+      "relevance_score": 4,
+      "rationale": "Illustrates an aortoesophageal fistula with mediastinal abscess and collapse, supporting the concept of fistulous communication and adjacent inflammatory changes, though the etiology differs from the target case.",
+      "most_important_signal": "Aortic wall defect adjacent to mediastinal collection indicating fistulous erosion."
+    },
+    {
+      "relevant_case_id": "9603",
+      "relevance_score": 4,
+      "rationale": "Demonstrates intraluminal air within an aneurysm in close contact with the esophagus, an important imaging clue mirrored in the target case, despite involving an aberrant subclavian artery rather than the descending aorta.",
+      "most_important_signal": "Air bubbles within thrombotic aneurysm lumen adjacent to esophageal wall."
+    },
+    {
+      "relevant_case_id": "5363",
+      "relevance_score": 3,
+      "rationale": "Provides a baseline example of a penetrating atherosclerotic ulcer causing a saccular aneurysm without fistulization, useful for differentiating uncomplicated PAU from progression to aortoesophageal fistula as seen in the target.",
+      "most_important_signal": "Saccular aneurysm from PAU without intramural gas or contrast extravasation."
+    },
+    {
+      "relevant_case_id": "12642",
+      "relevance_score": 2,
+      "rationale": "Illustrates an aortoenteric (aortoduodenal) fistula with contrast extravasation, conceptually related but anatomically distinct, limiting its direct applicability to thoracic aortoesophageal fistula diagnosis.",
+      "most_important_signal": "Active contrast extravasation from aorta into gastrointestinal lumen, but at abdominal/duodenal level."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 19078
+TIMESTAMP: 2026-02-22T10:13:26.651722
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "19078",
+  "short_target_summary": "A 49-year-old premenopausal woman presented with a painful right breast lump showing a large suspicious asymmetry and hypoechoic mass on mammography and ultrasound, initially categorized as BI-RADS 4C. Biopsy revealed lymphocytic mastopathy associated with previously unrecognized dysglycaemia, with complete imaging resolution after metabolic control.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation from malignancy relies on nuanced imaging patterns (asymmetry, non-mass enhancement, hypoechoic shadowing, lack of vascularity) that closely mimic carcinoma and require careful radiologic–pathologic correlation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "2185",
+      "relevance_score": 5,
+      "rationale": "This case is a classic example of diabetic (lymphocytic) mastopathy with mammographic asymmetries and hypoechoic shadowing masses that closely mimic malignancy, directly paralleling the target case pathology and imaging pitfall.",
+      "most_important_signal": "Focal parenchymal condensations with hypoechoic shadowing masses in a patient with diabetes, proven as sclerosing lymphocytic lobulitis."
+    },
+    {
+      "relevant_case_id": "8545",
+      "relevance_score": 5,
+      "rationale": "Demonstrates focal asymmetry visible only on MLO view and ill-defined hypoechoic ultrasound findings initially discordant with biopsy, later resolved as diabetic mastopathy, mirroring the diagnostic challenge of the target case.",
+      "most_important_signal": "Ill-defined hypoechoic area with posterior attenuation and benign outcome despite suspicious imaging."
+    },
+    {
+      "relevant_case_id": "14178",
+      "relevance_score": 5,
+      "rationale": "Strongly relevant due to similar mammographic asymmetry, shadowing on ultrasound, benign biopsy with lymphocytic infiltration, and normal contrast-enhanced MRI, reinforcing benign lymphocytic mastopathy diagnosis.",
+      "most_important_signal": "Normal contrast-enhanced MRI despite suspicious mammography and ultrasound findings."
+    },
+    {
+      "relevant_case_id": "12236",
+      "relevance_score": 4,
+      "rationale": "Shows ill-defined hypoechoic mass in the upper outer quadrant with repeated benign biopsies and eventual resolution, supporting conservative management and benign nature similar to the target case.",
+      "most_important_signal": "Resolution of suspicious imaging after benign histology confirming diabetic mastopathy."
+    },
+    {
+      "relevant_case_id": "17489",
+      "relevance_score": 3,
+      "rationale": "Partially relevant as it highlights coexistence of diabetic mastopathy and carcinoma in situ, underscoring the need for biopsy; however, it differs from the target case which had no malignancy.",
+      "most_important_signal": "Demonstrates that diabetic mastopathy can coexist with carcinoma, emphasizing careful exclusion of malignancy."
+    },
+    {
+      "relevant_case_id": "16604",
+      "relevance_score": 2,
+      "rationale": "Primarily useful as a contrast case illustrating imaging features of secondary breast lymphoma, helping differentiate from lymphocytic mastopathy rather than directly supporting the diagnosis.",
+      "most_important_signal": "Infiltrative non-mass enhancement with restricted diffusion and lymphadenopathy distinguishing lymphoma from mastopathy."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 19087
+TIMESTAMP: 2026-02-22T10:13:45.356381
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "19087",
+  "short_target_summary": "An 8-year-old boy with chronic flank symptoms, anaemia, and infection signs shows a non-functioning left kidney with parenchymal destruction, bear paw sign, nephrolithiasis, and perirenal extension on multimodality imaging. Final diagnosis is diffuse xanthogranulomatous pyelonephritis.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis hinges on recognizing specific imaging patterns (bear paw sign, parenchymal destruction, calyceal dilatation, perirenal inflammatory extension) and differentiating them from tumors, hydronephrosis, or tuberculosis, which requires nuanced image interpretation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "17028",
+      "relevance_score": 5,
+      "rationale": "Demonstrates classic diffuse XGP imaging findings including bear paw sign, staghorn calculus, perinephric inflammation, and non-functioning kidney, directly mirroring the target case.",
+      "most_important_signal": "Bear paw sign with parenchymal destruction and associated staghorn calculus plus perirenal extension."
+    },
+    {
+      "relevant_case_id": "18308",
+      "relevance_score": 4,
+      "rationale": "Strongly illustrates bear paw sign and chronic inflammatory changes of XGP, though complicated by fistula and prior urinary reconstruction, making it slightly less directly comparable.",
+      "most_important_signal": "Radially arranged dilated calyces with thin residual parenchyma indicating diffuse XGP rather than simple hydronephrosis."
+    },
+    {
+      "relevant_case_id": "17200",
+      "relevance_score": 4,
+      "rationale": "Shows non-functioning kidney with staghorn calculus, caliectasis, cortical thinning, and inflammatory extension consistent with XGP, closely aligning with target imaging features.",
+      "most_important_signal": "Marked parenchymal thinning with calyceal collections and lack of excretion on delayed CT."
+    },
+    {
+      "relevant_case_id": "17779",
+      "relevance_score": 3,
+      "rationale": "Supports XGP diagnosis through perirenal inflammatory fat involvement and calculus, but lacks the full bear paw sign and severe parenchymal destruction seen in the target case.",
+      "most_important_signal": "Inflammatory perirenal fat changes with associated staghorn calculus suggesting chronic XGP."
+    },
+    {
+      "relevant_case_id": "MRI confirms lipid-laden macrophages (in/out phase signal drop) and radial striae - highlights xanthogranulomatous lipid replacement distinguishing from renal tumor.",
+      "relevance_score": 3,
+      "rationale": "Conceptually relevant by emphasizing lipid-laden macrophages and imaging clues distinguishing XGP from malignancy, but insufficient case detail limits direct comparison.",
+      "most_important_signal": "Signal drop on opposed-phase MRI indicating lipid-laden macrophages characteristic of XGP."
+    },
+    {
+      "relevant_case_id": "14129",
+      "relevance_score": 4,
+      "rationale": "Closely parallels the target case with ultrasound and CT showing renal replacement by cavities, staghorn lithiasis, infection, and eventual histologic confirmation of XGP.",
+      "most_important_signal": "Confluent water-attenuation cavities with staghorn calculus and severely thinned parenchyma."
+    },
+    {
+      "relevant_case_id": "CECT",
+      "relevance_score": 2,
+      "rationale": "Provides general supportive imaging description of XGP-like destruction but lacks specific clinical and imaging detail to strongly inform diagnosis.",
+      "most_important_signal": "Poorly enhancing, thinned parenchyma with calyceal dilatation suggesting chronic destructive infection."
+    },
+    {
+      "relevant_case_id": "2523",
+      "relevance_score": 4,
+      "rationale": "Illustrates advanced diffuse XGP with non-functioning kidney, extensive perirenal involvement, and histologic confirmation, reinforcing imaging hallmarks relevant to the target.",
+      "most_important_signal": "Extensive perirenal lipomatous expansion with thin parenchymal rim and cystic spaces indicating advanced diffuse XGP."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 9556
+TIMESTAMP: 2026-02-22T10:46:59.230895
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "9556",
+  "short_target_summary": "A 5-year-old boy presented with dysuria and hypogastric pain, found to have a large heterogeneous pelvic mass above the bladder without calcification or renal involvement. Imaging and biopsy ultimately confirmed an extrarenal Wilms’ tumour.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation from other pediatric pelvic masses relies heavily on imaging nuances such as absence of calcification, relationship to kidneys and bladder, pattern of necrosis, and lack of vascular encasement or invasion.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "6879",
+      "relevance_score": 4,
+      "rationale": "Demonstrates classic imaging features of Wilms’ tumour (heterogeneous solid mass with necrosis and no calcification), which closely match the target case apart from the renal origin.",
+      "most_important_signal": "Heterogeneous solid mass with necrotic areas and absence of calcification, supporting Wilms histology."
+    },
+    {
+      "relevant_case_id": "17695",
+      "relevance_score": 4,
+      "rationale": "Shows multifocal Wilms’ tumour with similar heterogeneous enhancement and necrosis, reinforcing the imaging pattern typical of Wilms’ tumour despite renal involvement.",
+      "most_important_signal": "Necrotic, heterogeneously enhancing mass without calcification, consistent with Wilms’ tumour morphology."
+    },
+    {
+      "relevant_case_id": "5926",
+      "relevance_score": 3,
+      "rationale": "Useful as a contrast case for pelvic neuroblastoma, highlighting features that help exclude this diagnosis in the target case.",
+      "most_important_signal": "Presence of calcifications and positive catecholamines/MIBG uptake, which are absent in the target case."
+    },
+    {
+      "relevant_case_id": "9384",
+      "relevance_score": 3,
+      "rationale": "Provides comparison with pelvic rhabdomyosarcoma, another key differential, but imaging vascularity differs from the target case.",
+      "most_important_signal": "Marked intralesional and perilesional hypervascularity, unlike the relatively avascular necrotic Wilms’ tumour."
+    },
+    {
+      "relevant_case_id": "12237",
+      "relevance_score": 2,
+      "rationale": "Pelvic/bladder rhabdomyosarcoma shares symptoms such as dysuria but differs in size, origin, and vascularity, limiting direct diagnostic relevance.",
+      "most_important_signal": "Intravesical origin with intense Doppler vascularity, distinguishing it from extravesical extrarenal Wilms’ tumour."
+    },
+    {
+      "relevant_case_id": "702",
+      "relevance_score": 3,
+      "rationale": "Classic renal Wilms’ tumour case that supports general imaging appearance but lacks the extrarenal pelvic context.",
+      "most_important_signal": "Lobulated heterogeneous renal mass with necrosis, reinforcing typical Wilms’ tumour imaging."
+    },
+    {
+      "relevant_case_id": "6899",
+      "relevance_score": 3,
+      "rationale": "Helpful in excluding extra-adrenal neuroblastoma, a major differential, based on differing imaging and biochemical features.",
+      "most_important_signal": "Prominent vascularity and elevated urinary catecholamines, not seen in the target case."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 9435
+TIMESTAMP: 2026-02-22T10:47:17.952931
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "9435",
+  "short_target_summary": "An 11-year-old boy with fever and right hip/buttock pain showed MRI and CT evidence of a sacral lesion with cortical destruction, central bony sequestrum, and extensive adjacent muscle inflammation, consistent with pyogenic sacral osteomyelitis.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Key diagnostic features depend on recognizing marrow signal changes, cortical loss, a central low-signal sequestrum, and patterns of soft-tissue enhancement on MRI and CT, which cannot be inferred from clinical data alone.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "8494",
+      "relevance_score": 4,
+      "rationale": "Demonstrates infection centered on the sacroiliac region with adjacent iliacus muscle abscess and marrow involvement of sacrum and ilium, closely paralleling the anatomic distribution and infectious pattern of the target case, though in an adult with sacroiliitis rather than primary sacral osteomyelitis.",
+      "most_important_signal": "MRI evidence of iliacus abscess with adjacent sacral and iliac marrow enhancement indicating contiguous spread of infection."
+    },
+    {
+      "relevant_case_id": "10303",
+      "relevance_score": 4,
+      "rationale": "Shows CT findings of cortical erosions at the sacroiliac joint with multiple pelvic muscle abscesses, reinforcing the imaging pattern of aggressive infection spreading from bone to surrounding soft tissues seen in the target case.",
+      "most_important_signal": "Cortical erosions of sacrum/ilium with associated pelvic muscle abscesses on contrast-enhanced CT."
+    },
+    {
+      "relevant_case_id": "17605",
+      "relevance_score": 5,
+      "rationale": "Very closely mirrors the target case with MRI-demonstrated sacral and iliac marrow edema adjacent to the SI joint and rim-enhancing iliacus abscesses in a young patient with fever and elevated inflammatory markers.",
+      "most_important_signal": "Combined marrow edema of sacrum/ilium and rim-enhancing soft-tissue abscesses on MRI consistent with acute pyogenic infection."
+    },
+    {
+      "relevant_case_id": "18506",
+      "relevance_score": 4,
+      "rationale": "Although involving the femur rather than the sacrum, this case clearly illustrates the imaging hallmark of chronic osteomyelitis with a central low-signal sequestrum, cortical disruption, and extension into adjacent muscle, which directly supports interpretation of the sequestrum in the target case.",
+      "most_important_signal": "Central bony sequestrum with surrounding marrow edema and cortical cloacae on MRI and CT."
+    },
+    {
+      "relevant_case_id": "4857",
+      "relevance_score": 2,
+      "rationale": "Represents pyogenic spinal infection with vertebral osteomyelitis and discitis, sharing general infectious imaging features but differing substantially in location, age group, and biomechanics from pediatric sacral osteomyelitis.",
+      "most_important_signal": "Diffuse marrow edema and enhancement with cortical lysis indicating pyogenic bone infection, but in the spine rather than sacrum."
+    },
+    {
+      "relevant_case_id": "14951",
+      "relevance_score": 3,
+      "rationale": "Provides an important differential comparison by illustrating CRMO with multifocal marrow lesions in a pediatric patient, helping distinguish nonbacterial inflammatory disease from the focal sequestrum-forming pyogenic osteomyelitis in the target case.",
+      "most_important_signal": "Multifocal bone marrow lesions without sequestrum or abscess formation, arguing against pyogenic osteomyelitis."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 9299
+TIMESTAMP: 2026-02-22T10:47:36.688070
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "9299",
+  "short_target_summary": "A 61-year-old HIV-positive man on HAART presented with chronic bloody diarrhoea and abdominal pain. CT showed right-sided colonic concentric wall thickening with target sign, ascites, and pericolonic fat stranding, resolving after treatment, confirming amoebic colitis.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation relies on CT pattern recognition (distribution, target sign, ileal sparing, associated ascites) to distinguish amoebic colitis from other infectious, inflammatory, ischemic, or neutropenic colitides.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "9439",
+      "relevance_score": 4,
+      "rationale": "Demonstrates amoebic colitis spectrum (ameboma) with right-sided colonic involvement and ileal sparing, directly relevant to etiology but more mass-like and complicated by liver abscess.",
+      "most_important_signal": "Right colon concentric thickening with ileocaecal sparing due to amoebic infection."
+    },
+    {
+      "relevant_case_id": "17728",
+      "relevance_score": 4,
+      "rationale": "Confirms that even subtle caecal wall thickening on CT/MRI can represent amoebic colitis, reinforcing imaging-pathology correlation.",
+      "most_important_signal": "Biopsy-proven amoebic colitis corresponding to caecal mural thickening."
+    },
+    {
+      "relevant_case_id": "17079",
+      "relevance_score": 5,
+      "rationale": "Highly relevant comparator showing CMV colitis in AIDS with very similar CT findings, crucial for differential diagnosis in immunocompromised patients.",
+      "most_important_signal": "Diffuse colonic wall thickening with thumbprinting and ascites but different etiology (CMV)."
+    },
+    {
+      "relevant_case_id": "5314",
+      "relevance_score": 3,
+      "rationale": "Shows right-sided colonic wall thickening in an immunocompromised patient, but clinical context (neutropenia, leukemia) differs from HIV-related amoebic colitis.",
+      "most_important_signal": "Caecal and ascending colon thickening with fat edema typical of typhlitis."
+    },
+    {
+      "relevant_case_id": "8844",
+      "relevance_score": 3,
+      "rationale": "Illustrates neutropenic colitis with overlapping CT signs, useful for exclusion rather than confirmation of amoebic colitis.",
+      "most_important_signal": "Marked heterogeneous cecal thickening with intramural low-density areas in neutropenia."
+    },
+    {
+      "relevant_case_id": "10393",
+      "relevance_score": 2,
+      "rationale": "Mimics infectious colitis with target sign, but final diagnosis is non-inflammatory edema related to cirrhosis, making it a potential pitfall rather than supportive.",
+      "most_important_signal": "Target/water halo sign without true inflammatory colitis."
+    },
+    {
+      "relevant_case_id": "7816",
+      "relevance_score": 3,
+      "rationale": "Provides contrast with pseudomembranous pancolitis, highlighting different distribution (pancolonic vs right-sided) despite similar target sign.",
+      "most_important_signal": "Diffuse pancolonic involvement with accordion sign."
+    },
+    {
+      "relevant_case_id": "17497",
+      "relevance_score": 2,
+      "rationale": "Right-sided colonic wall thickening is present, but focal diverticula-related inflammation makes it only tangentially relevant.",
+      "most_important_signal": "Hyperdense inflamed diverticula distinguishing diverticulitis from infectious colitis."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 9246
+TIMESTAMP: 2026-02-22T10:47:55.450810
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "9246",
+  "short_target_summary": "A 54-year-old woman presented with acute rectal bleeding and anemia. CT showed duodenal wall lesion with active bleeding, calcified mesenteric lymph nodes, inflammatory mesenteric changes, pneumoperitoneum, and a suspected fistula; histology confirmed intestinal tuberculosis.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Assessment of calcified lymph nodes, active contrast extravasation, fistulous tract, and mesenteric inflammatory changes requires nuanced CT image interpretation to distinguish intestinal tuberculosis from Crohn disease or malignancy.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "3814",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target with calcified omental and peritoneal implants and bowel wall involvement, classic for gastrointestinal tuberculosis.",
+      "most_important_signal": "Multiple calcified peritoneal and mesenteric nodules supporting chronic tuberculous infection."
+    },
+    {
+      "relevant_case_id": "4430",
+      "relevance_score": 5,
+      "rationale": "Demonstrates duodenal fistula formation and mesenteric lymphadenopathy due to tuberculosis, directly paralleling the suspected duodenal fistulous tract and pneumoperitoneum in the target case.",
+      "most_important_signal": "Documented pyloroduodenal fistula with histologically proven tuberculosis."
+    },
+    {
+      "relevant_case_id": "2095",
+      "relevance_score": 3,
+      "rationale": "Illustrates intestinal tuberculosis with peritoneal involvement but in the ileocaecal region rather than duodenum, limiting direct applicability.",
+      "most_important_signal": "Peritoneal thickening and lymphadenopathy helping differentiate TB from Crohn disease."
+    },
+    {
+      "relevant_case_id": "680",
+      "relevance_score": 4,
+      "rationale": "Shows tuberculous lymphadenitis with marked mesenteric inflammation, supporting the interpretation of mesenteric fat stranding and adenopathy in the target case.",
+      "most_important_signal": "Caseating necrosis in mesenteric lymph nodes causing inflammatory mesenteric mass."
+    },
+    {
+      "relevant_case_id": "18267",
+      "relevance_score": 3,
+      "rationale": "Provides modern imaging examples of calcified lymph nodes in intestinal TB but involves the ileocaecal junction rather than duodenum.",
+      "most_important_signal": "Calcified mesenteric and retroperitoneal lymph nodes indicative of chronic tuberculosis."
+    },
+    {
+      "relevant_case_id": "11776",
+      "relevance_score": 4,
+      "rationale": "Demonstrates peritoneal and mesenteric manifestations of abdominal tuberculosis, reinforcing interpretation of inflammatory mesenteric changes in the target.",
+      "most_important_signal": "Omental and mesenteric thickening with small homogeneous lymph nodes typical of abdominal TB."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 9232
+TIMESTAMP: 2026-02-22T10:48:14.181655
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "9232",
+  "short_target_summary": "A 2-year-old child presented with acute right thigh pain and gait impairment. Imaging showed a deep intramuscular thigh mass with marked Doppler flow, MRI flow voids and enhancement, and associated femoral cortical thickening; biopsy confirmed a high-flow venous malformation.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Correct diagnosis depends on recognizing imaging hallmarks of high-flow vascular malformations (flow voids, Doppler arterialized flow, muscle infiltration, and reactive cortical thickening) that can closely mimic malignant soft-tissue or bone tumors.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "16243",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target with a thigh-based vascular lesion showing prominent Doppler flow and MRI-demonstrated abnormal vascular channels infiltrating muscle, helping differentiate AVM from solid neoplasms.",
+      "most_important_signal": "Serpiginous vascular channels with arterial and venous Doppler flow and muscle replacement rather than compression."
+    },
+    {
+      "relevant_case_id": "17667",
+      "relevance_score": 4,
+      "rationale": "Although located in the foot and in an adult, this case clearly demonstrates classic high-flow AVM imaging features that are directly applicable to distinguishing vascular malformations from tumors in the target case.",
+      "most_important_signal": "High-velocity low-resistance arterial flow on Doppler and MRI flow voids forming a nidus."
+    },
+    {
+      "relevant_case_id": "13949",
+      "relevance_score": 5,
+      "rationale": "This case strongly supports the target diagnosis by showing how high-flow AVMs can produce cortical bone changes and mimic aggressive bone pathology, similar to the femoral diaphyseal sclerosis in the target.",
+      "most_important_signal": "Cortical thickening and erosions caused by intraosseous drainage vessels associated with AVM."
+    },
+    {
+      "relevant_case_id": "15905",
+      "relevance_score": 4,
+      "rationale": "Demonstrates classic ultrasound and MRI findings of high-flow peripheral AVMs with muscle infiltration, reinforcing the interpretation of Doppler and MRI features seen in the target case.",
+      "most_important_signal": "Complete Doppler color filling with arterialized venous flow and MRI muscle infiltration."
+    },
+    {
+      "relevant_case_id": "14433",
+      "relevance_score": 3,
+      "rationale": "Shows extensive soft-tissue and osseous involvement from a congenital AVF, supporting the concept that high-flow shunting can cause bone remodeling, though the extent and anatomy differ from the target.",
+      "most_important_signal": "Intraosseous hypervascularity with cortical erosions and medullary signal voids due to high-flow shunting."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 17930
+TIMESTAMP: 2026-02-22T10:48:32.923059
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "17930",
+  "short_target_summary": "A 53-year-old man with acute right iliac fossa pain underwent contrast-enhanced CT showing a markedly enlarged appendix with irregular wall thickening, periappendiceal fat stranding, small lymph nodes and mild ascites. Final diagnosis was nonmucinous adenocarcinoma of the appendix mimicking acute appendicitis.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Distinguishing nonmucinous appendiceal adenocarcinoma from appendicitis, mucocele, or caecal diverticulitis relies on subtle CT features such as irregular asymmetric wall thickening, degree of enhancement, lymph nodes, and inflammatory pattern, which require image-level assessment.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "9105",
+      "relevance_score": 4,
+      "rationale": "This case demonstrates an appendiceal carcinoma with irregularly thickened, enhancing walls and extensive surrounding fat infiltration on CT, closely paralleling the neoplastic imaging pattern of the target case, though it represents a mucinous subtype rather than nonmucinous.",
+      "most_important_signal": "Irregular enhancing appendiceal wall with mass-like appearance and disproportionate periappendiceal fat infiltration suggesting malignancy rather than simple appendicitis."
+    },
+    {
+      "relevant_case_id": "3417",
+      "relevance_score": 3,
+      "rationale": "Shows a mucinous cystadenocarcinoma presenting as a large cystic appendiceal mass, which is relevant for differential diagnosis but differs substantially from the solid, irregular thickening seen in nonmucinous adenocarcinoma.",
+      "most_important_signal": "Predominantly cystic, low-attenuation dilatation of the appendix with thin wall enhancement, helping contrast mucinous tumors against solid neoplastic appendiceal thickening."
+    },
+    {
+      "relevant_case_id": "17497",
+      "relevance_score": 3,
+      "rationale": "Useful as a differential comparator demonstrating caecal diverticulitis with a normal appendix, helping exclude colonic-origin inflammation when the appendix itself is clearly abnormal as in the target case.",
+      "most_important_signal": "Inflammation centered on caecum with hyperattenuating diverticula and a normal appendix."
+    },
+    {
+      "relevant_case_id": "1602",
+      "relevance_score": 3,
+      "rationale": "Represents classic uncomplicated appendicitis, relevant for comparison since the target case clinically mimics appendicitis but imaging shows atypical malignant features.",
+      "most_important_signal": "Uniform appendiceal enlargement with smooth walls and periappendiceal fat stranding without irregularity or lymphadenopathy."
+    },
+    {
+      "relevant_case_id": "13126",
+      "relevance_score": 3,
+      "rationale": "Demonstrates an appendiceal mucocele, which is an important differential diagnosis but differs clearly from the target by its smooth, cystic, non-inflammatory appearance.",
+      "most_important_signal": "Smooth, thin-walled, fluid-filled tubular appendix without fat stranding or nodal disease."
+    },
+    {
+      "relevant_case_id": "12940",
+      "relevance_score": 2,
+      "rationale": "Shows caecal diverticulitis with micro-perforation and a normal appendix; relevant mainly to exclude colonic diverticular disease as the cause of right iliac fossa pain.",
+      "most_important_signal": "Enhancing caecal diverticulum with adjacent inflammatory changes and a non-involved appendix."
+    },
+    {
+      "relevant_case_id": "10592",
+      "relevance_score": 2,
+      "rationale": "Includes appendiceal perforation with low-grade mucinous neoplasm and concurrent lymphoma, but the dominant pathology and systemic disease make it less directly applicable to isolated nonmucinous appendiceal adenocarcinoma.",
+      "most_important_signal": "Presence of additional large mesenteric mass suggesting alternative or concomitant systemic malignancy rather than isolated appendiceal cancer."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 17406
+TIMESTAMP: 2026-02-22T10:48:51.645994
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "17406",
+  "short_target_summary": "A 59-year-old woman developed acute respiratory distress and abdominal distention during admission for presumed gastroenteritis. Imaging revealed massive pneumoperitoneum and free fluid with focal duodenal bulb discontinuity, confirmed surgically as a perforated juxta-pyloric duodenal ulcer.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies on recognizing imaging signs such as pneumoperitoneum, hydropneumoperitoneum, and subtle focal duodenal wall discontinuity on radiography and CT to localize the site and cause of perforation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "11172",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target with acute presentation, pneumoperitoneum, free fluid, and contrast leak from the pyloric region due to ulcer perforation, directly supporting the same diagnosis.",
+      "most_important_signal": "Extravasation of oral contrast from the pylorus on CT confirming perforated peptic ulcer as the cause of pneumoperitoneum."
+    },
+    {
+      "relevant_case_id": "2845",
+      "relevance_score": 5,
+      "rationale": "Demonstrates classic radiographic signs of perforated duodenal ulcer including large pneumoperitoneum and Rigler’s sign, directly applicable to recognizing the target case imaging pattern.",
+      "most_important_signal": "Large subdiaphragmatic free air and Rigler’s sign on plain radiographs indicating hollow viscus perforation."
+    },
+    {
+      "relevant_case_id": "16749",
+      "relevance_score": 4,
+      "rationale": "Shows complications of duodenal ulcer perforation with gas-containing collections, relevant for understanding alternative or evolving imaging presentations, though less acute free perforation than the target.",
+      "most_important_signal": "Air-fluid levels within lesser sac collections secondary to perforated duodenal ulcer."
+    },
+    {
+      "relevant_case_id": "14507",
+      "relevance_score": 4,
+      "rationale": "Illustrates contained perforation of a proximal duodenal ulcer leading to abscess formation, reinforcing the link between duodenal wall defects and secondary gas/fluid collections.",
+      "most_important_signal": "Focal fistulous communication between duodenum and gas-containing abscess on multiplanar CT."
+    },
+    {
+      "relevant_case_id": "13942",
+      "relevance_score": 3,
+      "rationale": "Relevant as a differential diagnosis example of duodenal perforation, but mechanism differs (foreign body) and lacks massive pneumoperitoneum seen in the target case.",
+      "most_important_signal": "Linear hyperdense foreign body traversing duodenal wall distinguishing foreign body perforation from ulcer."
+    },
+    {
+      "relevant_case_id": "16839",
+      "relevance_score": 3,
+      "rationale": "Useful as a contrasting case to differentiate idiopathic spontaneous pneumoperitoneum from perforated ulcer by absence of free fluid, inflammation, or wall defect.",
+      "most_important_signal": "Large pneumoperitoneum without ascites, bowel wall thickening, or inflammatory changes."
+    },
+    {
+      "relevant_case_id": "16860",
+      "relevance_score": 2,
+      "rationale": "Only tangentially relevant as it demonstrates pneumoperitoneum from bowel ischemia at a different location with vascular findings, helping exclude ischemic ileal causes in the target.",
+      "most_important_signal": "SMA thrombosis with poorly enhancing necrotic ileum and perforation on CT angiography."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 17337
+TIMESTAMP: 2026-02-22T10:49:10.368464
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "17337",
+  "short_target_summary": "A 23-year-old woman with abdominal pain and metabolic comorbidities showed diffuse fatty replacement of the pancreatic body and tail with mass effect on CT and MRI. Imaging features favored lipomatous pseudohypertrophy of the pancreas over agenesis or focal lipomatous conditions.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis hinges on nuanced imaging features such as uniform fat attenuation, preservation or absence of ducts, mass effect, and distinction between true absence versus fatty replacement of pancreatic tissue.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "12459",
+      "relevance_score": 5,
+      "rationale": "Demonstrates near-complete fatty replacement of pancreatic parenchyma with preserved ductal anatomy on CT and MRI, closely mirroring the target case imaging and directly supporting the diagnosis of a benign diffuse lipomatous process.",
+      "most_important_signal": "Uniform fat-density replacement of pancreas with visible pancreaticobiliary ducts coursing through."
+    },
+    {
+      "relevant_case_id": "9519",
+      "relevance_score": 4,
+      "rationale": "Shows extensive pancreatic lipomatosis but with intraductal calculi and chronic obstructive changes, which are absent in the target case; still useful for pattern recognition and differentiation.",
+      "most_important_signal": "Near-total fatty replacement associated with intraductal calculi indicating obstructive etiology."
+    },
+    {
+      "relevant_case_id": "10028",
+      "relevance_score": 3,
+      "rationale": "Illustrates a focal pancreatic lipoma rather than diffuse involvement; helps exclude a discrete mass lesion as the cause of fatty signal.",
+      "most_important_signal": "Well-circumscribed focal fat-attenuation mass surrounded by normal pancreatic tissue."
+    },
+    {
+      "relevant_case_id": "16955",
+      "relevance_score": 3,
+      "rationale": "Represents uneven focal pancreatic lipomatosis without mass effect or diffuse enlargement, providing contrast with the diffuse pseudohypertrophy pattern in the target case.",
+      "most_important_signal": "Focal homogeneous signal loss on fat-suppressed and out-of-phase MRI without mass effect."
+    },
+    {
+      "relevant_case_id": "13671",
+      "relevance_score": 4,
+      "rationale": "Classic example of dorsal pancreatic agenesis with absent body and tail but without fatty replacement, aiding differentiation from lipomatous pseudohypertrophy.",
+      "most_important_signal": "Abrupt truncation of pancreas with empty pancreatic bed and short Wirsung duct."
+    },
+    {
+      "relevant_case_id": "17140",
+      "relevance_score": 2,
+      "rationale": "Represents a malignant retroperitoneal mass with necrosis and invasion; mainly useful as a contrast to benign uniform fatty pancreatic enlargement.",
+      "most_important_signal": "Heterogeneous solid mass with necrosis and vascular invasion rather than uniform fat density."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 16760
+TIMESTAMP: 2026-02-22T10:49:29.090626
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "16760",
+  "short_target_summary": "A 60-year-old asymptomatic woman with an incidentally detected small, well-marginated deep-lobe parotid mass showing T1 hypointensity, T2 hyperintensity, diffusion restriction (low ADC), and vivid enhancement with type B time–intensity curve on MRI. Final diagnosis was salivary gland acinic cell carcinoma.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Differentiation between low-grade malignant and benign parotid tumors relies heavily on MRI signal characteristics, diffusion metrics, enhancement kinetics, and subtle features such as capsule, cystic change, or T2 signal patterns that require direct image interpretation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "959",
+      "relevance_score": 4,
+      "rationale": "This case of Warthin tumor provides strong comparative value by illustrating classic low T2 signal intensity and relatively less enhancement, which contrasts with the T2 hyperintense, vividly enhancing acinic cell carcinoma in the target case.",
+      "most_important_signal": "Low T2 signal intensity in Warthin tumor, helping exclude it when a parotid lesion is T2 hyperintense."
+    },
+    {
+      "relevant_case_id": "1128",
+      "relevance_score": 3,
+      "rationale": "Pleomorphic adenoma shares several imaging features with the target case (well-circumscribed, T1 hypointense, T2 hyperintense, enhancing), highlighting diagnostic overlap but lacking diffusion restriction and malignant implication.",
+      "most_important_signal": "Benign pleomorphic adenoma appearance with strong enhancement but without aggressive diffusion features."
+    },
+    {
+      "relevant_case_id": "16845",
+      "relevance_score": 3,
+      "rationale": "Demonstrates that pleomorphic adenomas can also show diffusion restriction and T2 hyperintensity, underscoring the limitation of single-parameter assessment and the importance of enhancement pattern and capsule evaluation.",
+      "most_important_signal": "Presence of a fibrous capsule and progressive enhancement favoring benignity despite diffusion restriction."
+    },
+    {
+      "relevant_case_id": "4957",
+      "relevance_score": 2,
+      "rationale": "Multiple Warthin tumors with cystic components provide limited relevance; the cystic, multicentric nature contrasts with the solid, solitary lesion of the target case.",
+      "most_important_signal": "Cystic components and multicentricity typical of Warthin tumors, not seen in the target lesion."
+    },
+    {
+      "relevant_case_id": "7748",
+      "relevance_score": 2,
+      "rationale": "This long-standing pleomorphic adenoma involving the deep lobe/parapharyngeal space is anatomically relevant but clinically and temporally distinct, with imaging favoring benign behavior.",
+      "most_important_signal": "Very long duration and indolent growth pattern supporting benign pleomorphic adenoma."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 16720
+TIMESTAMP: 2026-02-22T10:49:47.819207
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "16720",
+  "short_target_summary": "A 10-year-old girl with craniofacial malformation and persistent unilateral conductive hearing loss. High-resolution CT shows a bony plate obliterating the oval window niche with otherwise normal ossicles and middle ear, consistent with isolated unilateral congenital oval window atresia.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis hinges on subtle CT bone-window findings distinguishing true bony obliteration of the oval window from fenestral hypodensity, stapes fixation, or ossicular abnormalities; these nuances cannot be inferred from clinical data alone.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "13203",
+      "relevance_score": 4,
+      "rationale": "Provides a strong comparative example of otosclerosis, a key differential diagnosis, highlighting imaging features that contrast with congenital oval window atresia.",
+      "most_important_signal": "Hypodense spongiotic plaques and thickened stapes footplate rather than a solid hyperdense bony plate obliterating the oval window niche."
+    },
+    {
+      "relevant_case_id": "2682",
+      "relevance_score": 3,
+      "rationale": "Illustrates diffuse fenestral and cochlear otosclerosis, which is part of the differential but differs in age, bilaterality, and CT appearance.",
+      "most_important_signal": "Demineralization of the otic capsule and otosclerotic plaques involving oval and round windows, not a congenital bony atresia."
+    },
+    {
+      "relevant_case_id": "2685",
+      "relevance_score": 2,
+      "rationale": "Shows ossicular discontinuity as a cause of conductive hearing loss, but the oval window niche is normal, making it only tangentially relevant.",
+      "most_important_signal": "Incudostapedial joint dislocation with preserved oval window, potentially misleading if ossicular detail is overemphasized."
+    },
+    {
+      "relevant_case_id": "8090",
+      "relevance_score": 3,
+      "rationale": "Demonstrates congenital aural atresia, helping localize the level of atresia and distinguish external canal abnormalities from oval window pathology.",
+      "most_important_signal": "Bony replacement of the external auditory canal with a normal middle ear and stapes at a patent oval window."
+    },
+    {
+      "relevant_case_id": "8672",
+      "relevance_score": 3,
+      "rationale": "Provides another congenital atresia example, reinforcing differentiation between external auditory canal atresia and isolated oval window atresia.",
+      "most_important_signal": "Osseous atresia plates at the tympanic membrane level with normal middle and inner ear structures, including fenestrated oval windows."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 16686
+TIMESTAMP: 2026-02-22T10:50:06.570080
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "16686",
+  "short_target_summary": "An 81-year-old woman with sepsis was found on CT to have a duodenal perforation with fistulization to a large paravertebral abscess and lumbar spine, resulting in Streptococcus anginosus spondylodiscitis with epidural extension.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "Diagnosis relies on recognizing CT features such as bowel wall discontinuity, oral contrast opacifying a fistulous tract, gas-containing paravertebral collections, and extension into disc spaces and epidural canal, which require detailed image interpretation.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "13232",
+      "relevance_score": 5,
+      "rationale": "This case closely parallels the target case by demonstrating spondylodiscitis caused by fistulization from the gastrointestinal tract to the spine with associated paravertebral and epidural infection.",
+      "most_important_signal": "Direct visualization of a fistulous tract between bowel (sigmoid colon) and infected disc/paravertebral abscess."
+    },
+    {
+      "relevant_case_id": "19122",
+      "relevance_score": 4,
+      "rationale": "Shows imaging features of pyogenic spondylodiscitis with gas and paravertebral/psoas involvement, supporting recognition of aggressive spinal infection, though without a demonstrated bowel perforation.",
+      "most_important_signal": "Gas within vertebral body and psoas/paraspinal collections indicating pyogenic infection."
+    },
+    {
+      "relevant_case_id": "4822",
+      "relevance_score": 4,
+      "rationale": "Illustrates coexistence of bowel perforation and spinal infection with epidural/psoas abscesses, relevant for differential considerations, though the spinal infection is tuberculous rather than pyogenic.",
+      "most_important_signal": "Association of perforated viscus with adjacent vertebral destruction and epidural/psoas collections."
+    },
+    {
+      "relevant_case_id": "4857",
+      "relevance_score": 3,
+      "rationale": "Demonstrates classic MRI features of pyogenic spondylodiscitis with epidural involvement, helpful for recognizing spinal infection but lacking gastrointestinal fistula or perforation.",
+      "most_important_signal": "Disc and vertebral body marrow edema with epidural enhancement consistent with spondylodiscitis."
+    }
+  ]
+}
+
+====================================================================================================
+CASE_ID: 16526
+TIMESTAMP: 2026-02-22T10:50:25.302387
+----------------------------------------------------------------------------------------------------
+{
+  "target_case_id": "16526",
+  "short_target_summary": "A 60-year-old man with fever, abdominal pain and obstruction symptoms was found on CT to have severe acute-on-chronic gangrenous cholecystitis with intramural and intraluminal gas, wall disruption, pericholecystitis, pneumobilia, and small pericholecystic hepatic abscesses.",
+  "needs_image_understanding": true,
+  "needs_image_understanding_reason": "The diagnosis hinges on recognizing specific imaging signs such as intramural gas, absent or irregular wall enhancement, pneumobilia, wall disruption, and pericholecystic inflammatory or abscessing changes that distinguish gangrenous/emphysematous cholecystitis from uncomplicated acute cholecystitis or biliary-enteric fistula.",
+  "relevant_case_reviews": [
+    {
+      "relevant_case_id": "13654",
+      "relevance_score": 5,
+      "rationale": "This case closely mirrors the target with intramural and intraluminal gas, absent wall enhancement indicating gangrene, and severe pericholecystic inflammation, directly supporting the diagnosis of gangrenous/emphysematous cholecystitis.",
+      "most_important_signal": "Non-enhancing gallbladder wall with intramural gas and large intraluminal air-fluid level indicating gangrene."
+    },
+    {
+      "relevant_case_id": "16002",
+      "relevance_score": 4,
+      "rationale": "Highly relevant due to abundant intraluminal gas, gallbladder wall hypoenhancement, aerobilia, and severe infection, though complicated by septic shock and portal thrombophlebitis not present in the target case.",
+      "most_important_signal": "Intraluminal gas with gallbladder wall hypoenhancement and aerobilia supporting emphysematous cholecystitis."
+    },
+    {
+      "relevant_case_id": "2969",
+      "relevance_score": 4,
+      "rationale": "Demonstrates classic CT features of gangrenous cholecystitis with air in the lumen and pericholecystic tissues, aligning well with the target diagnosis despite less detail on biliary gas or abscesses.",
+      "most_important_signal": "Markedly distended gallbladder with intraluminal and pericholecystic gas consistent with gangrene."
+    },
+    {
+      "relevant_case_id": "10390",
+      "relevance_score": 4,
+      "rationale": "Relevant for showing intramural gas and pericholecystic fluid indicating emphysematous cholecystitis, though preserved wall enhancement and focus on perforation slightly differ from the target’s gangrenous changes.",
+      "most_important_signal": "Intramural air along the gallbladder wall with pericholecystic fluid."
+    },
+    {
+      "relevant_case_id": "13294",
+      "relevance_score": 4,
+      "rationale": "Provides multimodality confirmation of emphysematous cholecystitis with intramural and intraluminal gas, aiding pattern recognition, but lacks wall disruption, pneumobilia, or abscess formation seen in the target.",
+      "most_important_signal": "Curvilinear gas in the gallbladder wall on plain film and CT."
+    },
+    {
+      "relevant_case_id": "1150",
+      "relevance_score": 4,
+      "rationale": "Directly relevant by demonstrating gas in the gallbladder wall and lumen with pericholecystic and perihepatic fluid, consistent with severe inflammatory cholecystitis similar to the target case.",
+      "most_important_signal": "Combined intramural and intraluminal gas with surrounding inflammatory fluid."
+    },
+    {
+      "relevant_case_id": "1489",
+      "relevance_score": 3,
+      "rationale": "Partially relevant as it shows intramural gas and pneumobilia, supporting emphysematous cholecystitis, but provides limited detail on gangrenous wall disruption or pericholecystic abscessing.",
+      "most_important_signal": "Intramural gallbladder gas with air in the common bile duct (pneumobilia)."
+    }
+  ]
+}

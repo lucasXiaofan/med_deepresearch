@@ -49,6 +49,7 @@ import json
 import re
 import argparse
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from datetime import datetime
 from typing import Optional, List, Dict, Any, Tuple
@@ -264,6 +265,19 @@ def extract_answer(result: str) -> Tuple[Optional[str], str]:
             answer = letter
             break
 
+    # Parse command-style output, e.g.:
+    # uv run python ... submit --answer E --reasoning "..."
+    if answer is None:
+        cmd_match = re.search(r'--answer\s+([A-E])\b', result, re.IGNORECASE)
+        if cmd_match:
+            answer = cmd_match.group(1).upper()
+
+    # Generic textual fallback: "Final answer: B", "Diagnosis: C", etc.
+    if answer is None:
+        txt_match = re.search(r'\b(?:final answer|diagnosis|answer)\b\s*[:\-]?\s*([A-E])\b', result, re.IGNORECASE)
+        if txt_match:
+            answer = txt_match.group(1).upper()
+
     return answer, reasoning
 
 
@@ -278,6 +292,7 @@ def run_single_case(
     config_path: Path,
     skills_dir: Path,
     session_dir: Path,
+    retry_no_answer: int = 1,
 ) -> Dict[str, Any]:
     """Run a single case through the vision agent.
 
@@ -314,25 +329,59 @@ def run_single_case(
     session_id = f"fewshot_{mode}_{timestamp}_{case_index}"
 
     try:
-        agent = Agent(
-            session_id=session_id,
-            session_dir=session_dir,
-            skills=[],  # no skills, custom prompt only
-            skills_dir=skills_dir,
-            model=model,
-            model_type=model_type,
-            config_path=config_path,
-            max_turns=2,
-            temperature=1,
-            custom_system_prompt=system_prompt,
-            agent_name=f"fewshot-{mode}-{case_index}"
-        )
+        attempt = 0
+        max_attempts = max(1, retry_no_answer + 1)
+        elapsed_total = 0.0
+        final_result_text = ""
+        agent_answer: Optional[str] = None
+        agent_reasoning = ""
+        used_session_id = session_id
 
-        start_time = time.time()
-        result = agent.run(user_prompt, case_id=case_number, run_id=f"fewshot_{mode}_{case_index}")
-        elapsed = time.time() - start_time
+        while attempt < max_attempts:
+            attempt += 1
+            this_session_id = session_id if attempt == 1 else f"{session_id}_retry{attempt-1}"
+            used_session_id = this_session_id
+            this_system_prompt = system_prompt
+            this_max_turns = 2
+            this_temperature = 1
 
-        agent_answer, agent_reasoning = extract_answer(result)
+            if attempt > 1:
+                this_system_prompt = (
+                    system_prompt
+                    + "\n\nMANDATORY OUTPUT RULE: If tool submission fails, you must end with exactly "
+                      "`Final answer: <A-E>` on its own line."
+                )
+                this_max_turns = 3
+                this_temperature = 0.2
+
+            agent = Agent(
+                session_id=this_session_id,
+                session_dir=session_dir,
+                skills=[],  # no skills, custom prompt only
+                skills_dir=skills_dir,
+                model=model,
+                model_type=model_type,
+                config_path=config_path,
+                max_turns=this_max_turns,
+                temperature=this_temperature,
+                custom_system_prompt=this_system_prompt,
+                agent_name=f"fewshot-{mode}-{case_index}"
+            )
+
+            start_time = time.time()
+            result = agent.run(user_prompt, case_id=case_number, run_id=f"fewshot_{mode}_{case_index}_a{attempt}")
+            elapsed_total += (time.time() - start_time)
+            final_result_text = result or ""
+
+            agent_answer, agent_reasoning = extract_answer(final_result_text)
+            if agent_answer:
+                break
+
+            print(
+                f"  [WARN] No answer parsed for case {case_number} ({mode}) "
+                f"on attempt {attempt}/{max_attempts}."
+            )
+
         is_correct = agent_answer == gt_letter
 
         return {
@@ -348,8 +397,10 @@ def run_single_case(
                 {'case_id': case_id, 'reason': reason}
                 for case_id, reason in (relevant_entries or [])
             ],
-            'elapsed_time': round(elapsed, 1),
-            'session_id': session_id,
+            'elapsed_time': round(elapsed_total, 1),
+            'session_id': used_session_id,
+            'attempts': attempt,
+            'raw_output_preview': final_result_text[:500],
         }
 
     except Exception as e:
@@ -385,31 +436,23 @@ def run_mode(
     config_path: Path,
     skills_dir: Path,
     session_dir: Path,
+    workers: int,
+    retry_no_answer: int,
 ) -> Tuple[List[Dict[str, Any]], int, int]:
     """Run all cases in a given mode.
 
     Returns:
         (results_list, correct_count, total_count)
     """
-    results = []
-    correct = 0
-    total = 0
+    total_cases = len(case_indices)
+    workers = max(1, min(workers, total_cases))
 
-    for idx in case_indices:
+    def _run_idx(idx: int) -> Dict[str, Any]:
         case = cases[idx]
         case_number = extract_case_number(case.get('case_title', ''))
-
         relevant_text = relevant_fulltext_dict.get(case_number) if mode == "fewshot" else None
         relevant_entries = relevant_map.get(case_number, []) if mode == "fewshot" else []
-
-        print(f"\n{'─'*60}")
-        print(f"[{mode.upper()}] Case {total+1}/{len(case_indices)}: {case.get('case_title', '')}")
-        print(f"{'─'*60}")
-        if mode == "fewshot":
-            loaded_ids = [case_id for case_id, _ in relevant_entries]
-            print(f"  Relevant cases loaded ({len(loaded_ids)}): {', '.join(loaded_ids) if loaded_ids else 'None'}")
-
-        result = run_single_case(
+        return run_single_case(
             case=case,
             case_index=idx,
             relevant_fulltext=relevant_text,
@@ -420,18 +463,53 @@ def run_mode(
             config_path=config_path,
             skills_dir=skills_dir,
             session_dir=session_dir,
+            retry_no_answer=retry_no_answer,
         )
 
-        results.append(result)
-        total += 1
-        if result['correct']:
-            correct += 1
+    # Sequential fallback (workers=1) to preserve existing behavior when desired.
+    if workers == 1:
+        results = []
+        correct = 0
+        total = 0
+        for idx in case_indices:
+            case = cases[idx]
+            print(f"\n{'─'*60}")
+            print(f"[{mode.upper()}] Case {total+1}/{total_cases}: {case.get('case_title', '')}")
+            print(f"{'─'*60}")
+            result = _run_idx(idx)
+            results.append(result)
+            total += 1
+            if result['correct']:
+                correct += 1
+            status = "CORRECT" if result['correct'] else "INCORRECT"
+            print(f"  {status} | GT: {result['ground_truth']} | Agent: {result['agent_answer']}")
+            print(f"  Running Accuracy: {correct}/{total} ({100*correct/total:.1f}%)")
+        return results, correct, total
 
-        status = "CORRECT" if result['correct'] else "INCORRECT"
-        print(f"  {status} | GT: {result['ground_truth']} | Agent: {result['agent_answer']}")
-        print(f"  Running Accuracy: {correct}/{total} ({100*correct/total:.1f}%)")
+    print(f"Running {mode} with {workers} workers...")
+    results_by_idx: Dict[int, Dict[str, Any]] = {}
+    done = 0
+    correct = 0
 
-    return results, correct, total
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(_run_idx, idx): idx for idx in case_indices}
+        for future in as_completed(futures):
+            idx = futures[future]
+            result = future.result()
+            results_by_idx[idx] = result
+            done += 1
+            if result['correct']:
+                correct += 1
+
+            status = "CORRECT" if result['correct'] else "INCORRECT"
+            print(
+                f"[{mode.upper()}] {done}/{total_cases} {status} | "
+                f"Case {result.get('case_number') or idx} | "
+                f"GT: {result['ground_truth']} | Agent: {result['agent_answer']}"
+            )
+
+    ordered_results = [results_by_idx[idx] for idx in case_indices]
+    return ordered_results, correct, total_cases
 
 
 def print_summary(all_results: Dict[str, Dict[str, Any]]):
@@ -585,6 +663,14 @@ Examples:
         "--session-dir", type=Path, default=DEFAULT_SESSION_DIR,
         help="Path to session directory"
     )
+    parser.add_argument(
+        "--workers", type=int, default=5,
+        help="Parallel workers per mode (default: 5)"
+    )
+    parser.add_argument(
+        "--retry-no-answer", type=int, default=1,
+        help="Retries when no answer can be parsed (default: 1)"
+    )
 
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -644,6 +730,8 @@ Examples:
             config_path=args.config_path,
             skills_dir=args.skills_dir,
             session_dir=args.session_dir,
+            workers=args.workers,
+            retry_no_answer=args.retry_no_answer,
         )
         all_results["baseline"] = {
             "results": baseline_results,
@@ -665,6 +753,8 @@ Examples:
             config_path=args.config_path,
             skills_dir=args.skills_dir,
             session_dir=args.session_dir,
+            workers=args.workers,
+            retry_no_answer=args.retry_no_answer,
         )
         all_results["fewshot"] = {
             "results": fewshot_results,
